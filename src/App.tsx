@@ -1,26 +1,23 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { FC, useReducer } from "react";
+import { CharacterComponent } from "./component/CharacterComponent";
+import { DispatchContext, StateContext } from "./context";
+import { reducer, INITIAL_STATE } from "./reducer";
+import { State } from "./model/state";
+import { loadCharacter } from "./persistance";
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const App: FC = () => {
+    const [state, dispatch] = useReducer(reducer, INITIAL_STATE, (s: State) => {
+        const savedCharacter = loadCharacter();
+        const character = savedCharacter || s.character;
+        return { ...s, character };
+    });
+    return (
+        <DispatchContext.Provider value={dispatch}>
+            <StateContext.Provider value={state}>
+                <CharacterComponent />
+            </StateContext.Provider>
+        </DispatchContext.Provider>
+    );
+};
 
 export default App;
