@@ -19,5 +19,3 @@ export const App: FC = () => {
         </DispatchContext.Provider>
     );
 };
-
-export default App;

@@ -14,3 +14,7 @@ export function loadCharacter(): Character | undefined {
 export function saveCharacter(character: Character) {
     localStorage.setItem(CHARACTER_KEY, JSON.stringify(character));
 }
+
+export function clearCharacter() {
+    localStorage.removeItem(CHARACTER_KEY);
+}

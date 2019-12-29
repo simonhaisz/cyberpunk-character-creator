@@ -17,6 +17,7 @@ export type Quality = {
 };
 
 export type Skill = {
+    group: string;
     name: string;
     rating: number;
     specialization: string | undefined;
