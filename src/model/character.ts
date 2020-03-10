@@ -26,7 +26,7 @@ export type Skill = {
 export type Character = {
     name: string;
     streetName: string;
-    metaType: MetaType | undefined;
+    metaType: MetaType;
     attributes: Attribute[];
     qualities: Quality[];
     skills: Skill[];

@@ -10,7 +10,7 @@ import { ActionType } from "../reducer";
 export const AttributesComponent: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("character");
-    const { attributes } = character;
+    const { attributes, metaType } = character;
 
     const onUpdate = (attribute: Attribute) => {
         const newAttributes = [ ...attributes ];
@@ -26,7 +26,7 @@ export const AttributesComponent: FC = () => {
             {
                 attributes.map(a => (
                     <ListItem>
-                        <AttributeComponent attribute={a} onUpdate={onUpdate} />
+                        <AttributeComponent attribute={a} metaType={metaType} onUpdate={onUpdate} />
                     </ListItem>
                 ))
             }

@@ -5,8 +5,9 @@ import Typography from "@material-ui/core/Typography";
 
 import styled from "styled-components";
 
-import { Attribute } from "../model/character";
+import { Attribute, MetaType } from "../model/character";
 import { isArray } from "util";
+import { getAttributeModifier, getAttributeCost } from "../model/attributes";
 
 const Root = styled.div`
     display: flex;
@@ -19,16 +20,19 @@ const StyledTypography = styled(Typography)`
 
 const SliderContainer = styled.div`
     width: 300px;
+    margin-right: 10px;
 `;
 
 type Props = {
     attribute: Attribute;
+    metaType: MetaType;
     onUpdate: (attribute: Attribute) => void;
 };
 
 export const AttributeComponent: FC<Props> = (props: Props) => {
-    const { attribute, onUpdate } = props;
+    const { attribute, metaType, onUpdate } = props;
     const { name, rating } = attribute;
+    const modifier = getAttributeModifier(metaType, attribute);
 
     const handleChange = (e: React.ChangeEvent<any>, rating: number | number[]) => {
         if (isArray(rating)) {
@@ -36,25 +40,26 @@ export const AttributeComponent: FC<Props> = (props: Props) => {
         }
         onUpdate({
             name,
-            rating
+            rating: rating
         });
     }
 
     return (
         <Root>
-            <StyledTypography id={`attribute-${name}-label`} gutterBottom>{name}</StyledTypography>
+            <StyledTypography gutterBottom>{name}</StyledTypography>
             <SliderContainer>
                 <Slider
                     defaultValue={rating}
-                    aria-labelledBy={`attribute-${name}-label`}
                     step={1}
                     min={1}
                     max={6}
                     marks
                     valueLabelDisplay="on"
                     onChange={handleChange}
+                    valueLabelFormat={(value: number, _index: number) => (value + modifier).toString()}
                 />
             </SliderContainer>
+            <StyledTypography gutterBottom>({getAttributeCost(attribute)})</StyledTypography>
         </Root>
     );
 };

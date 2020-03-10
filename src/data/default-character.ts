@@ -1,9 +1,9 @@
-import { Character } from "../model/character";
+import { Character, MetaType } from "../model/character";
 
 export const DEFAULT_CHARACTER: Character = {
     name: "",
     streetName: "",
-    metaType: undefined,
+    metaType: MetaType.Human,
     attributes: [
         { name: "Body", rating: 3 },
         { name: "Agility", rating: 3 },
