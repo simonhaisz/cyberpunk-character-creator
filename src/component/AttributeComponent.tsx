@@ -10,6 +10,7 @@ import { isArray } from "util";
 
 const Root = styled.div`
     display: flex;
+    height: 50px;
 `;
 
 const StyledTypography = styled(Typography)`

@@ -14,7 +14,7 @@ export const AttributesComponent: FC = () => {
 
     const onUpdate = (attribute: Attribute) => {
         const newAttributes = [ ...attributes ];
-        const attributeIndex = newAttributes.indexOf(attribute);
+        const attributeIndex = newAttributes.findIndex(a => a.name === attribute.name);
         newAttributes[attributeIndex] = attribute;
         dispatch({
             type: ActionType.UpdateCharacter,
