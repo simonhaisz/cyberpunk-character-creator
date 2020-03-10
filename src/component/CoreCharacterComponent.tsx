@@ -26,8 +26,8 @@ export const CoreCharacterComponent: FC = () => {
             <TextField id-="name" label="Name" value={name} onChange={e => updateCharacter({ ...character, name: e.target.value})} />
             <TextField id-="street-name" label="Street Name" value={streetName} onChange={e => updateCharacter({ ...character, streetName: e.target.value})} />
             <Select id="meta-type" value={metaType} displayEmpty onChange={e => updateCharacter({ ...character, metaType: e.target.value as MetaType})}>
-                <MenuItem value="" key="empty" disabled>= Select Meta-Type =</MenuItem>
-                {ALL_META_TYPES.map(t => <MenuItem value={t} key={t}>{t}</MenuItem>)}
+                <MenuItem value="" disabled>Meta-Type</MenuItem>
+                {ALL_META_TYPES.map(t => <MenuItem value={t}>{t}</MenuItem>)}
             </Select>
         </Root>
     )
