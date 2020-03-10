@@ -27,13 +27,14 @@ type Props = {
 
 export const SkillComponent: FC<Props> = (props: Props) => {
     const { skill, onUpdate } = props;
-    const { name, rating, specialization } = skill;
+    const { group, name, rating, specialization } = skill;
 
     const handleRatingChange = (e: React.ChangeEvent<any>, rating: number | number[]) => {
         if (isArray(rating)) {
             throw new Error(`Attribute element '${e.target.id}' has an array of values instead of a single value: [${rating.join(", ")}]`);
         }
         onUpdate({
+            group,
             name,
             rating,
             specialization
