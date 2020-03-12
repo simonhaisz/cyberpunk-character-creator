@@ -1,3 +1,44 @@
+export const ACTIVE_SKILLS_NAMES: string[] = [
+    "Archery",
+    "Close Combat",
+    "Firearms",
+    "Heavy Weapons",
+    "Throwing Weapons",
+    "Athletics",
+    "Diving",
+    "Escape Artist",
+    "Free-fall",
+    "Outdoors",
+    "Perception",
+    "Stealth",
+    "Acting",
+    "Influence",
+    "Instruction",
+    "Intimidation",
+    "Arcana",
+    "Assensing",
+    "Astral Combat",
+    "Conjuring",
+    "Enchanting",
+    "Sorcery",
+    "Animal Handling",
+    "Armorer",
+    "Artisan",
+    "Biotech",
+    "Chemistry",
+    "Cracking",
+    "Demolitions",
+    "Electronics",
+    "Forgery",
+    "Locksmith",
+    "Mechanic",
+    "Gunnery",
+    "Pilot Areospace",
+    "Pilot Aircraft",
+    "Pilot Groundcraft",
+    "Pilot Watercraft"
+]
+
 type SkillGroup = {
     name: string;
     skills: string[];
@@ -6,11 +47,11 @@ type SkillGroup = {
 export const ACTIVE_SKILL_GROUPS: SkillGroup[] = [
     {
         name: "Combat",
-        skills: ["Close Combat", "Firearms"]
+        skills: ["Archery", "Close Combat", "Firearms", "Launch Weapons", "Throwing Weapons"]
     },
     {
         name: "Magical",
-        skills: ["Conjuring", "Sorcery"]
+        skills: ["Arcana", "Assensing", "Astral Combat", "Conjuring", "Enchanting", "Sorcery"]
     },
     {
         name: "Physical",
@@ -18,11 +59,15 @@ export const ACTIVE_SKILL_GROUPS: SkillGroup[] = [
     },
     {
         name: "Social",
-        skills: ["Influence"]
+        skills: ["Acting", "Influence", "Instruction", "Intimidation"]
     },
     {
         name: "Technical",
-        skills: ["Cracking", "Electronics"]
+        skills: ["Animal Handling", "Armorer", "Artisan", "Biotech", "Chemistry", "Cracking", "Demolitions", "Electronics", "Forgery", "Locksmith", "Mechanic"]
+    },
+    {
+        name: "Vehicle",
+        skills: ["Gunnery", "Pilot Aerospace", "Pilot Aircraft", "Pilot Groundcraft", "Pilot Watercraft"]
     }
 ];
 

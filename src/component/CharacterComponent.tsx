@@ -5,6 +5,7 @@ import { useDispatch } from "../context";
 import styled from "styled-components";
 import { AttributesComponent } from "./AttributesComponent";
 import { ActionType } from "../reducer";
+import { SkillsComponents } from "./SkillsComponents";
 
 const Root = styled.div`
     display: flex;
@@ -15,7 +16,7 @@ const Root = styled.div`
 const ButtonPanel = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     margin-top: 5px;
 `;
 
@@ -30,12 +31,13 @@ export const CharacterComponent: FC = () => {
     }
     return (
         <Root>
-            <CoreCharacterComponent />
-            <AttributesComponent />
             <ButtonPanel>
                 <Button variant="outlined" onClick={saveClickHandler}>Save</Button>
                 <Button variant="outlined" onClick={resetClickHandler}>Reset</Button>
             </ButtonPanel>
+            <CoreCharacterComponent />
+            <AttributesComponent />
+            <SkillsComponents />
         </Root>
     );
 };

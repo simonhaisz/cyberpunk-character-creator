@@ -6,22 +6,16 @@ export enum MetaType {
     Troll = "Troll",
 }
 
-export type Attribute = {
+export type NamedProperty = {
     name: string;
     rating: number;
 };
 
-export type Quality = {
-    name: string;
-    cost: number;
-};
+export type Attribute = NamedProperty;
 
-export type Skill = {
-    group: string;
-    name: string;
-    rating: number;
-    specialization: string | undefined;
-};
+export type Quality = NamedProperty;
+
+export type Skill = NamedProperty;
 
 export type Character = {
     name: string;

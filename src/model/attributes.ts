@@ -60,8 +60,8 @@ export function getAttributeModifier(metaType: MetaType, attribute: Attribute): 
     return 0;
 }
 
-export function getAttributeCost(attribute: Attribute): number {
-    switch (attribute.rating) {
+export function getAttributeCost(rating: number): number {
+    switch (rating) {
         case 1:
             return -25;
         case 2:
@@ -77,6 +77,6 @@ export function getAttributeCost(attribute: Attribute): number {
         case 7:
             return 110;
         default:
-            return Number.NaN;
+            throw new Error(`Unsupported attribute rating ${rating}`);
     }
 }
