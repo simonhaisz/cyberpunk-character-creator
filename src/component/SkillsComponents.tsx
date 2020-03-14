@@ -76,7 +76,7 @@ export const SkillsComponents: FC = () => {
             >
             {
                 shownSkills.map(s => (
-                    <ListItem>
+                    <ListItem key={s.name}>
                         <SkillComponent skill={s} onUpdate={onSkillUpdate} />
                     </ListItem>
                 ))

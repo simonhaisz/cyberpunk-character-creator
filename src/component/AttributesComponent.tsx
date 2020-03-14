@@ -25,7 +25,7 @@ export const AttributesComponent: FC = () => {
         <List subheader={<ListSubheader>Attributes</ListSubheader>}>
             {
                 attributes.map(a => (
-                    <ListItem>
+                    <ListItem key={a.name}>
                         <AttributeComponent attribute={a} metaType={metaType} onUpdate={onUpdate} />
                     </ListItem>
                 ))

@@ -50,10 +50,10 @@ export const PropertyComponent: FC<Props> = (props: Props) => {
             <StyledTypography gutterBottom>{name}</StyledTypography>
             <SliderContainer>
                 <Slider
-                    defaultValue={rating}
                     step={step}
                     min={min}
                     max={max}
+                    value={rating}
                     marks
                     valueLabelDisplay="on"
                     onChange={handleChange}
