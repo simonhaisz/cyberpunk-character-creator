@@ -1,6 +1,8 @@
 import { Character, MetaType } from "../model/character";
 
-export const DEFAULT_CHARACTER: Character = {
+const DEFAULT_KEY = -1;
+const DEFAULT_CHARACTER: Character = {
+    key: DEFAULT_KEY,
     name: "",
     streetName: "",
     metaType: MetaType.Human,
@@ -18,3 +20,15 @@ export const DEFAULT_CHARACTER: Character = {
     qualities: [],
     skills: []
 };
+
+export function getDefaultCharacter(): Character {
+    return { ...DEFAULT_CHARACTER };
+}
+
+export function isDefaultCharacter(character: Character): boolean {
+    return JSON.stringify(DEFAULT_CHARACTER) === JSON.stringify(character);
+}
+
+export function hasDefaultKey(character: Character): boolean {
+    return character.key === DEFAULT_KEY;
+}

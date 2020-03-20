@@ -20,7 +20,7 @@ const ListHeader = styled.div`
 
 export const SkillsComponents: FC = () => {
     const dispatch = useDispatch();
-    const character = useGlobalState("character");
+    const character = useGlobalState("selectedCharacter");
     const { skills } = character;
     const [showAllSkills, setShowAllSkills] = useState(skills.length === 0);
 

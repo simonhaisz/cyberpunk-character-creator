@@ -17,7 +17,7 @@ const Root = styled.div`
 
 export const CoreCharacterComponent: FC = () => {
     const dispatch = useDispatch();
-    const character = useGlobalState("character");
+    const character = useGlobalState("selectedCharacter");
     const { name, streetName, metaType } = character;
     const updateCharacter = (character: Character) => {
         dispatch({ type: ActionType.UpdateCharacter, data: character });

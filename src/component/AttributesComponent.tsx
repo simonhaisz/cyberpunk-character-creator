@@ -9,7 +9,7 @@ import { ActionType } from "../reducer";
 
 export const AttributesComponent: FC = () => {
     const dispatch = useDispatch();
-    const character = useGlobalState("character");
+    const character = useGlobalState("selectedCharacter");
     const { attributes, metaType } = character;
 
     const onUpdate = (attribute: Attribute) => {

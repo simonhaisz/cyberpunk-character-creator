@@ -1,5 +1,6 @@
-import { Character } from "./character";
+import { Character, CharacterRef } from "./character";
 
 export type State = {
-    character: Character;
+    characters: CharacterRef[];
+    selectedCharacter: Character;
 };
