@@ -3,9 +3,9 @@ import { DispatchContext, StateContext } from "./context";
 import { reducer, INITIAL_STATE } from "./reducer";
 import { State } from "./model/state";
 import { loadCharacter, loadCharacters, loadSelectedCharacter } from "./persistance";
-import { AppComponent } from "./component/AppComponent";
+import CharacterCreator from "./component/CharacterCreator";
 
-export const App: FC = () => {
+const App: FC = () => {
     const [state, dispatch] = useReducer(reducer, INITIAL_STATE, (s: State): State => {
         const characters = loadCharacters();
         const selectedCharacterKey = loadSelectedCharacter();
@@ -24,8 +24,10 @@ export const App: FC = () => {
     return (
         <DispatchContext.Provider value={dispatch}>
             <StateContext.Provider value={state}>
-                <AppComponent />
+                <CharacterCreator />
             </StateContext.Provider>
         </DispatchContext.Provider>
     );
 };
+
+export default App;

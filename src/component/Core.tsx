@@ -15,7 +15,7 @@ const Root = styled.div`
     margin: 5px;
 `;
 
-export const CoreCharacterComponent: FC = () => {
+const Core: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const { name, streetName, metaType } = character;
@@ -33,3 +33,5 @@ export const CoreCharacterComponent: FC = () => {
         </Root>
     )
 }
+
+export default Core;

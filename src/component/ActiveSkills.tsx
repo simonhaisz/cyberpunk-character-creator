@@ -8,9 +8,9 @@ import Switch from "@material-ui/core/Switch";
 
 import styled from "styled-components";
 import { useDispatch, useGlobalState } from "../context"
-import { Skill, Character } from "../model/character";
+import { Skill as SkillData, Character } from "../model/character";
 import { ACTIVE_SKILLS_NAMES } from "../data/skills";
-import { SkillComponent } from "./SkillComponent";
+import ActiveSkill from "./ActiveSkill";
 import { ActionType } from "../reducer";
 
 const ListHeader = styled.div`
@@ -18,7 +18,7 @@ const ListHeader = styled.div`
     flex-direction: row;
 `;
 
-export const SkillsComponents: FC = () => {
+const ActiveSkills: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const { activeSkills } = character;
@@ -43,7 +43,7 @@ export const SkillsComponents: FC = () => {
         setShowAllSkills(checked);
     };
 
-    const onSkillUpdate = (skill: Skill) => {
+    const onSkillUpdate = (skill: SkillData) => {
         const newSkills = [ ...activeSkills ];
         const skillIndex = activeSkills.findIndex(s => s.name === skill.name);
         if (skillIndex > -1) {
@@ -75,10 +75,12 @@ export const SkillsComponents: FC = () => {
             {
                 shownSkills.map(s => (
                     <ListItem key={s.name}>
-                        <SkillComponent skill={s} onUpdate={onSkillUpdate} />
+                        <ActiveSkill skill={s} onUpdate={onSkillUpdate} />
                     </ListItem>
                 ))
             }
         </List>
     );
 }
+
+export default ActiveSkills;

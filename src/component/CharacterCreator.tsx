@@ -1,5 +1,5 @@
 import React, { FC, Fragment, useState } from "react";
-import { CharacterComponent } from "./CharacterComponent";
+import Character from "./Character";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -8,8 +8,8 @@ import MenuIcon from "@material-ui/icons/Menu";
 import SaveIcon from "@material-ui/icons/Save";
 import ClearIcon from "@material-ui/icons/Clear";
 import styled from "styled-components";
-import { SelectCharacterComponent } from "./SelectCharacterComponent";
-import { CharacterNameComponent } from "./CharacterNameComponent";
+import SelectCharacter from "./SelectCharacter";
+import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
 import { ActionType } from "../reducer";
 
@@ -20,7 +20,7 @@ const StyledBar = styled.div`
 const StyleSidebar = styled(Drawer)`
 `;
 
-export const AppComponent: FC = () => {
+const CharacterCreator: FC = () => {
     const dispatch = useDispatch();
     const selectedCharacter = useGlobalState("selectedCharacter");
 
@@ -48,7 +48,7 @@ export const AppComponent: FC = () => {
                         <MenuIcon />
                     </IconButton>
                     <StyledBar>
-                        <CharacterNameComponent character={selectedCharacter} />
+                        <CharacterName character={selectedCharacter} />
                     </StyledBar>
                     <IconButton aria-label="save" onClick={saveClickHandler} color="secondary">
                         <SaveIcon />
@@ -58,10 +58,12 @@ export const AppComponent: FC = () => {
                     </IconButton>
                 </Toolbar>
             </AppBar>
-            <CharacterComponent />
+            <Character />
             <StyleSidebar open={drawerOpen} onClose={onDrawerClose}>
-                <SelectCharacterComponent />
+                <SelectCharacter />
             </StyleSidebar>
         </Fragment>
     )
 };
+
+export default CharacterCreator;

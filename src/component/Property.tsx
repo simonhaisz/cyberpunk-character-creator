@@ -31,7 +31,7 @@ type Props = {
     computeCost: (rating: number) => number;
 };
 
-export const PropertyComponent: FC<Props> = (props: Props) => {
+const Property: FC<Props> = (props: Props) => {
     const { property, onUpdate, min, max, step, formatDisplayValue, computeCost } = props;
     const { name, rating } = property;
 
@@ -64,3 +64,5 @@ export const PropertyComponent: FC<Props> = (props: Props) => {
         </Root>
     );
 };
+
+export default Property;

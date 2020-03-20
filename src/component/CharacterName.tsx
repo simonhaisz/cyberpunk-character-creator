@@ -7,7 +7,7 @@ type Props = {
     character: CharacterRef;
 };
 
-export const CharacterNameComponent: FC<Props> = (props: Props) => {
+const CharacterName: FC<Props> = (props: Props) => {
     const { character } = props;
     const { name, streetName } = character;
     if (!name && !streetName) {
@@ -21,3 +21,5 @@ export const CharacterNameComponent: FC<Props> = (props: Props) => {
     }
     return <Typography>{name} aka {streetName}</Typography>
 };
+
+export default CharacterName;
