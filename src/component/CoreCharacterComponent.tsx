@@ -5,7 +5,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import styled from "styled-components";
 import { useDispatch, useGlobalState } from "../context";
 import { Character, MetaType } from "../model/character";
-import { ActionType } from "../reducer";
+import { ActionType, UpdateCharacterData } from "../reducer";
 import { ALL_META_TYPES } from "../data/meta-types";
 import { getMetaTypeCost } from "../model/meta-type";
 
@@ -20,7 +20,8 @@ export const CoreCharacterComponent: FC = () => {
     const character = useGlobalState("selectedCharacter");
     const { name, streetName, metaType } = character;
     const updateCharacter = (character: Character) => {
-        dispatch({ type: ActionType.UpdateCharacter, data: character });
+        const data: UpdateCharacterData = character;
+        dispatch({ type: ActionType.UpdateCharacter, data });
     };
     return (
         <Root>

@@ -27,5 +27,7 @@ export type Character = CharacterRef & {
     metaType: MetaType;
     attributes: Attribute[];
     qualities: Quality[];
-    skills: Skill[];
+    activeSkills: Skill[];
+    knowledgeSkills: Skill[];
+    languageSkills: Skill[];
 };

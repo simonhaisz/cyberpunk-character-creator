@@ -13,7 +13,7 @@ import { CharacterNameComponent } from "./CharacterNameComponent";
 import { useDispatch, useGlobalState } from "../context";
 import { ActionType } from "../reducer";
 
-const StyledCharacterName = styled(CharacterNameComponent)`
+const StyledBar = styled.div`
     flex-grow: 1;
 `;
 
@@ -47,7 +47,9 @@ export const AppComponent: FC = () => {
                     <IconButton edge="start" onClick={onMenuClick} aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <StyledCharacterName character={selectedCharacter} />
+                    <StyledBar>
+                        <CharacterNameComponent character={selectedCharacter} />
+                    </StyledBar>
                     <IconButton aria-label="save" onClick={saveClickHandler} color="secondary">
                         <SaveIcon />
                     </IconButton>

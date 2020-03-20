@@ -18,7 +18,9 @@ const DEFAULT_CHARACTER: Character = {
         { name: "Edge", rating: 3 },
     ],
     qualities: [],
-    skills: []
+    activeSkills: [],
+    knowledgeSkills: [],
+    languageSkills: []
 };
 
 export function getDefaultCharacter(): Character {

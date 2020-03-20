@@ -5,17 +5,15 @@ import ListSubheader from "@material-ui/core/ListSubheader";
 import { useGlobalState, useDispatch } from "../context";
 import { CharacterNameComponent } from "./CharacterNameComponent";
 import { CharacterRef } from "../model/character";
-import { ActionType } from "../reducer";
+import { ActionType, SelectCharacterData } from "../reducer";
 
 export const SelectCharacterComponent: FC = () => {
     const dispatch = useDispatch();
     const characters = useGlobalState("characters");
 
     const onCharacterClick = (character: CharacterRef) => {
-        dispatch({
-            type: ActionType.SelectCharacter,
-            data: character
-        });
+        const data: SelectCharacterData = character;
+        dispatch({ type: ActionType.SelectCharacter, data });
     };
     return (
         <List subheader={

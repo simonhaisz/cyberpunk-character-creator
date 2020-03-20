@@ -8,7 +8,7 @@ import Switch from "@material-ui/core/Switch";
 
 import styled from "styled-components";
 import { useDispatch, useGlobalState } from "../context"
-import { Skill } from "../model/character";
+import { Skill, Character } from "../model/character";
 import { ACTIVE_SKILLS_NAMES } from "../data/skills";
 import { SkillComponent } from "./SkillComponent";
 import { ActionType } from "../reducer";
@@ -21,14 +21,14 @@ const ListHeader = styled.div`
 export const SkillsComponents: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
-    const { skills } = character;
-    const [showAllSkills, setShowAllSkills] = useState(skills.length === 0);
+    const { activeSkills } = character;
+    const [showAllSkills, setShowAllSkills] = useState(activeSkills.length === 0);
 
-    const shownSkills = [...skills];
+    const shownSkills = [...activeSkills];
 
     if (showAllSkills) {
         for (const skillName of ACTIVE_SKILLS_NAMES) {
-            if (skills.find(s => s.name === skillName) === undefined) {
+            if (activeSkills.find(s => s.name === skillName) === undefined) {
                 shownSkills.push({
                     name: skillName,
                     rating: -1
@@ -44,8 +44,8 @@ export const SkillsComponents: FC = () => {
     };
 
     const onSkillUpdate = (skill: Skill) => {
-        const newSkills = [ ...skills ];
-        const skillIndex = skills.findIndex(s => s.name === skill.name);
+        const newSkills = [ ...activeSkills ];
+        const skillIndex = activeSkills.findIndex(s => s.name === skill.name);
         if (skillIndex > -1) {
             if (skill.rating > 0) {
                 newSkills[skillIndex] = skill;
@@ -55,10 +55,8 @@ export const SkillsComponents: FC = () => {
         } else if (skill.rating > 0) {
             newSkills.push(skill);
         }
-        dispatch({
-            type: ActionType.UpdateCharacter,
-            data: { ...character, skills: newSkills }
-        });
+        const data: Character = { ...character, activeSkills: newSkills };
+        dispatch({ type: ActionType.UpdateCharacter, data });
     }
 
     return (
