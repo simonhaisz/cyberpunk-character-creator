@@ -16,9 +16,11 @@ import { ActionType } from "../reducer";
 import Character from "./Character";
 import Attributes from "./Attributes";
 import Skills from "./Skills";
+import Karma from "./Karma";
 
 const StyledBar = styled.div`
     flex-grow: 1;
+    display: flex;
 `;
 
 const StyleSidebar = styled(Drawer)`
@@ -73,6 +75,7 @@ const CharacterCreator: FC = () => {
                     </IconButton>
                     <StyledBar>
                         <CharacterName character={selectedCharacter} />
+                        <Karma />
                     </StyledBar>
                     <IconButton aria-label="save" onClick={saveClickHandler} color="secondary">
                         <SaveIcon />
