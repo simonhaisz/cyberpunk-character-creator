@@ -3,23 +3,23 @@ import React, { FC } from "react";
 import Slider from "@material-ui/core/Slider";
 import Typography from "@material-ui/core/Typography";
 
-import styled from "styled-components";
+import { makeStyles } from '@material-ui/core/styles';
 
 import { NamedProperty } from "../model/character";
 
-const Root = styled.div`
-    display: flex;
-    height: 50px;
-`;
-
-const StyledTypography = styled(Typography)`
-    width: 200px;
-`;
-
-const SliderContainer = styled.div`
-    width: 300px;
-    margin-right: 10px;
-`;
+const useStyles = makeStyles({
+    root: {
+        display: "flex",
+        height: "50px"
+    },
+    name: {
+        width: "200px"
+    },
+    slider: {
+        width: "300px",
+        marginRight: "10px"
+    }
+});
 
 type Props = {
     property: NamedProperty;
@@ -35,6 +35,8 @@ const Property: FC<Props> = (props: Props) => {
     const { property, onUpdate, min, max, step, formatDisplayValue, computeCost } = props;
     const { name, rating } = property;
 
+    const classes = useStyles();
+
     const handleChange = (e: React.ChangeEvent<any>, rating: number | number[]) => {
         if (Array.isArray(rating)) {
             throw new Error(`Property element '${e.target.id}' has an array of values instead of a single value: [${rating.join(", ")}]`);
@@ -46,9 +48,9 @@ const Property: FC<Props> = (props: Props) => {
     }
 
     return (
-        <Root>
-            <StyledTypography gutterBottom>{name}</StyledTypography>
-            <SliderContainer>
+        <div className={classes.root}>
+            <Typography gutterBottom className={classes.name}>{name}</Typography>
+            <div className={classes.slider}>
                 <Slider
                     step={step}
                     min={min}
@@ -59,9 +61,9 @@ const Property: FC<Props> = (props: Props) => {
                     onChange={handleChange}
                     valueLabelFormat={(value: number, _index: number) => formatDisplayValue(value)}
                 />
-            </SliderContainer>
-            <StyledTypography gutterBottom>({computeCost(rating)})</StyledTypography>
-        </Root>
+            </div>
+            <Typography gutterBottom>({computeCost(rating)})</Typography>
+        </div>
     );
 };
 

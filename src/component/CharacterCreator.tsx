@@ -1,4 +1,4 @@
-import React, { FC, Fragment, useState } from "react";
+import React, { FC, useState } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -8,7 +8,7 @@ import SaveIcon from "@material-ui/icons/Save";
 import ClearIcon from "@material-ui/icons/Clear";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
-import styled from "styled-components";
+import { makeStyles } from '@material-ui/core/styles';
 import SelectCharacter from "./SelectCharacter";
 import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
@@ -18,15 +18,15 @@ import Attributes from "./Attributes";
 import Skills from "./Skills";
 import Karma from "./Karma";
 
-const StyledBar = styled.div`
-    flex-grow: 1;
-    display: flex;
-`;
-
-const StyleSidebar = styled(Drawer)`
-`;
+const useStyles = makeStyles({
+    bar: {
+        flexGrow: 1,
+        display: "flex"
+    }
+});
 
 const CharacterCreator: FC = () => {
+    const classes = useStyles();
     const dispatch = useDispatch();
     const selectedCharacter = useGlobalState("selectedCharacter");
 
@@ -67,16 +67,16 @@ const CharacterCreator: FC = () => {
     }
     
     return (
-        <Fragment>
-            <AppBar position="sticky">
+        <div>
+            <AppBar position="sticky" color="default">
                 <Toolbar>
                     <IconButton edge="start" onClick={onMenuClick} aria-label="menu">
                         <MenuIcon />
                     </IconButton>
-                    <StyledBar>
+                    <div className={classes.bar}>
                         <CharacterName character={selectedCharacter} />
                         <Karma />
-                    </StyledBar>
+                    </div>
                     <IconButton aria-label="save" onClick={saveClickHandler} color="secondary">
                         <SaveIcon />
                     </IconButton>
@@ -93,11 +93,11 @@ const CharacterCreator: FC = () => {
             {
                 selectedTabPanel
             }
-            <StyleSidebar open={drawerOpen} onClose={onDrawerClose}>
+            <Drawer open={drawerOpen} onClose={onDrawerClose}>
                 <SelectCharacter />
-            </StyleSidebar>
-        </Fragment>
-    )
+            </Drawer>
+        </div>
+    );
 };
 
 export default CharacterCreator;

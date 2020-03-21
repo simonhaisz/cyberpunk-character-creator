@@ -1,27 +1,30 @@
 import React, { FC, Fragment } from "react";
 import Badge from "@material-ui/core/Badge";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
-import styled from "styled-components";
+import { makeStyles } from '@material-ui/core/styles';
 import { useGlobalState } from "../context";
 
-const StyledBadge = styled(Badge)`
-    margin-left: 50px;
-`;
+const useStyles = makeStyles({
+    badge: {
+        marginLeft: "50px"
+    }
+});
 
 const Karma: FC = () => {
+    const classes = useStyles();
     const karma = useGlobalState("karma");
     const { total, spent, available } = karma;
     return (
         <Fragment>
-            <StyledBadge badgeContent={total} color="primary" max={1000} showZero>
+            <Badge className={classes.badge} badgeContent={total} color="primary" max={1000} showZero>
                 <ShoppingCartIcon />
-            </StyledBadge>
-            <StyledBadge badgeContent={spent} color="error" max={1000} showZero>
+            </Badge>
+            <Badge className={classes.badge} badgeContent={spent} color="error" max={1000} showZero>
                 <ShoppingCartIcon />
-            </StyledBadge>
-            <StyledBadge badgeContent={available} color="secondary" max={1000} showZero>
+            </Badge>
+            <Badge className={classes.badge} badgeContent={available} color="secondary" max={1000} showZero>
                 <ShoppingCartIcon />
-            </StyledBadge>
+            </Badge>
         </Fragment>
     );
 };

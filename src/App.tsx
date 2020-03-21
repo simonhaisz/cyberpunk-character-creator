@@ -4,6 +4,14 @@ import { reducer, INITIAL_STATE } from "./reducer";
 import { State } from "./model/state";
 import { loadCharacter, loadCharacters, loadSelectedCharacter } from "./persistance";
 import CharacterCreator from "./component/CharacterCreator";
+import { createMuiTheme, ThemeProvider } from "@material-ui/core/styles";
+import CssBaseline from "@material-ui/core/CssBaseline";
+
+const theme = createMuiTheme({
+    palette: {
+        type: "dark"
+    }
+});
 
 const App: FC = () => {
     const [state, dispatch] = useReducer(reducer, INITIAL_STATE, (s: State): State => {
@@ -24,7 +32,10 @@ const App: FC = () => {
     return (
         <DispatchContext.Provider value={dispatch}>
             <StateContext.Provider value={state}>
-                <CharacterCreator />
+                <ThemeProvider theme={theme}>
+                    <CssBaseline />
+                    <CharacterCreator />
+                </ThemeProvider>
             </StateContext.Provider>
         </DispatchContext.Provider>
     );

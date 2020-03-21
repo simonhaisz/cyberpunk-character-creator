@@ -5,20 +5,22 @@ import ListItem from "@material-ui/core/ListItem";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Switch from "@material-ui/core/Switch";
-
-import styled from "styled-components";
+import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useGlobalState } from "../context"
 import { Skill as SkillData, Character } from "../model/character";
 import { ACTIVE_SKILLS_NAMES } from "../data/skills";
 import ActiveSkill from "./ActiveSkill";
 import { ActionType } from "../reducer";
 
-const ListHeader = styled.div`
-    display: flex;
-    flex-direction: row;
-`;
+const useStyles = makeStyles({
+    header: {
+        display: "flex",
+        flexDirection: "row"
+    }
+});
 
 const ActiveSkills: FC = () => {
+    const classes = useStyles();
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const { activeSkills } = character;
@@ -61,7 +63,7 @@ const ActiveSkills: FC = () => {
 
     return (
         <List subheader={
-                <ListHeader>
+                <div className={classes.header}>
                     <ListSubheader>Active Skills</ListSubheader>
                     <FormControlLabel
                         control={
@@ -69,7 +71,7 @@ const ActiveSkills: FC = () => {
                         }
                         label="Show all"
                     />
-                </ListHeader>
+                </div>
             }
             >
             {
