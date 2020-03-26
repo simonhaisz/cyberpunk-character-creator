@@ -1,4 +1,4 @@
-import { MetaType, Attribute } from "./character";
+import { MetaType, Attribute, Character } from "./character";
 
 export function getAttributeModifier(metaType: MetaType, attribute: Attribute): number {
     switch (metaType) {
@@ -79,4 +79,8 @@ export function getAttributeCost(rating: number): number {
         default:
             throw new Error(`Unsupported attribute rating ${rating}`);
     }
+}
+
+export function getAttributesCost(character: Character): number {
+    return character.attributes.map(a => getAttributeCost(a.rating)).reduce((a, b) => a + b, 0);
 }

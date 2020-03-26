@@ -1,3 +1,5 @@
+import { Quality } from "./quality";
+
 export enum MetaType {
     Dwarf = "Dwarf",
     Elf = "Elf",
@@ -12,8 +14,6 @@ export type NamedProperty = {
 };
 
 export type Attribute = NamedProperty;
-
-export type Quality = NamedProperty;
 
 export type Skill = NamedProperty;
 

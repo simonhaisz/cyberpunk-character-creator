@@ -39,3 +39,12 @@ export function getFreeKnowledgeSkillPoints(character: Character): number {
     }
     return (intuition.rating + logic.rating) * 10;
 }
+
+export function getSkillsCost(character: Character): number {
+    const activeSkillCost = character.activeSkills.map(s => getActiveSkillCost(s.rating)).reduce((a, b) => a + b, 0);
+    const knowledgeSkillCost = character.knowledgeSkills.map(s => getKnowledgeSkillCost(s)).reduce((a, b) => a + b, 0);
+    // exclude native language
+    const languageSkillCost = character.languageSkills.filter(s => s.rating < 6).map(s => getKnowledgeSkillCost(s)).reduce((a, b) => a + b, 0);
+    const freeKnowledgePoints = getFreeKnowledgeSkillPoints(character);
+    return activeSkillCost + Math.max(knowledgeSkillCost + languageSkillCost - freeKnowledgePoints, 0);
+}

@@ -6,11 +6,14 @@ import ListSubheader from "@material-ui/core/ListSubheader";
 import Attribute from "./Attribute";
 import { Attribute as AttributeData } from "../model/character";
 import { ActionType } from "../reducer";
+import { getAttributesCost } from "../model/attributes";
 
 const Attributes: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const { attributes, metaType } = character;
+
+    const attributesCost = getAttributesCost(character);
 
     const onUpdate = (attribute: AttributeData) => {
         const newAttributes = [ ...attributes ];
@@ -22,7 +25,7 @@ const Attributes: FC = () => {
         });
     };
     return (
-        <List subheader={<ListSubheader>Attributes</ListSubheader>}>
+        <List subheader={<ListSubheader>Attributes ({attributesCost})</ListSubheader>}>
             {
                 attributes.map(a => (
                     <ListItem key={a.name}>
