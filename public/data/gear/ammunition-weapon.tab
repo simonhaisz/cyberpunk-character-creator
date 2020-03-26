@@ -1,0 +1,9 @@
+Weapon	Availability	Cost per X shots
+Dart	-	20
+Taser	-	10
+Holdout Pistols, Light Pistols, Machine Pistols, Sub Machineguns	-	100
+Heavy Pistols	+2	20
+Shotguns	-	20
+Assault Rifles, Light Machineguns	+4	50
+Sport Rifles, Medium Machineguns	+6	20
+Sniper Rifles, Heavy Machineguns, Assault Cannons	+8	10

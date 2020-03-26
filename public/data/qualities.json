@@ -1,0 +1,705 @@
+{
+    "negative": [
+        {
+            "name": "Addiction [Mild]",
+            "cost": "-5"
+        },
+        {
+            "name": "Addiction [Moderate]",
+            "cost": "-10"
+        },
+        {
+            "name": "Addiction [Severe]",
+            "cost": "-20"
+        },
+        {
+            "name": "Addiction [Burnout]",
+            "cost": "-30"
+        },
+        {
+            "name": "Albinism",
+            "cost": "-10"
+        },
+        {
+            "name": "Allergy [Uncommon&Mild]",
+            "cost": "-5"
+        },
+        {
+            "name": "Allergy [Uncommon&Moderate]",
+            "cost": "-10"
+        },
+        {
+            "name": "Allergy [Uncommon&Severe]",
+            "cost": "-15"
+        },
+        {
+            "name": "Allergy [Common&Mild]",
+            "cost": "-10"
+        },
+        {
+            "name": "Allergy [Common&Moderate]",
+            "cost": "-15"
+        },
+        {
+            "name": "Allergy [Common&Severe]",
+            "cost": "-20"
+        },
+        {
+            "name": "Amnesia [Life]",
+            "cost": "-10"
+        },
+        {
+            "name": "Amnesia [Everything]",
+            "cost": "-25"
+        },
+        {
+            "name": "Asthma",
+            "cost": "-15"
+        },
+        {
+            "name": "Astral Beacon",
+            "cost": "-5"
+        },
+        {
+            "name": "Bad Lucky",
+            "cost": "-20"
+        },
+        {
+            "name": "Bad Rep",
+            "cost": "-5"
+        },
+        {
+            "name": "Bi-Polar",
+            "cost": "-10"
+        },
+        {
+            "name": "Big Regret",
+            "cost": "-5"
+        },
+        {
+            "name": "Borrowed Time",
+            "cost": "-20"
+        },
+        {
+            "name": "Codeblock",
+            "cost": "-5"
+        },
+        {
+            "name": "Combat Paralysis",
+            "cost": "-20"
+        },
+        {
+            "name": "Computer Illeterate",
+            "cost": "-5"
+        },
+        {
+            "name": "Cranial Bomb",
+            "cost": "-10"
+        },
+        {
+            "name": "Day Job [10 Hours]",
+            "cost": "-5"
+        },
+        {
+            "name": "Day Job [20 Hours]",
+            "cost": "-10"
+        },
+        {
+            "name": "Day Job [40 Hours]",
+            "cost": "-15"
+        },
+        {
+            "name": "Delusions",
+            "cost": "-10"
+        },
+        {
+            "name": "Dementia",
+            "cost": "-20"
+        },
+        {
+            "name": "Dependent(s) [Nuisance]",
+            "cost": "-5"
+        },
+        {
+            "name": "Dependent(s) [Commitment]",
+            "cost": "-10"
+        },
+        {
+            "name": "Dependent(s) [Special Care]",
+            "cost": "-15"
+        },
+        {
+            "name": "Distinctive Style [1]",
+            "cost": "-5"
+        },
+        {
+            "name": "Distinctive Style [2]",
+            "cost": "-10"
+        },
+        {
+            "name": "Distinctive Style [3]",
+            "cost": "-15"
+        },
+        {
+            "name": "Elf Poser",
+            "cost": "-5"
+        },
+        {
+            "name": "Enemy [C+I=5]",
+            "cost": "-5"
+        },
+        {
+            "name": "Enemy [C+I=15]",
+            "cost": "-15"
+        },
+        {
+            "name": "Enemy [C+I=25]",
+            "cost": "-25"
+        },
+        {
+            "name": "Evil Twin",
+            "cost": "-10"
+        },
+        {
+            "name": "Flashbacks [Uncommon]",
+            "cost": "-5"
+        },
+        {
+            "name": "Flashbacks [common]",
+            "cost": "-10"
+        },
+        {
+            "name": "Gremlins",
+            "cost": "-20"
+        },
+        {
+            "name": "Hallucinations",
+            "cost": "-10"
+        },
+        {
+            "name": "Hung Out to Dry",
+            "cost": "-10"
+        },
+        {
+            "name": "Illiterate",
+            "cost": "-10"
+        },
+        {
+            "name": "In Debt [10000]",
+            "cost": "-5"
+        },
+        {
+            "name": "In Debt [30000]",
+            "cost": "-15"
+        },
+        {
+            "name": "In Debt [50000]",
+            "cost": "-25"
+        },
+        {
+            "name": "Incompetent",
+            "cost": "-5"
+        },
+        {
+            "name": "Infirm",
+            "cost": "-20"
+        },
+        {
+            "name": "Judas",
+            "cost": "-10"
+        },
+        {
+            "name": "Liar",
+            "cost": "-5"
+        },
+        {
+            "name": "Lost Loved One",
+            "cost": "-5"
+        },
+        {
+            "name": "Low Pain Tolerance",
+            "cost": "-10"
+        },
+        {
+            "name": "Mental Handicap [2]",
+            "cost": "-20"
+        },
+        {
+            "name": "Multiple Personality Disorder",
+            "cost": "-20"
+        },
+        {
+            "name": "Mysterious Implant [Passive]",
+            "cost": "-5"
+        },
+        {
+            "name": "Mysterious Implant [Active]",
+            "cost": "-10"
+        },
+        {
+            "name": "Mysterious Implant [Deadly]",
+            "cost": "-25"
+        },
+        {
+            "name": "Night Blindness",
+            "cost": "-5"
+        },
+        {
+            "name": "Oblivious",
+            "cost": "-5"
+        },
+        {
+            "name": "Obsessive Compulsive Disorder-10"
+        },
+        {
+            "name": "Ork Poser",
+            "cost": "-5"
+        },
+        {
+            "name": "Pacifist [Self-Defense]",
+            "cost": "-5"
+        },
+        {
+            "name": "Pacifist [Never]",
+            "cost": "-10"
+        },
+        {
+            "name": "Paranoia",
+            "cost": "-10"
+        },
+        {
+            "name": "Phobia [Uncommon, Mild]",
+            "cost": "-5"
+        },
+        {
+            "name": "Phobia [Uncommon, Moderate]",
+            "cost": "-10"
+        },
+        {
+            "name": "Phobia [Uncommon, Severe]",
+            "cost": "-15"
+        },
+        {
+            "name": "Phobia [Common, Mild]",
+            "cost": "-10"
+        },
+        {
+            "name": "Phobia [Common, Moderate]",
+            "cost": "-15"
+        },
+        {
+            "name": "Phobia [Common, Severe]",
+            "cost": "-20"
+        },
+        {
+            "name": "Poor Self Control [Braggart]",
+            "cost": "-5"
+        },
+        {
+            "name": "Poor Self Control [Thrill Seeker]",
+            "cost": "-5"
+        },
+        {
+            "name": "Poor Self Control [Compulsive, Minor]",
+            "cost": "-5"
+        },
+        {
+            "name": "Poor Self Control [Compulsive, Severe]",
+            "cost": "-15"
+        },
+        {
+            "name": "Poor Self Control [Vindictive]",
+            "cost": "-10"
+        },
+        {
+            "name": "Poor Self Control [Combat Monster]",
+            "cost": "-10"
+        },
+        {
+            "name": "Prejudiced [Common, Biased]",
+            "cost": "-10"
+        },
+        {
+            "name": "Prejudiced [Common, Outspoken]",
+            "cost": "-15"
+        },
+        {
+            "name": "Prejudiced [Common, Active]",
+            "cost": "-20"
+        },
+        {
+            "name": "Prejudiced [Common, Radical]",
+            "cost": "-25"
+        },
+        {
+            "name": "Quadriplegic [Meetbag]",
+            "cost": "-20"
+        },
+        {
+            "name": "Quadriplegic [Full Immersion]",
+            "cost": "-10"
+        },
+        {
+            "name": "Records on File",
+            "cost": "-10"
+        },
+        {
+            "name": "Reduced Sense [Blind]",
+            "cost": "-10"
+        },
+        {
+            "name": "Reduced Sense [Deaf]",
+            "cost": "-10"
+        },
+        {
+            "name": "Scorched [Meatbags]",
+            "cost": "-5"
+        },
+        {
+            "name": "Scorched [Hackers]",
+            "cost": "-10"
+        },
+        {
+            "name": "Sensitive Neural Structure [Meatbags]",
+            "cost": "-5"
+        },
+        {
+            "name": "Sensitive Neural Structure [Hackers]",
+            "cost": "-10"
+        },
+        {
+            "name": "Sensitive System [Mundanes]",
+            "cost": "-20"
+        },
+        {
+            "name": "Sensitive System [Awakened]",
+            "cost": "-10"
+        },
+        {
+            "name": "Sensory Overload Syndrome",
+            "cost": "-10"
+        },
+        {
+            "name": "Signature",
+            "cost": "-10"
+        },
+        {
+            "name": "Simsense Vertigo [Meatbags]",
+            "cost": "-10"
+        },
+        {
+            "name": "Simsense Vertigo [Hackers]",
+            "cost": "-20"
+        },
+        {
+            "name": "Sinner [Citizen]",
+            "cost": "-5"
+        },
+        {
+            "name": "Sinner [Criminal]",
+            "cost": "-10"
+        },
+        {
+            "name": "Spammed",
+            "cost": "-5"
+        },
+        {
+            "name": "Spirite Bane",
+            "cost": "-10"
+        },
+        {
+            "name": "Uncouth",
+            "cost": "-20"
+        },
+        {
+            "name": "Uneducated",
+            "cost": "-20"
+        },
+        {
+            "name": "Vendetta",
+            "cost": "-5"
+        },
+        {
+            "name": "Weak Immune System",
+            "cost": "-5"
+        }
+    ],
+    "positive": [
+        {
+            "name": "Adept",
+            "cost": "20"
+        },
+        {
+            "name": "Ambidextrous",
+            "cost": "5"
+        },
+        {
+            "name": "Analytical Mind",
+            "cost": "5"
+        },
+        {
+            "name": "Animal Empathy",
+            "cost": "10"
+        },
+        {
+            "name": "Aptitude",
+            "cost": "10"
+        },
+        {
+            "name": "Astral Chameleon",
+            "cost": "5"
+        },
+        {
+            "name": "Bilingual",
+            "cost": "5"
+        },
+        {
+            "name": "Black Market Pipeline",
+            "cost": "10"
+        },
+        {
+            "name": "Blandness",
+            "cost": "10"
+        },
+        {
+            "name": "Born Rich",
+            "cost": "10"
+        },
+        {
+            "name": "Catlike",
+            "cost": "10"
+        },
+        {
+            "name": "Codeslinger",
+            "cost": "10"
+        },
+        {
+            "name": "College Education",
+            "cost": "5"
+        },
+        {
+            "name": "Common Sensitive",
+            "cost": "5"
+        },
+        {
+            "name": "Deep Cover [Trigger]",
+            "cost": "5"
+        },
+        {
+            "name": "Deep Cover [Controlled]",
+            "cost": "10"
+        },
+        {
+            "name": "Digital Doppelganger",
+            "cost": "10"
+        },
+        {
+            "name": "Double Jointed",
+            "cost": "5"
+        },
+        {
+            "name": "Erased [Week]",
+            "cost": "5"
+        },
+        {
+            "name": "Erased [24 Hours]",
+            "cost": "10"
+        },
+        {
+            "name": "Escaped Clone",
+            "cost": "5"
+        },
+        {
+            "name": "Exceptional Attribute",
+            "cost": "20"
+        },
+        {
+            "name": "Fame [Local]",
+            "cost": "5"
+        },
+        {
+            "name": "Fame [National]",
+            "cost": "10"
+        },
+        {
+            "name": "Fame [Global]",
+            "cost": "20"
+        },
+        {
+            "name": "First Impression",
+            "cost": "5"
+        },
+        {
+            "name": "Focused Concentration",
+            "cost": "20"
+        },
+        {
+            "name": "Gearhead [Specific]",
+            "cost": "5"
+        },
+        {
+            "name": "Gearhead [Type]",
+            "cost": "10"
+        },
+        {
+            "name": "Guts",
+            "cost": "5"
+        },
+        {
+            "name": "Hawk Eye",
+            "cost": "5"
+        },
+        {
+            "name": "High Pain Tolerance",
+            "cost": "20"
+        },
+        {
+            "name": "Home Ground",
+            "cost": "10"
+        },
+        {
+            "name": "Human Looking",
+            "cost": "5"
+        },
+        {
+            "name": "Inspired",
+            "cost": "5"
+        },
+        {
+            "name": "Juryrigger",
+            "cost": "10"
+        },
+        {
+            "name": "Linguist",
+            "cost": "5"
+        },
+        {
+            "name": "Lucky",
+            "cost": "20"
+        },
+        {
+            "name": "Made Man",
+            "cost": "10"
+        },
+        {
+            "name": "Magician",
+            "cost": "50"
+        },
+        {
+            "name": "Magic Resistance",
+            "cost": "20"
+        },
+        {
+            "name": "Mentor Spirit",
+            "cost": "5"
+        },
+        {
+            "name": "Mistaken Identity",
+            "cost": "10"
+        },
+        {
+            "name": "Murky Link",
+            "cost": "10"
+        },
+        {
+            "name": "Natural Athlete",
+            "cost": "10"
+        },
+        {
+            "name": "Natural Hardening",
+            "cost": "10"
+        },
+        {
+            "name": "Natual Immunity [Natural]",
+            "cost": "5"
+        },
+        {
+            "name": "Natual Immunity [Synthetic]",
+            "cost": "15"
+        },
+        {
+            "name": "Outdoorsman",
+            "cost": "10"
+        },
+        {
+            "name": "Perceptive",
+            "cost": "10"
+        },
+        {
+            "name": "Perfect Time",
+            "cost": "5"
+        },
+        {
+            "name": "Photographic Memory",
+            "cost": "10"
+        },
+        {
+            "name": "Privileged Family Name",
+            "cost": "5"
+        },
+        {
+            "name": "Quick Healer",
+            "cost": "10"
+        },
+        {
+            "name": "Resistance to Pathogens/Toxins [Or]",
+            "cost": "5"
+        },
+        {
+            "name": "Resistance to Pathogens/Toxins [And]",
+            "cost": "5"
+        },
+        {
+            "name": "Restricted Gear",
+            "cost": "5"
+        },
+        {
+            "name": "School of Hard Knocks",
+            "cost": "5"
+        },
+        {
+            "name": "Sense of Direction",
+            "cost": "5"
+        },
+        {
+            "name": "Speed Reading",
+            "cost": "5"
+        },
+        {
+            "name": "Spirit Affinity",
+            "cost": "10"
+        },
+        {
+            "name": "Technical School Education",
+            "cost": "5"
+        },
+        {
+            "name": "Tough as Nails",
+            "cost": "30"
+        },
+        {
+            "name": "Toughness",
+            "cost": "10"
+        },
+        {
+            "name": "Trust Fund [Moderate]",
+            "cost": "10"
+        },
+        {
+            "name": "Trust Fund [High]",
+            "cost": "20"
+        },
+        {
+            "name": "Trustworthy",
+            "cost": "10"
+        },
+        {
+            "name": "Water Sprite",
+            "cost": "5"
+        },
+        {
+            "name": "Will to Live",
+            "cost": "15"
+        }
+    ]
+}
