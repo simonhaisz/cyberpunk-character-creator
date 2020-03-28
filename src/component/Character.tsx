@@ -15,8 +15,11 @@ const useStyles = makeStyles({
     header: {
         display: "flex",
         flexDirection: "row",
-        margin: "5px"
-    }
+        margin: "5px",
+    },
+    field: {
+        paddingRight: "10px",
+    },
 });
 
 const Character: FC = () => {
@@ -31,9 +34,9 @@ const Character: FC = () => {
     return (
         <Fragment>
             <div className={classes.header}>
-                <TextField id-="name" label="Name" value={name} onChange={e => updateCharacter({ ...character, name: e.target.value})} />
-                <TextField id-="street-name" label="Street Name" value={streetName} onChange={e => updateCharacter({ ...character, streetName: e.target.value})} />
-                <Select id="meta-type" value={metaType} displayEmpty onChange={e => updateCharacter({ ...character, metaType: e.target.value as MetaType})}>
+                <TextField id-="name" label="Name" value={name} onChange={e => updateCharacter({ ...character, name: e.target.value})} className={classes.field} />
+                <TextField id-="street-name" label="Street Name" value={streetName} onChange={e => updateCharacter({ ...character, streetName: e.target.value})} className={classes.field} />
+                <Select id="meta-type" value={metaType} displayEmpty onChange={e => updateCharacter({ ...character, metaType: e.target.value as MetaType})} className={classes.field}>
                     {ALL_META_TYPES.map(t => <MenuItem key={t} value={t}>{t} ({getMetaTypeCost(t)})</MenuItem>)}
                 </Select>
             </div>
