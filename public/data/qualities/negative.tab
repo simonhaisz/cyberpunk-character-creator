@@ -1,4 +1,4 @@
-Quality	Cost
+Name	Cost
 Addiction [Mild]	-5
 Addiction [Moderate]	-10
 Addiction [Severe]	-20
@@ -14,7 +14,7 @@ Amnesia [Life]	-10
 Amnesia [Everything]	-25
 Asthma	-15
 Astral Beacon	-5
-Bad Lucky	-20
+Bad Luck	-20
 Bad Rep	-5
 Bi-Polar	-10
 Big Regret	-5
@@ -61,7 +61,7 @@ Mysterious Implant [Active]	-10
 Mysterious Implant [Deadly]	-25
 Night Blindness	-5
 Oblivious	-5
-Obsessive Compulsive Disorder-10
+Obsessive Compulsive Disorder	-10
 Ork Poser	-5
 Pacifist [Self-Defense]	-5
 Pacifist [Never]	-10

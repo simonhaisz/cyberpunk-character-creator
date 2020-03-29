@@ -1,704 +1,705 @@
 {
     "negative": [
         {
-            "Quality": "Addiction [Mild]",
+            "Name": "Addiction [Mild]",
             "Cost": "-5"
         },
         {
-            "Quality": "Addiction [Moderate]",
+            "Name": "Addiction [Moderate]",
             "Cost": "-10"
         },
         {
-            "Quality": "Addiction [Severe]",
+            "Name": "Addiction [Severe]",
             "Cost": "-20"
         },
         {
-            "Quality": "Addiction [Burnout]",
+            "Name": "Addiction [Burnout]",
             "Cost": "-30"
         },
         {
-            "Quality": "Albinism",
+            "Name": "Albinism",
             "Cost": "-10"
         },
         {
-            "Quality": "Allergy [Uncommon&Mild]",
+            "Name": "Allergy [Uncommon&Mild]",
             "Cost": "-5"
         },
         {
-            "Quality": "Allergy [Uncommon&Moderate]",
+            "Name": "Allergy [Uncommon&Moderate]",
             "Cost": "-10"
         },
         {
-            "Quality": "Allergy [Uncommon&Severe]",
+            "Name": "Allergy [Uncommon&Severe]",
             "Cost": "-15"
         },
         {
-            "Quality": "Allergy [Common&Mild]",
+            "Name": "Allergy [Common&Mild]",
             "Cost": "-10"
         },
         {
-            "Quality": "Allergy [Common&Moderate]",
+            "Name": "Allergy [Common&Moderate]",
             "Cost": "-15"
         },
         {
-            "Quality": "Allergy [Common&Severe]",
+            "Name": "Allergy [Common&Severe]",
             "Cost": "-20"
         },
         {
-            "Quality": "Amnesia [Life]",
+            "Name": "Amnesia [Life]",
             "Cost": "-10"
         },
         {
-            "Quality": "Amnesia [Everything]",
+            "Name": "Amnesia [Everything]",
             "Cost": "-25"
         },
         {
-            "Quality": "Asthma",
+            "Name": "Asthma",
             "Cost": "-15"
         },
         {
-            "Quality": "Astral Beacon",
+            "Name": "Astral Beacon",
             "Cost": "-5"
         },
         {
-            "Quality": "Bad Lucky",
+            "Name": "Bad Luck",
             "Cost": "-20"
         },
         {
-            "Quality": "Bad Rep",
+            "Name": "Bad Rep",
             "Cost": "-5"
         },
         {
-            "Quality": "Bi-Polar",
+            "Name": "Bi-Polar",
             "Cost": "-10"
         },
         {
-            "Quality": "Big Regret",
+            "Name": "Big Regret",
             "Cost": "-5"
         },
         {
-            "Quality": "Borrowed Time",
+            "Name": "Borrowed Time",
             "Cost": "-20"
         },
         {
-            "Quality": "Codeblock",
+            "Name": "Codeblock",
             "Cost": "-5"
         },
         {
-            "Quality": "Combat Paralysis",
+            "Name": "Combat Paralysis",
             "Cost": "-20"
         },
         {
-            "Quality": "Computer Illeterate",
+            "Name": "Computer Illeterate",
             "Cost": "-5"
         },
         {
-            "Quality": "Cranial Bomb",
+            "Name": "Cranial Bomb",
             "Cost": "-10"
         },
         {
-            "Quality": "Day Job [10 Hours]",
+            "Name": "Day Job [10 Hours]",
             "Cost": "-5"
         },
         {
-            "Quality": "Day Job [20 Hours]",
+            "Name": "Day Job [20 Hours]",
             "Cost": "-10"
         },
         {
-            "Quality": "Day Job [40 Hours]",
+            "Name": "Day Job [40 Hours]",
             "Cost": "-15"
         },
         {
-            "Quality": "Delusions",
+            "Name": "Delusions",
             "Cost": "-10"
         },
         {
-            "Quality": "Dementia",
+            "Name": "Dementia",
             "Cost": "-20"
         },
         {
-            "Quality": "Dependent(s) [Nuisance]",
+            "Name": "Dependent(s) [Nuisance]",
             "Cost": "-5"
         },
         {
-            "Quality": "Dependent(s) [Commitment]",
+            "Name": "Dependent(s) [Commitment]",
             "Cost": "-10"
         },
         {
-            "Quality": "Dependent(s) [Special Care]",
+            "Name": "Dependent(s) [Special Care]",
             "Cost": "-15"
         },
         {
-            "Quality": "Distinctive Style [1]",
+            "Name": "Distinctive Style [1]",
             "Cost": "-5"
         },
         {
-            "Quality": "Distinctive Style [2]",
+            "Name": "Distinctive Style [2]",
             "Cost": "-10"
         },
         {
-            "Quality": "Distinctive Style [3]",
+            "Name": "Distinctive Style [3]",
             "Cost": "-15"
         },
         {
-            "Quality": "Elf Poser",
+            "Name": "Elf Poser",
             "Cost": "-5"
         },
         {
-            "Quality": "Enemy [C+I=5]",
+            "Name": "Enemy [C+I=5]",
             "Cost": "-5"
         },
         {
-            "Quality": "Enemy [C+I=15]",
+            "Name": "Enemy [C+I=15]",
             "Cost": "-15"
         },
         {
-            "Quality": "Enemy [C+I=25]",
+            "Name": "Enemy [C+I=25]",
             "Cost": "-25"
         },
         {
-            "Quality": "Evil Twin",
+            "Name": "Evil Twin",
             "Cost": "-10"
         },
         {
-            "Quality": "Flashbacks [Uncommon]",
+            "Name": "Flashbacks [Uncommon]",
             "Cost": "-5"
         },
         {
-            "Quality": "Flashbacks [common]",
+            "Name": "Flashbacks [common]",
             "Cost": "-10"
         },
         {
-            "Quality": "Gremlins",
+            "Name": "Gremlins",
             "Cost": "-20"
         },
         {
-            "Quality": "Hallucinations",
+            "Name": "Hallucinations",
             "Cost": "-10"
         },
         {
-            "Quality": "Hung Out to Dry",
+            "Name": "Hung Out to Dry",
             "Cost": "-10"
         },
         {
-            "Quality": "Illiterate",
+            "Name": "Illiterate",
             "Cost": "-10"
         },
         {
-            "Quality": "In Debt [10000]",
+            "Name": "In Debt [10000]",
             "Cost": "-5"
         },
         {
-            "Quality": "In Debt [30000]",
+            "Name": "In Debt [30000]",
             "Cost": "-15"
         },
         {
-            "Quality": "In Debt [50000]",
+            "Name": "In Debt [50000]",
             "Cost": "-25"
         },
         {
-            "Quality": "Incompetent",
+            "Name": "Incompetent",
             "Cost": "-5"
         },
         {
-            "Quality": "Infirm",
+            "Name": "Infirm",
             "Cost": "-20"
         },
         {
-            "Quality": "Judas",
+            "Name": "Judas",
             "Cost": "-10"
         },
         {
-            "Quality": "Liar",
+            "Name": "Liar",
             "Cost": "-5"
         },
         {
-            "Quality": "Lost Loved One",
+            "Name": "Lost Loved One",
             "Cost": "-5"
         },
         {
-            "Quality": "Low Pain Tolerance",
+            "Name": "Low Pain Tolerance",
             "Cost": "-10"
         },
         {
-            "Quality": "Mental Handicap [2]",
+            "Name": "Mental Handicap [2]",
             "Cost": "-20"
         },
         {
-            "Quality": "Multiple Personality Disorder",
+            "Name": "Multiple Personality Disorder",
             "Cost": "-20"
         },
         {
-            "Quality": "Mysterious Implant [Passive]",
+            "Name": "Mysterious Implant [Passive]",
             "Cost": "-5"
         },
         {
-            "Quality": "Mysterious Implant [Active]",
+            "Name": "Mysterious Implant [Active]",
             "Cost": "-10"
         },
         {
-            "Quality": "Mysterious Implant [Deadly]",
+            "Name": "Mysterious Implant [Deadly]",
             "Cost": "-25"
         },
         {
-            "Quality": "Night Blindness",
+            "Name": "Night Blindness",
             "Cost": "-5"
         },
         {
-            "Quality": "Oblivious",
+            "Name": "Oblivious",
             "Cost": "-5"
         },
         {
-            "Quality": "Obsessive Compulsive Disorder-10"
-        },
-        {
-            "Quality": "Ork Poser",
-            "Cost": "-5"
-        },
-        {
-            "Quality": "Pacifist [Self-Defense]",
-            "Cost": "-5"
-        },
-        {
-            "Quality": "Pacifist [Never]",
+            "Name": "Obsessive Compulsive Disorder",
             "Cost": "-10"
         },
         {
-            "Quality": "Paranoia",
-            "Cost": "-10"
-        },
-        {
-            "Quality": "Phobia [Uncommon, Mild]",
+            "Name": "Ork Poser",
             "Cost": "-5"
         },
         {
-            "Quality": "Phobia [Uncommon, Moderate]",
+            "Name": "Pacifist [Self-Defense]",
+            "Cost": "-5"
+        },
+        {
+            "Name": "Pacifist [Never]",
             "Cost": "-10"
         },
         {
-            "Quality": "Phobia [Uncommon, Severe]",
+            "Name": "Paranoia",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Phobia [Uncommon, Mild]",
+            "Cost": "-5"
+        },
+        {
+            "Name": "Phobia [Uncommon, Moderate]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Phobia [Uncommon, Severe]",
             "Cost": "-15"
         },
         {
-            "Quality": "Phobia [Common, Mild]",
+            "Name": "Phobia [Common, Mild]",
             "Cost": "-10"
         },
         {
-            "Quality": "Phobia [Common, Moderate]",
+            "Name": "Phobia [Common, Moderate]",
             "Cost": "-15"
         },
         {
-            "Quality": "Phobia [Common, Severe]",
+            "Name": "Phobia [Common, Severe]",
             "Cost": "-20"
         },
         {
-            "Quality": "Poor Self Control [Braggart]",
+            "Name": "Poor Self Control [Braggart]",
             "Cost": "-5"
         },
         {
-            "Quality": "Poor Self Control [Thrill Seeker]",
+            "Name": "Poor Self Control [Thrill Seeker]",
             "Cost": "-5"
         },
         {
-            "Quality": "Poor Self Control [Compulsive, Minor]",
+            "Name": "Poor Self Control [Compulsive, Minor]",
             "Cost": "-5"
         },
         {
-            "Quality": "Poor Self Control [Compulsive, Severe]",
+            "Name": "Poor Self Control [Compulsive, Severe]",
             "Cost": "-15"
         },
         {
-            "Quality": "Poor Self Control [Vindictive]",
+            "Name": "Poor Self Control [Vindictive]",
             "Cost": "-10"
         },
         {
-            "Quality": "Poor Self Control [Combat Monster]",
+            "Name": "Poor Self Control [Combat Monster]",
             "Cost": "-10"
         },
         {
-            "Quality": "Prejudiced [Common, Biased]",
+            "Name": "Prejudiced [Common, Biased]",
             "Cost": "-10"
         },
         {
-            "Quality": "Prejudiced [Common, Outspoken]",
+            "Name": "Prejudiced [Common, Outspoken]",
             "Cost": "-15"
         },
         {
-            "Quality": "Prejudiced [Common, Active]",
+            "Name": "Prejudiced [Common, Active]",
             "Cost": "-20"
         },
         {
-            "Quality": "Prejudiced [Common, Radical]",
+            "Name": "Prejudiced [Common, Radical]",
             "Cost": "-25"
         },
         {
-            "Quality": "Quadriplegic [Meetbag]",
+            "Name": "Quadriplegic [Meetbag]",
             "Cost": "-20"
         },
         {
-            "Quality": "Quadriplegic [Full Immersion]",
+            "Name": "Quadriplegic [Full Immersion]",
             "Cost": "-10"
         },
         {
-            "Quality": "Records on File",
+            "Name": "Records on File",
             "Cost": "-10"
         },
         {
-            "Quality": "Reduced Sense [Blind]",
+            "Name": "Reduced Sense [Blind]",
             "Cost": "-10"
         },
         {
-            "Quality": "Reduced Sense [Deaf]",
+            "Name": "Reduced Sense [Deaf]",
             "Cost": "-10"
         },
         {
-            "Quality": "Scorched [Meatbags]",
+            "Name": "Scorched [Meatbags]",
             "Cost": "-5"
         },
         {
-            "Quality": "Scorched [Hackers]",
+            "Name": "Scorched [Hackers]",
             "Cost": "-10"
         },
         {
-            "Quality": "Sensitive Neural Structure [Meatbags]",
+            "Name": "Sensitive Neural Structure [Meatbags]",
             "Cost": "-5"
         },
         {
-            "Quality": "Sensitive Neural Structure [Hackers]",
+            "Name": "Sensitive Neural Structure [Hackers]",
             "Cost": "-10"
         },
         {
-            "Quality": "Sensitive System [Mundanes]",
+            "Name": "Sensitive System [Mundanes]",
             "Cost": "-20"
         },
         {
-            "Quality": "Sensitive System [Awakened]",
+            "Name": "Sensitive System [Awakened]",
             "Cost": "-10"
         },
         {
-            "Quality": "Sensory Overload Syndrome",
+            "Name": "Sensory Overload Syndrome",
             "Cost": "-10"
         },
         {
-            "Quality": "Signature",
+            "Name": "Signature",
             "Cost": "-10"
         },
         {
-            "Quality": "Simsense Vertigo [Meatbags]",
+            "Name": "Simsense Vertigo [Meatbags]",
             "Cost": "-10"
         },
         {
-            "Quality": "Simsense Vertigo [Hackers]",
+            "Name": "Simsense Vertigo [Hackers]",
             "Cost": "-20"
         },
         {
-            "Quality": "Sinner [Citizen]",
+            "Name": "Sinner [Citizen]",
             "Cost": "-5"
         },
         {
-            "Quality": "Sinner [Criminal]",
+            "Name": "Sinner [Criminal]",
             "Cost": "-10"
         },
         {
-            "Quality": "Spammed",
+            "Name": "Spammed",
             "Cost": "-5"
         },
         {
-            "Quality": "Spirite Bane",
+            "Name": "Spirite Bane",
             "Cost": "-10"
         },
         {
-            "Quality": "Uncouth",
+            "Name": "Uncouth",
             "Cost": "-20"
         },
         {
-            "Quality": "Uneducated",
+            "Name": "Uneducated",
             "Cost": "-20"
         },
         {
-            "Quality": "Vendetta",
+            "Name": "Vendetta",
             "Cost": "-5"
         },
         {
-            "Quality": "Weak Immune System",
+            "Name": "Weak Immune System",
             "Cost": "-5"
         }
     ],
     "positive": [
         {
-            "Quality": "Adept",
+            "Name": "Adept",
             "Cost": "20"
         },
         {
-            "Quality": "Ambidextrous",
+            "Name": "Ambidextrous",
             "Cost": "5"
         },
         {
-            "Quality": "Analytical Mind",
+            "Name": "Analytical Mind",
             "Cost": "5"
         },
         {
-            "Quality": "Animal Empathy",
+            "Name": "Animal Empathy",
             "Cost": "10"
         },
         {
-            "Quality": "Aptitude",
+            "Name": "Aptitude",
             "Cost": "10"
         },
         {
-            "Quality": "Astral Chameleon",
+            "Name": "Astral Chameleon",
             "Cost": "5"
         },
         {
-            "Quality": "Bilingual",
+            "Name": "Bilingual",
             "Cost": "5"
         },
         {
-            "Quality": "Black Market Pipeline",
+            "Name": "Black Market Pipeline",
             "Cost": "10"
         },
         {
-            "Quality": "Blandness",
+            "Name": "Blandness",
             "Cost": "10"
         },
         {
-            "Quality": "Born Rich",
+            "Name": "Born Rich",
             "Cost": "10"
         },
         {
-            "Quality": "Catlike",
+            "Name": "Catlike",
             "Cost": "10"
         },
         {
-            "Quality": "Codeslinger",
+            "Name": "Codeslinger",
             "Cost": "10"
         },
         {
-            "Quality": "College Education",
+            "Name": "College Education",
             "Cost": "5"
         },
         {
-            "Quality": "Common Sensitive",
+            "Name": "Common Sensitive",
             "Cost": "5"
         },
         {
-            "Quality": "Deep Cover [Trigger]",
+            "Name": "Deep Cover [Trigger]",
             "Cost": "5"
         },
         {
-            "Quality": "Deep Cover [Controlled]",
+            "Name": "Deep Cover [Controlled]",
             "Cost": "10"
         },
         {
-            "Quality": "Digital Doppelganger",
+            "Name": "Digital Doppelganger",
             "Cost": "10"
         },
         {
-            "Quality": "Double Jointed",
+            "Name": "Double Jointed",
             "Cost": "5"
         },
         {
-            "Quality": "Erased [Week]",
+            "Name": "Erased [Week]",
             "Cost": "5"
         },
         {
-            "Quality": "Erased [24 Hours]",
+            "Name": "Erased [24 Hours]",
             "Cost": "10"
         },
         {
-            "Quality": "Escaped Clone",
+            "Name": "Escaped Clone",
             "Cost": "5"
         },
         {
-            "Quality": "Exceptional Attribute",
+            "Name": "Exceptional Attribute",
             "Cost": "20"
         },
         {
-            "Quality": "Fame [Local]",
+            "Name": "Fame [Local]",
             "Cost": "5"
         },
         {
-            "Quality": "Fame [National]",
+            "Name": "Fame [National]",
             "Cost": "10"
         },
         {
-            "Quality": "Fame [Global]",
+            "Name": "Fame [Global]",
             "Cost": "20"
         },
         {
-            "Quality": "First Impression",
+            "Name": "First Impression",
             "Cost": "5"
         },
         {
-            "Quality": "Focused Concentration",
+            "Name": "Focused Concentration",
             "Cost": "20"
         },
         {
-            "Quality": "Gearhead [Specific]",
+            "Name": "Gearhead [Specific]",
             "Cost": "5"
         },
         {
-            "Quality": "Gearhead [Type]",
+            "Name": "Gearhead [Type]",
             "Cost": "10"
         },
         {
-            "Quality": "Guts",
+            "Name": "Guts",
             "Cost": "5"
         },
         {
-            "Quality": "Hawk Eye",
+            "Name": "Hawk Eye",
             "Cost": "5"
         },
         {
-            "Quality": "High Pain Tolerance",
+            "Name": "High Pain Tolerance",
             "Cost": "20"
         },
         {
-            "Quality": "Home Ground",
+            "Name": "Home Ground",
             "Cost": "10"
         },
         {
-            "Quality": "Human Looking",
+            "Name": "Human Looking",
             "Cost": "5"
         },
         {
-            "Quality": "Inspired",
+            "Name": "Inspired",
             "Cost": "5"
         },
         {
-            "Quality": "Juryrigger",
+            "Name": "Juryrigger",
             "Cost": "10"
         },
         {
-            "Quality": "Linguist",
+            "Name": "Linguist",
             "Cost": "5"
         },
         {
-            "Quality": "Lucky",
+            "Name": "Lucky",
             "Cost": "20"
         },
         {
-            "Quality": "Made Man",
+            "Name": "Made Man",
             "Cost": "10"
         },
         {
-            "Quality": "Magician",
+            "Name": "Magician",
             "Cost": "50"
         },
         {
-            "Quality": "Magic Resistance",
+            "Name": "Magic Resistance",
             "Cost": "20"
         },
         {
-            "Quality": "Mentor Spirit",
+            "Name": "Mentor Spirit",
             "Cost": "5"
         },
         {
-            "Quality": "Mistaken Identity",
+            "Name": "Mistaken Identity",
             "Cost": "10"
         },
         {
-            "Quality": "Murky Link",
+            "Name": "Murky Link",
             "Cost": "10"
         },
         {
-            "Quality": "Natural Athlete",
+            "Name": "Natural Athlete",
             "Cost": "10"
         },
         {
-            "Quality": "Natural Hardening",
+            "Name": "Natural Hardening",
             "Cost": "10"
         },
         {
-            "Quality": "Natual Immunity [Natural]",
+            "Name": "Natual Immunity [Natural]",
             "Cost": "5"
         },
         {
-            "Quality": "Natual Immunity [Synthetic]",
+            "Name": "Natual Immunity [Synthetic]",
             "Cost": "15"
         },
         {
-            "Quality": "Outdoorsman",
+            "Name": "Outdoorsman",
             "Cost": "10"
         },
         {
-            "Quality": "Perceptive",
+            "Name": "Perceptive",
             "Cost": "10"
         },
         {
-            "Quality": "Perfect Time",
+            "Name": "Perfect Time",
             "Cost": "5"
         },
         {
-            "Quality": "Photographic Memory",
+            "Name": "Photographic Memory",
             "Cost": "10"
         },
         {
-            "Quality": "Privileged Family Name",
+            "Name": "Privileged Family Name",
             "Cost": "5"
         },
         {
-            "Quality": "Quick Healer",
+            "Name": "Quick Healer",
             "Cost": "10"
         },
         {
-            "Quality": "Resistance to Pathogens/Toxins [Or]",
+            "Name": "Resistance to Pathogens/Toxins [Or]",
             "Cost": "5"
         },
         {
-            "Quality": "Resistance to Pathogens/Toxins [And]",
+            "Name": "Resistance to Pathogens/Toxins [And]",
             "Cost": "5"
         },
         {
-            "Quality": "Restricted Gear",
+            "Name": "Restricted Gear",
             "Cost": "5"
         },
         {
-            "Quality": "School of Hard Knocks",
+            "Name": "School of Hard Knocks",
             "Cost": "5"
         },
         {
-            "Quality": "Sense of Direction",
+            "Name": "Sense of Direction",
             "Cost": "5"
         },
         {
-            "Quality": "Speed Reading",
+            "Name": "Speed Reading",
             "Cost": "5"
         },
         {
-            "Quality": "Spirit Affinity",
+            "Name": "Spirit Affinity",
             "Cost": "10"
         },
         {
-            "Quality": "Technical School Education",
+            "Name": "Technical School Education",
             "Cost": "5"
         },
         {
-            "Quality": "Tough as Nails",
+            "Name": "Tough as Nails",
             "Cost": "30"
         },
         {
-            "Quality": "Toughness",
+            "Name": "Toughness",
             "Cost": "10"
         },
         {
-            "Quality": "Trust Fund [Moderate]",
+            "Name": "Trust Fund [Moderate]",
             "Cost": "10"
         },
         {
-            "Quality": "Trust Fund [High]",
+            "Name": "Trust Fund [High]",
             "Cost": "20"
         },
         {
-            "Quality": "Trustworthy",
+            "Name": "Trustworthy",
             "Cost": "10"
         },
         {
-            "Quality": "Water Sprite",
+            "Name": "Water Sprite",
             "Cost": "5"
         },
         {
-            "Quality": "Will to Live",
+            "Name": "Will to Live",
             "Cost": "15"
         }
     ]
