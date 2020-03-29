@@ -20,7 +20,7 @@ const useStyles = makeStyles({
         marginBottom: 10,
     },
     field: {
-        paddingRight: "10px",
+        paddingRight: 10,
     },
     divider: {
         margin: 5,

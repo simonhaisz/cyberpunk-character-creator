@@ -6,11 +6,11 @@ import { Quality as QualityData } from "../model/quality";
 const useStyles = makeStyles({
     root: {
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
     },
     name: {
-        width: "250px"
-    }
+        width: 250,
+    },
 });
 
 type Props = {

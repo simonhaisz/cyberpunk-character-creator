@@ -6,8 +6,8 @@ import { useGlobalState } from "../context";
 
 const useStyles = makeStyles({
     badge: {
-        marginLeft: "50px"
-    }
+        marginLeft: 50,
+    },
 });
 
 const Karma: FC = () => {

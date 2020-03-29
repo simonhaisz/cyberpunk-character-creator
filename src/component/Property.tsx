@@ -10,15 +10,15 @@ import { NamedProperty } from "../model/character";
 const useStyles = makeStyles({
     root: {
         display: "flex",
-        height: "50px"
+        height: 50
     },
     name: {
-        width: "200px"
+        width: 200
     },
     slider: {
-        width: "300px",
-        marginRight: "10px"
-    }
+        width: 300,
+        marginRight: 10,
+    },
 });
 
 type Props = {
