@@ -2,7 +2,8 @@ import { Character } from "./character";
 import { getMetaTypeCost } from "./meta-type";
 import { getAttributesCost } from "./attributes";
 import { getSkillsCost } from "./skills";
-import { getQualitiesCost } from "./quality";
+import { getAllQualitiesCost } from "./quality";
+import { State } from "./state";
 
 export type Karma = {
     total: number;
@@ -20,11 +21,11 @@ export function getDefaultKarma(): Karma {
     };
 }
 
-export function getCharacterKarma(karma: Karma, character: Character): Karma {
+export function getCharacterKarma(karma: Karma, character: Character, state: State): Karma {
     const { total } = karma;
     let spent = 0;
     spent += getMetaTypeCost(character.metaType);
-    spent += getQualitiesCost(character.qualities);
+    spent += getAllQualitiesCost(character.qualities, state.qualities);
     spent += getAttributesCost(character);
     spent += getSkillsCost(character);
     const available = total - spent;

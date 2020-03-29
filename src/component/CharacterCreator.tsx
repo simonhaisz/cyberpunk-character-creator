@@ -1,4 +1,4 @@
-import React, { FC, useState } from "react";
+import React, { FC, useState, useEffect } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -17,6 +17,7 @@ import Character from "./Character";
 import Attributes from "./Attributes";
 import Skills from "./Skills";
 import Karma from "./Karma";
+import { Qualities } from "../model/quality";
 
 const useStyles = makeStyles({
     bar: {
@@ -29,6 +30,18 @@ const CharacterCreator: FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
     const selectedCharacter = useGlobalState("selectedCharacter");
+
+    useEffect(() => {
+        fetch("/data/qualities.json")
+            .then(response => response.json())
+            .then(qualities => {
+                const data = qualities as Qualities
+                dispatch({ type: ActionType.LoadQualities, data });
+            })
+            .catch(error => {
+                console.error(`Error occured loading qualities: ${error.message}\n${error.stack}`);
+            });
+    }, [dispatch]);
 
     const saveClickHandler = () => {
         dispatch({ type: ActionType.SaveCharacter });

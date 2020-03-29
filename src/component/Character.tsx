@@ -15,11 +15,16 @@ const useStyles = makeStyles({
     header: {
         display: "flex",
         flexDirection: "row",
-        margin: "5px",
+        marginLeft: 5,
+        marginRight: 5,
+        marginBottom: 10,
     },
     field: {
         paddingRight: "10px",
     },
+    divider: {
+        margin: 5,
+    }
 });
 
 const Character: FC = () => {

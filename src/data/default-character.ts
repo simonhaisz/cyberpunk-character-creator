@@ -17,7 +17,7 @@ const DEFAULT_CHARACTER: Character = {
         { name: "Willpower", rating: 3 },
         { name: "Edge", rating: 3 },
     ],
-    qualities: [],
+    qualities: { negative: [], positive: [] },
     activeSkills: [],
     knowledgeSkills: [],
     languageSkills: []

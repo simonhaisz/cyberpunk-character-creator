@@ -4,12 +4,15 @@ import { getDefaultCharacter, isDefaultCharacter, hasDefaultKey } from "./data/d
 import { Character, CharacterRef } from "./model/character";
 import { saveCharacter, clearCharacter, saveSelectedCharacter, loadCharacter } from "./persistance";
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
+import { Qualities } from "./model/quality";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
     SaveCharacter = "saveCharacter",
     ClearCharacter = "clearCharacter",
-    SelectCharacter = "selectCharacter"
+    SelectCharacter = "selectCharacter",
+    LoadQualities = "loadQualities",
+    LoadGear = "loadGear",
 }
 
 export type Action = {
@@ -19,12 +22,13 @@ export type Action = {
 
 export type UpdateCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
+export type LoadQualitiesData = Qualities;
 
 export const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
     switch (action.type) {
         case ActionType.UpdateCharacter: {
             const selectedCharacter = action.data as UpdateCharacterData;
-            const karma = getCharacterKarma(state.karma, selectedCharacter);
+            const karma = getCharacterKarma(state.karma, selectedCharacter, state);
             return { ...state, selectedCharacter, karma };
         }
         case ActionType.SaveCharacter: {
@@ -56,8 +60,15 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             if (!selectedCharacter) {
                 throw new Error(`Could not find saved character ${JSON.stringify(characterRef)}`);
             }
-            const karma = getCharacterKarma(state.karma, selectedCharacter);
+            const karma = getCharacterKarma(state.karma, selectedCharacter, state);
             return { ...state, selectedCharacter, karma};
+        }
+        case ActionType.LoadQualities: {
+            const qualities = action.data as LoadQualitiesData;
+            return { ...state, qualities };
+        }
+        case ActionType.LoadGear: {
+            throw new Error(`'${ActionType.LoadGear}' action not supported`);
         }
     }
     return { ...state };
@@ -66,5 +77,6 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
 export const INITIAL_STATE: State = {
     characters: [getDefaultCharacter()],
     selectedCharacter: getDefaultCharacter(),
-    karma: getDefaultKarma()
+    karma: getDefaultKarma(),
+    qualities: { positive: [], negative: [] },
 };

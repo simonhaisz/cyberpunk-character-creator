@@ -29,6 +29,7 @@ const App: FC = () => {
         }
         return { ...s, characters, selectedCharacter };
     });
+
     return (
         <DispatchContext.Provider value={dispatch}>
             <StateContext.Provider value={state}>

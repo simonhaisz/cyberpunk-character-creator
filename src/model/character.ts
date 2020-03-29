@@ -1,5 +1,3 @@
-import { Quality } from "./quality";
-
 export enum MetaType {
     Dwarf = "Dwarf",
     Elf = "Elf",
@@ -26,7 +24,7 @@ export type CharacterRef = {
 export type Character = CharacterRef & {
     metaType: MetaType;
     attributes: Attribute[];
-    qualities: Quality[];
+    qualities: { negative: string[], positive: string[] };
     activeSkills: Skill[];
     knowledgeSkills: Skill[];
     languageSkills: Skill[];

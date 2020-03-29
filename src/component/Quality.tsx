@@ -1,6 +1,5 @@
 import React, { FC } from "react";
 import Typography from "@material-ui/core/Typography";
-import Switch from "@material-ui/core/Switch";
 import { makeStyles } from '@material-ui/core/styles';
 import { Quality as QualityData } from "../model/quality";
 
@@ -14,28 +13,18 @@ const useStyles = makeStyles({
     }
 });
 
-export type QualityControl = {
-    purchased: boolean;
-} & QualityData;
-
 type Props = {
-    quality: QualityControl;
-    onUpdate: (value: QualityControl) => void;
+    quality: QualityData;
 };
 const Quality: FC<Props> = (props: Props) => {
-    const { quality, onUpdate } = props;
+    const { quality } = props;
 
     const classes = useStyles();
 
-    const onToggle = (event: React.ChangeEvent<HTMLInputElement>, purchased: boolean) => {
-        onUpdate({ ...quality, purchased });
-    };
-
     return (
         <div className={classes.root}>
-            <Switch checked={quality.purchased} onChange={onToggle} size="small" />
-            <Typography className={classes.name}>{quality.name}</Typography>
-            <Typography>({quality.cost})</Typography>
+            <Typography className={classes.name}>{quality.Name}</Typography>
+            <Typography>({quality.Cost})</Typography>
         </div>
     );
 };
