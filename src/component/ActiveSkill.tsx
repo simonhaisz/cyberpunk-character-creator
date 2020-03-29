@@ -23,7 +23,7 @@ const ActiveSkill: FC<Props> = (props: Props) => {
         <Property
             property={skill}
             onUpdate={onUpdate}
-            min={-1}
+            min={1}
             max={5}
             step={2}
             formatDisplayValue={formatDisplayValue}

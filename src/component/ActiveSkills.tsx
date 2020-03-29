@@ -1,16 +1,15 @@
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListSubheader from "@material-ui/core/ListSubheader";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import Switch from "@material-ui/core/Switch";
 import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useGlobalState } from "../context"
 import { Skill as SkillData, Character } from "../model/character";
-import { ACTIVE_SKILLS_NAMES } from "../data/skills";
 import ActiveSkill from "./ActiveSkill";
 import { ActionType } from "../reducer";
+import { getActiveSkillsCost } from "../model/skills";
+import PickerButton from "./PickerButton";
 
 const useStyles = makeStyles({
     header: {
@@ -23,27 +22,12 @@ const ActiveSkills: FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
+    const allSkills = useGlobalState("skills");
     const { activeSkills } = character;
-    const [showAllSkills, setShowAllSkills] = useState(activeSkills.length === 0);
 
-    const shownSkills = [...activeSkills];
+    const activeSkillsCost = getActiveSkillsCost(activeSkills);
 
-    if (showAllSkills) {
-        for (const skillName of ACTIVE_SKILLS_NAMES) {
-            if (activeSkills.find(s => s.name === skillName) === undefined) {
-                shownSkills.push({
-                    name: skillName,
-                    rating: -1
-                })
-            }
-        }
-    }
-
-    shownSkills.sort((a, b) => a.name.localeCompare(b.name));
-
-    const onIncludeAllSkillsChange = (_event: React.ChangeEvent<HTMLElement>, checked: boolean) => {
-        setShowAllSkills(checked);
-    };
+    activeSkills.sort((a, b) => a.name.localeCompare(b.name));
 
     const onSkillUpdate = (skill: SkillData) => {
         const newSkills = [ ...activeSkills ];
@@ -61,21 +45,32 @@ const ActiveSkills: FC = () => {
         dispatch({ type: ActionType.UpdateCharacter, data });
     }
 
+    const addSkill = (name: string) => {
+        onSkillUpdate({ name, rating: 1 });
+    };
+
+    const removeSkill = (name: string) => {
+        onSkillUpdate({ name, rating: -1 });
+    };
+
     return (
         <List subheader={
                 <div className={classes.header}>
-                    <ListSubheader>Active Skills</ListSubheader>
-                    <FormControlLabel
-                        control={
-                            <Switch checked={showAllSkills} onChange={onIncludeAllSkillsChange} size="small" value="show-all-skills" />
-                        }
-                        label="Show all"
-                    />
+                    <ListSubheader>
+                        Active Skills ({activeSkillsCost})
+                        <PickerButton
+                            breadcrums={["Skills", "Active"]}
+                            values={allSkills.active}
+                            selectedValueNames={activeSkills.map(s => s.name)}
+                            addValue={addSkill}
+                            removeValue={removeSkill}
+                        />
+                    </ListSubheader>
                 </div>
             }
             >
             {
-                shownSkills.map(s => (
+                activeSkills.map(s => (
                     <ListItem key={s.name}>
                         <ActiveSkill skill={s} onUpdate={onSkillUpdate} />
                     </ListItem>

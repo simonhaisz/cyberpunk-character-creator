@@ -33,10 +33,10 @@ const findAvailability = (value: any): string => {
 	return availability;
 };
 
-const createSelectableItem = (value: any, selectedValueNames: string[], includeAvailability: boolean): SelectableItem => {
+const createSelectableItem = (value: any, selectedValueNames: string[], includeAvailability: boolean, includeCost: boolean): SelectableItem => {
 	const name = findName(value);
-	const cost = findCost(value);
 	const availability = includeAvailability ? findAvailability(value) : undefined;
+	const cost = includeCost ? findCost(value) : undefined;
 	const selected = selectedValueNames.find(n => n === name) !== undefined;
 	return { name, cost, availability, selected	};
 };
@@ -54,10 +54,11 @@ type Props = {
 	addValue: (name: string) => void;
 	removeValue: (name: string) => void;
 	includeAvailability?: boolean;
+	includeCost?: boolean;
 	allowMultiSelection?: boolean;
 };
 const PickerButton: FC<Props> = (props: Props) => {
-	const { breadcrums, values, selectedValueNames, addValue, removeValue, includeAvailability=false, allowMultiSelection=false } = props;
+	const { breadcrums, values, selectedValueNames, addValue, removeValue, includeAvailability=false, includeCost=false, allowMultiSelection=false } = props;
 	
 	const classes = useStyles();
 
@@ -67,7 +68,7 @@ const PickerButton: FC<Props> = (props: Props) => {
 
 	const title = breadcrums.join(" - ");
 
-	const items = values.map(v => createSelectableItem(v, selectedValueNames, includeAvailability));
+	const items = values.map(v => createSelectableItem(v, selectedValueNames, includeAvailability, includeCost));
 
 	const onItemSelectionChange = (index: number, selected: boolean) => {
 		const name = findName(values[index]);
@@ -90,6 +91,7 @@ const PickerButton: FC<Props> = (props: Props) => {
 				items={items}
 				onItemSelectionChange={onItemSelectionChange}
 				includeAvailability={includeAvailability}
+				includeCost={includeCost}
 				allowMultiSelection={allowMultiSelection}
 			/>
 		</Fragment>

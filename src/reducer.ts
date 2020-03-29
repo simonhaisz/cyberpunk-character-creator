@@ -5,6 +5,7 @@ import { Character, CharacterRef } from "./model/character";
 import { saveCharacter, clearCharacter, saveSelectedCharacter, loadCharacter } from "./persistance";
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { Qualities } from "./model/quality";
+import { Skills } from "./model/skills";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -12,6 +13,7 @@ export enum ActionType {
     ClearCharacter = "clearCharacter",
     SelectCharacter = "selectCharacter",
     LoadQualities = "loadQualities",
+    LoadSkills = "loadSkills",
     LoadGear = "loadGear",
 }
 
@@ -23,6 +25,7 @@ export type Action = {
 export type UpdateCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = Qualities;
+export type LoadSkillsData = Skills;
 
 export const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
     switch (action.type) {
@@ -67,6 +70,10 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             const qualities = action.data as LoadQualitiesData;
             return { ...state, qualities };
         }
+        case ActionType.LoadSkills: {
+            const skills = action.data as LoadSkillsData;
+            return { ...state, skills };
+        }
         case ActionType.LoadGear: {
             throw new Error(`'${ActionType.LoadGear}' action not supported`);
         }
@@ -79,4 +86,5 @@ export const INITIAL_STATE: State = {
     selectedCharacter: getDefaultCharacter(),
     karma: getDefaultKarma(),
     qualities: { positive: [], negative: [] },
+    skills: { active: [], knowledge: [], language: [] },
 };

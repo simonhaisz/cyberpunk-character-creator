@@ -72,6 +72,7 @@ const Qualities: FC = () => {
             selectedValueNames={selectedQualities.positive}
             addValue={addPositive}
             removeValue={removePositive}
+            includeCost
         />;
 
     const negativePicker =
@@ -81,6 +82,7 @@ const Qualities: FC = () => {
             selectedValueNames={selectedQualities.negative}
             addValue={addNegative}
             removeValue={removeNegative}
+            includeCost
         />;
 
     return (

@@ -1,0 +1,215 @@
+{
+    "active": [
+        {
+            "Name": "Arcana"
+        },
+        {
+            "Name": "Acting"
+        },
+        {
+            "Name": "Animal Handling"
+        },
+        {
+            "Name": "Armorer"
+        },
+        {
+            "Name": "Artisan"
+        },
+        {
+            "Name": "Assensing"
+        },
+        {
+            "Name": "Astral Combat"
+        },
+        {
+            "Name": "Athletics"
+        },
+        {
+            "Name": "Archery"
+        },
+        {
+            "Name": "Biotech"
+        },
+        {
+            "Name": "Chemistry"
+        },
+        {
+            "Name": "Close Combat"
+        },
+        {
+            "Name": "Cracking"
+        },
+        {
+            "Name": "Conjuring"
+        },
+        {
+            "Name": "Demolitions"
+        },
+        {
+            "Name": "Diving"
+        },
+        {
+            "Name": "Electronics"
+        },
+        {
+            "Name": "Enchanting"
+        },
+        {
+            "Name": "Escape Artist"
+        },
+        {
+            "Name": "Firearms"
+        },
+        {
+            "Name": "Forgery"
+        },
+        {
+            "Name": "Free-fall"
+        },
+        {
+            "Name": "Gunnery"
+        },
+        {
+            "Name": "Heavy Weapons"
+        },
+        {
+            "Name": "Influence"
+        },
+        {
+            "Name": "Instruction"
+        },
+        {
+            "Name": "Intimidation"
+        },
+        {
+            "Name": "Locksmith"
+        },
+        {
+            "Name": "Mechanic"
+        },
+        {
+            "Name": "Outdoors"
+        },
+        {
+            "Name": "Perception"
+        },
+        {
+            "Name": "Pilot Aerospace"
+        },
+        {
+            "Name": "Pilot Aircraft"
+        },
+        {
+            "Name": "Pilot Groundcraft"
+        },
+        {
+            "Name": "Pilot Watercraft"
+        },
+        {
+            "Name": "Sorcery"
+        },
+        {
+            "Name": "Stealth"
+        },
+        {
+            "Name": "Throwing Weapons"
+        }
+    ],
+    "knowledge": [
+        {
+            "Name": "Architecture"
+        },
+        {
+            "Name": "Ares Macrotechnology"
+        },
+        {
+            "Name": "Biology"
+        },
+        {
+            "Name": "Business"
+        },
+        {
+            "Name": "Chemistry"
+        },
+        {
+            "Name": "Club Music"
+        },
+        {
+            "Name": "Economics"
+        },
+        {
+            "Name": "Engineering"
+        },
+        {
+            "Name": "History"
+        },
+        {
+            "Name": "Hong Kong Triads"
+        },
+        {
+            "Name": "Literature"
+        },
+        {
+            "Name": "Matrix Games"
+        },
+        {
+            "Name": "Military"
+        },
+        {
+            "Name": "Seattle Street Gangs"
+        },
+        {
+            "Name": "Security Corporations"
+        },
+        {
+            "Name": "Security Design"
+        },
+        {
+            "Name": "Security Procedures"
+        },
+        {
+            "Name": "Sports"
+        },
+        {
+            "Name": "Street Drugs"
+        },
+        {
+            "Name": "UCAS Politics"
+        },
+        {
+            "Name": "Wines"
+        }
+    ],
+    "language": [
+        {
+            "Name": "Algonquin"
+        },
+        {
+            "Name": "Cantonese"
+        },
+        {
+            "Name": "English"
+        },
+        {
+            "Name": "Japanese"
+        },
+        {
+            "Name": "Korean"
+        },
+        {
+            "Name": "Russian"
+        },
+        {
+            "Name": "Sioux"
+        },
+        {
+            "Name": "Spanish"
+        },
+        {
+            "Name": "Spethriel"
+        },
+        {
+            "Name": "Tagalog"
+        }
+    ]
+}

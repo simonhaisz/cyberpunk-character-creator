@@ -13,8 +13,8 @@ import RemoveIcon from "@material-ui/icons/Remove";
 
 export type SelectableItem = {
 	name: string;
-	cost: string;
 	availability?: string;
+	cost?: string;
 	selected: boolean;
 };
 
@@ -52,10 +52,11 @@ type Props = {
 	items: SelectableItem[];
 	onItemSelectionChange: (index: number, selected: boolean) => void;
 	includeAvailability: boolean;
+	includeCost: boolean;
 	allowMultiSelection: boolean;
 };
 const PickerDialog: FC<Props> = (props: Props) => {
-	const { open, onClose, title, items, onItemSelectionChange, includeAvailability, allowMultiSelection } = props;
+	const { open, onClose, title, items, onItemSelectionChange, includeAvailability, includeCost, allowMultiSelection } = props;
 
 	const classes = useStyles();
 
@@ -67,14 +68,14 @@ const PickerDialog: FC<Props> = (props: Props) => {
 					<ListItem key="header" className={classes.header}>
 						<Typography className={classes.name}>Name</Typography>
 						{ includeAvailability ? <Typography className={classes.availability}>i.availability</Typography> : null }
-						<Typography className={classes.cost}>Cost</Typography>
+						{ includeCost ? <Typography className={classes.cost}>Cost</Typography> : null }
 					</ListItem>
 					{
 						items.map((item, index) => (
 							<ListItem key={item.name}>
 								<ListItemText className={classes.name}>{item.name}</ListItemText>
 								{ includeAvailability ? <ListItemText className={classes.availability}>i.availability</ListItemText> : null }
-								<ListItemText className={classes.cost}>{item.cost}</ListItemText>
+								{ includeCost ? <ListItemText className={classes.cost}>{item.cost}</ListItemText> : null }
 								{
 									allowMultiSelection ?
 									<Fragment>

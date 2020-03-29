@@ -1,5 +1,11 @@
 import { Skill, Character } from "./character";
 
+export type Skills = {
+    active: string[];
+    knowledge: string[];
+    language: string[];
+};
+
 export function getActiveSkillCost(rating: number): number {
     switch (rating) {
         case -1:
@@ -13,6 +19,10 @@ export function getActiveSkillCost(rating: number): number {
         default:
             throw new Error(`Unsupported skill rating ${rating}`);
     }
+}
+
+export function getActiveSkillsCost(activeSkills: Skill[]): number {
+    return activeSkills.map(s => getActiveSkillCost(s.rating)).reduce((a, b) => a + b, 0);
 }
 
 export function getKnowledgeSkillCost(skill: Skill): number {
@@ -41,7 +51,7 @@ export function getFreeKnowledgeSkillPoints(character: Character): number {
 }
 
 export function getSkillsCost(character: Character): number {
-    const activeSkillCost = character.activeSkills.map(s => getActiveSkillCost(s.rating)).reduce((a, b) => a + b, 0);
+    const activeSkillCost = getActiveSkillsCost(character.activeSkills);
     const knowledgeSkillCost = character.knowledgeSkills.map(s => getKnowledgeSkillCost(s)).reduce((a, b) => a + b, 0);
     // exclude native language
     const languageSkillCost = character.languageSkills.filter(s => s.rating < 6).map(s => getKnowledgeSkillCost(s)).reduce((a, b) => a + b, 0);

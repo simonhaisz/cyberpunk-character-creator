@@ -18,6 +18,7 @@ import Attributes from "./Attributes";
 import Skills from "./Skills";
 import Karma from "./Karma";
 import { Qualities } from "../model/quality";
+import { Skills as SkillsType } from "../model/skills";
 
 const useStyles = makeStyles({
     bar: {
@@ -40,6 +41,12 @@ const CharacterCreator: FC = () => {
             })
             .catch(error => {
                 console.error(`Error occured loading qualities: ${error.message}\n${error.stack}`);
+            });
+        fetch("/data/skills.json")
+            .then(response => response.json())
+            .then(skills => {
+                const data = skills as SkillsType;
+                dispatch({ type: ActionType.LoadSkills, data });
             });
     }, [dispatch]);
 
