@@ -25,7 +25,7 @@ export function getCharacterKarma(karma: Karma, character: Character, state: Sta
     const { total } = karma;
     let spent = 0;
     spent += getMetaTypeCost(character.metaType);
-    spent += getAllQualitiesCost(character.qualities, state.qualities);
+    spent += getAllQualitiesCost(character.qualities, state.allQualities);
     spent += getAttributesCost(character);
     spent += getSkillsCost(character);
     const available = total - spent;

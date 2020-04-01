@@ -1,3 +1,5 @@
+import { Contact } from "./contact";
+
 export enum MetaType {
     Dwarf = "Dwarf",
     Elf = "Elf",
@@ -28,6 +30,7 @@ export type Character = CharacterRef & {
     activeSkills: Skill[];
     knowledgeSkills: Skill[];
     languageSkills: Skill[];
+    contacts: Contact[];
 };
 
 export function isAwakened(character: Character): boolean {

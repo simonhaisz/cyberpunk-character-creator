@@ -1,0 +1,220 @@
+{
+    "all": [
+        {
+            "Name": "Actor [Source]"
+        },
+        {
+            "Name": "Antiques and Oddities Dealer [Dealer]"
+        },
+        {
+            "Name": "Amerindian Tribesperson [Source]"
+        },
+        {
+            "Name": "Armorer [Dealer]"
+        },
+        {
+            "Name": "Bartender [Source]"
+        },
+        {
+            "Name": "Beat Cop [Source]"
+        },
+        {
+            "Name": "Black Clinic Supplier [Source]"
+        },
+        {
+            "Name": "Blogger [Source]"
+        },
+        {
+            "Name": "Bookie [Source]"
+        },
+        {
+            "Name": "Bodyguard [Specialist]"
+        },
+        {
+            "Name": "Chemist [Specialist]"
+        },
+        {
+            "Name": "Chop Shop Owner [Dealer]"
+        },
+        {
+            "Name": "Club Hopper [Source]"
+        },
+        {
+            "Name": "Club Owner [Source]"
+        },
+        {
+            "Name": "Company Man [Source]"
+        },
+        {
+            "Name": "Corporate Headhunter [Source]"
+        },
+        {
+            "Name": "Corporate Manager [Source]"
+        },
+        {
+            "Name": "Corporate Scientist [Source]"
+        },
+        {
+            "Name": "Corporate Wage Slave [Source]"
+        },
+        {
+            "Name": "Cult Member [Source]"
+        },
+        {
+            "Name": "Demolitions Expert [Specialist]"
+        },
+        {
+            "Name": "Dockworker [Source]"
+        },
+        {
+            "Name": "Executive Assistant [Source]"
+        },
+        {
+            "Name": "Fixer [Fixer]"
+        },
+        {
+            "Name": "Firefighter [Source]"
+        },
+        {
+            "Name": "Forensics Expert [Source]"
+        },
+        {
+            "Name": "Forgerer [Specialist]"
+        },
+        {
+            "Name": "Freedom Figher [Source]"
+        },
+        {
+            "Name": "Gang Leader [Source]"
+        },
+        {
+            "Name": "Gambler [Source]"
+        },
+        {
+            "Name": "Getaway Driver [Specialist]"
+        },
+        {
+            "Name": "Go-Ganger [Source]"
+        },
+        {
+            "Name": "Grassroots Politician [Source]"
+        },
+        {
+            "Name": "Hacker [Specialist]"
+        },
+        {
+            "Name": "Hermetic Academic [Source]"
+        },
+        {
+            "Name": "High Stakes Negotiator [Source]"
+        },
+        {
+            "Name": "Humanis Policlub Member [Source]"
+        },
+        {
+            "Name": "Janitor [Source]"
+        },
+        {
+            "Name": "Journalist [Source]"
+        },
+        {
+            "Name": "Mafia Consiglieri [Source]"
+        },
+        {
+            "Name": "Mechanic [Specialist]"
+        },
+        {
+            "Name": "M. Johnson [Fixer]"
+        },
+        {
+            "Name": "Ork Nation Organizer [Source]"
+        },
+        {
+            "Name": "Paramedic [Specialist]"
+        },
+        {
+            "Name": "Paramedic Shaman [Specialist]"
+        },
+        {
+            "Name": "Parasecurity Expert [Source]"
+        },
+        {
+            "Name": "Parazoology Academic [Source]"
+        },
+        {
+            "Name": "Pimp [Source]"
+        },
+        {
+            "Name": "Pirate [Source]"
+        },
+        {
+            "Name": "Police Chief [Source]"
+        },
+        {
+            "Name": "Political Intern [Source]"
+        },
+        {
+            "Name": "Prostitute [Source]"
+        },
+        {
+            "Name": "Security Contractor [Source]"
+        },
+        {
+            "Name": "Security Guard [Source]"
+        },
+        {
+            "Name": "Security Spider [Source]"
+        },
+        {
+            "Name": "Stripper [Source]"
+        },
+        {
+            "Name": "Shark Lawyer [Specialist]"
+        },
+        {
+            "Name": "Simsense Star [Source]"
+        },
+        {
+            "Name": "Slumlord [Source]"
+        },
+        {
+            "Name": "Squatter [Source]"
+        },
+        {
+            "Name": "Street Doc [Specialist]"
+        },
+        {
+            "Name": "Street Dealer [Fixer]"
+        },
+        {
+            "Name": "Street Vendor [Source]"
+        },
+        {
+            "Name": "Supply Sergeant [Dealer]"
+        },
+        {
+            "Name": "Talislegger [Dealer]"
+        },
+        {
+            "Name": "Talismonger [Dealer]"
+        },
+        {
+            "Name": "Tamanous Member [Source]"
+        },
+        {
+            "Name": "Taxi Driver [Source]"
+        },
+        {
+            "Name": "TerraFirst! Activist [Source]"
+        },
+        {
+            "Name": "Trid Pirate [Source]"
+        },
+        {
+            "Name": "Wiz Ki Ganger [Source]"
+        },
+        {
+            "Name": "Yakuza Soldier [Source]"
+        }
+    ]
+}

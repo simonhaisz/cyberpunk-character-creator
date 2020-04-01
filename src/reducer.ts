@@ -15,6 +15,7 @@ export enum ActionType {
     SelectCharacter = "selectCharacter",
     LoadQualities = "loadQualities",
     LoadSkills = "loadSkills",
+    LoadContacts = "loadContacts",
     LoadGear = "loadGear",
     LoadCustomItems = "loadCustomItems",
     AddCustomItem = "addCustomItem"
@@ -29,6 +30,7 @@ export type UpdateCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = Qualities;
 export type LoadSkillsData = Skills;
+export type LoadContactsData = Item[];
 export type LoadCustomItemsData = Dictionary<Item>;
 export type AddCustomItemData = { path: string, item: Item };
 
@@ -72,12 +74,16 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             return { ...state, selectedCharacter, karma};
         }
         case ActionType.LoadQualities: {
-            const qualities = action.data as LoadQualitiesData;
-            return { ...state, qualities };
+            const allQualities = action.data as LoadQualitiesData;
+            return { ...state, allQualities };
         }
         case ActionType.LoadSkills: {
-            const skills = action.data as LoadSkillsData;
-            return { ...state, skills };
+            const allSkills = action.data as LoadSkillsData;
+            return { ...state, allSkills };
+        }
+        case ActionType.LoadContacts: {
+            const allContacts = action.data as LoadContactsData;
+            return { ...state, allContacts}
         }
         case ActionType.LoadGear: {
             throw new Error(`'${ActionType.LoadGear}' action not supported`);
@@ -102,7 +108,8 @@ export const INITIAL_STATE: State = {
     characters: [getDefaultCharacter()],
     selectedCharacter: getDefaultCharacter(),
     karma: getDefaultKarma(),
-    qualities: { positive: [], negative: [] },
-    skills: { active: [], knowledge: [], language: [] },
+    allQualities: { positive: [], negative: [] },
+    allSkills: { active: [], knowledge: [], language: [] },
+    allContacts: [],
     customItems: {},
 };

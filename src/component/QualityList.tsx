@@ -35,7 +35,7 @@ const Qualities: FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
-    const allQualities = useGlobalState("qualities");
+    const allQualities = useGlobalState("allQualities");
     const { qualities: selectedQualities } = character;
 
     const positiveCost = getQualitiesCost(selectedQualities.positive, allQualities.positive);

@@ -10,7 +10,7 @@ const breadcrums = ["Skills", "Knowledge"];
 const KnowledgeSkillList: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
-	const allSkills = useGlobalState("skills");
+	const allSkills = useGlobalState("allSkills");
 
 	const { knowledgeSkills } = character;
 

@@ -8,7 +8,8 @@ export type State = {
     characters: CharacterRef[];
     selectedCharacter: Character;
     karma: Karma;
-    qualities: Qualities;
-    skills: Skills;
+    allQualities: Qualities;
+    allSkills: Skills;
+    allContacts: Item[];
     customItems: Dictionary<Item>;
 };

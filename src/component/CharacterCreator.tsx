@@ -12,13 +12,12 @@ import { makeStyles } from '@material-ui/core/styles';
 import SelectCharacter from "./SelectCharacter";
 import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
-import { ActionType } from "../reducer";
+import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData } from "../reducer";
 import CharacterTab from "./CharacterTab";
 import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
-import { Qualities } from "../model/quality";
-import { Skills as SkillsType } from "../model/skills";
 import AttributesTab from "./AttributesTab";
+import ContactsTab from "./ContactsTab";
 
 const useStyles = makeStyles({
     bar: {
@@ -36,7 +35,7 @@ const CharacterCreator: FC = () => {
         fetch("/data/qualities.json")
             .then(response => response.json())
             .then(qualities => {
-                const data = qualities as Qualities
+                const data = qualities as LoadQualitiesData;
                 dispatch({ type: ActionType.LoadQualities, data });
             })
             .catch(error => {
@@ -45,8 +44,14 @@ const CharacterCreator: FC = () => {
         fetch("/data/skills.json")
             .then(response => response.json())
             .then(skills => {
-                const data = skills as SkillsType;
+                const data = skills as LoadSkillsData;
                 dispatch({ type: ActionType.LoadSkills, data });
+            });
+        fetch("/data/contacts.json")
+            .then(response => response.json())
+            .then(contacts => {
+                const data = contacts.all as LoadContactsData;
+                dispatch({ type: ActionType.LoadContacts, data });
             });
     }, [dispatch]);
 
@@ -72,6 +77,9 @@ const CharacterCreator: FC = () => {
             break;
         case 2:
             selectedTabPanel = <SkillsTab />
+            break;
+        case 3:
+            selectedTabPanel = <ContactsTab />
             break;
         default:
             throw new Error(`Unknown tab index ${selectedTab}`);
@@ -108,6 +116,7 @@ const CharacterCreator: FC = () => {
                     <Tab label="Character" />
                     <Tab label="Attributes" />
                     <Tab label="Skills" />
+                    <Tab label="Contacts" />
                 </Tabs>
             </AppBar>
             {

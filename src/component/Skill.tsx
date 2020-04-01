@@ -19,7 +19,7 @@ const Skill: FC<Props> = (props: Props) => {
             min={1}
             max={5}
             step={2}
-            formatDisplayValue={(value: number) => value.toString()}
+            formatDisplayValue={value => value.toString()}
             computeCost={computeCost}
             />
     );

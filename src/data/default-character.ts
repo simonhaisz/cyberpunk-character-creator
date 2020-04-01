@@ -21,7 +21,8 @@ const DEFAULT_CHARACTER: Character = {
     qualities: { negative: [], positive: [] },
     activeSkills: [],
     knowledgeSkills: [],
-    languageSkills: []
+    languageSkills: [],
+    contacts: [],
 };
 
 export function getDefaultCharacter(): Character {
