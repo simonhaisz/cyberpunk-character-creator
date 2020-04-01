@@ -1,4 +1,4 @@
-import { MetaType, Attribute, Character } from "./character";
+import { MetaType, Attribute, Character, isAwakened } from "./character";
 
 export function getAttributeModifier(metaType: MetaType, attribute: Attribute): number {
     switch (metaType) {
@@ -82,5 +82,15 @@ export function getAttributeCost(rating: number): number {
 }
 
 export function getAttributesCost(character: Character): number {
-    return character.attributes.map(a => getAttributeCost(a.rating)).reduce((a, b) => a + b, 0);
+    const awakened = isAwakened(character);
+    let cost = 0;
+    for (const attribute of character.attributes) {
+        if (attribute.name === "Magic" && !awakened) {
+            // character could be awakened, have their Magic attribute, then be mundane
+            // ignore any Magic changes in this case
+            continue;
+        }
+        cost += getAttributeCost(attribute.rating);
+    }
+    return cost;
 }

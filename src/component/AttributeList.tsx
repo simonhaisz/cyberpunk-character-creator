@@ -4,7 +4,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListSubheader from "@material-ui/core/ListSubheader";
 import Attribute from "./Attribute";
-import { Attribute as AttributeData } from "../model/character";
+import { Attribute as AttributeData, isAwakened } from "../model/character";
 import { ActionType } from "../reducer";
 import { getAttributesCost } from "../model/attributes";
 import { makeStyles } from "@material-ui/core";
@@ -18,9 +18,11 @@ const useStyles = makeStyles({
 const AttributeList: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
+    const classes = useStyles();
+
     const { attributes, metaType } = character;
 
-    const classes = useStyles();
+    const filteredAttributes = attributes.filter(a => isAwakened(character) || a.name !== "Magic");
 
     const attributesCost = getAttributesCost(character);
 
@@ -36,7 +38,7 @@ const AttributeList: FC = () => {
     return (
         <List subheader={<ListSubheader className={classes.header}>Attributes ({attributesCost})</ListSubheader>}>
             {
-                attributes.map(a => (
+                filteredAttributes.map(a => (
                     <ListItem key={a.name}>
                         <Attribute attribute={a} metaType={metaType} onUpdate={onUpdate} />
                     </ListItem>

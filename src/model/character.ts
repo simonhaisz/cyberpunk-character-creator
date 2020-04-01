@@ -29,3 +29,7 @@ export type Character = CharacterRef & {
     knowledgeSkills: Skill[];
     languageSkills: Skill[];
 };
+
+export function isAwakened(character: Character): boolean {
+    return character.qualities.positive.find(q => q === "Adept" || q === "Magician") !== undefined;
+}
