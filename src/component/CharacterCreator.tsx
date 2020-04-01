@@ -18,6 +18,9 @@ import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
 import AttributesTab from "./AttributesTab";
 import ContactsTab from "./ContactsTab";
+import { isAwakened } from "../model/character";
+import MagicTab from "./MagicTab";
+import GearTab from "./GearTab";
 
 const useStyles = makeStyles({
     bar: {
@@ -67,7 +70,9 @@ const CharacterCreator: FC = () => {
         setSelectedTab(newValue);
     };
 
-    let selectedTabPanel: JSX.Element;
+    const awakened = isAwakened(selectedCharacter);
+
+    let selectedTabPanel: JSX.Element | null;
     switch (selectedTab) {
         case 0:
             selectedTabPanel = <CharacterTab />
@@ -81,6 +86,22 @@ const CharacterCreator: FC = () => {
         case 3:
             selectedTabPanel = <ContactsTab />
             break;
+        case 4: {
+            if (awakened) {
+                selectedTabPanel = <MagicTab />
+            } else {
+                selectedTabPanel = <GearTab />
+            }
+            break;
+        }
+        case 5: {
+            if (awakened) {
+                selectedTabPanel = <GearTab />
+            } else {
+                selectedTabPanel = null;
+            }
+            break;
+        }
         default:
             throw new Error(`Unknown tab index ${selectedTab}`);
     }
@@ -117,6 +138,8 @@ const CharacterCreator: FC = () => {
                     <Tab label="Attributes" />
                     <Tab label="Skills" />
                     <Tab label="Contacts" />
+                    { awakened ? <Tab label="Magic" /> : null }
+                    <Tab label="Gear" />
                 </Tabs>
             </AppBar>
             {
