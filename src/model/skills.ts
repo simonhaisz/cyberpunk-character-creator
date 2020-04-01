@@ -1,9 +1,10 @@
 import { Skill, Character } from "./character";
+import { Item } from "./custom-item";
 
 export type Skills = {
-    active: string[];
-    knowledge: string[];
-    language: string[];
+    active: Item[];
+    knowledge: Item[];
+    language: Item[];
 };
 
 export function getActiveSkillCost(rating: number): number {
@@ -25,8 +26,8 @@ export function getActiveSkillsCost(activeSkills: Skill[]): number {
     return activeSkills.map(s => getActiveSkillCost(s.rating)).reduce((a, b) => a + b, 0);
 }
 
-export function getKnowledgeSkillCost(skill: Skill): number {
-    switch (skill.rating) {
+export function getKnowledgeSkillCost(rating: number): number {
+    switch (rating) {
         case 1:
             return 2;
         case 3:
@@ -34,8 +35,12 @@ export function getKnowledgeSkillCost(skill: Skill): number {
         case 5:
             return 15;
         default:
-            throw new Error(`Unsupported skill rating ${skill.rating} for skill ${skill.name}`);
+            throw new Error(`Unsupported skill rating ${rating}`);
     }
+}
+
+export function getKnowledgeSkillsCost(knowledgeSkills: Skill[]): number {
+    return knowledgeSkills.map(s => getKnowledgeSkillCost(s.rating)).reduce((a, b) => a + b, 0);
 }
 
 export function getFreeKnowledgeSkillPoints(character: Character): number {
@@ -52,9 +57,9 @@ export function getFreeKnowledgeSkillPoints(character: Character): number {
 
 export function getSkillsCost(character: Character): number {
     const activeSkillCost = getActiveSkillsCost(character.activeSkills);
-    const knowledgeSkillCost = character.knowledgeSkills.map(s => getKnowledgeSkillCost(s)).reduce((a, b) => a + b, 0);
+    const knowledgeSkillCost = getKnowledgeSkillsCost(character.knowledgeSkills);
     // exclude native language
-    const languageSkillCost = character.languageSkills.filter(s => s.rating < 6).map(s => getKnowledgeSkillCost(s)).reduce((a, b) => a + b, 0);
+    const languageSkillCost = getKnowledgeSkillsCost(character.languageSkills);
     const freeKnowledgePoints = getFreeKnowledgeSkillPoints(character);
     return activeSkillCost + Math.max(knowledgeSkillCost + languageSkillCost - freeKnowledgePoints, 0);
 }

@@ -123,10 +123,16 @@
             "Name": "Ares Macrotechnology"
         },
         {
+            "Name": "Black Market"
+        },
+        {
             "Name": "Biology"
         },
         {
             "Name": "Business"
+        },
+        {
+            "Name": "Celebrities"
         },
         {
             "Name": "Chemistry"
@@ -138,13 +144,13 @@
             "Name": "Economics"
         },
         {
-            "Name": "Engineering"
-        },
-        {
             "Name": "History"
         },
         {
             "Name": "Hong Kong Triads"
+        },
+        {
+            "Name": "Law"
         },
         {
             "Name": "Literature"
@@ -166,6 +172,9 @@
         },
         {
             "Name": "Security Procedures"
+        },
+        {
+            "Name": "Software Design"
         },
         {
             "Name": "Sports"
@@ -197,19 +206,25 @@
             "Name": "Korean"
         },
         {
+            "Name": "Or’zet (Orkish)"
+        },
+        {
             "Name": "Russian"
         },
         {
-            "Name": "Sioux"
+            "Name": "Salish"
         },
         {
             "Name": "Spanish"
         },
         {
-            "Name": "Spethriel"
+            "Name": "Sperethriel (Elvish)"
         },
         {
             "Name": "Tagalog"
+        },
+        {
+            "Name": "Vietnamese"
         }
     ]
 }

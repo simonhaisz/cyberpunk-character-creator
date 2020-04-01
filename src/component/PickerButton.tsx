@@ -34,11 +34,11 @@ const findAvailability = (value: any): string => {
 };
 
 const createSelectableItem = (value: any, selectedValueNames: string[], includeAvailability: boolean, includeCost: boolean): SelectableItem => {
-	const name = findName(value);
-	const availability = includeAvailability ? findAvailability(value) : undefined;
-	const cost = includeCost ? findCost(value) : undefined;
-	const selected = selectedValueNames.find(n => n === name) !== undefined;
-	return { name, cost, availability, selected	};
+	const Name = findName(value);
+	const Availability = includeAvailability ? findAvailability(value) : undefined;
+	const Cost = includeCost ? findCost(value) : undefined;
+	const selected = selectedValueNames.find(n => n === Name) !== undefined;
+	return { Name, Cost, Availability, selected	};
 };
 
 const useStyles = makeStyles({
@@ -55,10 +55,12 @@ type Props = {
 	removeValue: (name: string) => void;
 	includeAvailability?: boolean;
 	includeCost?: boolean;
+	allowNewValues?: boolean;
+	createValue?: (value: any) => void;
 	allowMultiSelection?: boolean;
 };
 const PickerButton: FC<Props> = (props: Props) => {
-	const { breadcrums, values, selectedValueNames, addValue, removeValue, includeAvailability=false, includeCost=false, allowMultiSelection=false } = props;
+	const { breadcrums, values, selectedValueNames, addValue, removeValue, includeAvailability=false, includeCost=false, allowNewValues: allowNewItems=false, createValue, allowMultiSelection=false } = props;
 	
 	const classes = useStyles();
 
@@ -70,12 +72,20 @@ const PickerButton: FC<Props> = (props: Props) => {
 
 	const items = values.map(v => createSelectableItem(v, selectedValueNames, includeAvailability, includeCost));
 
-	const onItemSelectionChange = (index: number, selected: boolean) => {
-		const name = findName(values[index]);
+	const onItemSelectionChange = (item: SelectableItem) => {
+		const { Name, Availability, Cost, selected } = item;
 		if (selected) {
-			addValue(name);
+			addValue(Name);
+			if (values.find(v => findName(v) === Name) === undefined) {
+				// new item
+				const value = { Name, Availability, Cost };
+				if (!createValue) {
+					throw new Error(`Attempting to create new item '${JSON.stringify(value)}' with no createValue prop`);
+				}
+				createValue(value);
+			}
 		} else {
-			removeValue(name);
+			removeValue(Name);
 		}
 	};
 
@@ -92,6 +102,7 @@ const PickerButton: FC<Props> = (props: Props) => {
 				onItemSelectionChange={onItemSelectionChange}
 				includeAvailability={includeAvailability}
 				includeCost={includeCost}
+				allowNewItems={allowNewItems}
 				allowMultiSelection={allowMultiSelection}
 			/>
 		</Fragment>

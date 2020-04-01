@@ -14,11 +14,12 @@ import PickerButton from "./PickerButton";
 const useStyles = makeStyles({
     header: {
         display: "flex",
-        flexDirection: "row"
+        flexDirection: "row",
     },
     headerLabel: {
         marginLeft: 5,
-        marginRight: 10
+        marginRight: 10,
+        marginBottom: 20,
     }
 });
 

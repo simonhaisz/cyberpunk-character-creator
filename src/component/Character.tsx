@@ -20,7 +20,8 @@ const useStyles = makeStyles({
         marginBottom: 10,
     },
     field: {
-        paddingRight: 10,
+        marginRight: 10,
+        marginTop: 20,
     },
     divider: {
         margin: 5,
@@ -39,9 +40,9 @@ const Character: FC = () => {
     return (
         <Fragment>
             <div className={classes.header}>
-                <TextField id-="name" label="Name" value={name} onChange={e => updateCharacter({ ...character, name: e.target.value})} className={classes.field} />
-                <TextField id-="street-name" label="Street Name" value={streetName} onChange={e => updateCharacter({ ...character, streetName: e.target.value})} className={classes.field} />
-                <Select id="meta-type" value={metaType} displayEmpty onChange={e => updateCharacter({ ...character, metaType: e.target.value as MetaType})} className={classes.field}>
+                <TextField id-="name" label="Name" value={name} onChange={e => updateCharacter({ ...character, name: e.target.value})} className={classes.field} variant="outlined" />
+                <TextField id-="street-name" label="Street Name" value={streetName} onChange={e => updateCharacter({ ...character, streetName: e.target.value})} className={classes.field} variant="outlined" />
+                <Select id="meta-type" value={metaType} displayEmpty onChange={e => updateCharacter({ ...character, metaType: e.target.value as MetaType})} className={classes.field} variant="outlined">
                     {ALL_META_TYPES.map(t => <MenuItem key={t} value={t}>{t} ({getMetaTypeCost(t)})</MenuItem>)}
                 </Select>
             </div>

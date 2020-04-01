@@ -1,82 +1,37 @@
 import React, { FC } from "react";
-
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListSubheader from "@material-ui/core/ListSubheader";
-import { makeStyles } from '@material-ui/core/styles';
 import { useDispatch, useGlobalState } from "../context"
 import { Skill as SkillData, Character } from "../model/character";
-import ActiveSkill from "./ActiveSkill";
 import { ActionType } from "../reducer";
-import { getActiveSkillsCost } from "../model/skills";
-import PickerButton from "./PickerButton";
+import { getActiveSkillsCost, getActiveSkillCost } from "../model/skills";
+import SkillList from "./SkillList";
 
-const useStyles = makeStyles({
-    header: {
-        display: "flex",
-        flexDirection: "row"
-    }
-});
+const breadcrums = ["Skills", "Active"];
 
 const ActiveSkills: FC = () => {
-    const classes = useStyles();
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const allSkills = useGlobalState("skills");
+
     const { activeSkills } = character;
 
     const activeSkillsCost = getActiveSkillsCost(activeSkills);
+    const headerLabel = `Active Skills (${activeSkillsCost})`;
 
-    activeSkills.sort((a, b) => a.name.localeCompare(b.name));
+    const allActiveSkills = [...allSkills.active];
 
-    const onSkillUpdate = (skill: SkillData) => {
-        const newSkills = [ ...activeSkills ];
-        const skillIndex = activeSkills.findIndex(s => s.name === skill.name);
-        if (skillIndex > -1) {
-            if (skill.rating > 0) {
-                newSkills[skillIndex] = skill;
-            } else {
-                newSkills.splice(skillIndex, 1);
-            }
-        } else if (skill.rating > 0) {
-            newSkills.push(skill);
-        }
-        const data: Character = { ...character, activeSkills: newSkills };
+    const onSkillsUpdated = (activeSkills: SkillData[]) => {
+        const data: Character = { ...character, activeSkills };
         dispatch({ type: ActionType.UpdateCharacter, data });
     }
-
-    const addSkill = (name: string) => {
-        onSkillUpdate({ name, rating: 1 });
-    };
-
-    const removeSkill = (name: string) => {
-        onSkillUpdate({ name, rating: -1 });
-    };
-
     return (
-        <List subheader={
-                <div className={classes.header}>
-                    <ListSubheader>
-                        Active Skills ({activeSkillsCost})
-                        <PickerButton
-                            breadcrums={["Skills", "Active"]}
-                            values={allSkills.active}
-                            selectedValueNames={activeSkills.map(s => s.name)}
-                            addValue={addSkill}
-                            removeValue={removeSkill}
-                        />
-                    </ListSubheader>
-                </div>
-            }
-            >
-            {
-                activeSkills.map(s => (
-                    <ListItem key={s.name}>
-                        <ActiveSkill skill={s} onUpdate={onSkillUpdate} />
-                    </ListItem>
-                ))
-            }
-        </List>
+        <SkillList
+            breadcrums={breadcrums}
+            skills={activeSkills}
+            allSkills={allActiveSkills}
+            headerLabel={headerLabel}
+            computeSkillCost={getActiveSkillCost}
+            onSkillsUpdated={onSkillsUpdated}
+        />
     );
 }
 

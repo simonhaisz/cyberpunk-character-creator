@@ -2,10 +2,11 @@ import { Reducer } from "react";
 import { State } from "./model/state";
 import { getDefaultCharacter, isDefaultCharacter, hasDefaultKey } from "./data/default-character";
 import { Character, CharacterRef } from "./model/character";
-import { saveCharacter, clearCharacter, saveSelectedCharacter, loadCharacter } from "./persistance";
+import { saveCharacter, clearCharacter, saveSelectedCharacter, loadCharacter, saveCustomItem } from "./persistance";
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { Qualities } from "./model/quality";
 import { Skills } from "./model/skills";
+import { Dictionary, Item } from "./model/custom-item";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -15,6 +16,8 @@ export enum ActionType {
     LoadQualities = "loadQualities",
     LoadSkills = "loadSkills",
     LoadGear = "loadGear",
+    LoadCustomItems = "loadCustomItems",
+    AddCustomItem = "addCustomItem"
 }
 
 export type Action = {
@@ -26,6 +29,8 @@ export type UpdateCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = Qualities;
 export type LoadSkillsData = Skills;
+export type LoadCustomItemsData = Dictionary<Item>;
+export type AddCustomItemData = { path: string, item: Item };
 
 export const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
     switch (action.type) {
@@ -77,6 +82,18 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
         case ActionType.LoadGear: {
             throw new Error(`'${ActionType.LoadGear}' action not supported`);
         }
+        case ActionType.LoadCustomItems: {
+            const customItems = action.data as LoadCustomItemsData;
+            return { ...state, customItems };
+        }
+        case ActionType.AddCustomItem: {
+            const newItem = action.data as AddCustomItemData;
+            // persist item in local storage for later
+            saveCustomItem(newItem.path, newItem.item);
+            const customItems = { ...state.customItems };
+            customItems[newItem.path] = newItem.item;
+            return { ...state, customItems };
+        }
     }
     return { ...state };
 }
@@ -87,4 +104,5 @@ export const INITIAL_STATE: State = {
     karma: getDefaultKarma(),
     qualities: { positive: [], negative: [] },
     skills: { active: [], knowledge: [], language: [] },
+    customItems: {},
 };

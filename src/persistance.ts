@@ -1,8 +1,9 @@
 import { Character, CharacterRef } from "./model/character";
+import { Item, Dictionary } from "./model/custom-item";
 
 const CHARACTER_KEY = "character";
 
-function createKey(key: number): string {
+function createCharacterKey(key: number): string {
     return `${CHARACTER_KEY}:${key}`;
 }
 
@@ -13,6 +14,7 @@ export function loadCharacters(): CharacterRef[] {
         if (key === null) {
             continue;
         }
+        // charater:1337
         if (/^character:\d+$/i.test(key)) {
             const characterJSON = localStorage.getItem(key);
             if (characterJSON) {
@@ -26,7 +28,7 @@ export function loadCharacters(): CharacterRef[] {
 }
 
 export function loadCharacter(key: number): Character | undefined {
-    const character = localStorage.getItem(createKey(key));
+    const character = localStorage.getItem(createCharacterKey(key));
     if (character) {
         return JSON.parse(character);
     } else {
@@ -35,11 +37,11 @@ export function loadCharacter(key: number): Character | undefined {
 }
 
 export function saveCharacter(character: Character) {
-    localStorage.setItem(createKey(character.key), JSON.stringify(character));
+    localStorage.setItem(createCharacterKey(character.key), JSON.stringify(character));
 }
 
 export function clearCharacter(character: Character) {
-    localStorage.removeItem(createKey(character.key));
+    localStorage.removeItem(createCharacterKey(character.key));
 }
 
 const SELECTED_CHARACTER_KEY = "selected-character";
@@ -59,4 +61,48 @@ export function saveSelectedCharacter(key: number) {
 
 export function clearSelectedCharacter() {
     localStorage.removeItem(SELECTED_CHARACTER_KEY);
+}
+
+const CUSTOM_ITEM_KEY = "custom-item";
+
+function createCustomItemKey(path: string, name: string): string {
+    return `${CUSTOM_ITEM_KEY}:${path}.${name}}`;
+}
+
+export function loadCustomItems(): Dictionary<Item> {
+    const customItems: Dictionary<Item> = {};
+    for (let i = 0; i < localStorage.length; i++) {
+        const key = localStorage.key(i);
+        if (key === null) {
+            // not a custom item
+            continue;
+        }
+        /*
+        custom-item:category.group.name => [
+            "custom-item:category.group.name",
+            "category.group",
+            "name"
+        ]
+        */
+        const result = /^custom-item:(?:((?:(?:\w+)(?:\.)?)*)\.)?(\w+)$/i.exec(key);
+        if (result) {
+            const path = result[1];
+            const itemJSON = localStorage.getItem(key);
+            if (itemJSON) {
+                const item = JSON.parse(itemJSON);
+                customItems[path] = item;
+            }
+        }
+    }
+    return customItems;
+}
+
+export function saveCustomItem(path: string, item: Item) {
+    const key = createCustomItemKey(path, item.Name);
+    localStorage.setItem(key, JSON.stringify(item));
+}
+
+export function clearCustomItem(path: string, item: Item) {
+    const key = createCustomItemKey(path, item.Name);
+    localStorage.removeItem(key);
 }

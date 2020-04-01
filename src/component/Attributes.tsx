@@ -7,11 +7,20 @@ import Attribute from "./Attribute";
 import { Attribute as AttributeData } from "../model/character";
 import { ActionType } from "../reducer";
 import { getAttributesCost } from "../model/attributes";
+import { makeStyles } from "@material-ui/core";
+
+const useStyles = makeStyles({
+    header: {
+        marginBottom: 20,
+    }
+});
 
 const Attributes: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const { attributes, metaType } = character;
+
+    const classes = useStyles();
 
     const attributesCost = getAttributesCost(character);
 
@@ -25,7 +34,7 @@ const Attributes: FC = () => {
         });
     };
     return (
-        <List subheader={<ListSubheader>Attributes ({attributesCost})</ListSubheader>}>
+        <List subheader={<ListSubheader className={classes.header}>Attributes ({attributesCost})</ListSubheader>}>
             {
                 attributes.map(a => (
                     <ListItem key={a.name}>
