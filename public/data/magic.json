@@ -1,0 +1,551 @@
+{
+    "spells": {
+        "combat": [
+            {
+                "Name": "Acid Stream"
+            },
+            {
+                "Name": "Ball Lightning"
+            },
+            {
+                "Name": "Blast"
+            },
+            {
+                "Name": "Clout"
+            },
+            {
+                "Name": "Corrode [Object]"
+            },
+            {
+                "Name": "Death Touch"
+            },
+            {
+                "Name": "Demolish [Object]"
+            },
+            {
+                "Name": "Fireball"
+            },
+            {
+                "Name": "Firewater"
+            },
+            {
+                "Name": "Flamethrower"
+            },
+            {
+                "Name": "Knockout"
+            },
+            {
+                "Name": "Lightning Bolt"
+            },
+            {
+                "Name": "Manaball"
+            },
+            {
+                "Name": "Manabolt"
+            },
+            {
+                "Name": "Melt [Object]"
+            },
+            {
+                "Name": "Napalm"
+            },
+            {
+                "Name": "One Less [Metatype/Species]"
+            },
+            {
+                "Name": "Powerball"
+            },
+            {
+                "Name": "Powerbolt"
+            },
+            {
+                "Name": "Punch"
+            },
+            {
+                "Name": "Ram [Object]"
+            },
+            {
+                "Name": "Shatter"
+            },
+            {
+                "Name": "Shattershield"
+            },
+            {
+                "Name": "Slaughter [Metatype/Species]"
+            },
+            {
+                "Name": "Slay [Metatype/Species]"
+            },
+            {
+                "Name": "Sludge [Object]"
+            },
+            {
+                "Name": "Stunball"
+            },
+            {
+                "Name": "Stunbolt"
+            },
+            {
+                "Name": "Toxic Wave"
+            },
+            {
+                "Name": "Wreck [Object]"
+            }
+        ],
+        "detection": [
+            {
+                "Name": "Analyze Device"
+            },
+            {
+                "Name": "Analyze Magic"
+            },
+            {
+                "Name": "Analyze Truth"
+            },
+            {
+                "Name": "Animal Sense"
+            },
+            {
+                "Name": "Area Thought Recognition"
+            },
+            {
+                "Name": "Astral Clairvoyance"
+            },
+            {
+                "Name": "Astral Window"
+            },
+            {
+                "Name": "Borrow Sense"
+            },
+            {
+                "Name": "Catalog"
+            },
+            {
+                "Name": "Clairaudience"
+            },
+            {
+                "Name": "Clairvoyance"
+            },
+            {
+                "Name": "Combat Sense"
+            },
+            {
+                "Name": "Detect Enemies"
+            },
+            {
+                "Name": "Detect Individual"
+            },
+            {
+                "Name": "Detect Life"
+            },
+            {
+                "Name": "Detect [Life Form]"
+            },
+            {
+                "Name": "Detect Magic"
+            },
+            {
+                "Name": "Detect [Object]"
+            },
+            {
+                "Name": "Diagnose"
+            },
+            {
+                "Name": "Enhance Aim"
+            },
+            {
+                "Name": "Eyes of the Pack"
+            },
+            {
+                "Name": "Hawkeye"
+            },
+            {
+                "Name": "Mana Window"
+            },
+            {
+                "Name": "Mindlink"
+            },
+            {
+                "Name": "Mindnet"
+            },
+            {
+                "Name": "Mind Probe"
+            },
+            {
+                "Name": "Night Vision"
+            },
+            {
+                "Name": "[Sense] Cryptesthesia"
+            },
+            {
+                "Name": "Spatial Sense"
+            },
+            {
+                "Name": "Thermographic Vision"
+            },
+            {
+                "Name": "Thought Recognition"
+            },
+            {
+                "Name": "Translate"
+            }
+        ],
+        "health": [
+            {
+                "Name": "Alleviate Addiction"
+            },
+            {
+                "Name": "Alleviate Allergy"
+            },
+            {
+                "Name": "Antidote"
+            },
+            {
+                "Name": "Awaken"
+            },
+            {
+                "Name": "Crank"
+            },
+            {
+                "Name": "Cure Disease"
+            },
+            {
+                "Name": "Decrease [Attribute]"
+            },
+            {
+                "Name": "Decrease Reflexes"
+            },
+            {
+                "Name": "Detox"
+            },
+            {
+                "Name": "Enabler"
+            },
+            {
+                "Name": "Fast"
+            },
+            {
+                "Name": "Heal"
+            },
+            {
+                "Name": "Healthy Glow"
+            },
+            {
+                "Name": "Hibernate"
+            },
+            {
+                "Name": "Increase [Attribute]"
+            },
+            {
+                "Name": "Increase Reflexes"
+            },
+            {
+                "Name": "Intoxication"
+            },
+            {
+                "Name": "Nutrition"
+            },
+            {
+                "Name": "Oxygenate"
+            },
+            {
+                "Name": "Prophylaxis"
+            },
+            {
+                "Name": "Resist Pain"
+            },
+            {
+                "Name": "Stabilize"
+            },
+            {
+                "Name": "Stim"
+            }
+        ],
+        "illusion": [
+            {
+                "Name": "Agony"
+            },
+            {
+                "Name": "Bugs"
+            },
+            {
+                "Name": "Camouflage"
+            },
+            {
+                "Name": "Chaff"
+            },
+            {
+                "Name": "Chaos"
+            },
+            {
+                "Name": "Chaotic World"
+            },
+            {
+                "Name": "Confusion"
+            },
+            {
+                "Name": "Double Image"
+            },
+            {
+                "Name": "Dream"
+            },
+            {
+                "Name": "Entertainment"
+            },
+            {
+                "Name": "Flak"
+            },
+            {
+                "Name": "Foreboding"
+            },
+            {
+                "Name": "Hot Potato"
+            },
+            {
+                "Name": "Hush"
+            },
+            {
+                "Name": "Improved Invisibility"
+            },
+            {
+                "Name": "Invisibility"
+            },
+            {
+                "Name": "Mask"
+            },
+            {
+                "Name": "Mass Agony"
+            },
+            {
+                "Name": "Mass Confusion"
+            },
+            {
+                "Name": "Mass [Sense]"
+            },
+            {
+                "Name": "Orgasm"
+            },
+            {
+                "Name": "Orgy"
+            },
+            {
+                "Name": "Phantasm"
+            },
+            {
+                "Name": "Physical Camouflage"
+            },
+            {
+                "Name": "Physical Double Image"
+            },
+            {
+                "Name": "Physical Mask"
+            },
+            {
+                "Name": "[Sense] Removal"
+            },
+            {
+                "Name": "Silence"
+            },
+            {
+                "Name": "Sound Barrier"
+            },
+            {
+                "Name": "Stealth"
+            },
+            {
+                "Name": "Stench"
+            },
+            {
+                "Name": "Stink"
+            },
+            {
+                "Name": "Swarm"
+            },
+            {
+                "Name": "Trid Entertainment"
+            },
+            {
+                "Name": "Trid Phantasm"
+            },
+            {
+                "Name": "Vehicle Mask"
+            }
+        ],
+        "manipulation": [
+            {
+                "Name": "Alter Memory"
+            },
+            {
+                "Name": "Alter Temperature"
+            },
+            {
+                "Name": "Animate"
+            },
+            {
+                "Name": "Armor"
+            },
+            {
+                "Name": "Astral Armor"
+            },
+            {
+                "Name": "Bind"
+            },
+            {
+                "Name": "Calm Animal"
+            },
+            {
+                "Name": "Calm Pack"
+            },
+            {
+                "Name": "Catfall"
+            },
+            {
+                "Name": "Clean [Element]"
+            },
+            {
+                "Name": "Compel Truth"
+            },
+            {
+                "Name": "Control Actions"
+            },
+            {
+                "Name": "Control Animal"
+            },
+            {
+                "Name": "Control Emotions"
+            },
+            {
+                "Name": "Control Pack"
+            },
+            {
+                "Name": "Control Thoughts"
+            },
+            {
+                "Name": "[Critter] Form"
+            },
+            {
+                "Name": "Deflection"
+            },
+            {
+                "Name": "[Element] Aura"
+            },
+            {
+                "Name": "[Element] Wall"
+            },
+            {
+                "Name": "Fashion"
+            },
+            {
+                "Name": "Fix"
+            },
+            {
+                "Name": "Fling"
+            },
+            {
+                "Name": "Gecko Crawl"
+            },
+            {
+                "Name": "Glue Strip"
+            },
+            {
+                "Name": "Ice Sheet"
+            },
+            {
+                "Name": "Ignite"
+            },
+            {
+                "Name": "Influence"
+            },
+            {
+                "Name": "Interference"
+            },
+            {
+                "Name": "Levitate"
+            },
+            {
+                "Name": "Light"
+            },
+            {
+                "Name": "Lock"
+            },
+            {
+                "Name": "Magic Fingers"
+            },
+            {
+                "Name": "Makeover"
+            },
+            {
+                "Name": "Mana Barrier"
+            },
+            {
+                "Name": "Mana Bind"
+            },
+            {
+                "Name": "Mana Net"
+            },
+            {
+                "Name": "Mana Static"
+            },
+            {
+                "Name": "Mass Animate"
+            },
+            {
+                "Name": "Mist"
+            },
+            {
+                "Name": "Mob Control"
+            },
+            {
+                "Name": "Mob Mind"
+            },
+            {
+                "Name": "Mob Mood"
+            },
+            {
+                "Name": "Net"
+            },
+            {
+                "Name": "Offensive Mana Barrier"
+            },
+            {
+                "Name": "Petrify"
+            },
+            {
+                "Name": "Physical Barrier"
+            },
+            {
+                "Name": "Poltergeist"
+            },
+            {
+                "Name": "Preserve"
+            },
+            {
+                "Name": "Pulse"
+            },
+            {
+                "Name": "Reinforce"
+            },
+            {
+                "Name": "Shadow"
+            },
+            {
+                "Name": "Shapechange"
+            },
+            {
+                "Name": "Shape [Material]"
+            },
+            {
+                "Name": "Spirit Barrier"
+            },
+            {
+                "Name": "Spirit Zapper"
+            },
+            {
+                "Name": "Sterilize"
+            },
+            {
+                "Name": "Turn to Goo"
+            }
+        ]
+    }
+}
