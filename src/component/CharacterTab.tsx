@@ -3,7 +3,7 @@ import Select from "@material-ui/core/Select";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import { makeStyles } from '@material-ui/core/styles';
-import Qualities from "./Qualities";
+import Qualities from "./QualityList";
 import { useDispatch, useGlobalState } from "../context";
 import { Character as CharacterData, MetaType } from "../model/character";
 import { ActionType, UpdateCharacterData } from "../reducer";
@@ -28,7 +28,7 @@ const useStyles = makeStyles({
     }
 });
 
-const Character: FC = () => {
+const CharacterTab: FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
@@ -51,4 +51,4 @@ const Character: FC = () => {
     )
 }
 
-export default Character;
+export default CharacterTab;

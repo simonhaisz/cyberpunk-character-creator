@@ -110,9 +110,9 @@ const PickerDialog: FC<Props> = (props: Props) => {
 					{
 						allowNewItems ?
 						<ListItem key="new-item">
-							<TextField id="new-item-name" label="Name" value={newItemName} onChange={onUpdateNewItem} variant="outlined" />
-							{ includeAvailability ? <TextField id="new-item-availability" label="Availability" value={newItemAvailability} onChange={onUpdateNewItem} variant="outlined" /> : null }
-							{ includeCost ? <TextField id="new-item-cost" label="Cost" value={newItemCost} onChange={onUpdateNewItem} variant="outlined" /> : null }
+							<TextField id="new-item-name" label="Custom" value={newItemName} onChange={onUpdateNewItem} className={classes.name} variant="outlined" />
+							{ includeAvailability ? <TextField id="new-item-availability" label="Availability" value={newItemAvailability} onChange={onUpdateNewItem} className={classes.availability} variant="outlined" /> : null }
+							{ includeCost ? <TextField id="new-item-cost" label="Cost" value={newItemCost} onChange={onUpdateNewItem} className={classes.cost} variant="outlined" /> : null }
 							<IconButton aria-label="create" onClick={onCreateNewItem} color="secondary" size="small">
 								<AddIcon />
 							</IconButton>

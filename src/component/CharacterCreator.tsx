@@ -13,12 +13,12 @@ import SelectCharacter from "./SelectCharacter";
 import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
 import { ActionType } from "../reducer";
-import Character from "./Character";
-import Attributes from "./Attributes";
-import Skills from "./Skills";
+import CharacterTab from "./CharacterTab";
+import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
 import { Qualities } from "../model/quality";
 import { Skills as SkillsType } from "../model/skills";
+import AttributesTab from "./AttributesTab";
 
 const useStyles = makeStyles({
     bar: {
@@ -65,13 +65,13 @@ const CharacterCreator: FC = () => {
     let selectedTabPanel: JSX.Element;
     switch (selectedTab) {
         case 0:
-            selectedTabPanel = <Character />
+            selectedTabPanel = <CharacterTab />
             break;
         case 1:
-            selectedTabPanel = <Attributes />
+            selectedTabPanel = <AttributesTab />
             break;
         case 2:
-            selectedTabPanel = <Skills />
+            selectedTabPanel = <SkillsTab />
             break;
         default:
             throw new Error(`Unknown tab index ${selectedTab}`);

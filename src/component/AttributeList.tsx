@@ -15,7 +15,7 @@ const useStyles = makeStyles({
     }
 });
 
-const Attributes: FC = () => {
+const AttributeList: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
     const { attributes, metaType } = character;
@@ -46,4 +46,4 @@ const Attributes: FC = () => {
     );
 };
 
-export default Attributes;
+export default AttributeList;

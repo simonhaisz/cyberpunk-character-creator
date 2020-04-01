@@ -7,7 +7,7 @@ import SkillList from "./SkillList";
 
 const breadcrums = ["Skills", "Knowledge"];
 
-const KnowledgeSkills: FC = () => {
+const KnowledgeSkillList: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
 	const allSkills = useGlobalState("skills");
@@ -38,4 +38,4 @@ const KnowledgeSkills: FC = () => {
     );
 }
 
-export default KnowledgeSkills;
+export default KnowledgeSkillList;
