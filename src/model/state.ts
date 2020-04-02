@@ -3,6 +3,7 @@ import { Karma } from "./karma";
 import { Qualities } from "./quality";
 import { Skills } from "./skills";
 import { Dictionary, Item } from "./custom-item";
+import { Spells } from "./magic";
 
 export type State = {
     characters: CharacterRef[];
@@ -11,5 +12,6 @@ export type State = {
     allQualities: Qualities;
     allSkills: Skills;
     allContacts: Item[];
+    allSpells: Spells;
     customItems: Dictionary<Item>;
 };

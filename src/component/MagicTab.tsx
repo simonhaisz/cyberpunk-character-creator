@@ -1,9 +1,10 @@
 import React, { FC } from "react";
+import SpellSection from "./SpellSection";
 
 const MagicTab: FC = () => {
 	return (
-		<div>Magic</div>
-	)
+		<SpellSection />
+	);
 };
 
 export default MagicTab;

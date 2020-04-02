@@ -1,5 +1,6 @@
 import { Character, CharacterRef } from "./model/character";
 import { Item, Dictionary } from "./model/custom-item";
+import { getDefaultCharacter } from "./data/default-character";
 
 const CHARACTER_KEY = "character";
 
@@ -8,7 +9,7 @@ function createCharacterKey(key: number): string {
 }
 
 export function loadCharacters(): CharacterRef[] {
-    const characters: CharacterRef[] = [];
+    const characters: CharacterRef[] = [getDefaultCharacter()];
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         if (key === null) {
@@ -28,6 +29,9 @@ export function loadCharacters(): CharacterRef[] {
 }
 
 export function loadCharacter(key: number): Character | undefined {
+    if (key === -1) {
+        return getDefaultCharacter();
+    }
     const character = localStorage.getItem(createCharacterKey(key));
     if (character) {
         return JSON.parse(character);

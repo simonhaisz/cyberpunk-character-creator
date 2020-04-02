@@ -2,11 +2,12 @@ import { Reducer } from "react";
 import { State } from "./model/state";
 import { getDefaultCharacter, isDefaultCharacter, hasDefaultKey } from "./data/default-character";
 import { Character, CharacterRef } from "./model/character";
-import { saveCharacter, clearCharacter, saveSelectedCharacter, loadCharacter, saveCustomItem } from "./persistance";
+import { saveCharacter, clearCharacter, loadCharacter, saveCustomItem } from "./persistance";
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { Qualities } from "./model/quality";
 import { Skills } from "./model/skills";
 import { Dictionary, Item } from "./model/custom-item";
+import { Spells } from "./model/magic";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -16,6 +17,7 @@ export enum ActionType {
     LoadQualities = "loadQualities",
     LoadSkills = "loadSkills",
     LoadContacts = "loadContacts",
+    LoadSpells = "loadSpells",
     LoadGear = "loadGear",
     LoadCustomItems = "loadCustomItems",
     AddCustomItem = "addCustomItem"
@@ -31,6 +33,7 @@ export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = Qualities;
 export type LoadSkillsData = Skills;
 export type LoadContactsData = Item[];
+export type LoadSpellsData = Spells;
 export type LoadCustomItemsData = Dictionary<Item>;
 export type AddCustomItemData = { path: string, item: Item };
 
@@ -65,7 +68,8 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
         }
         case ActionType.SelectCharacter: {
             const characterRef = action.data as SelectCharacterData;
-            saveSelectedCharacter(characterRef.key);
+            // Loading the app with a saved character can throw an error calculating karma cost, as the available data (qualities, etc) have not been loaded yet
+            // saveSelectedCharacter(characterRef.key);
             const selectedCharacter = loadCharacter(characterRef.key);
             if (!selectedCharacter) {
                 throw new Error(`Could not find saved character ${JSON.stringify(characterRef)}`);
@@ -88,6 +92,10 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
         case ActionType.LoadGear: {
             throw new Error(`'${ActionType.LoadGear}' action not supported`);
         }
+        case ActionType.LoadSpells: {
+            const allSpells = action.data as LoadSpellsData;
+            return { ...state, allSpells };
+        }
         case ActionType.LoadCustomItems: {
             const customItems = action.data as LoadCustomItemsData;
             return { ...state, customItems };
@@ -105,11 +113,12 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
 }
 
 export const INITIAL_STATE: State = {
-    characters: [getDefaultCharacter()],
+    characters: [],
     selectedCharacter: getDefaultCharacter(),
     karma: getDefaultKarma(),
     allQualities: { positive: [], negative: [] },
     allSkills: { active: [], knowledge: [], language: [] },
     allContacts: [],
+    allSpells: { combat: [], detection: [], health: [], illusion: [], manipulation: [] },
     customItems: {},
 };

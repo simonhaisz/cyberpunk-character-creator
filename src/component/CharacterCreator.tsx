@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import SelectCharacter from "./SelectCharacter";
 import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
-import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData } from "../reducer";
+import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData, LoadSpellsData } from "../reducer";
 import CharacterTab from "./CharacterTab";
 import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
@@ -55,6 +55,12 @@ const CharacterCreator: FC = () => {
             .then(contacts => {
                 const data = contacts.all as LoadContactsData;
                 dispatch({ type: ActionType.LoadContacts, data });
+            });
+        fetch("/data/magic.json")
+            .then(response => response.json())
+            .then(magic => {
+                const data = magic.spells as LoadSpellsData;
+                dispatch({ type: ActionType.LoadSpells, data });
             });
     }, [dispatch]);
 
