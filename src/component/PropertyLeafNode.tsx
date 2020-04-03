@@ -50,8 +50,6 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 		return parseInt(value.Cost!);
 	};
 
-	const totalCost = names.map(n => getCost(n)).reduce((a, b) => a + b, 0);
-
 	const addValue = (name: string) => {
 		const newValues = [...names, name];
 		onNamesUpdated(newValues);
@@ -76,7 +74,7 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 	return (
 		<Fragment>
 			<div className={classes.header}>
-				<Typography className={classes.headerLabel} style={{fontWeight}}>{header} ({totalCost})</Typography>
+				<Typography className={classes.headerLabel} style={{fontWeight}}>{header}</Typography>
 				<PickerButton
 					breadcrums={breadcrums}
 					values={allValues}

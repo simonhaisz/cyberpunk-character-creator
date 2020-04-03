@@ -1,5 +1,9 @@
 import React, { FC, Fragment } from "react";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
 import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { isArray } from "util";
 import { sentenceCase } from "change-case";
 import { Item } from "../model/custom-item";
@@ -8,6 +12,7 @@ import PropertyLeafNode from "./PropertyLeafNode";
 const fontWeights = [700, 600, 500, 400, 300, 200, 100];
 
 type Props = {
+	rootCost?: number;
 	parentPath: string;
 	name: string;
 	value: any;
@@ -15,7 +20,7 @@ type Props = {
 	onValueUpdated: (updatedValue: any) => void;
 };
 const PropertyNode: FC<Props> = (props: Props) => {
-	const { parentPath, name, value, all, onValueUpdated } = props;
+	const { rootCost = -1, parentPath, name, value, all, onValueUpdated } = props;
 	
 	const label = sentenceCase(name);
 	const fontWeight = fontWeights[parentPath.split(".").length - 1];
@@ -39,6 +44,7 @@ const PropertyNode: FC<Props> = (props: Props) => {
 			/>
 		)
 	} else {
+		const isRoot = parentPath.split(".").length === 1;
 		// branch-node
 		const children: JSX.Element[] = [];
 		for (const childName of Object.keys(value)) {
@@ -62,8 +68,14 @@ const PropertyNode: FC<Props> = (props: Props) => {
 		}
 		return (
 			<Fragment>
-				<Typography style={{fontWeight}}>{label}</Typography>
-				{ children }
+				<ExpansionPanel defaultExpanded={true}>
+					<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} >
+						<Typography style={{fontWeight}}>{label}{ isRoot ? (` (${rootCost})`) : null}</Typography>
+					</ExpansionPanelSummary>
+					<ExpansionPanelDetails>
+						<div>{ children }</div>
+					</ExpansionPanelDetails>
+				</ExpansionPanel>
 			</Fragment>
 		)
 	}

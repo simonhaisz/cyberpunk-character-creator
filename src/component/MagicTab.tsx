@@ -1,14 +1,12 @@
 import React, { FC } from "react";
 import PropertyTree from "./PropertyTree";
 import { useGlobalState, useDispatch } from "../context";
-import { Spells } from "../model/magic";
+import { Spells, getCharacterSpellsCost } from "../model/magic";
 import { ActionType, UpdateCharacterData } from "../reducer";
 import { makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	root: {
-		marginTop: 12,
-		marginLeft: 16,
 	},
 });
 
@@ -19,13 +17,15 @@ const MagicTab: FC = () => {
 	const { spells } = character;
 	const allSpells = useGlobalState("allSpells");
 
+	const cost = getCharacterSpellsCost(character);
+
 	const onSpellsUpdated = (updatedSpells: Spells) => {
 		const data: UpdateCharacterData = { ...character, spells: updatedSpells };
 		dispatch({ type: ActionType.UpdateCharacter, data });
 	};
 	return (
 		<div className={classes.root}>
-			<PropertyTree rootName="spells" rootValue={spells} rootAll={allSpells} onRootUpdated={onSpellsUpdated} />
+			<PropertyTree rootCost={cost} rootName="spells" rootValue={spells} rootAll={allSpells} onRootUpdated={onSpellsUpdated} />
 		</div>
 	);
 };
