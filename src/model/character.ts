@@ -1,5 +1,6 @@
 import { Contact } from "./contact";
 import { Spells } from "./magic";
+import { Qualities } from "./quality";
 
 export enum MetaType {
     Dwarf = "Dwarf",
@@ -27,7 +28,7 @@ export type CharacterRef = {
 export type Character = CharacterRef & {
     metaType: MetaType;
     attributes: Attribute[];
-    qualities: { negative: string[], positive: string[] };
+    qualities: Qualities;
     activeSkills: Skill[];
     knowledgeSkills: Skill[];
     languageSkills: Skill[];

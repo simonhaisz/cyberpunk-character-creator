@@ -83,6 +83,7 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 					removeValue={removeValue}
 					allowNewValues
 					createValue={createNewValue}
+					includeCost
 				/>
 			</div>
 			<List>

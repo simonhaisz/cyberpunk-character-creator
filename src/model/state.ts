@@ -1,6 +1,6 @@
 import { Character, CharacterRef } from "./character";
 import { Karma } from "./karma";
-import { Qualities } from "./quality";
+import { AllQualities } from "./quality";
 import { Skills } from "./skills";
 import { Dictionary, Item } from "./custom-item";
 import { Spells, Magic } from "./magic";
@@ -9,7 +9,7 @@ export type State = {
     characters: CharacterRef[];
     selectedCharacter: Character;
     karma: Karma;
-    allQualities: Qualities;
+    allQualities: AllQualities;
     allSkills: Skills;
     allContacts: Item[];
     allSpells: Spells;

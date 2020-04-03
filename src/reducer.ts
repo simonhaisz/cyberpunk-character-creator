@@ -4,7 +4,7 @@ import { getDefaultCharacter, isDefaultCharacter, hasDefaultKey } from "./data/d
 import { Character, CharacterRef } from "./model/character";
 import { saveCharacter, clearCharacter, loadCharacter, saveCustomItem } from "./persistance";
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
-import { Qualities } from "./model/quality";
+import { AllQualities } from "./model/quality";
 import { Skills } from "./model/skills";
 import { Dictionary, Item } from "./model/custom-item";
 import { Spells, Magic } from "./model/magic";
@@ -31,7 +31,7 @@ export type Action = {
 
 export type UpdateCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
-export type LoadQualitiesData = Qualities;
+export type LoadQualitiesData = AllQualities;
 export type LoadSkillsData = Skills;
 export type LoadContactsData = Item[];
 export type LoadSpellsData = Spells;
