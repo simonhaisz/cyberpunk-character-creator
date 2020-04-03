@@ -25,3 +25,7 @@ export function getCharacterSpellsCost(character: Character): number {
 	cost += getSpellsCost(character.spells.manipulation);
 	return cost;
 }
+
+export type Magic = {
+	spells: Spells;
+};

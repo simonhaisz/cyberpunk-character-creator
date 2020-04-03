@@ -7,7 +7,7 @@ import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { Qualities } from "./model/quality";
 import { Skills } from "./model/skills";
 import { Dictionary, Item } from "./model/custom-item";
-import { Spells } from "./model/magic";
+import { Spells, Magic } from "./model/magic";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -18,6 +18,7 @@ export enum ActionType {
     LoadSkills = "loadSkills",
     LoadContacts = "loadContacts",
     LoadSpells = "loadSpells",
+    LoadMagic = "loadMagic",
     LoadGear = "loadGear",
     LoadCustomItems = "loadCustomItems",
     AddCustomItem = "addCustomItem"
@@ -34,6 +35,7 @@ export type LoadQualitiesData = Qualities;
 export type LoadSkillsData = Skills;
 export type LoadContactsData = Item[];
 export type LoadSpellsData = Spells;
+export type LoadMagicData = Magic;
 export type LoadCustomItemsData = Dictionary<Item>;
 export type AddCustomItemData = { path: string, item: Item };
 
@@ -96,6 +98,10 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             const allSpells = action.data as LoadSpellsData;
             return { ...state, allSpells };
         }
+        case ActionType.LoadMagic: {
+            const magic = action.data as LoadMagicData;
+            return { ...state, magic };
+        }
         case ActionType.LoadCustomItems: {
             const customItems = action.data as LoadCustomItemsData;
             return { ...state, customItems };
@@ -120,5 +126,8 @@ export const INITIAL_STATE: State = {
     allSkills: { active: [], knowledge: [], language: [] },
     allContacts: [],
     allSpells: { combat: [], detection: [], health: [], illusion: [], manipulation: [] },
+    magic: {
+        spells: { combat: [], detection: [], health: [], illusion: [], manipulation: [] },
+    },
     customItems: {},
 };

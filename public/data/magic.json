@@ -2,549 +2,728 @@
     "spells": {
         "combat": [
             {
-                "Name": "Acid Stream"
+                "Name": "Acid Stream",
+                "Cost": "5"
             },
             {
-                "Name": "Ball Lightning"
+                "Name": "Ball Lightning",
+                "Cost": "5"
             },
             {
-                "Name": "Blast"
+                "Name": "Blast",
+                "Cost": "5"
             },
             {
-                "Name": "Clout"
+                "Name": "Clout",
+                "Cost": "5"
             },
             {
-                "Name": "Corrode [Object]"
+                "Name": "Corrode [Object]",
+                "Cost": "5"
             },
             {
-                "Name": "Death Touch"
+                "Name": "Death Touch",
+                "Cost": "5"
             },
             {
-                "Name": "Demolish [Object]"
+                "Name": "Demolish [Object]",
+                "Cost": "5"
             },
             {
-                "Name": "Fireball"
+                "Name": "Fireball",
+                "Cost": "5"
             },
             {
-                "Name": "Firewater"
+                "Name": "Firewater",
+                "Cost": "5"
             },
             {
-                "Name": "Flamethrower"
+                "Name": "Flamethrower",
+                "Cost": "5"
             },
             {
-                "Name": "Knockout"
+                "Name": "Knockout",
+                "Cost": "5"
             },
             {
-                "Name": "Lightning Bolt"
+                "Name": "Lightning Bolt",
+                "Cost": "5"
             },
             {
-                "Name": "Manaball"
+                "Name": "Manaball",
+                "Cost": "5"
             },
             {
-                "Name": "Manabolt"
+                "Name": "Manabolt",
+                "Cost": "5"
             },
             {
-                "Name": "Melt [Object]"
+                "Name": "Melt [Object]",
+                "Cost": "5"
             },
             {
-                "Name": "Napalm"
+                "Name": "Napalm",
+                "Cost": "5"
             },
             {
-                "Name": "One Less [Metatype/Species]"
+                "Name": "One Less [Metatype/Species]",
+                "Cost": "5"
             },
             {
-                "Name": "Powerball"
+                "Name": "Powerball",
+                "Cost": "5"
             },
             {
-                "Name": "Powerbolt"
+                "Name": "Powerbolt",
+                "Cost": "5"
             },
             {
-                "Name": "Punch"
+                "Name": "Punch",
+                "Cost": "5"
             },
             {
-                "Name": "Ram [Object]"
+                "Name": "Ram [Object]",
+                "Cost": "5"
             },
             {
-                "Name": "Shatter"
+                "Name": "Shatter",
+                "Cost": "5"
             },
             {
-                "Name": "Shattershield"
+                "Name": "Shattershield",
+                "Cost": "5"
             },
             {
-                "Name": "Slaughter [Metatype/Species]"
+                "Name": "Slaughter [Metatype/Species]",
+                "Cost": "5"
             },
             {
-                "Name": "Slay [Metatype/Species]"
+                "Name": "Slay [Metatype/Species]",
+                "Cost": "5"
             },
             {
-                "Name": "Sludge [Object]"
+                "Name": "Sludge [Object]",
+                "Cost": "5"
             },
             {
-                "Name": "Stunball"
+                "Name": "Stunball",
+                "Cost": "5"
             },
             {
-                "Name": "Stunbolt"
+                "Name": "Stunbolt",
+                "Cost": "5"
             },
             {
-                "Name": "Toxic Wave"
+                "Name": "Toxic Wave",
+                "Cost": "5"
             },
             {
-                "Name": "Wreck [Object]"
+                "Name": "Wreck [Object]",
+                "Cost": "5"
             }
         ],
         "detection": [
             {
-                "Name": "Analyze Device"
+                "Name": "Analyze Device",
+                "Cost": "5"
             },
             {
-                "Name": "Analyze Magic"
+                "Name": "Analyze Magic",
+                "Cost": "5"
             },
             {
-                "Name": "Analyze Truth"
+                "Name": "Analyze Truth",
+                "Cost": "5"
             },
             {
-                "Name": "Animal Sense"
+                "Name": "Animal Sense",
+                "Cost": "5"
             },
             {
-                "Name": "Area Thought Recognition"
+                "Name": "Area Thought Recognition",
+                "Cost": "5"
             },
             {
-                "Name": "Astral Clairvoyance"
+                "Name": "Astral Clairvoyance",
+                "Cost": "5"
             },
             {
-                "Name": "Astral Window"
+                "Name": "Astral Window",
+                "Cost": "5"
             },
             {
-                "Name": "Borrow Sense"
+                "Name": "Borrow Sense",
+                "Cost": "5"
             },
             {
-                "Name": "Catalog"
+                "Name": "Catalog",
+                "Cost": "5"
             },
             {
-                "Name": "Clairaudience"
+                "Name": "Clairaudience",
+                "Cost": "5"
             },
             {
-                "Name": "Clairvoyance"
+                "Name": "Clairvoyance",
+                "Cost": "5"
             },
             {
-                "Name": "Combat Sense"
+                "Name": "Combat Sense",
+                "Cost": "5"
             },
             {
-                "Name": "Detect Enemies"
+                "Name": "Detect Enemies",
+                "Cost": "5"
             },
             {
-                "Name": "Detect Individual"
+                "Name": "Detect Individual",
+                "Cost": "5"
             },
             {
-                "Name": "Detect Life"
+                "Name": "Detect Life",
+                "Cost": "5"
             },
             {
-                "Name": "Detect [Life Form]"
+                "Name": "Detect [Life Form]",
+                "Cost": "5"
             },
             {
-                "Name": "Detect Magic"
+                "Name": "Detect Magic",
+                "Cost": "5"
             },
             {
-                "Name": "Detect [Object]"
+                "Name": "Detect [Object]",
+                "Cost": "5"
             },
             {
-                "Name": "Diagnose"
+                "Name": "Diagnose",
+                "Cost": "5"
             },
             {
-                "Name": "Enhance Aim"
+                "Name": "Enhance Aim",
+                "Cost": "5"
             },
             {
-                "Name": "Eyes of the Pack"
+                "Name": "Eyes of the Pack",
+                "Cost": "5"
             },
             {
-                "Name": "Hawkeye"
+                "Name": "Hawkeye",
+                "Cost": "5"
             },
             {
-                "Name": "Mana Window"
+                "Name": "Mana Window",
+                "Cost": "5"
             },
             {
-                "Name": "Mindlink"
+                "Name": "Mindlink",
+                "Cost": "5"
             },
             {
-                "Name": "Mindnet"
+                "Name": "Mindnet",
+                "Cost": "5"
             },
             {
-                "Name": "Mind Probe"
+                "Name": "Mind Probe",
+                "Cost": "5"
             },
             {
-                "Name": "Night Vision"
+                "Name": "Night Vision",
+                "Cost": "5"
             },
             {
-                "Name": "[Sense] Cryptesthesia"
+                "Name": "[Sense] Cryptesthesia",
+                "Cost": "5"
             },
             {
-                "Name": "Spatial Sense"
+                "Name": "Spatial Sense",
+                "Cost": "5"
             },
             {
-                "Name": "Thermographic Vision"
+                "Name": "Thermographic Vision",
+                "Cost": "5"
             },
             {
-                "Name": "Thought Recognition"
+                "Name": "Thought Recognition",
+                "Cost": "5"
             },
             {
-                "Name": "Translate"
+                "Name": "Translate",
+                "Cost": "5"
             }
         ],
         "health": [
             {
-                "Name": "Alleviate Addiction"
+                "Name": "Alleviate Addiction",
+                "Cost": "5"
             },
             {
-                "Name": "Alleviate Allergy"
+                "Name": "Alleviate Allergy",
+                "Cost": "5"
             },
             {
-                "Name": "Antidote"
+                "Name": "Antidote",
+                "Cost": "5"
             },
             {
-                "Name": "Awaken"
+                "Name": "Awaken",
+                "Cost": "5"
             },
             {
-                "Name": "Crank"
+                "Name": "Crank",
+                "Cost": "5"
             },
             {
-                "Name": "Cure Disease"
+                "Name": "Cure Disease",
+                "Cost": "5"
             },
             {
-                "Name": "Decrease [Attribute]"
+                "Name": "Decrease [Attribute]",
+                "Cost": "5"
             },
             {
-                "Name": "Decrease Reflexes"
+                "Name": "Decrease Reflexes",
+                "Cost": "5"
             },
             {
-                "Name": "Detox"
+                "Name": "Detox",
+                "Cost": "5"
             },
             {
-                "Name": "Enabler"
+                "Name": "Enabler",
+                "Cost": "5"
             },
             {
-                "Name": "Fast"
+                "Name": "Fast",
+                "Cost": "5"
             },
             {
-                "Name": "Heal"
+                "Name": "Heal",
+                "Cost": "5"
             },
             {
-                "Name": "Healthy Glow"
+                "Name": "Healthy Glow",
+                "Cost": "5"
             },
             {
-                "Name": "Hibernate"
+                "Name": "Hibernate",
+                "Cost": "5"
             },
             {
-                "Name": "Increase [Attribute]"
+                "Name": "Increase [Attribute]",
+                "Cost": "5"
             },
             {
-                "Name": "Increase Reflexes"
+                "Name": "Increase Reflexes",
+                "Cost": "5"
             },
             {
-                "Name": "Intoxication"
+                "Name": "Intoxication",
+                "Cost": "5"
             },
             {
-                "Name": "Nutrition"
+                "Name": "Nutrition",
+                "Cost": "5"
             },
             {
-                "Name": "Oxygenate"
+                "Name": "Oxygenate",
+                "Cost": "5"
             },
             {
-                "Name": "Prophylaxis"
+                "Name": "Prophylaxis",
+                "Cost": "5"
             },
             {
-                "Name": "Resist Pain"
+                "Name": "Resist Pain",
+                "Cost": "5"
             },
             {
-                "Name": "Stabilize"
+                "Name": "Stabilize",
+                "Cost": "5"
             },
             {
-                "Name": "Stim"
+                "Name": "Stim",
+                "Cost": "5"
             }
         ],
         "illusion": [
             {
-                "Name": "Agony"
+                "Name": "Agony",
+                "Cost": "5"
             },
             {
-                "Name": "Bugs"
+                "Name": "Bugs",
+                "Cost": "5"
             },
             {
-                "Name": "Camouflage"
+                "Name": "Camouflage",
+                "Cost": "5"
             },
             {
-                "Name": "Chaff"
+                "Name": "Chaff",
+                "Cost": "5"
             },
             {
-                "Name": "Chaos"
+                "Name": "Chaos",
+                "Cost": "5"
             },
             {
-                "Name": "Chaotic World"
+                "Name": "Chaotic World",
+                "Cost": "5"
             },
             {
-                "Name": "Confusion"
+                "Name": "Confusion",
+                "Cost": "5"
             },
             {
-                "Name": "Double Image"
+                "Name": "Double Image",
+                "Cost": "5"
             },
             {
-                "Name": "Dream"
+                "Name": "Dream",
+                "Cost": "5"
             },
             {
-                "Name": "Entertainment"
+                "Name": "Entertainment",
+                "Cost": "5"
             },
             {
-                "Name": "Flak"
+                "Name": "Flak",
+                "Cost": "5"
             },
             {
-                "Name": "Foreboding"
+                "Name": "Foreboding",
+                "Cost": "5"
             },
             {
-                "Name": "Hot Potato"
+                "Name": "Hot Potato",
+                "Cost": "5"
             },
             {
-                "Name": "Hush"
+                "Name": "Hush",
+                "Cost": "5"
             },
             {
-                "Name": "Improved Invisibility"
+                "Name": "Improved Invisibility",
+                "Cost": "5"
             },
             {
-                "Name": "Invisibility"
+                "Name": "Invisibility",
+                "Cost": "5"
             },
             {
-                "Name": "Mask"
+                "Name": "Mask",
+                "Cost": "5"
             },
             {
-                "Name": "Mass Agony"
+                "Name": "Mass Agony",
+                "Cost": "5"
             },
             {
-                "Name": "Mass Confusion"
+                "Name": "Mass Confusion",
+                "Cost": "5"
             },
             {
-                "Name": "Mass [Sense]"
+                "Name": "Mass [Sense]",
+                "Cost": "5"
             },
             {
-                "Name": "Orgasm"
+                "Name": "Orgasm",
+                "Cost": "5"
             },
             {
-                "Name": "Orgy"
+                "Name": "Orgy",
+                "Cost": "5"
             },
             {
-                "Name": "Phantasm"
+                "Name": "Phantasm",
+                "Cost": "5"
             },
             {
-                "Name": "Physical Camouflage"
+                "Name": "Physical Camouflage",
+                "Cost": "5"
             },
             {
-                "Name": "Physical Double Image"
+                "Name": "Physical Double Image",
+                "Cost": "5"
             },
             {
-                "Name": "Physical Mask"
+                "Name": "Physical Mask",
+                "Cost": "5"
             },
             {
-                "Name": "[Sense] Removal"
+                "Name": "[Sense] Removal",
+                "Cost": "5"
             },
             {
-                "Name": "Silence"
+                "Name": "Silence",
+                "Cost": "5"
             },
             {
-                "Name": "Sound Barrier"
+                "Name": "Sound Barrier",
+                "Cost": "5"
             },
             {
-                "Name": "Stealth"
+                "Name": "Stealth",
+                "Cost": "5"
             },
             {
-                "Name": "Stench"
+                "Name": "Stench",
+                "Cost": "5"
             },
             {
-                "Name": "Stink"
+                "Name": "Stink",
+                "Cost": "5"
             },
             {
-                "Name": "Swarm"
+                "Name": "Swarm",
+                "Cost": "5"
             },
             {
-                "Name": "Trid Entertainment"
+                "Name": "Trid Entertainment",
+                "Cost": "5"
             },
             {
-                "Name": "Trid Phantasm"
+                "Name": "Trid Phantasm",
+                "Cost": "5"
             },
             {
-                "Name": "Vehicle Mask"
+                "Name": "Vehicle Mask",
+                "Cost": "5"
             }
         ],
         "manipulation": [
             {
-                "Name": "Alter Memory"
+                "Name": "Alter Memory",
+                "Cost": "5"
             },
             {
-                "Name": "Alter Temperature"
+                "Name": "Alter Temperature",
+                "Cost": "5"
             },
             {
-                "Name": "Animate"
+                "Name": "Animate",
+                "Cost": "5"
             },
             {
-                "Name": "Armor"
+                "Name": "Armor",
+                "Cost": "5"
             },
             {
-                "Name": "Astral Armor"
+                "Name": "Astral Armor",
+                "Cost": "5"
             },
             {
-                "Name": "Bind"
+                "Name": "Bind",
+                "Cost": "5"
             },
             {
-                "Name": "Calm Animal"
+                "Name": "Calm Animal",
+                "Cost": "5"
             },
             {
-                "Name": "Calm Pack"
+                "Name": "Calm Pack",
+                "Cost": "5"
             },
             {
-                "Name": "Catfall"
+                "Name": "Catfall",
+                "Cost": "5"
             },
             {
-                "Name": "Clean [Element]"
+                "Name": "Clean [Element]",
+                "Cost": "5"
             },
             {
-                "Name": "Compel Truth"
+                "Name": "Compel Truth",
+                "Cost": "5"
             },
             {
-                "Name": "Control Actions"
+                "Name": "Control Actions",
+                "Cost": "5"
             },
             {
-                "Name": "Control Animal"
+                "Name": "Control Animal",
+                "Cost": "5"
             },
             {
-                "Name": "Control Emotions"
+                "Name": "Control Emotions",
+                "Cost": "5"
             },
             {
-                "Name": "Control Pack"
+                "Name": "Control Pack",
+                "Cost": "5"
             },
             {
-                "Name": "Control Thoughts"
+                "Name": "Control Thoughts",
+                "Cost": "5"
             },
             {
-                "Name": "[Critter] Form"
+                "Name": "[Critter] Form",
+                "Cost": "5"
             },
             {
-                "Name": "Deflection"
+                "Name": "Deflection",
+                "Cost": "5"
             },
             {
-                "Name": "[Element] Aura"
+                "Name": "[Element] Aura",
+                "Cost": "5"
             },
             {
-                "Name": "[Element] Wall"
+                "Name": "[Element] Wall",
+                "Cost": "5"
             },
             {
-                "Name": "Fashion"
+                "Name": "Fashion",
+                "Cost": "5"
             },
             {
-                "Name": "Fix"
+                "Name": "Fix",
+                "Cost": "5"
             },
             {
-                "Name": "Fling"
+                "Name": "Fling",
+                "Cost": "5"
             },
             {
-                "Name": "Gecko Crawl"
+                "Name": "Gecko Crawl",
+                "Cost": "5"
             },
             {
-                "Name": "Glue Strip"
+                "Name": "Glue Strip",
+                "Cost": "5"
             },
             {
-                "Name": "Ice Sheet"
+                "Name": "Ice Sheet",
+                "Cost": "5"
             },
             {
-                "Name": "Ignite"
+                "Name": "Ignite",
+                "Cost": "5"
             },
             {
-                "Name": "Influence"
+                "Name": "Influence",
+                "Cost": "5"
             },
             {
-                "Name": "Interference"
+                "Name": "Interference",
+                "Cost": "5"
             },
             {
-                "Name": "Levitate"
+                "Name": "Levitate",
+                "Cost": "5"
             },
             {
-                "Name": "Light"
+                "Name": "Light",
+                "Cost": "5"
             },
             {
-                "Name": "Lock"
+                "Name": "Lock",
+                "Cost": "5"
             },
             {
-                "Name": "Magic Fingers"
+                "Name": "Magic Fingers",
+                "Cost": "5"
             },
             {
-                "Name": "Makeover"
+                "Name": "Makeover",
+                "Cost": "5"
             },
             {
-                "Name": "Mana Barrier"
+                "Name": "Mana Barrier",
+                "Cost": "5"
             },
             {
-                "Name": "Mana Bind"
+                "Name": "Mana Bind",
+                "Cost": "5"
             },
             {
-                "Name": "Mana Net"
+                "Name": "Mana Net",
+                "Cost": "5"
             },
             {
-                "Name": "Mana Static"
+                "Name": "Mana Static",
+                "Cost": "5"
             },
             {
-                "Name": "Mass Animate"
+                "Name": "Mass Animate",
+                "Cost": "5"
             },
             {
-                "Name": "Mist"
+                "Name": "Mist",
+                "Cost": "5"
             },
             {
-                "Name": "Mob Control"
+                "Name": "Mob Control",
+                "Cost": "5"
             },
             {
-                "Name": "Mob Mind"
+                "Name": "Mob Mind",
+                "Cost": "5"
             },
             {
-                "Name": "Mob Mood"
+                "Name": "Mob Mood",
+                "Cost": "5"
             },
             {
-                "Name": "Net"
+                "Name": "Net",
+                "Cost": "5"
             },
             {
-                "Name": "Offensive Mana Barrier"
+                "Name": "Offensive Mana Barrier",
+                "Cost": "5"
             },
             {
-                "Name": "Petrify"
+                "Name": "Petrify",
+                "Cost": "5"
             },
             {
-                "Name": "Physical Barrier"
+                "Name": "Physical Barrier",
+                "Cost": "5"
             },
             {
-                "Name": "Poltergeist"
+                "Name": "Poltergeist",
+                "Cost": "5"
             },
             {
-                "Name": "Preserve"
+                "Name": "Preserve",
+                "Cost": "5"
             },
             {
-                "Name": "Pulse"
+                "Name": "Pulse",
+                "Cost": "5"
             },
             {
-                "Name": "Reinforce"
+                "Name": "Reinforce",
+                "Cost": "5"
             },
             {
-                "Name": "Shadow"
+                "Name": "Shadow",
+                "Cost": "5"
             },
             {
-                "Name": "Shapechange"
+                "Name": "Shapechange",
+                "Cost": "5"
             },
             {
-                "Name": "Shape [Material]"
+                "Name": "Shape [Material]",
+                "Cost": "5"
             },
             {
-                "Name": "Spirit Barrier"
+                "Name": "Spirit Barrier",
+                "Cost": "5"
             },
             {
-                "Name": "Spirit Zapper"
+                "Name": "Spirit Zapper",
+                "Cost": "5"
             },
             {
-                "Name": "Sterilize"
+                "Name": "Sterilize",
+                "Cost": "5"
             },
             {
-                "Name": "Turn to Goo"
+                "Name": "Turn to Goo",
+                "Cost": "5"
             }
         ]
     }
