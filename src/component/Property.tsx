@@ -10,7 +10,8 @@ import { NamedProperty } from "../model/character";
 const useStyles = makeStyles({
     root: {
         display: "flex",
-        height: 50
+        height: 50,
+        marginTop: 20,
     },
     name: {
         width: 200

@@ -1,16 +1,21 @@
-import React, { FC } from "react";
+import React, { FC, Fragment } from "react";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import Typography from "@material-ui/core/Typography";
+import { makeStyles } from "@material-ui/core";
 import { Contact as ContactData, getContactCost, getContactRatingCost } from "../model/contact";
-import { Typography, makeStyles } from "@material-ui/core";
 import Property from "./Property";
 import { NamedProperty } from "../model/character";
 
 const useStyles = makeStyles({
-	root: {
+	headerLabel: {
+		fontWeight: 700,
+	},
+	details: {
 		display: "flex",
 		flexDirection: "column",
-	},
-    header: {
-        marginBottom: 40,
 	},
 	rating: {
 		marginBottom: 20,
@@ -40,31 +45,39 @@ const Contact: FC<Props> = (props: Props) => {
 	};
 
 	return (
-		<div className={classes.root}>
-			<Typography className={classes.header} variant="h6">{contact.name} ({contactCost})</Typography>
-			<div className={classes.rating}>
-				<Property
-					property={connection}
-					onUpdate={onUpdateConnection}
-					min={1}
-					max={3}
-					step={2}
-					formatDisplayValue={(value => value.toString())}
-					computeCost={getContactRatingCost}
-				/>
-			</div>
-			<div className={classes.rating}>
-				<Property
-					property={loyalty}
-					onUpdate={onUpdateLoyalty}
-					min={1}
-					max={5}
-					step={2}
-					formatDisplayValue={(value => value.toString())}
-					computeCost={getContactRatingCost}
-				/>
-			</div>
-		</div>
+		<Fragment>
+			<ExpansionPanel defaultExpanded={true}>
+				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+					<Typography className={classes.headerLabel}>{contact.name} ({contactCost})</Typography>
+				</ExpansionPanelSummary>
+				<ExpansionPanelDetails>
+					<div className={classes.details}>
+						<div className={classes.rating}>
+							<Property
+								property={connection}
+								onUpdate={onUpdateConnection}
+								min={1}
+								max={3}
+								step={2}
+								formatDisplayValue={(value => value.toString())}
+								computeCost={getContactRatingCost}
+							/>
+						</div>
+						<div className={classes.rating}>
+							<Property
+								property={loyalty}
+								onUpdate={onUpdateLoyalty}
+								min={1}
+								max={5}
+								step={2}
+								formatDisplayValue={(value => value.toString())}
+								computeCost={getContactRatingCost}
+							/>
+						</div>
+					</div>
+				</ExpansionPanelDetails>
+			</ExpansionPanel>
+		</Fragment>
 	);
 }
 

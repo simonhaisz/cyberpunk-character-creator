@@ -4,9 +4,10 @@ import ListItem from "@material-ui/core/ListItem";
 import ExpansionPanel from "@material-ui/core/ExpansionPanel";
 import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
 import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
 import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import { makeStyles, FormControlLabel } from "@material-ui/core";
+import { makeStyles } from "@material-ui/core";
 import { Skill as SkillData } from "../model/character";
 import { Item, getChildItems } from "../model/custom-item";
 import { AddCustomItemData, ActionType } from "../reducer";
@@ -23,7 +24,8 @@ const useStyles = makeStyles({
         paddingTop: 12,
     },
     headerLabel: {
-        lineHeight: 3
+        lineHeight: 3,
+        fontWeight: 700,
     },
 });
 
@@ -80,21 +82,21 @@ const SkillList: FC<Props> = (props: Props) => {
 	return (
         <Fragment>
             <ExpansionPanel defaultExpanded={true}>
-                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} >
-                <FormControlLabel
-                    onClick={(event) => event.stopPropagation()}
-                    onFocus={(event) => event.stopPropagation()}
-                    control={<PickerButton
-                        breadcrums={breadcrums}
-                        values={allSkills}
-                        selectedValueNames={skills.map(s => s.name)}
-                        addValue={addSkill}
-                        removeValue={removeSkill}
-                        allowNewValues
-                        createValue={createNewSkill}
-                    />}
-                    label=""
-                />
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
+                    <FormControlLabel
+                        onClick={(event) => event.stopPropagation()}
+                        onFocus={(event) => event.stopPropagation()}
+                        control={<PickerButton
+                            breadcrums={breadcrums}
+                            values={allSkills}
+                            selectedValueNames={skills.map(s => s.name)}
+                            addValue={addSkill}
+                            removeValue={removeSkill}
+                            allowNewValues
+                            createValue={createNewSkill}
+                        />}
+                        label=""
+                    />
                     <Typography className={classes.headerLabel}>{headerLabel}</Typography>
                 </ExpansionPanelSummary>
                 <ExpansionPanelDetails>

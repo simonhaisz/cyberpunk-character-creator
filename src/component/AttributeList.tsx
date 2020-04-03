@@ -14,6 +14,7 @@ const useStyles = makeStyles({
         marginBottom: 20,
         paddingLeft: 16,
         paddingTop: 12,
+        fontWeight: 700,
     }
 });
 

@@ -1,7 +1,7 @@
-import React, { FC } from "react";
+import React, { FC, Fragment } from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListSubheader from "@material-ui/core/ListSubheader";
+import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
 import PickerButton from "./PickerButton";
 import Contact from "./Contact";
@@ -12,10 +12,12 @@ import { getChildItems, Item } from "../model/custom-item";
 
 const useStyles = makeStyles({
 	header: {
-
+		display: "flex",
+		flexDirection: "row",
 	},
 	headerLabel: {
-
+		lineHeight: 3,
+		fontWeight: 700,
 	},
 });
 
@@ -71,31 +73,29 @@ const ContactList: FC = () => {
     };
 
 	return (
-        <List subheader={
-            <div className={classes.header}>
-                <ListSubheader>
-                    {headerLabel}
-                    <PickerButton
-                        breadcrums={breadcrums}
-                        values={allContacts}
-                        selectedValueNames={selectedContacts.map(s => s.name)}
-                        addValue={addContact}
-                        removeValue={removeContact}
-                        allowNewValues
-                        createValue={createNewContact}
-                    />
-                </ListSubheader>
-            </div>
-        }
-        >
-        {
-            selectedContacts.map(c => (
-                <ListItem key={c.name}>
-                    <Contact contact={c} onUpdate={onContactUpdate} />
-                </ListItem>
-            ))
-        }
-        </List>
+		<Fragment>
+			<div className={classes.header}>
+				<PickerButton
+					breadcrums={breadcrums}
+					values={allContacts}
+					selectedValueNames={selectedContacts.map(s => s.name)}
+					addValue={addContact}
+					removeValue={removeContact}
+					allowNewValues
+					createValue={createNewContact}
+				/>
+				<Typography className={classes.headerLabel}>{headerLabel}</Typography>
+			</div>
+			<List>
+				{
+					selectedContacts.map(c => (
+						<ListItem key={c.name}>
+							<Contact contact={c} onUpdate={onContactUpdate} />
+						</ListItem>
+					))
+				}
+				</List>
+		</Fragment>
 	);
 }
 
