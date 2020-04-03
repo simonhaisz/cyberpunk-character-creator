@@ -1,8 +1,12 @@
-import React, { FC } from "react";
+import React, { FC, Fragment } from "react";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListSubheader from "@material-ui/core/ListSubheader";
-import { makeStyles } from "@material-ui/core";
+import ExpansionPanel from "@material-ui/core/ExpansionPanel";
+import ExpansionPanelSummary from "@material-ui/core/ExpansionPanelSummary";
+import ExpansionPanelDetails from "@material-ui/core/ExpansionPanelDetails";
+import Typography from "@material-ui/core/Typography";
+import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
+import { makeStyles, FormControlLabel } from "@material-ui/core";
 import { Skill as SkillData } from "../model/character";
 import { Item, getChildItems } from "../model/custom-item";
 import { AddCustomItemData, ActionType } from "../reducer";
@@ -15,7 +19,12 @@ const useStyles = makeStyles({
         display: "flex",
         flexDirection: "row",
         marginBottom: 20,
-    }
+        paddingLeft: 16,
+        paddingTop: 12,
+    },
+    headerLabel: {
+        lineHeight: 3
+    },
 });
 
 type Props = {
@@ -69,11 +78,13 @@ const SkillList: FC<Props> = (props: Props) => {
     };
 
 	return (
-        <List subheader={
-            <div className={classes.header}>
-                <ListSubheader>
-                    {headerLabel}
-                    <PickerButton
+        <Fragment>
+            <ExpansionPanel defaultExpanded={true}>
+                <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} >
+                <FormControlLabel
+                    onClick={(event) => event.stopPropagation()}
+                    onFocus={(event) => event.stopPropagation()}
+                    control={<PickerButton
                         breadcrums={breadcrums}
                         values={allSkills}
                         selectedValueNames={skills.map(s => s.name)}
@@ -81,19 +92,24 @@ const SkillList: FC<Props> = (props: Props) => {
                         removeValue={removeSkill}
                         allowNewValues
                         createValue={createNewSkill}
-                    />
-                </ListSubheader>
-            </div>
-        }
-        >
-        {
-            skills.map(s => (
-                <ListItem key={s.name}>
-                    <Skill skill={s} onUpdate={onSkillUpdate} computeCost={computeSkillCost} />
-                </ListItem>
-            ))
-        }
-        </List>
+                    />}
+                    label=""
+                />
+                    <Typography className={classes.headerLabel}>{headerLabel}</Typography>
+                </ExpansionPanelSummary>
+                <ExpansionPanelDetails>
+                    <List>
+                    {
+                        skills.map(s => (
+                            <ListItem key={s.name}>
+                                <Skill skill={s} onUpdate={onSkillUpdate} computeCost={computeSkillCost} />
+                            </ListItem>
+                        ))
+                    }
+                    </List>
+                </ExpansionPanelDetails>
+            </ExpansionPanel>
+        </Fragment>
 	);
 };
 

@@ -15,7 +15,7 @@ const LanguageSkillList: FC = () => {
 	const { languageSkills } = character;
 
 	const languageSkillsCost = getKnowledgeSkillsCost(languageSkills);
-    const headerLabel = `Language Skills (${languageSkillsCost}) +Native`;
+    const headerLabel = `Language Skills (${languageSkillsCost}) + Native`;
 
     const allLanguageSkills = [...allSkills.language];
 

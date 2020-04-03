@@ -1,8 +1,8 @@
-import React, { FC } from "react";
+import React, { FC, Fragment } from "react";
 import { useDispatch, useGlobalState } from "../context";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
-import ListSubheader from "@material-ui/core/ListSubheader";
+import Typography from "@material-ui/core/Typography";
 import Attribute from "./Attribute";
 import { Attribute as AttributeData, isAwakened } from "../model/character";
 import { ActionType } from "../reducer";
@@ -12,6 +12,8 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles({
     header: {
         marginBottom: 20,
+        paddingLeft: 16,
+        paddingTop: 12,
     }
 });
 
@@ -36,15 +38,18 @@ const AttributeList: FC = () => {
         });
     };
     return (
-        <List subheader={<ListSubheader className={classes.header}>Attributes ({attributesCost})</ListSubheader>}>
-            {
-                filteredAttributes.map(a => (
-                    <ListItem key={a.name}>
-                        <Attribute attribute={a} metaType={metaType} onUpdate={onUpdate} />
-                    </ListItem>
-                ))
-            }
-        </List>
+        <Fragment>
+            <Typography className={classes.header}>Attributes ({attributesCost})</Typography>
+            <List>
+                {
+                    filteredAttributes.map(a => (
+                        <ListItem key={a.name}>
+                            <Attribute attribute={a} metaType={metaType} onUpdate={onUpdate} />
+                        </ListItem>
+                    ))
+                }
+            </List>
+        </Fragment>
     );
 };
 

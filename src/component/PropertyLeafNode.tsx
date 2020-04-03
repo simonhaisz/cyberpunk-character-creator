@@ -16,6 +16,7 @@ const useStyles = makeStyles({
 	},
 	headerLabel: {
 		lineHeight: 3,
+		marginLeft: 16
 	},
 });
 
@@ -74,7 +75,6 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 	return (
 		<Fragment>
 			<div className={classes.header}>
-				<Typography className={classes.headerLabel} style={{fontWeight}}>{header}</Typography>
 				<PickerButton
 					breadcrums={breadcrums}
 					values={allValues}
@@ -85,6 +85,7 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 					createValue={createNewValue}
 					includeCost
 				/>
+				<Typography className={classes.headerLabel} style={{fontWeight}}>{header}</Typography>
 			</div>
 			<List>
 				{
