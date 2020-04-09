@@ -1,4 +1,4 @@
-Upgrade	Availability	Cost
+Name	Availability	Cost
 Firewall (4, 6)	4, 6	300, 1500
 Response (4, 6)	4, 6	1500, 7500
 Signal (4, 6)	4, 6	500, 1500

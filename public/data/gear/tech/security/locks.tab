@@ -1,4 +1,4 @@
-Lock	Availability	Cost
+Name	Availability	Cost
 Key Lock (2, 4, 6)	4, 6, 8	10, 50, 150
 Maglock (2, 4, 6)	2, 3, 4	100, 500, 1500
 Keypad / Card Reader	-	-

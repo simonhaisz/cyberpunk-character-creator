@@ -1,4 +1,4 @@
-Sensor Function	Capacity	Availability	Cost
+Name	Capacity	Availability	Cost
 Atmosphere Sensor (1, 2, 3)	[1, 2, 3]	2, 3, 4	20, 100, 300
 Cyberware Scanner (2, 4, 6)	[1, 2, 3]	4R, 6R, 8R	200, 1000, 3000
 Directional Microphone (2, 4, 6)	[1, 2, 3]	4, 6, 8	50, 250, 750

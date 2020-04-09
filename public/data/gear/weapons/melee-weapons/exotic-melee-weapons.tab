@@ -1,4 +1,4 @@
-Exotic Melee Weapon	Reach	Damage	AP	STR Min	Availability	Cost
+Name	Reach	Damage	AP	STR Min	Availability	Cost
 Garrote	-	(STR/2)P	-	-	4F	20
 Monofilament Garrote	-	8P	-4	-	18F	2000
 Monofilament Whip	2	8P	-4	3	12F	5000

@@ -1,4 +1,4 @@
-Bodyware	Essence	Capacity	Availability	Cost
+Name	Essence	Capacity	Availability	Cost
 Autoinjector (Reusable, One-shot, Extra Capacity)	0.1, 0.05, -	[0]	4, 8, -	500, 1000, 500
 Balance Tail	0.5	- / [2]	9	5000
 Biomonitor	0.3	[1]	4	1000

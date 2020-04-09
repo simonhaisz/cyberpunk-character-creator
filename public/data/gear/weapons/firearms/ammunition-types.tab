@@ -1,4 +1,4 @@
-Ammunition	Damage	AP	Armor	Availability	Cost (per X shots)
+Name	Damage	AP	Armor	Availability	Cost (per X shots)
 Armor Piercing	-	-2	Ballistic	8F	20
 APDS	-2	-6	Ballistic	16F	100
 Capsule	-2S	+2	Impact	4	50

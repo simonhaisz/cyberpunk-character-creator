@@ -2,271 +2,271 @@
     "augmentations": {
         "basic-bioware": [
             {
-                "Basic Bioware": "Adrenal Pump (1, 2, 3)",
+                "Name": "Adrenal Pump (1, 2, 3)",
                 "Essence": "0.75, 1.5, 2.25",
                 "Availability": "6F, 9F, 12F",
                 "Cost": "30000, 150000, 450000"
             },
             {
-                "Basic Bioware": "Bone Density Augmentation (1, 2, 3)",
+                "Name": "Bone Density Augmentation (1, 2, 3)",
                 "Essence": "0.3, 0.6, 0.9",
                 "Availability": "8R, 12R, 16R",
                 "Cost": "20000, 100000, 300000"
             },
             {
-                "Basic Bioware": "Cat’s Eyes",
+                "Name": "Cat’s Eyes",
                 "Essence": "0.1",
                 "Availability": "4",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Chemical Gland",
+                "Name": "Chemical Gland",
                 "Essence": "0.3",
                 "Availability": "12*",
                 "Cost": "30000 + (compound x 100)"
             },
             {
-                "Basic Bioware": "Exhalation Spray",
+                "Name": "Exhalation Spray",
                 "Essence": "0.1",
                 "Availability": "-",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Internal Release",
+                "Name": "Internal Release",
                 "Essence": "-",
                 "Availability": "-",
                 "Cost": "1000"
             },
             {
-                "Basic Bioware": "Spit",
+                "Name": "Spit",
                 "Essence": "0.1",
                 "Availability": "-",
                 "Cost": "3000"
             },
             {
-                "Basic Bioware": "Weapon Reservoir",
+                "Name": "Weapon Reservoir",
                 "Essence": "0.1",
                 "Availability": "-",
                 "Cost": "2000"
             },
             {
-                "Basic Bioware": "Cosmetic Modification",
+                "Name": "Cosmetic Modification",
                 "Essence": "-",
                 "Availability": "4-16",
                 "Cost": "1000-50000"
             },
             {
-                "Basic Bioware": "Digestive Expansion",
+                "Name": "Digestive Expansion",
                 "Essence": "0.5",
                 "Availability": "4",
                 "Cost": "20000"
             },
             {
-                "Basic Bioware": "Echolocation",
+                "Name": "Echolocation",
                 "Essence": "0.1",
                 "Availability": "8",
                 "Cost": "15000"
             },
             {
-                "Basic Bioware": "Elastic Joints",
+                "Name": "Elastic Joints",
                 "Essence": "0.3",
                 "Availability": "10",
                 "Cost": "15000"
             },
             {
-                "Basic Bioware": "Enhanced Articulation",
+                "Name": "Enhanced Articulation",
                 "Essence": "0.3",
                 "Availability": "12",
                 "Cost": "40000"
             },
             {
-                "Basic Bioware": "Enhanced Pheromone Receptors (1, 2, 3)",
+                "Name": "Enhanced Pheromone Receptors (1, 2, 3)",
                 "Essence": "0.1",
                 "Availability": "10, 15, 20",
                 "Cost": "5000, 25000, 75000"
             },
             {
-                "Basic Bioware": "Extended Volume (1, 2, 3)",
+                "Name": "Extended Volume (1, 2, 3)",
                 "Essence": "0.1, 0.2, 0.3",
                 "Availability": "4, 6, 8",
                 "Cost": "4000, 20000, 60000"
             },
             {
-                "Basic Bioware": "False Front (1, 2, 3)",
+                "Name": "False Front (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "8F, 12F, 16F",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Basic Bioware": "Mimic Option",
+                "Name": "Mimic Option",
                 "Essence": "-",
                 "Availability": "+4F",
                 "Cost": "50000"
             },
             {
-                "Basic Bioware": "Gecko Hands",
+                "Name": "Gecko Hands",
                 "Essence": "0.1",
                 "Availability": "6",
                 "Cost": "10000"
             },
             {
-                "Basic Bioware": "Gills",
+                "Name": "Gills",
                 "Essence": "0.2",
                 "Availability": "6",
                 "Cost": "10000"
             },
             {
-                "Basic Bioware": "Hearing Enhancement",
+                "Name": "Hearing Enhancement",
                 "Essence": "0.1",
                 "Availability": "6",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Metabolic Arrestor",
+                "Name": "Metabolic Arrestor",
                 "Essence": "0.3",
                 "Availability": "8",
                 "Cost": "10000"
             },
             {
-                "Basic Bioware": "Muscle Augmentation (1, 2, 3)",
+                "Name": "Muscle Augmentation (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "7000, 35000, 105000"
             },
             {
-                "Basic Bioware": "Muscle Toner (1, 2, 3)",
+                "Name": "Muscle Toner (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "8000, 40000, 120000"
             },
             {
-                "Basic Bioware": "Nephritic Screen (1, 2, 3)",
+                "Name": "Nephritic Screen (1, 2, 3)",
                 "Essence": "0.1, 0.2, 0,3",
                 "Availability": "8, 12, 16",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Basic Bioware": "Nictitating Membrane",
+                "Name": "Nictitating Membrane",
                 "Essence": "0.1",
                 "Availability": "4",
                 "Cost": "2000"
             },
             {
-                "Basic Bioware": "Orthoskin (1, 2, 3)",
+                "Name": "Orthoskin (1, 2, 3)",
                 "Essence": "0.25, 0.5, 0.75",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "30000, 150000, 450000"
             },
             {
-                "Basic Bioware": "Dragon Hide",
+                "Name": "Dragon Hide",
                 "Essence": "0.1",
                 "Availability": "12R",
                 "Cost": "10000"
             },
             {
-                "Basic Bioware": "Electroshock",
+                "Name": "Electroshock",
                 "Essence": "0.25",
                 "Availability": "12R",
                 "Cost": "30000"
             },
             {
-                "Basic Bioware": "Sharkskin",
+                "Name": "Sharkskin",
                 "Essence": "0.1",
                 "Availability": "12R",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Smart Insulation",
+                "Name": "Smart Insulation",
                 "Essence": "0.1",
                 "Availability": "12R",
                 "Cost": "15000"
             },
             {
-                "Basic Bioware": "Quills",
+                "Name": "Quills",
                 "Essence": "0.25",
                 "Availability": "8",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Pathogenic Defense (2, 4, 6)",
+                "Name": "Pathogenic Defense (2, 4, 6)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "4, 6, 8",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Basic Bioware": "Platelet Factories",
+                "Name": "Platelet Factories",
                 "Essence": "0.2",
                 "Availability": "12",
                 "Cost": "25000"
             },
             {
-                "Basic Bioware": "Skin Pocket",
+                "Name": "Skin Pocket",
                 "Essence": "0.1",
                 "Availability": "4",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Spidersilk Gland",
+                "Name": "Spidersilk Gland",
                 "Essence": "0.3",
                 "Availability": "10",
                 "Cost": "40000"
             },
             {
-                "Basic Bioware": "Suprathyroid Gland",
+                "Name": "Suprathyroid Gland",
                 "Essence": "0.7",
                 "Availability": "20F",
                 "Cost": "50000"
             },
             {
-                "Basic Bioware": "Symbiotes (1, 2, 3)",
+                "Name": "Symbiotes (1, 2, 3)",
                 "Essence": "0.2, 0,4, 0,6",
                 "Availability": "4, 6, 8",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Basic Bioware": "Synthacardium (1, 2, 3)",
+                "Name": "Synthacardium (1, 2, 3)",
                 "Essence": "0.1, 0.2, 0.3",
                 "Availability": "4, 6, 8",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Basic Bioware": "Tactile Sensitivity",
+                "Name": "Tactile Sensitivity",
                 "Essence": "0.2",
                 "Availability": "8",
                 "Cost": "4000"
             },
             {
-                "Basic Bioware": "Tailored Critter Pheromones (1, 2, 3)",
+                "Name": "Tailored Critter Pheromones (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0,6",
                 "Availability": "6, 9, 12",
                 "Cost": "15000, 75000, 225000"
             },
             {
-                "Basic Bioware": "Tailored Pheromones (1, 2, 3)",
+                "Name": "Tailored Pheromones (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "6F, 9F, 12F",
                 "Cost": "15000, 75000, 225000"
             },
             {
-                "Basic Bioware": "Toxin Extractor (2, 4, 6)",
+                "Name": "Toxin Extractor (2, 4, 6)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "6, 9, 12",
                 "Cost": "20000, 100000, 300000"
             },
             {
-                "Basic Bioware": "Tracheal Filter (2, 4, 6)",
+                "Name": "Tracheal Filter (2, 4, 6)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "6, 9, 12",
                 "Cost": "15000, 75000, 225000"
             },
             {
-                "Basic Bioware": "Troll’s Eyes",
+                "Name": "Troll’s Eyes",
                 "Essence": "0.1",
                 "Availability": "6",
                 "Cost": "5000"
             },
             {
-                "Basic Bioware": "Vocal Range Enhancer",
+                "Name": "Vocal Range Enhancer",
                 "Essence": "0.1",
                 "Availability": "8",
                 "Cost": "10000"
@@ -274,203 +274,203 @@
         ],
         "bodyware": [
             {
-                "Bodyware": "Autoinjector (Reusable, One-shot, Extra Capacity)",
+                "Name": "Autoinjector (Reusable, One-shot, Extra Capacity)",
                 "Essence": "0.1, 0.05, -",
                 "Capacity": "[0]",
                 "Availability": "4, 8, -",
                 "Cost": "500, 1000, 500"
             },
             {
-                "Bodyware": "Balance Tail",
+                "Name": "Balance Tail",
                 "Essence": "0.5",
                 "Capacity": "- / [2]",
                 "Availability": "9",
                 "Cost": "5000"
             },
             {
-                "Bodyware": "Biomonitor",
+                "Name": "Biomonitor",
                 "Essence": "0.3",
                 "Capacity": "[1]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Bodyware": "Blood Circuit Control Systems",
+                "Name": "Blood Circuit Control Systems",
                 "Essence": "1",
                 "Capacity": "-",
                 "Availability": "15",
                 "Cost": "30000"
             },
             {
-                "Bodyware": "Bone Lacing (Plastic, Kevlar, Aluminum, Ceramic, Titanium)",
+                "Name": "Bone Lacing (Plastic, Kevlar, Aluminum, Ceramic, Titanium)",
                 "Essence": "0.5, 1, 1, 1.2, 1.5",
                 "Capacity": "-",
                 "Availability": "8R, 10R, 12R, 14R, 16R",
                 "Cost": "5000, 15000, 25000, 50000, 75000"
             },
             {
-                "Bodyware": "Cosmetic Modification",
+                "Name": "Cosmetic Modification",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "2-12",
                 "Cost": "200-10000"
             },
             {
-                "Bodyware": "Dermal Plating (1, 2, 3)",
+                "Name": "Dermal Plating (1, 2, 3)",
                 "Essence": "0.5, 1, 1.5",
                 "Capacity": "-",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "5000, 25000, 75000"
             },
             {
-                "Bodyware": "Dermal Sheath (1, 2, 3)",
+                "Name": "Dermal Sheath (1, 2, 3)",
                 "Essence": "0.6, 1.2, 1.8",
                 "Capacity": "-",
                 "Availability": "8R, 12R, 16R",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Bodyware": "Ruthenium Polymer Coating",
+                "Name": "Ruthenium Polymer Coating",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "+2",
                 "Cost": "+10000"
             },
             {
-                "Bodyware": "Chameleon Modification",
+                "Name": "Chameleon Modification",
                 "Essence": "+0.2",
                 "Capacity": "-",
                 "Availability": "+4F",
                 "Cost": "+50000"
             },
             {
-                "Bodyware": "Fingertip Compartment",
+                "Name": "Fingertip Compartment",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Bodyware": "Flex Hands",
+                "Name": "Flex Hands",
                 "Essence": "0.3",
                 "Capacity": "-",
                 "Availability": "10",
                 "Cost": "3500"
             },
             {
-                "Bodyware": "Foot Anchor",
+                "Name": "Foot Anchor",
                 "Essence": "0.4",
                 "Capacity": "[3]",
                 "Availability": "10",
                 "Cost": "4000"
             },
             {
-                "Bodyware": "Gastric Neurostimulator",
+                "Name": "Gastric Neurostimulator",
                 "Essence": "0.2",
                 "Capacity": "-",
                 "Availability": "6",
                 "Cost": "2000"
             },
             {
-                "Bodyware": "Grapple Gun",
+                "Name": "Grapple Gun",
                 "Essence": "0.5",
                 "Capacity": "[5]",
                 "Availability": "8",
                 "Cost": "2000"
             },
             {
-                "Bodyware": "Grip Feet",
+                "Name": "Grip Feet",
                 "Essence": "0.3",
                 "Capacity": "[2]",
                 "Availability": "10",
                 "Cost": "5000"
             },
             {
-                "Bodyware": "Internal Air Tank",
+                "Name": "Internal Air Tank",
                 "Essence": "0.25",
                 "Capacity": "[3]",
                 "Availability": "4",
                 "Cost": "500"
             },
             {
-                "Bodyware": "Magnetic System",
+                "Name": "Magnetic System",
                 "Essence": "0.25",
                 "Capacity": "[2]",
                 "Availability": "8",
                 "Cost": "1500"
             },
             {
-                "Bodyware": "Move-by-Wire System (1, 2, 3)",
+                "Name": "Move-by-Wire System (1, 2, 3)",
                 "Essence": "1.5, 3, 4.5",
                 "Capacity": "-",
                 "Availability": "12R, 18R, 24R",
                 "Cost": "50000, 250000, 750000"
             },
             {
-                "Bodyware": "Muscle Replacement (1, 2, 3)",
+                "Name": "Muscle Replacement (1, 2, 3)",
                 "Essence": "1, 2, 3",
                 "Capacity": "-",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "5000, 25000, 75000"
             },
             {
-                "Bodyware": "OXSYS Cybergill",
+                "Name": "OXSYS Cybergill",
                 "Essence": "0.25",
                 "Capacity": "-",
                 "Availability": "6",
                 "Cost": "5000"
             },
             {
-                "Bodyware": "Reaction Enhancer (1, 2, 3)",
+                "Name": "Reaction Enhancer (1, 2, 3)",
                 "Essence": "0.3, 0.6, 0.9",
                 "Capacity": "-",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Bodyware": "Retractable Climbing Claws",
+                "Name": "Retractable Climbing Claws",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "8",
                 "Cost": "2000"
             },
             {
-                "Bodyware": "Simrig",
+                "Name": "Simrig",
                 "Essence": "0.5",
                 "Capacity": "-",
                 "Availability": "8",
                 "Cost": "5000"
             },
             {
-                "Bodyware": "Skillwires (1, 3, 5)",
+                "Name": "Skillwires (1, 3, 5)",
                 "Essence": "0.2, 0.6, 1",
                 "Capacity": "-",
                 "Availability": "4, 6, 8",
                 "Cost": "2000, 10000, 30000"
             },
             {
-                "Bodyware": "Smart Articulation",
+                "Name": "Smart Articulation",
                 "Essence": "0.8",
                 "Capacity": "-",
                 "Availability": "6",
                 "Cost": "15000"
             },
             {
-                "Bodyware": "Smuggling Compartment",
+                "Name": "Smuggling Compartment",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "6",
                 "Cost": "2000"
             },
             {
-                "Bodyware": "Touch Link",
+                "Name": "Touch Link",
                 "Essence": "0.1",
                 "Capacity": "-",
                 "Availability": "6",
                 "Cost": "1000"
             },
             {
-                "Bodyware": "Wired Reflexes (1, 2, 3)",
+                "Name": "Wired Reflexes (1, 2, 3)",
                 "Essence": "1.5, 3, 4.5",
                 "Capacity": "-",
                 "Availability": "8R, 12R, 16R",
@@ -479,31 +479,31 @@
         ],
         "bone-lacing": [
             {
-                "Bone Lacing": "Kevlar",
+                "Name": "Kevlar",
                 "Unarmed Combat Damage": "(STR/2)S",
                 "Damage Resistance": "+1",
                 "Ballistic / Impact": "+1 / +0"
             },
             {
-                "Bone Lacing": "Plastic",
+                "Name": "Plastic",
                 "Unarmed Combat Damage": "(STR/2 + 1)S",
                 "Damage Resistance": "+1",
                 "Ballistic / Impact": "+0 / +0"
             },
             {
-                "Bone Lacing": "Aluminum",
+                "Name": "Aluminum",
                 "Unarmed Combat Damage": "(STR/2 + 2)S",
                 "Damage Resistance": "+2",
                 "Ballistic / Impact": "+0 / +1"
             },
             {
-                "Bone Lacing": "Ceramic",
+                "Name": "Ceramic",
                 "Unarmed Combat Damage": "(STR/2 + 3)S",
                 "Damage Resistance": "+2",
                 "Ballistic / Impact": "+0 / +2"
             },
             {
-                "Bone Lacing": "Titanium",
+                "Name": "Titanium",
                 "Unarmed Combat Damage": "(STR/2 + 3)S",
                 "Damage Resistance": "+3",
                 "Ballistic / Impact": "+1 / +1"
@@ -511,61 +511,61 @@
         ],
         "cultured-bioware": [
             {
-                "Cultured Bioware": "Cerebral Booster (1, 2, 3)",
+                "Name": "Cerebral Booster (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "6, 9, 12",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Cultured Bioware": "Damage Compensators (3, 6, 9)",
+                "Name": "Damage Compensators (3, 6, 9)",
                 "Essence": "0.3, 0.6, 0.9",
                 "Availability": "12F, 18F, 24F",
                 "Cost": "15000, 75000, 25000"
             },
             {
-                "Cultured Bioware": "Mnemonic Enhancer (1, 2, 3)",
+                "Name": "Mnemonic Enhancer (1, 2, 3)",
                 "Essence": "0.1, 0.2, 0.3",
                 "Availability": "6, 9, 12",
                 "Cost": "7000, 35000, 105000"
             },
             {
-                "Cultured Bioware": "Pain Editor",
+                "Name": "Pain Editor",
                 "Essence": "0.3",
                 "Availability": "18F",
                 "Cost": "50000"
             },
             {
-                "Cultured Bioware": "Reflex Recorder",
+                "Name": "Reflex Recorder",
                 "Essence": "0.2",
                 "Availability": "12",
                 "Cost": "25000"
             },
             {
-                "Cultured Bioware": "Sleep Regulator",
+                "Name": "Sleep Regulator",
                 "Essence": "0.15",
                 "Availability": "8",
                 "Cost": "10000"
             },
             {
-                "Cultured Bioware": "Synaptic Booster (1, 2, 3)",
+                "Name": "Synaptic Booster (1, 2, 3)",
                 "Essence": "0.5, 1, 1.5",
                 "Availability": "12R, 18R, 24R",
                 "Cost": "100000, 500000, 1500000"
             },
             {
-                "Cultured Bioware": "Reception Enhancer (1, 2, 3)",
+                "Name": "Reception Enhancer (1, 2, 3)",
                 "Essence": "0.2, 0.4, 0.6",
                 "Availability": "4, 6, 8",
                 "Cost": "20000, 100000, 300000"
             },
             {
-                "Cultured Bioware": "Thermosense Organ",
+                "Name": "Thermosense Organ",
                 "Essence": "0.3",
                 "Availability": "10",
                 "Cost": "15000"
             },
             {
-                "Cultured Bioware": "Trauma Damper",
+                "Name": "Trauma Damper",
                 "Essence": "0.2",
                 "Availability": "8R",
                 "Cost": "40000"
@@ -573,28 +573,28 @@
         ],
         "cyber-melee-weapons": [
             {
-                "Cyber Melee Weapon": "Hand Blade (Retractable)",
+                "Name": "Hand Blade (Retractable)",
                 "Essence": "0.25",
                 "Capacity": "[3]",
                 "Availability": "10F",
                 "Cost": "2000"
             },
             {
-                "Cyber Melee Weapon": "Hand Razors (Retractable)",
+                "Name": "Hand Razors (Retractable)",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "8F",
                 "Cost": "1000"
             },
             {
-                "Cyber Melee Weapon": "Shock Hand",
+                "Name": "Shock Hand",
                 "Essence": "0.25",
                 "Capacity": "[3]",
                 "Availability": "8R",
                 "Cost": "1000"
             },
             {
-                "Cyber Melee Weapon": "Spur (Retractable)",
+                "Name": "Spur (Retractable)",
                 "Essence": "0.3",
                 "Capacity": "[3]",
                 "Availability": "12F",
@@ -603,35 +603,35 @@
         ],
         "cyberlimb-accessories": [
             {
-                "Cyberlimb Accessory": "Cyberarm Gyromount",
+                "Name": "Cyberarm Gyromount",
                 "Essence": "-",
                 "Capacity": "[4]",
                 "Availability": "12F",
                 "Cost": "5000"
             },
             {
-                "Cyberlimb Accessory": "Cyberarm Slide",
+                "Name": "Cyberarm Slide",
                 "Essence": "-",
                 "Capacity": "[8]",
                 "Availability": "12R",
                 "Cost": "3000"
             },
             {
-                "Cyberlimb Accessory": "Cyberarm Holster",
+                "Name": "Cyberarm Holster",
                 "Essence": "-",
                 "Capacity": "[7]",
                 "Availability": "8R",
                 "Cost": "2000"
             },
             {
-                "Cyberlimb Accessory": "Hydraulic Jack (2, 4, 6)",
+                "Name": "Hydraulic Jack (2, 4, 6)",
                 "Essence": "-",
                 "Capacity": "[2, 4, 6]",
                 "Availability": "6, 9, 12",
                 "Cost": "2000, 10000, 30000"
             },
             {
-                "Cyberlimb Accessory": "Large Smuggling Compartment",
+                "Name": "Large Smuggling Compartment",
                 "Essence": "-",
                 "Capacity": "[5]",
                 "Availability": "6",
@@ -640,87 +640,87 @@
         ],
         "cyberlimb-enhancements": [
             {
-                "Cyberlimb Enhancement": "Armor (1, 2, 3)",
+                "Name": "Armor (1, 2, 3)",
                 "Essence": "-",
                 "Capacity": "[2, 4, 6]",
                 "Availability": "4, 6, 8",
                 "Cost": "200, 1000, 3000"
             },
             {
-                "Cyberlimb Enhancement": "Agility (2, 4, 6)",
+                "Name": "Agility (2, 4, 6)",
                 "Essence": "-",
                 "Capacity": "[2, 4, 6]",
                 "Availability": "6R, 12R, 20R",
                 "Cost": "200, 1000, 3000"
             },
             {
-                "Cyberlimb Enhancement": "Body (2, 4, 6)",
+                "Name": "Body (2, 4, 6)",
                 "Essence": "-",
                 "Capacity": "[2, 4, 6]",
                 "Availability": "6R, 12R, 20R",
                 "Cost": "200, 1000, 3000"
             },
             {
-                "Cyberlimb Enhancement": "Strength (2, 4, 6)",
+                "Name": "Strength (2, 4, 6)",
                 "Essence": "-",
                 "Capacity": "[2, 4, 6]",
                 "Availability": "6R, 12R, 20R",
                 "Cost": "200, 1000, 3000"
             }
         ],
-        "cyberlimb-type": [
+        "cyberlimb-types": [
             {
-                "Cyberlimb Type": "Obvious",
+                "Name": "Obvious",
                 "Availability Modifier": "-",
-                "Cost Multiplier": "x 1"
+                "Cost": "x1"
             },
             {
-                "Cyberlimb Type": "Synthetic",
+                "Name": "Synthetic",
                 "Availability Modifier": "-",
-                "Cost Multiplier": "x 2"
+                "Cost": "x2"
             },
             {
-                "Cyberlimb Type": "Standard",
+                "Name": "Standard",
                 "Availability Modifier": "-",
-                "Cost Multiplier": "x 1"
+                "Cost": "x1"
             },
             {
-                "Cyberlimb Type": "Customized",
+                "Name": "Customized",
                 "Availability Modifier": "+4",
-                "Cost Multiplier": "x 5"
+                "Cost": "x5"
             }
         ],
-        "cyberlimb": [
+        "cyberlimbs": [
             {
-                "Cyberlimb": "Full Arm/Leg",
+                "Name": "Full Arm/Leg",
                 "Essence": "1",
                 "Capacity": "20",
                 "Availability": "4",
                 "Cost": "10000"
             },
             {
-                "Cyberlimb": "Lower Arm/Leg",
+                "Name": "Lower Arm/Leg",
                 "Essence": "0.5",
                 "Capacity": "10",
                 "Availability": "2",
                 "Cost": "5000"
             },
             {
-                "Cyberlimb": "Hand/Foot",
+                "Name": "Hand/Foot",
                 "Essence": "0.2",
                 "Capacity": "4",
                 "Availability": "4",
                 "Cost": "2000"
             },
             {
-                "Cyberlimb": "Torso",
+                "Name": "Torso",
                 "Essence": "1.5",
                 "Capacity": "10",
                 "Availability": "12",
                 "Cost": "15000"
             },
             {
-                "Cyberlimb": "Skull",
+                "Name": "Skull",
                 "Essence": "1",
                 "Capacity": "4",
                 "Availability": "16",
@@ -729,85 +729,85 @@
         ],
         "cyberware-and-bioware-grades": [
             {
-                "Grade": "Used",
+                "Name": "Used",
                 "Essence Multiplier": "x 1.2",
-                "Cost Multiplier": "x 0.5"
+                "Cost": "x0.5"
             },
             {
-                "Grade": "Alphaware",
+                "Name": "Alphaware",
                 "Essence Multiplier": "x 1",
-                "Cost Multiplier": "x 1"
+                "Cost": "x1"
             },
             {
-                "Grade": "Betaware",
+                "Name": "Betaware",
                 "Essence Multiplier": "x 0.7",
-                "Cost Multiplier": "x 5"
+                "Cost": "x5"
             },
             {
-                "Grade": "Deltaware",
+                "Name": "Deltaware",
                 "Essence Multiplier": "x 0.5",
-                "Cost Multiplier": "x 15"
+                "Cost": "x15"
             }
         ],
         "earware": [
             {
-                "Earware": "Cyberears (1, 2, 3)",
+                "Name": "Cyberears (1, 2, 3)",
                 "Essence": "0.2, 0.3, 0.4",
                 "Capacity": "[4, 8, 12]",
                 "Availability": "2, 3, 4",
                 "Cost": "500, 2500, 7500"
             },
             {
-                "Earware": "Audio Enhancers (1, 2, 3)",
+                "Name": "Audio Enhancers (1, 2, 3)",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "4, 6, 8",
                 "Cost": "1500, 7500, 22500"
             },
             {
-                "Earware": "Balance Augmenter",
+                "Name": "Balance Augmenter",
                 "Essence": "0.1",
                 "Capacity": "[4]",
                 "Availability": "10",
                 "Cost": "5000"
             },
             {
-                "Earware": "Damper",
+                "Name": "Damper",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Earware": "Ear Recording Unit",
+                "Name": "Ear Recording Unit",
                 "Essence": "0.1",
                 "Capacity": "Included",
                 "Availability": "4",
                 "Cost": "500"
             },
             {
-                "Earware": "Increased Sensitivity",
+                "Name": "Increased Sensitivity",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "6",
                 "Cost": "1000"
             },
             {
-                "Earware": "Select Sound Filter (2, 4, 6)",
+                "Name": "Select Sound Filter (2, 4, 6)",
                 "Essence": "0.1",
                 "Capacity": "[4]",
                 "Availability": "4, 6, 8",
                 "Cost": "1000, 5000, 15000"
             },
             {
-                "Earware": "Sound Link",
+                "Name": "Sound Link",
                 "Essence": "0.1",
                 "Capacity": "Included",
                 "Availability": "-",
                 "Cost": "200"
             },
             {
-                "Earware": "Spatial Recognizer",
+                "Name": "Spatial Recognizer",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "8",
@@ -816,133 +816,133 @@
         ],
         "eyeware": [
             {
-                "Eyeware": "Cybereyes (1, 2, 3)",
+                "Name": "Cybereyes (1, 2, 3)",
                 "Essence": "0.2, 0.3, 0.4",
                 "Capacity": "4, 8, 12",
                 "Availability": "2, 3, 4",
                 "Cost": "500, 2500, 7500"
             },
             {
-                "Eyeware": "Eye Recoding Unit",
+                "Name": "Eye Recoding Unit",
                 "Essence": "0.1",
                 "Capacity": "Included",
                 "Availability": "4",
                 "Cost": "2000"
             },
             {
-                "Eyeware": "Flare Compensation",
+                "Name": "Flare Compensation",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Eyeware": "Image Link",
+                "Name": "Image Link",
                 "Essence": "0.1",
                 "Capacity": "Included",
                 "Availability": "4",
                 "Cost": "500"
             },
             {
-                "Eyeware": "Laser System",
+                "Name": "Laser System",
                 "Essence": "-",
                 "Capacity": "[3]",
                 "Availability": "10",
                 "Cost": "2000"
             },
             {
-                "Eyeware": "Laser Designator",
+                "Name": "Laser Designator",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "12R",
                 "Cost": "1000"
             },
             {
-                "Eyeware": "Laser Microphone (1, 2, 3)",
+                "Name": "Laser Microphone (1, 2, 3)",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "8R, 12R, 16R",
                 "Cost": "500, 2500, 7500"
             },
             {
-                "Eyeware": "Laser Range Finder",
+                "Name": "Laser Range Finder",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "10",
                 "Cost": "1000"
             },
             {
-                "Eyeware": "Tool Laser",
+                "Name": "Tool Laser",
                 "Essence": "-",
                 "Capacity": "[6]",
                 "Availability": "10R",
                 "Cost": "2000"
             },
             {
-                "Eyeware": "Light System",
+                "Name": "Light System",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "6",
                 "Cost": "500"
             },
             {
-                "Eyeware": "Low-Light Vision",
+                "Name": "Low-Light Vision",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Eyeware": "Microscopic Vision",
+                "Name": "Microscopic Vision",
                 "Essence": "0.2",
                 "Capacity": "[3]",
                 "Availability": "4",
                 "Cost": "1500"
             },
             {
-                "Eyeware": "Ocular Drone",
+                "Name": "Ocular Drone",
                 "Essence": "-",
                 "Capacity": "[6]",
                 "Availability": "6",
                 "Cost": "3000"
             },
             {
-                "Eyeware": "Protective Covers",
+                "Name": "Protective Covers",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "4",
                 "Cost": "100"
             },
             {
-                "Eyeware": "Retinal Duplication (2, 4, 6)",
+                "Name": "Retinal Duplication (2, 4, 6)",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "12F, 18F, 24F",
                 "Cost": "15000, 75000, 225000"
             },
             {
-                "Eyeware": "Smartlink",
+                "Name": "Smartlink",
                 "Essence": "0.1",
                 "Capacity": "[3]",
                 "Availability": "8R",
                 "Cost": "1000"
             },
             {
-                "Eyeware": "Thermographic Vision",
+                "Name": "Thermographic Vision",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Eyeware": "Vision Enhancement (1, 2, 3)",
+                "Name": "Vision Enhancement (1, 2, 3)",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "4, 6, 8",
                 "Cost": "1500, 7500, 22500"
             },
             {
-                "Eyeware": "Vision Magnification",
+                "Name": "Vision Magnification",
                 "Essence": "0.1",
                 "Capacity": "[2]",
                 "Availability": "4",
@@ -951,154 +951,154 @@
         ],
         "headware": [
             {
-                "Headware": "Attention Coprocessor (1, 2, 3)",
+                "Name": "Attention Coprocessor (1, 2, 3)",
                 "Essence": "0.3",
                 "Capacity": "-",
                 "Availability": "4, 6, 8",
                 "Cost": "3000, 15000, 45000"
             },
             {
-                "Headware": "Commlink",
+                "Name": "Commlink",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "-",
                 "Cost": "2000 + Commlink"
             },
             {
-                "Headware": "Control Rig",
+                "Name": "Control Rig",
                 "Essence": "0.5",
                 "Capacity": "-",
                 "Availability": "8",
                 "Cost": "10000"
             },
             {
-                "Headware": "Cranial Bomb (Kink, Micro, Area)",
+                "Name": "Cranial Bomb (Kink, Micro, Area)",
                 "Essence": "0",
                 "Capacity": "[1, 2, 3]",
                 "Availability": "16F, 16F, 20F",
                 "Cost": "2000, 5000, 10000"
             },
             {
-                "Headware": "Datafilter",
+                "Name": "Datafilter",
                 "Essence": "0.2",
                 "Capacity": "-",
                 "Availability": "12",
                 "Cost": "2500"
             },
             {
-                "Headware": "Datajack",
+                "Name": "Datajack",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "-",
                 "Cost": "500"
             },
             {
-                "Headware": "Data Lock",
+                "Name": "Data Lock",
                 "Essence": "0.1",
                 "Capacity": "[1]",
                 "Availability": "12",
                 "Cost": "1000 + Encryption"
             },
             {
-                "Headware": "Encephalon (1, 2)",
+                "Name": "Encephalon (1, 2)",
                 "Essence": "0.75, 1.5",
                 "Capacity": "-",
                 "Availability": "8, 12",
                 "Cost": "30000, 75000"
             },
             {
-                "Headware": "Math SPU",
+                "Name": "Math SPU",
                 "Essence": "0.15",
                 "Capacity": "-",
                 "Availability": "9",
                 "Cost": "5000"
             },
             {
-                "Headware": "Olfactory Booster (2, 4, 6)",
+                "Name": "Olfactory Booster (2, 4, 6)",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "4, 6, 8",
                 "Cost": "1000, 5000, 15000"
             },
             {
-                "Headware": "Orientation System",
+                "Name": "Orientation System",
                 "Essence": "0.2",
                 "Capacity": "[1]",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Headware": "Radar System (1, 2, 3)",
+                "Name": "Radar System (1, 2, 3)",
                 "Essence": "0.3",
                 "Capacity": "[2]",
                 "Availability": "8, 12, 16",
                 "Cost": "3000, 15000, 45000"
             },
             {
-                "Headware": "Sim Module",
+                "Name": "Sim Module",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "-",
                 "Cost": "2000"
             },
             {
-                "Headware": "Hot Sim Module",
+                "Name": "Hot Sim Module",
                 "Essence": "0.2",
                 "Capacity": "[2]",
                 "Availability": "12F",
                 "Cost": "5000"
             },
             {
-                "Headware": "Simsense Booster",
+                "Name": "Simsense Booster",
                 "Essence": "0.5",
                 "Capacity": "-",
                 "Availability": "8",
                 "Cost": "65000"
             },
             {
-                "Headware": "Taste Booster (2, 4, 6)",
+                "Name": "Taste Booster (2, 4, 6)",
                 "Essence": "0.2",
                 "Capacity": "-",
                 "Availability": "4, 6, 8",
                 "Cost": "1500, 7500, 22500"
             },
             {
-                "Headware": "Tooth Storage Compartment",
+                "Name": "Tooth Storage Compartment",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "8",
                 "Cost": "200"
             },
             {
-                "Headware": "Tooth Breakable Compartment",
+                "Name": "Tooth Breakable Compartment",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "12",
                 "Cost": "500"
             },
             {
-                "Headware": "Ultrasound Sensor",
+                "Name": "Ultrasound Sensor",
                 "Essence": "0.3",
                 "Capacity": "[2]",
                 "Availability": "10",
                 "Cost": "5000"
             },
             {
-                "Headware": "Voice Mask",
+                "Name": "Voice Mask",
                 "Essence": "0.1",
                 "Capacity": "-",
                 "Availability": "8F",
                 "Cost": "3000"
             },
             {
-                "Headware": "Voice Modulator",
+                "Name": "Voice Modulator",
                 "Essence": "0.2",
                 "Capacity": "-",
                 "Availability": "4",
                 "Cost": "5000"
             },
             {
-                "Headware": "Secondary Pattern (2, 4, 6)",
+                "Name": "Secondary Pattern (2, 4, 6)",
                 "Essence": "-",
                 "Capacity": "-",
                 "Availability": "6F, 9F, 12F",
@@ -1107,19 +1107,19 @@
         ],
         "move-by-wire": [
             {
-                "Rating": "1",
+                "Name": "1",
                 "Reaction": "+2",
                 "Initiative Passes": "+1",
                 "Skillwire Rating": "1"
             },
             {
-                "Rating": "2",
+                "Name": "2",
                 "Reaction": "+4",
                 "Initiative Passes": "+2",
                 "Skillwire Rating": "3"
             },
             {
-                "Rating": "3",
+                "Name": "3",
                 "Reaction": "+6",
                 "Initiative Passes": "+3",
                 "Skillwire Rating": "5"
@@ -1129,280 +1129,280 @@
     "chemicals": {
         "compounds": [
             {
-                "Compound": "Acid (2, 4, 6)",
+                "Name": "Acid (2, 4, 6)",
                 "Availability": "4R, 8R, 12R",
-                "Cost (per 10 doses)": "500, 2500, 7500"
+                "Cost": "500, 2500, 7500"
             },
             {
-                "Compound": "Adhesive (6)",
+                "Name": "Adhesive (6)",
                 "Availability": "6",
-                "Cost (per 10 doses)": "50"
+                "Cost": "50"
             },
             {
-                "Compound": "Antivenom",
+                "Name": "Antivenom",
                 "Availability": "As venom",
-                "Cost (per 10 doses)": "As venom / 2"
+                "Cost": "As venom / 2"
             },
             {
-                "Compound": "DMSO",
+                "Name": "DMSO",
                 "Availability": "4",
-                "Cost (per 10 doses)": "10"
+                "Cost": "10"
             },
             {
-                "Compound": "Freeze Foam (6)",
+                "Name": "Freeze Foam (6)",
                 "Availability": "6R",
-                "Cost (per 10 doses)": "50",
+                "Cost": "50",
                 "undefined": ""
             },
             {
-                "Compound": "Glue Sprayer",
+                "Name": "Glue Sprayer",
                 "Availability": "2",
-                "Cost (per 10 doses)": "150"
+                "Cost": "150"
             },
             {
-                "Compound": "Stain",
+                "Name": "Stain",
                 "Availability": "2R",
-                "Cost (per 10 doses)": "5"
+                "Cost": "5"
             }
         ],
         "drugs": [
             {
-                "Drug": "Cram",
+                "Name": "Cram",
                 "Availability": "2R",
                 "Cost (per dose)": "10"
             },
             {
-                "Drug": "Deepweed",
+                "Name": "Deepweed",
                 "Availability": "8F",
                 "Cost (per dose)": "400"
             },
             {
-                "Drug": "Jazz",
+                "Name": "Jazz",
                 "Availability": "4R",
                 "Cost (per dose)": "50"
             },
             {
-                "Drug": "Kamikaze",
+                "Name": "Kamikaze",
                 "Availability": "8R",
                 "Cost (per dose)": "100"
             },
             {
-                "Drug": "Long Haul",
+                "Name": "Long Haul",
                 "Availability": "-",
                 "Cost (per dose)": "50"
             },
             {
-                "Drug": "Nitro",
+                "Name": "Nitro",
                 "Availability": "6R",
                 "Cost (per dose)": "50"
             },
             {
-                "Drug": "Novacoke",
+                "Name": "Novacoke",
                 "Availability": "4R",
                 "Cost (per dose)": "10"
             },
             {
-                "Drug": "Psyche",
+                "Name": "Psyche",
                 "Availability": "-",
                 "Cost (per dose)": "200"
             },
             {
-                "Drug": "Zen",
+                "Name": "Zen",
                 "Availability": "2R",
                 "Cost (per dose)": "5"
             }
         ],
         "toxins": [
             {
-                "Toxin": "Arsenic",
+                "Name": "Arsenic",
                 "Availability": "12R",
-                "Cost (per 10 doses)": "100"
+                "Cost": "100"
             },
             {
-                "Toxin": "Atropine",
+                "Name": "Atropine",
                 "Availability": "12R",
-                "Cost (per 10 doses)": "500"
+                "Cost": "500"
             },
             {
-                "Toxin": "CS/Tear Gas",
+                "Name": "CS/Tear Gas",
                 "Availability": "4R",
-                "Cost (per 10 doses)": "20"
+                "Cost": "20"
             },
             {
-                "Toxin": "Cyanide",
+                "Name": "Cyanide",
                 "Availability": "12F",
-                "Cost (per 10 doses)": "500"
+                "Cost": "500"
             },
             {
-                "Toxin": "Ekyelebenie Venom",
+                "Name": "Ekyelebenie Venom",
                 "Availability": "16F",
-                "Cost (per 10 doses)": "1000"
+                "Cost": "1000"
             },
             {
-                "Toxin": "Gamma-Scopolamine",
+                "Name": "Gamma-Scopolamine",
                 "Availability": "14F",
-                "Cost (per 10 doses)": "200"
+                "Cost": "200"
             },
             {
-                "Toxin": "KE IV",
+                "Name": "KE IV",
                 "Availability": "8",
-                "Cost (per 10 doses)": "10"
+                "Cost": "10"
             },
             {
-                "Toxin": "Naga Venom",
+                "Name": "Naga Venom",
                 "Availability": "12F",
-                "Cost (per 10 doses)": "500"
+                "Cost": "500"
             },
             {
-                "Toxin": "Narcojet",
+                "Name": "Narcojet",
                 "Availability": "8R",
-                "Cost (per 10 doses)": "50"
+                "Cost": "50"
             },
             {
-                "Toxin": "Nausea Gas",
+                "Name": "Nausea Gas",
                 "Availability": "6R",
-                "Cost (per 10 doses)": "25"
+                "Cost": "25"
             },
             {
-                "Toxin": "Neuro-Stun",
+                "Name": "Neuro-Stun",
                 "Availability": "12R",
-                "Cost (per 10 doses)": "100"
+                "Cost": "100"
             },
             {
-                "Toxin": "Nova Scorpion Venom",
+                "Name": "Nova Scorpion Venom",
                 "Availability": "16F",
-                "Cost (per 10 doses)": "1000"
+                "Cost": "1000"
             },
             {
-                "Toxin": "Pepper Punch",
+                "Name": "Pepper Punch",
                 "Availability": "-",
-                "Cost (per 10 doses)": "5"
+                "Cost": "5"
             },
             {
-                "Toxin": "Ringu",
+                "Name": "Ringu",
                 "Availability": "24F",
-                "Cost (per 10 doses)": "5000"
+                "Cost": "5000"
             },
             {
-                "Toxin": "Seven-7",
+                "Name": "Seven-7",
                 "Availability": "20F",
-                "Cost (per 10 doses)": "1000"
+                "Cost": "1000"
             },
             {
-                "Toxin": "Warp",
+                "Name": "Warp",
                 "Availability": "12F",
-                "Cost (per 10 doses)": "500"
+                "Cost": "500"
             }
         ]
     },
     "clothing-and-armor": {
         "armor-modifications": [
             {
-                "Armor Modification": "Chemical Protection (2, 4, 6)",
+                "Name": "Chemical Protection (2, 4, 6)",
                 "Availability": "8, 12, 16",
                 "Cost": "200, 1000, 3000"
             },
             {
-                "Armor Modification": "Fire Resistance (2, 4, 6)",
+                "Name": "Fire Resistance (2, 4, 6)",
                 "Availability": "4, 6, 8",
                 "Cost": "100, 500, 1500"
             },
             {
-                "Armor Modification": "Insulation (2, 4, 6)",
+                "Name": "Insulation (2, 4, 6)",
                 "Availability": "4, 6, 8",
                 "Cost": "100, 500, 1500"
             },
             {
-                "Armor Modification": "Nonconductivity (2, 4, 6)",
+                "Name": "Nonconductivity (2, 4, 6)",
                 "Availability": "6, 9, 12",
                 "Cost": "200, 1000, 3000"
             },
             {
-                "Armor Modification": "Shock Frills",
+                "Name": "Shock Frills",
                 "Availability": "6R",
                 "Cost": "500"
             },
             {
-                "Armor Modification": "Thermal Damping (2, 4, 6)",
+                "Name": "Thermal Damping (2, 4, 6)",
                 "Availability": "10F, 15F, 20F",
                 "Cost": "500, 2500, 7500"
             }
         ],
         "armor": [
             {
-                "Armor": "Armored Clothing (Store, Name, Luxury)",
+                "Name": "Armored Clothing (Store, Name, Luxury)",
                 "B / I": "4-5 / 2-3",
                 "Availability": "2, 6, 12",
                 "Cost": "500, 1000, 2000"
             },
             {
-                "Armor": "Armored Jacket",
+                "Name": "Armored Jacket",
                 "B / I": "6 / 4",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Armor": "Armored Vest (Concealed)",
+                "Name": "Armored Vest (Concealed)",
                 "B / I": "4 / 2",
                 "Availability": "6",
                 "Cost": "500"
             },
             {
-                "Armor": "Armored Vest (Obvious)",
+                "Name": "Armored Vest (Obvious)",
                 "B / I": "8 / 6",
                 "Availability": "8",
                 "Cost": "1000"
             },
             {
-                "Armor": "Camouflage Suit",
+                "Name": "Camouflage Suit",
                 "B / I": "6 / 4",
                 "Availability": "6",
                 "Cost": "1000"
             },
             {
-                "Armor": "Lined Coat",
+                "Name": "Lined Coat",
                 "B / I": "5 / 3",
                 "Availability": "6",
                 "Cost": "1000"
             },
             {
-                "Armor": "Urban Explorer Jumpsuit",
+                "Name": "Urban Explorer Jumpsuit",
                 "B / I": "2 / 6",
                 "Availability": "6",
                 "Cost": "500"
             },
             {
-                "Armor": "Chemical Seal",
+                "Name": "Chemical Seal",
                 "B / I": "-",
                 "Availability": "+6R",
                 "Cost": "5000"
             },
             {
-                "Armor": "Environment Adaptation",
+                "Name": "Environment Adaptation",
                 "B / I": "-",
                 "Availability": "+4R",
                 "Cost": "3000"
             },
             {
-                "Armor": "Military Armor",
+                "Name": "Military Armor",
                 "B / I": "16 / 14",
                 "Availability": "20F",
                 "Cost": "20000"
             },
             {
-                "Armor": "Military Helmet",
+                "Name": "Military Helmet",
                 "B / I": "+2 / +2",
                 "Availability": "20F",
                 "Cost": "5000"
             },
             {
-                "Armor": "Security Armor",
+                "Name": "Security Armor",
                 "B / I": "10 / 8",
                 "Availability": "14R",
                 "Cost": "5000"
             },
             {
-                "Armor": "Security Helmet",
+                "Name": "Security Helmet",
                 "B / I": "+2 / +2",
                 "Availability": "14R",
                 "Cost": "1000"
@@ -1410,19 +1410,19 @@
         ],
         "clothing": [
             {
-                "Clothing": "Clothing (Store, Name, Luxury)",
+                "Name": "Clothing (Store, Name, Luxury)",
                 "Ballistic / Impact": "0 / 0",
                 "Availability": "-, 2, 6",
                 "Cost": "100, 500, 1500"
             },
             {
-                "Clothing": "Feedback Clothing",
+                "Name": "Feedback Clothing",
                 "Ballistic / Impact": "-",
                 "Availability": "+8",
                 "Cost": "500"
             },
             {
-                "Clothing": "Leather Jacket",
+                "Name": "Leather Jacket",
                 "Ballistic / Impact": "1 / 2",
                 "Availability": "-, 2, 6",
                 "Cost": "200"
@@ -1430,25 +1430,25 @@
         ],
         "helmets-and-shields": [
             {
-                "Helmet / Shield": "Helmet",
+                "Name": "Helmet",
                 "Ballistic / Impact": "+0 / +2",
                 "Availability": "2",
                 "Cost": "100"
             },
             {
-                "Helmet / Shield": "Ballistic Shield",
+                "Name": "Ballistic Shield",
                 "Ballistic / Impact": "+6 / +4",
                 "Availability": "12R",
                 "Cost": "1000"
             },
             {
-                "Helmet / Shield": "Riot Shield",
+                "Name": "Riot Shield",
                 "Ballistic / Impact": "+2 / +6",
                 "Availability": "10R",
                 "Cost": "200"
             },
             {
-                "Helmet / Shield": "Taser Shield",
+                "Name": "Taser Shield",
                 "Ballistic / Impact": "+2 / +6",
                 "Availability": "12R",
                 "Cost": "500"
@@ -1458,47 +1458,47 @@
     "explosives": {
         "detonators": [
             {
-                "Detonators": "Anti-Removal Device (2, 4, 6)",
+                "Name": "Anti-Removal Device (2, 4, 6)",
                 "Availability": "4F, 8F, 12F",
                 "Cost": "100, 500, 1500"
             },
             {
-                "Detonators": "Detonator Cap",
+                "Name": "Detonator Cap",
                 "Availability": "8R",
                 "Cost": "100"
             },
             {
-                "Detonators": "Detonating Cord",
+                "Name": "Detonating Cord",
                 "Availability": "10R",
                 "Cost": "50 (per meter)"
             },
             {
-                "Detonators": "Safety Fuse",
+                "Name": "Safety Fuse",
                 "Availability": "6R",
                 "Cost": "5 (per meter)"
             }
         ],
         "explosives": [
             {
-                "Explosive": "Commercial",
+                "Name": "Commercial",
                 "Rating": "4",
                 "Availability": "8R",
                 "Cost (per kilo)": "100"
             },
             {
-                "Explosive": "Foam",
+                "Name": "Foam",
                 "Rating": "8",
                 "Availability": "12F",
                 "Cost (per kilo)": "500"
             },
             {
-                "Explosive": "Plastic",
+                "Name": "Plastic",
                 "Rating": "16",
                 "Availability": "16F",
                 "Cost (per kilo)": "1500"
             },
             {
-                "Explosive": "Thermite Burning Bar",
+                "Name": "Thermite Burning Bar",
                 "Rating": "16R",
                 "Availability": "500"
             }
@@ -1507,113 +1507,113 @@
     "magical-equipment": {
         "foci": [
             {
-                "Foci": "Spellcasting (2, 4, 6)",
+                "Name": "Spellcasting (2, 4, 6)",
                 "Availability": "8R, 12R, 16R",
                 "Cost": "15000, 75000, 225000"
             },
             {
-                "Foci": "Counterspelling (2, 4, 6)",
+                "Name": "Counterspelling (2, 4, 6)",
                 "Availability": "4R, 6R, 8R",
                 "Cost": "5000, 25000, 75000"
             },
             {
-                "Foci": "Sustaining (3, 6, 9)",
+                "Name": "Sustaining (3, 6, 9)",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "20000, 100000, 300000"
             },
             {
-                "Foci": "Summoning (2, 4, 6)",
+                "Name": "Summoning (2, 4, 6)",
                 "Availability": "8R, 12R, 16R",
                 "Cost": "15000, 75000, 225000"
             },
             {
-                "Foci": "Banishing (2, 4, 6)",
+                "Name": "Banishing (2, 4, 6)",
                 "Availability": "4R, 6R, 8R",
                 "Cost": "5000, 25000, 75000"
             },
             {
-                "Foci": "Binding (2, 4, 6)",
+                "Name": "Binding (2, 4, 6)",
                 "Availability": "6R, 9R, 12R",
                 "Cost": "10000, 50000, 150000"
             },
             {
-                "Foci": "Weapon (1, 2, 3)",
+                "Name": "Weapon (1, 2, 3)",
                 "Availability": "8F, 12F, 16F",
                 "Cost": "20000, 100000, 300000"
             },
             {
-                "Foci": "Power (1, 2, 3)",
+                "Name": "Power (1, 2, 3)",
                 "Availability": "12F, 18F, 24F",
                 "Cost": "50000, 250000, 750000"
             }
         ],
         "magical-supplies": [
             {
-                "Magical Supply": "Biofiber (4, 8, 12)",
+                "Name": "Biofiber (4, 8, 12)",
                 "Availability": "4R, 6R, 8R",
                 "Cost": "(100, 500, 1500) per square meter"
             },
             {
-                "Magical Supply": "Magical Lodge Materials (4, 8, 12)",
+                "Name": "Magical Lodge Materials (4, 8, 12)",
                 "Availability": "8R, 12R, 16R",
                 "Cost": "200, 1000, 3000"
             },
             {
-                "Magical Supply": "Spirit Binding Materials (3, 6, 9)",
+                "Name": "Spirit Binding Materials (3, 6, 9)",
                 "Availability": "2R",
                 "Cost": "500, 2500, 7500"
             }
         ],
         "spell-fetish": [
             {
-                "Spell Fetish": "Combat",
+                "Name": "Combat",
                 "Availability": "6F",
                 "Cost": "200"
             },
             {
-                "Spell Fetish": "Detection",
+                "Name": "Detection",
                 "Availability": "2R",
                 "Cost": "50"
             },
             {
-                "Spell Fetish": "Health",
+                "Name": "Health",
                 "Availability": "2R",
                 "Cost": "50"
             },
             {
-                "Spell Fetish": "Illusion",
+                "Name": "Illusion",
                 "Availability": "6R",
                 "Cost": "100"
             },
             {
-                "Spell Fetish": "Manipulation",
+                "Name": "Manipulation",
                 "Availability": "6R",
                 "Cost": "150"
             }
         ],
         "spell-formulae": [
             {
-                "Spell Formulae": "Combat",
+                "Name": "Combat",
                 "Availability": "8F",
                 "Cost": "2000"
             },
             {
-                "Spell Formulae": "Detection",
+                "Name": "Detection",
                 "Availability": "4R",
                 "Cost": "500"
             },
             {
-                "Spell Formulae": "Health",
+                "Name": "Health",
                 "Availability": "4R",
                 "Cost": "500"
             },
             {
-                "Spell Formulae": "Illusion",
+                "Name": "Illusion",
                 "Availability": "8R",
                 "Cost": "1000"
             },
             {
-                "Spell Formulae": "Manipulation",
+                "Name": "Manipulation",
                 "Availability": "8R",
                 "Cost": "1500"
             }
@@ -1622,66 +1622,66 @@
     "medical-equipment": {
         "biotech": [
             {
-                "Biotech": "Biomonitor",
+                "Name": "Biomonitor",
                 "Availability": "-",
                 "Cost": "300"
             },
             {
-                "Biotech": "Disposable Syringe",
+                "Name": "Disposable Syringe",
                 "Availability": "4",
                 "Cost": "10"
             },
             {
-                "Biotech": "Medkit (2, 4, 6)",
+                "Name": "Medkit (2, 4, 6)",
                 "Availability": "-",
                 "Cost": "100, 500, 1500"
             },
             {
-                "Biotech": "Medkit Supplies",
+                "Name": "Medkit Supplies",
                 "Availability": "-",
                 "Cost": "50"
             }
         ],
         "docwagon-contract": [
             {
-                "Docwagon Contract": "Basic",
+                "Name": "Basic",
                 "Availability": "-",
                 "Cost": "5000"
             },
             {
-                "Docwagon Contract": "Gold",
+                "Name": "Gold",
                 "Availability": "-",
                 "Cost": "50000"
             },
             {
-                "Docwagon Contract": "Platinum",
+                "Name": "Platinum",
                 "Availability": "-",
                 "Cost": "150000"
             },
             {
-                "Docwagon Contract": "Super-Platinum",
+                "Name": "Super-Platinum",
                 "Availability": "-",
                 "Cost": "300000"
             }
         ],
         "slap-patches": [
             {
-                "Slap Patch": "Antidote Patch (2, 4, 6)",
+                "Name": "Antidote Patch (2, 4, 6)",
                 "Availability": "2, 3, 4",
                 "Cost": "50, 250, 750"
             },
             {
-                "Slap Patch": "Stimulant Patch (1, 3, 6)",
+                "Name": "Stimulant Patch (1, 3, 6)",
                 "Availability": "4, 6, 8",
                 "Cost": "20, 100, 300"
             },
             {
-                "Slap Patch": "Tranq Patch (3, 6, 10)",
+                "Name": "Tranq Patch (3, 6, 10)",
                 "Availability": "4, 6, 8",
                 "Cost": "20, 100, 300"
             },
             {
-                "Slap Patch": "Trauma Patch",
+                "Name": "Trauma Patch",
                 "Availability": "2",
                 "Cost": "500"
             }
@@ -1691,100 +1691,100 @@
         "datachips-and-software": {
             "are-programs": [
                 {
-                    "ARE Program": "Virtual Surround Music",
+                    "Name": "Virtual Surround Music",
                     "Availability": "-",
                     "Cost": "1"
                 },
                 {
-                    "ARE Program": "Wall Space",
+                    "Name": "Wall Space",
                     "Availability": "-",
                     "Cost": "50"
                 },
                 {
-                    "ARE Program": "Virtual Pet",
+                    "Name": "Virtual Pet",
                     "Availability": "-",
                     "Cost": "100"
                 },
                 {
-                    "ARE Program": "Virtual Person",
+                    "Name": "Virtual Person",
                     "Availability": "-",
                     "Cost": "150"
                 },
                 {
-                    "ARE Program": "Virtual Weather",
+                    "Name": "Virtual Weather",
                     "Availability": "-",
                     "Cost": "100"
                 },
                 {
-                    "ARE Program": "Miracle Shooter",
+                    "Name": "Miracle Shooter",
                     "Availability": "-",
                     "Cost": "50"
                 }
             ],
             "data-programs": [
                 {
-                    "Data Program": "Datasofts (2, 4, 6)",
+                    "Name": "Datasofts (2, 4, 6)",
                     "Availability": "-",
                     "Cost": "10, 50, 150"
                 },
                 {
-                    "Data Program": "Mapsofts (2, 4, 6)",
+                    "Name": "Mapsofts (2, 4, 6)",
                     "Availability": "-",
                     "Cost": "5, 25, 75"
                 }
             ],
             "matrix-programs": [
                 {
-                    "Matrix Program": "Common Use (2, 4, 6)",
+                    "Name": "Common Use (2, 4, 6)",
                     "Availability": "-",
                     "Cost": "100, 500, 1500"
                 },
                 {
-                    "Matrix Program": "Hacking (2, 4, 6)",
+                    "Name": "Hacking (2, 4, 6)",
                     "Availability": "4R, 6R, 8R",
                     "Cost": "1000, 5000, 15000"
                 },
                 {
-                    "Matrix Program": "Agent / IC / Pilot (2, 4, 6)",
+                    "Name": "Agent / IC / Pilot (2, 4, 6)",
                     "Availability": "8, 12, 16",
                     "Cost": "2000, 10000, 30000"
                 },
                 {
-                    "Matrix Program": "Autosoft (2, 4, 6)",
+                    "Name": "Autosoft (2, 4, 6)",
                     "Availability": "4, 6, 8",
                     "Cost": "1000, 5000, 15000"
                 }
             ],
             "simsense": [
                 {
-                    "Simsense": "Sim recordings",
+                    "Name": "Sim recordings",
                     "Availability": "-",
                     "Cost": "5-50"
                 },
                 {
-                    "Simsense": "BTL recordings",
+                    "Name": "BTL recordings",
                     "Availability": "4F",
                     "Cost": "20-200"
                 },
                 {
-                    "Simsense": "VR Games",
+                    "Name": "VR Games",
                     "Availability": "-",
                     "Cost": "10-100"
                 }
             ],
             "skillsoft-programs": [
                 {
-                    "Skillsoft Program": "Activesofts (1, 3, 5)",
+                    "Name": "Activesofts (1, 3, 5)",
                     "Availability": "4, 6, 8",
                     "Cost": "5000, 25000, 75000"
                 },
                 {
-                    "Skillsoft Program": "Knowsofts (1, 3, 5)",
+                    "Name": "Knowsofts (1, 3, 5)",
                     "Availability": "-",
                     "Cost": "500, 2500, 7500"
                 },
                 {
-                    "Skillsoft Program": "Languasofts (1, 3, 5)",
+                    "Name": "Languasofts (1, 3, 5)",
                     "Availability": "-",
                     "Cost": "200, 1000, 3000"
                 }
@@ -1793,172 +1793,172 @@
         "electronics": {
             "commlink-accessories": [
                 {
-                    "Accessory": "AR Gloves",
+                    "Name": "AR Gloves",
                     "Availability": "-",
                     "Cost": "200"
                 },
                 {
-                    "Accessory": "Biometric Reader",
+                    "Name": "Biometric Reader",
                     "Availability": "4",
                     "Cost": "200"
                 },
                 {
-                    "Accessory": "Nanopaste Trodes",
+                    "Name": "Nanopaste Trodes",
                     "Availability": "3",
                     "Cost": "100"
                 },
                 {
-                    "Accessory": "Printer",
+                    "Name": "Printer",
                     "Availability": "-",
                     "Cost": "50"
                 },
                 {
-                    "Accessory": "Satellite Link",
+                    "Name": "Satellite Link",
                     "Availability": "4",
                     "Cost": "500"
                 },
                 {
-                    "Accessory": "Sim Module",
+                    "Name": "Sim Module",
                     "Availability": "-",
                     "Cost": "100"
                 },
                 {
-                    "Accessory": "Hot Sim Module",
+                    "Name": "Hot Sim Module",
                     "Availability": "4F",
                     "Cost": "200"
                 },
                 {
-                    "Accessory": "Sim Rig",
+                    "Name": "Sim Rig",
                     "Availability": "12",
                     "Cost": "1000"
                 },
                 {
-                    "Accessory": "Skin Link",
+                    "Name": "Skin Link",
                     "Availability": "6",
                     "Cost": "50"
                 },
                 {
-                    "Accessory": "Subvocal Microphone",
+                    "Name": "Subvocal Microphone",
                     "Availability": "6",
                     "Cost": "50"
                 },
                 {
-                    "Accessory": "Trodes",
+                    "Name": "Trodes",
                     "Availability": "-",
                     "Cost": "50"
                 }
             ],
             "commlink-upgrades": [
                 {
-                    "Upgrade": "Firewall (4, 6)",
+                    "Name": "Firewall (4, 6)",
                     "Availability": "4, 6",
                     "Cost": "300, 1500"
                 },
                 {
-                    "Upgrade": "Response (4, 6)",
+                    "Name": "Response (4, 6)",
                     "Availability": "4, 6",
                     "Cost": "1500, 7500"
                 },
                 {
-                    "Upgrade": "Signal (4, 6)",
+                    "Name": "Signal (4, 6)",
                     "Availability": "4, 6",
                     "Cost": "500, 1500"
                 },
                 {
-                    "Upgrade": "System (4, 6)",
+                    "Name": "System (4, 6)",
                     "Availability": "4, 6",
                     "Cost": "700, 3500"
                 }
             ],
             "commlink": [
                 {
-                    "Commlink": "Commlink (2, 4)",
+                    "Name": "Commlink (2, 4)",
                     "Availability": "2, 4",
                     "Cost": "200, 2000"
                 },
                 {
-                    "Commlink": "Operating System (2, 4)",
+                    "Name": "Operating System (2, 4)",
                     "Availability": "2, 4",
                     "Cost": "100, 1000"
                 }
             ],
             "communications": [
                 {
-                    "Communication": "Headjammer (2, 4, 6)",
+                    "Name": "Headjammer (2, 4, 6)",
                     "Availability": "6R, 9R, 12R",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Communication": "Jammer – Area (4, 8, 12)",
+                    "Name": "Jammer – Area (4, 8, 12)",
                     "Availability": "12F, 18F, 24F",
                     "Cost": "1000, 5000, 15000"
                 },
                 {
-                    "Communication": "Jammer – Directional (4, 8, 12)",
+                    "Name": "Jammer – Directional (4, 8, 12)",
                     "Availability": "8F, 12F, 16F",
                     "Cost": "500, 2500, 7500"
                 },
                 {
-                    "Communication": "Micro-Transceiver (2, 4, 6)",
+                    "Name": "Micro-Transceiver (2, 4, 6)",
                     "Availability": "4, 6, 8",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Communication": "Tag Eraser",
+                    "Name": "Tag Eraser",
                     "Availability": "6F",
                     "Cost": "200"
                 },
                 {
-                    "Communication": "White Noise Generator (2, 4, 6)",
+                    "Name": "White Noise Generator (2, 4, 6)",
                     "Availability": "4, 6, 8",
                     "Cost": "100, 500, 1500"
                 }
             ],
             "id-and-credsticks": [
                 {
-                    "ID/Credstick": "Certified Credstick",
+                    "Name": "Certified Credstick",
                     "Availability": "-",
                     "Cost": "25"
                 },
                 {
-                    "ID/Credstick": "Fake License (2, 4, 6)",
+                    "Name": "Fake License (2, 4, 6)",
                     "Availability": "4F, 6F, 8F",
                     "Cost": "100, 500, 1500"
                 },
                 {
-                    "ID/Credstick": "Fake SIN (2, 4, 6)",
+                    "Name": "Fake SIN (2, 4, 6)",
                     "Availability": "6F, 9F, 12F",
                     "Cost": "1000, 5000, 15000"
                 }
             ],
             "miscellaneous-electronics": [
                 {
-                    "Miscellaneous": "Electronic Paper",
+                    "Name": "Electronic Paper",
                     "Availability": "-",
                     "Cost": "20"
                 },
                 {
-                    "Miscellaneous": "Holo Projector",
+                    "Name": "Holo Projector",
                     "Availability": "-",
                     "Cost": "200"
                 },
                 {
-                    "Miscellaneous": "Standard RFID Tags (per 20)",
+                    "Name": "Standard RFID Tags (per 20)",
                     "Availability": "-",
                     "Cost": "1"
                 },
                 {
-                    "Miscellaneous": "Security RFID Tags (per 20)",
+                    "Name": "Security RFID Tags (per 20)",
                     "Availability": "4",
                     "Cost": "100"
                 },
                 {
-                    "Miscellaneous": "Sensor RFID Tags (per 20)",
+                    "Name": "Sensor RFID Tags (per 20)",
                     "Availability": "4",
                     "Cost": "500"
                 },
                 {
-                    "Miscellaneous": "Stealth RFID Tags (per 20)",
+                    "Name": "Stealth RFID Tags (per 20)",
                     "Availability": "6",
                     "Cost": "5"
                 }
@@ -1966,32 +1966,32 @@
         },
         "grapple-gun": [
             {
-                "Grapple Gun": "Grapple Gun",
+                "Name": "Grapple Gun",
                 "Availability": "8R",
                 "Cost": "500"
             },
             {
-                "Grapple Gun": "Catalyst Stick",
+                "Name": "Catalyst Stick",
                 "Availability": "8F",
                 "Cost": "100"
             },
             {
-                "Grapple Gun": "Microwire (per 100m)",
+                "Name": "Microwire (per 100m)",
                 "Availability": "4",
                 "Cost": "50"
             },
             {
-                "Grapple Gun": "Myomeric Rope (per 10m)",
+                "Name": "Myomeric Rope (per 10m)",
                 "Availability": "10",
                 "Cost": "200"
             },
             {
-                "Grapple Gun": "Standard Rope (per 100m)",
+                "Name": "Standard Rope (per 100m)",
                 "Availability": "-",
                 "Cost": "20"
             },
             {
-                "Grapple Gun": "Stealth Rope (per 100m)",
+                "Name": "Stealth Rope (per 100m)",
                 "Availability": "8F",
                 "Cost": "100"
             }
@@ -1999,113 +1999,113 @@
         "security": {
             "breaking-and-entering-tools": [
                 {
-                    "Breaking & Entering Tool": "Autopicker (2, 4, 6)",
+                    "Name": "Autopicker (2, 4, 6)",
                     "Availability": "6R, 9R, 12R",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Breaking & Entering Tool": "Cellular Glove Molder (1, 2, 3)",
+                    "Name": "Cellular Glove Molder (1, 2, 3)",
                     "Availability": "8F, 12F, 16F",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Breaking & Entering Tool": "Chisel",
+                    "Name": "Chisel",
                     "Availability": "-",
                     "Cost": "20"
                 },
                 {
-                    "Breaking & Entering Tool": "Keycard Copier (2, 4, 6)",
+                    "Name": "Keycard Copier (2, 4, 6)",
                     "Availability": "6F, 9F, 12F",
                     "Cost": "300, 1500, 4500"
                 },
                 {
-                    "Breaking & Entering Tool": "Lockpick Set",
+                    "Name": "Lockpick Set",
                     "Availability": "6R",
                     "Cost": "300"
                 },
                 {
-                    "Breaking & Entering Tool": "Maglock Passkey (2, 4, 6)",
+                    "Name": "Maglock Passkey (2, 4, 6)",
                     "Availability": "8F, 12F, 16F",
                     "Cost": "2000, 10000, 30000"
                 },
                 {
-                    "Breaking & Entering Tool": "Miniwelder",
+                    "Name": "Miniwelder",
                     "Availability": "2",
                     "Cost": "250"
                 },
                 {
-                    "Breaking & Entering Tool": "Monofilament Chainsaw",
+                    "Name": "Monofilament Chainsaw",
                     "Availability": "4",
                     "Cost": "300"
                 },
                 {
-                    "Breaking & Entering Tool": "Sequencer (2, 4, 6)",
+                    "Name": "Sequencer (2, 4, 6)",
                     "Availability": "8F, 12F, 16F",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Breaking & Entering Tool": "Wire Clippers",
+                    "Name": "Wire Clippers",
                     "Availability": "-",
                     "Cost": "25"
                 }
             ],
             "disguises": [
                 {
-                    "Disguise": "Latex Face Mask",
+                    "Name": "Latex Face Mask",
                     "Availability": "8",
                     "Cost": "500"
                 },
                 {
-                    "Disguise": "Nanopaste Disguise (Small, Large)",
+                    "Name": "Nanopaste Disguise (Small, Large)",
                     "Availability": "12, 16",
                     "Cost": "500, 1000"
                 }
             ],
             "locks": [
                 {
-                    "Lock": "Key Lock (2, 4, 6)",
+                    "Name": "Key Lock (2, 4, 6)",
                     "Availability": "4, 6, 8",
                     "Cost": "10, 50, 150"
                 },
                 {
-                    "Lock": "Maglock (2, 4, 6)",
+                    "Name": "Maglock (2, 4, 6)",
                     "Availability": "2, 3, 4",
                     "Cost": "100, 500, 1500"
                 },
                 {
-                    "Lock": "Keypad / Card Reader",
+                    "Name": "Keypad / Card Reader",
                     "Availability": "-",
                     "Cost": "-"
                 },
                 {
-                    "Lock": "Biometric Reader",
+                    "Name": "Biometric Reader",
                     "Availability": "+4",
                     "Cost": "+200"
                 },
                 {
-                    "Lock": "Anti-Tamper Circuits (1, 2, 4)",
+                    "Name": "Anti-Tamper Circuits (1, 2, 4)",
                     "Availability": "+2, +4, +6",
                     "Cost": "+100, +500, +1500"
                 }
             ],
             "restraints": [
                 {
-                    "Restraint": "Metal",
+                    "Name": "Metal",
                     "Availability": "-",
                     "Cost": "20"
                 },
                 {
-                    "Restraint": "Plasteel",
+                    "Name": "Plasteel",
                     "Availability": "6R",
                     "Cost": "50"
                 },
                 {
-                    "Restraint": "Plastic (per 10)",
+                    "Name": "Plastic (per 10)",
                     "Availability": "-",
                     "Cost": "1"
                 },
                 {
-                    "Restraint": "Containment Manacles",
+                    "Name": "Containment Manacles",
                     "Availability": "6R",
                     "Cost": "200"
                 }
@@ -2114,19 +2114,19 @@
         "surveillance": {
             "audio-devices": [
                 {
-                    "Audio Device": "Earbuds (2)",
+                    "Name": "Earbuds (2)",
                     "Capacity": "[4]",
                     "Availability": "-",
                     "Cost": "50"
                 },
                 {
-                    "Audio Device": "Headphones (4)",
+                    "Name": "Headphones (4)",
                     "Capacity": "[8]",
                     "Availability": "-",
                     "Cost": "50"
                 },
                 {
-                    "Audio Device": "Microphone (0, 6)",
+                    "Name": "Microphone (0, 6)",
                     "Capacity": "[1, 12]",
                     "Availability": "-",
                     "Cost": "50, 300"
@@ -2134,19 +2134,19 @@
             ],
             "audio-enhancements": [
                 {
-                    "Audio Enhancement": "Audio Enhancement (1, 2, 3)",
+                    "Name": "Audio Enhancement (1, 2, 3)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "+2",
                     "Cost": "+100, +500, +1500"
                 },
                 {
-                    "Audio Enhancement": "Select Sound Filter (1, 2, 3)",
+                    "Name": "Select Sound Filter (1, 2, 3)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "+8",
                     "Cost": "+200, +1000, +3000"
                 },
                 {
-                    "Audio Enhancement": "Spatial Recognizer",
+                    "Name": "Spatial Recognizer",
                     "Capacity": "[2]",
                     "Availability": "+6",
                     "Cost": "+100"
@@ -2154,123 +2154,173 @@
             ],
             "imaging-devices": [
                 {
-                    "Imaging Device": "Binoculars - Electronic (2)",
+                    "Name": "Binoculars - Electronic (2)",
                     "Capacity": "[2]",
                     "Availability": "-",
                     "Cost": "100"
                 },
                 {
-                    "Imaging Device": "Binoculars - Optical",
+                    "Name": "Binoculars - Optical",
                     "Capacity": "-",
                     "Availability": "-",
                     "Cost": "50"
                 },
                 {
-                    "Imaging Device": "Camera (0, 2, 4, 6)",
+                    "Name": "Camera (0, 2, 4, 6)",
                     "Capacity": "[0, 4, 8, 12]",
                     "Availability": "-",
                     "Cost": "200, 100, 500, 1500"
                 },
                 {
-                    "Imaging Device": "Contact Lenses (2)",
+                    "Name": "Contact Lenses (2)",
                     "Capacity": "[4]",
                     "Availability": "6",
                     "Cost": "100"
                 },
                 {
-                    "Imaging Device": "Glasses (4)",
+                    "Name": "Glasses (4)",
                     "Capacity": "[8]",
                     "Availability": "-",
                     "Cost": "100"
                 },
                 {
-                    "Imaging Device": "Goggles (6)",
+                    "Name": "Goggles (6)",
                     "Capacity": "[12]",
                     "Availability": "-",
                     "Cost": "300"
                 },
                 {
-                    "Imaging Device": "Monocle (4)",
+                    "Name": "Monocle (4)",
                     "Capacity": "[8]",
                     "Availability": "4",
                     "Cost": "100"
                 },
                 {
-                    "Imaging Device": "Endoscope",
+                    "Name": "Endoscope",
                     "Capacity": "-",
                     "Availability": "8",
                     "Cost": "250"
                 },
                 {
-                    "Imaging Device": "Periscope",
+                    "Name": "Periscope",
                     "Capacity": "[2]",
                     "Availability": "3",
                     "Cost": "50"
                 },
                 {
-                    "Imaging Device": "Mage Sight Goggles",
+                    "Name": "Mage Sight Goggles",
                     "Capacity": "[2]",
                     "Availability": "12R",
                     "Cost": "2000"
                 }
             ],
+            "imaging-enhancements": [
+                {
+                    "Name": "Low Light",
+                    "Capacity": "[2]",
+                    "Availability": "+4",
+                    "Cost": "+100"
+                },
+                {
+                    "Name": "Flare Comp",
+                    "Capacity": "[1]",
+                    "Availability": "+2",
+                    "Cost": "+50"
+                },
+                {
+                    "Name": "Image Link",
+                    "Capacity": "[1]",
+                    "Availability": "-",
+                    "Cost": "+25"
+                },
+                {
+                    "Name": "Smartlink",
+                    "Capacity": "[3]",
+                    "Availability": "+4F",
+                    "Cost": "+500"
+                },
+                {
+                    "Name": "Thermographic",
+                    "Capacity": "[2]",
+                    "Availability": "+6",
+                    "Cost": "+100"
+                },
+                {
+                    "Name": "Ultrasound",
+                    "Capacity": "[2]",
+                    "Availability": "+8",
+                    "Cost": "+1000"
+                },
+                {
+                    "Name": "Visual Enhancement (1, 2, 3)",
+                    "Capacity": "[1, 2, 3]",
+                    "Availability": "+2, +4, +6",
+                    "Cost": "+100, +500, +1500"
+                },
+                {
+                    "Name": "Visual Magnification",
+                    "Capacity": "[2]",
+                    "Availability": "+2",
+                    "Cost": "+100"
+                }
+            ],
             "sensor-functions": [
                 {
-                    "Sensor Function": "Atmosphere Sensor (1, 2, 3)",
+                    "Name": "Atmosphere Sensor (1, 2, 3)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "2, 3, 4",
                     "Cost": "20, 100, 300"
                 },
                 {
-                    "Sensor Function": "Cyberware Scanner (2, 4, 6)",
+                    "Name": "Cyberware Scanner (2, 4, 6)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "4R, 6R, 8R",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Sensor Function": "Directional Microphone (2, 4, 6)",
+                    "Name": "Directional Microphone (2, 4, 6)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "4, 6, 8",
                     "Cost": "50, 250, 750"
                 },
                 {
-                    "Sensor Function": "Geiger Counter",
+                    "Name": "Geiger Counter",
                     "Capacity": "[2]",
                     "Availability": "4",
                     "Cost": "50"
                 },
                 {
-                    "Sensor Function": "Laser Microphone (2, 4, 6)",
+                    "Name": "Laser Microphone (2, 4, 6)",
                     "Capacity": "[2, 3, 4]",
                     "Availability": "6R, 9R, 12R",
                     "Cost": "50, 250, 750"
                 },
                 {
-                    "Sensor Function": "Laser Range Finder",
+                    "Name": "Laser Range Finder",
                     "Capacity": "[1]",
                     "Availability": "8",
                     "Cost": "100"
                 },
                 {
-                    "Sensor Function": "MAD Scanner (2, 4, 6)",
+                    "Name": "MAD Scanner (2, 4, 6)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "6R, 9R, 12R",
                     "Cost": "100, 500, 750"
                 },
                 {
-                    "Sensor Function": "Motion Sensor",
+                    "Name": "Motion Sensor",
                     "Capacity": "[2]",
                     "Availability": "4",
                     "Cost": "50"
                 },
                 {
-                    "Sensor Function": "Olfactory Sensor (2, 4, 6)",
+                    "Name": "Olfactory Sensor (2, 4, 6)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "4, 6, 8",
                     "Cost": "500, 2500, 7500"
                 },
                 {
-                    "Sensor Function": "Radio Signal Scanner (2, 4, 6)",
+                    "Name": "Radio Signal Scanner (2, 4, 6)",
                     "Capacity": "[1, 2, 3]",
                     "Availability": "4R, 6R, 8R",
                     "Cost": "20, 100, 300"
@@ -2278,182 +2328,132 @@
             ],
             "sensor-package": [
                 {
-                    "Sensor Package": "RFID",
+                    "Name": "RFID",
                     "Capacity": "[1]",
                     "Signal": "0"
                 },
                 {
-                    "Sensor Package": "Micro",
+                    "Name": "Micro",
                     "Capacity": "[1]",
                     "Signal": "2"
                 },
                 {
-                    "Sensor Package": "Handheld / Mini Drone",
+                    "Name": "Handheld / Mini Drone",
                     "Capacity": "[2]",
                     "Signal": "3"
                 },
                 {
-                    "Sensor Package": "Mounted / Small Drone",
+                    "Name": "Mounted / Small Drone",
                     "Capacity": "[4]",
                     "Signal": "4"
                 },
                 {
-                    "Sensor Package": "Scanner / Medium Drone",
+                    "Name": "Scanner / Medium Drone",
                     "Capacity": "[6]",
                     "Signal": "4"
                 },
                 {
-                    "Sensor Package": "Large Drone",
+                    "Name": "Large Drone",
                     "Capacity": "[8]",
                     "Signal": "4"
                 },
                 {
-                    "Sensor Package": "Vehicle",
+                    "Name": "Vehicle",
                     "Capacity": "[12]",
                     "Signal": "5"
-                }
-            ],
-            "visual-enhancements": [
-                {
-                    "Visual Enhancement": "Low Light",
-                    "Capacity": "[2]",
-                    "Availability": "+4",
-                    "Cost": "+100"
-                },
-                {
-                    "Visual Enhancement": "Flare Comp",
-                    "Capacity": "[1]",
-                    "Availability": "+2",
-                    "Cost": "+50"
-                },
-                {
-                    "Visual Enhancement": "Image Link",
-                    "Capacity": "[1]",
-                    "Availability": "-",
-                    "Cost": "+25"
-                },
-                {
-                    "Visual Enhancement": "Smartlink",
-                    "Capacity": "[3]",
-                    "Availability": "+4F",
-                    "Cost": "+500"
-                },
-                {
-                    "Visual Enhancement": "Thermographic",
-                    "Capacity": "[2]",
-                    "Availability": "+6",
-                    "Cost": "+100"
-                },
-                {
-                    "Visual Enhancement": "Ultrasound",
-                    "Capacity": "[2]",
-                    "Availability": "+8",
-                    "Cost": "+1000"
-                },
-                {
-                    "Visual Enhancement": "Visual Enhancement (1, 2, 3)",
-                    "Capacity": "[1, 2, 3]",
-                    "Availability": "+2, +4, +6",
-                    "Cost": "+100, +500, +1500"
-                },
-                {
-                    "Visual Enhancement": "Visual Magnification",
-                    "Capacity": "[2]",
-                    "Availability": "+2",
-                    "Cost": "+100"
                 }
             ]
         },
         "survival-gear": [
             {
-                "Survival Gear": "Chemsuit (2, 4, 6)",
+                "Name": "Chemsuit (2, 4, 6)",
                 "Availability": "6, 9, 12",
                 "Cost": "100, 500, 1500"
             },
             {
-                "Survival Gear": "Climbing Gear",
+                "Name": "Climbing Gear",
                 "Availability": "-",
                 "Cost": "200"
             },
             {
-                "Survival Gear": "Diving Gear",
+                "Name": "Diving Gear",
                 "Availability": "6",
                 "Cost": "2000"
             },
             {
-                "Survival Gear": "Gas Mask",
+                "Name": "Gas Mask",
                 "Availability": "4",
                 "Cost": "200"
             },
             {
-                "Survival Gear": "Gecko Tape Gloves",
+                "Name": "Gecko Tape Gloves",
                 "Availability": "8",
                 "Cost": "250"
             },
             {
-                "Survival Gear": "GPS",
+                "Name": "GPS",
                 "Availability": "-",
                 "Cost": "200"
             },
             {
-                "Survival Gear": "Hazmat Suit",
+                "Name": "Hazmat Suit",
                 "Availability": "12",
                 "Cost": "1000"
             },
             {
-                "Survival Gear": "Flashlight",
+                "Name": "Flashlight",
                 "Availability": "-",
                 "Cost": "25"
             },
             {
-                "Survival Gear": "Light Stick",
+                "Name": "Light Stick",
                 "Availability": "-",
                 "Cost": "5"
             },
             {
-                "Survival Gear": "Magnesium Torch",
+                "Name": "Magnesium Torch",
                 "Availability": "-",
                 "Cost": "20"
             },
             {
-                "Survival Gear": "Micro Flare Launcher",
+                "Name": "Micro Flare Launcher",
                 "Availability": "-",
                 "Cost": "50"
             },
             {
-                "Survival Gear": "Micro Flares",
+                "Name": "Micro Flares",
                 "Availability": "-",
                 "Cost": "25"
             },
             {
-                "Survival Gear": "Rappelling Gloves",
+                "Name": "Rappelling Gloves",
                 "Availability": "-",
                 "Cost": "50"
             },
             {
-                "Survival Gear": "Respirator (2, 4, 6)",
+                "Name": "Respirator (2, 4, 6)",
                 "Availability": "2, 3, 4",
                 "Cost": "10, 100, 300"
             },
             {
-                "Survival Gear": "Survival Kit",
+                "Name": "Survival Kit",
                 "Availability": "4",
                 "Cost": "100"
             }
         ],
         "tools": [
             {
-                "Tool": "Kit",
+                "Name": "Kit",
                 "Availability": "-",
                 "Cost": "500"
             },
             {
-                "Tool": "Shop",
+                "Name": "Shop",
                 "Availability": "8",
                 "Cost": "5000"
             },
             {
-                "Tool": "Facility",
+                "Name": "Facility",
                 "Availability": "12",
                 "Cost": "100000"
             }
@@ -2462,28 +2462,28 @@
     "vehicles-and-drones": {
         "bikes": [
             {
-                "Vehicle": "Dodge Scoot",
+                "Name": "Dodge Scoot",
                 "Pilot": "0",
                 "Sensor": "2",
                 "Availability": "2",
                 "Cost": "2000"
             },
             {
-                "Vehicle": "Harley-Davidson Scorpion",
+                "Name": "Harley-Davidson Scorpion",
                 "Pilot": "2",
                 "Sensor": "2",
                 "Availability": "4",
                 "Cost": "15000"
             },
             {
-                "Vehicle": "Yamaha Growler",
+                "Name": "Yamaha Growler",
                 "Pilot": "0",
                 "Sensor": "2",
                 "Availability": "4",
                 "Cost": "5000"
             },
             {
-                "Vehicle": "Suzuki Mirage",
+                "Name": "Suzuki Mirage",
                 "Pilot": "0",
                 "Sensor": "2",
                 "Availability": "4",
@@ -2492,35 +2492,35 @@
         ],
         "cars": [
             {
-                "Vehicle": "Eurocar Westwind 3K",
+                "Name": "Eurocar Westwind 3K",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "8",
                 "Cost": "100000"
             },
             {
-                "Vehicle": "Ford Spiral 115Ti",
+                "Name": "Ford Spiral 115Ti",
                 "Pilot": "2",
                 "Sensor": "2",
                 "Availability": "4",
                 "Cost": "50000"
             },
             {
-                "Vehicle": "Honda Spirit",
+                "Name": "Honda Spirit",
                 "Pilot": "0",
                 "Sensor": "2",
                 "Availability": "2",
                 "Cost": "10000"
             },
             {
-                "Vehicle": "Mercury Comet",
+                "Name": "Mercury Comet",
                 "Pilot": "2",
                 "Sensor": "2",
                 "Availability": "2",
                 "Cost": "20000"
             },
             {
-                "Vehicle": "Mitsubishi Nightsky",
+                "Name": "Mitsubishi Nightsky",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "12",
@@ -2529,21 +2529,21 @@
         ],
         "large-drones": [
             {
-                "Vehicle": "C-D Dalmation",
+                "Name": "C-D Dalmation",
                 "Pilot": "4",
                 "Sensor": "4",
                 "Availability": "8",
                 "Cost": "3000"
             },
             {
-                "Vehicle": "CrashCart Autodoc",
+                "Name": "CrashCart Autodoc",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "8R",
                 "Cost": "5000"
             },
             {
-                "Vehicle": "Steel Lynx",
+                "Name": "Steel Lynx",
                 "Pilot": "4",
                 "Sensor": "4",
                 "Availability": "12F",
@@ -2552,21 +2552,21 @@
         ],
         "medium-drones": [
             {
-                "Vehicle": "GM-Nissan Doberman",
+                "Name": "GM-Nissan Doberman",
                 "Pilot": "4",
                 "Sensor": "4",
                 "Availability": "8F",
                 "Cost": "10000"
             },
             {
-                "Vehicle": "MCT-Nissan Rotordrone",
+                "Name": "MCT-Nissan Rotordrone",
                 "Pilot": "4",
                 "Sensor": "4",
                 "Availability": "6",
                 "Cost": "2000"
             },
             {
-                "Vehicle": "Renraku Stormcloud",
+                "Name": "Renraku Stormcloud",
                 "Pilot": "4",
                 "Sensor": "4",
                 "Availability": "8",
@@ -2575,14 +2575,14 @@
         ],
         "micro-drones": [
             {
-                "Vehicle": "Shiawase Kanmushi",
+                "Name": "Shiawase Kanmushi",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "8",
                 "Cost": "1000"
             },
             {
-                "Vehicle": "S-B Microskimmer",
+                "Name": "S-B Microskimmer",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "8",
@@ -2591,14 +2591,14 @@
         ],
         "mini-drones": [
             {
-                "Vehicle": "Lone Star iBall",
+                "Name": "Lone Star iBall",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "6R",
                 "Cost": "2000"
             },
             {
-                "Vehicle": "MCT Fly-Spy",
+                "Name": "MCT Fly-Spy",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "6",
@@ -2607,14 +2607,14 @@
         ],
         "security-vehicles": [
             {
-                "Vehicle": "Chrysler-Nissan Patrol-1",
+                "Name": "Chrysler-Nissan Patrol-1",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "12F",
                 "Cost": "50000"
             },
             {
-                "Vehicle": "Ares Citymaster",
+                "Name": "Ares Citymaster",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "20F",
@@ -2623,14 +2623,14 @@
         ],
         "small-drones": [
             {
-                "Vehicle": "Aztechnology Crawler",
+                "Name": "Aztechnology Crawler",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Vehicle": "Lockheed Optic-X",
+                "Name": "Lockheed Optic-X",
                 "Pilot": "4",
                 "Sensor": "2",
                 "Availability": "6",
@@ -2639,14 +2639,14 @@
         ],
         "trucks": [
             {
-                "Vehicle": "GMC Bulldog Step-van",
+                "Name": "GMC Bulldog Step-van",
                 "Pilot": "2",
                 "Sensor": "2",
                 "Availability": "6",
                 "Cost": "35000"
             },
             {
-                "Vehicle": "Toyota Gopher",
+                "Name": "Toyota Gopher",
                 "Pilot": "0",
                 "Sensor": "2",
                 "Availability": "4",
@@ -2655,12 +2655,12 @@
         ],
         "vehicle-modifications": [
             {
-                "Modification": "Rigger Adaption",
+                "Name": "Rigger Adaption",
                 "Availability": "4",
                 "Cost": "1000"
             },
             {
-                "Modification": "Weapon Mount",
+                "Name": "Weapon Mount",
                 "Availability": "8F",
                 "Cost": "2000"
             }
@@ -2668,9 +2668,81 @@
     },
     "weapons": {
         "firearms": {
-            "ammunition-type": [
+            "ammunition-calibers": [
                 {
-                    "Ammunition": "Armor Piercing",
+                    "Name": "Dart",
+                    "Availability": "-",
+                    "Cost (per X shots)": "20"
+                },
+                {
+                    "Name": "Taser",
+                    "Availability": "-",
+                    "Cost (per X shots)": "10"
+                },
+                {
+                    "Name": "Holdout Pistols",
+                    "Availability": "-",
+                    "Cost (per X shots)": "100"
+                },
+                {
+                    "Name": "Light Pistols",
+                    "Availability": "-",
+                    "Cost (per X shots)": "100"
+                },
+                {
+                    "Name": "Sub Machineguns",
+                    "Availability": "-",
+                    "Cost (per X shots)": "100"
+                },
+                {
+                    "Name": "Heavy Pistols",
+                    "Availability": "+2",
+                    "Cost (per X shots)": "20"
+                },
+                {
+                    "Name": "Shotguns",
+                    "Availability": "-",
+                    "Cost (per X shots)": "20"
+                },
+                {
+                    "Name": "Assault Rifles",
+                    "Availability": "+4",
+                    "Cost (per X shots)": "50"
+                },
+                {
+                    "Name": "Light Machineguns",
+                    "Availability": "+4",
+                    "Cost (per X shots)": "50"
+                },
+                {
+                    "Name": "Sport Rifles",
+                    "Availability": "+6",
+                    "Cost (per X shots)": "20"
+                },
+                {
+                    "Name": "Medium Machineguns",
+                    "Availability": "+6",
+                    "Cost (per X shots)": "20"
+                },
+                {
+                    "Name": "Sniper Rifles",
+                    "Availability": "+8",
+                    "Cost (per X shots)": "10"
+                },
+                {
+                    "Name": "Heavy Machineguns",
+                    "Availability": "+8",
+                    "Cost (per X shots)": "10"
+                },
+                {
+                    "Name": "Assault Cannons",
+                    "Availability": "+8",
+                    "Cost (per X shots)": "10"
+                }
+            ],
+            "ammunition-types": [
+                {
+                    "Name": "Armor Piercing",
                     "Damage": "-",
                     "AP": "-2",
                     "Armor": "Ballistic",
@@ -2678,7 +2750,7 @@
                     "Cost (per X shots)": "20"
                 },
                 {
-                    "Ammunition": "APDS",
+                    "Name": "APDS",
                     "Damage": "-2",
                     "AP": "-6",
                     "Armor": "Ballistic",
@@ -2686,7 +2758,7 @@
                     "Cost (per X shots)": "100"
                 },
                 {
-                    "Ammunition": "Capsule",
+                    "Name": "Capsule",
                     "Damage": "-2S",
                     "AP": "+2",
                     "Armor": "Impact",
@@ -2694,7 +2766,7 @@
                     "Cost (per X shots)": "50"
                 },
                 {
-                    "Ammunition": "Explosive",
+                    "Name": "Explosive",
                     "Damage": "+1",
                     "AP": "-1",
                     "Armor": "Ballistic",
@@ -2702,7 +2774,7 @@
                     "Cost (per X shots)": "100"
                 },
                 {
-                    "Ammunition": "Flechette",
+                    "Name": "Flechette",
                     "Damage": "+2",
                     "AP": "+5",
                     "Armor": "Impact",
@@ -2710,7 +2782,7 @@
                     "Cost (per X shots)": "50"
                 },
                 {
-                    "Ammunition": "Gel",
+                    "Name": "Gel",
                     "Damage": "-1S",
                     "AP": "+2",
                     "Armor": "Impact",
@@ -2718,7 +2790,7 @@
                     "Cost (per X shots)": "20"
                 },
                 {
-                    "Ammunition": "Hollow Point",
+                    "Name": "Hollow Point",
                     "Damage": "+1",
                     "AP": "+2",
                     "Armor": "Ballistic",
@@ -2726,7 +2798,7 @@
                     "Cost (per X shots)": "20"
                 },
                 {
-                    "Ammunition": "Incendiary",
+                    "Name": "Incendiary",
                     "Damage": "-",
                     "AP": "-",
                     "Armor": "Ballistic",
@@ -2734,7 +2806,7 @@
                     "Cost (per X shots)": "50"
                 },
                 {
-                    "Ammunition": "Regular",
+                    "Name": "Regular",
                     "Damage": "-",
                     "AP": "-",
                     "Armor": "Ballistic",
@@ -2742,7 +2814,7 @@
                     "Cost (per X shots)": "10"
                 },
                 {
-                    "Ammunition": "Tracer",
+                    "Name": "Tracer",
                     "Damage": "-",
                     "AP": "-",
                     "Armor": "Ballistic",
@@ -2750,7 +2822,7 @@
                     "Cost (per X shots)": "50"
                 },
                 {
-                    "Ammunition": "Injection Dart",
+                    "Name": "Injection Dart",
                     "Damage": "-",
                     "AP": "-",
                     "Armor": "Impact",
@@ -2758,7 +2830,7 @@
                     "Cost (per X shots)": "50"
                 },
                 {
-                    "Ammunition": "Taser Dart",
+                    "Name": "Taser Dart",
                     "Damage": "-",
                     "AP": "-",
                     "Armor": "Impact",
@@ -2766,81 +2838,9 @@
                     "Cost (per X shots)": "50"
                 }
             ],
-            "ammunition-weapon": [
-                {
-                    "Weapon": "Dart",
-                    "Availability": "-",
-                    "Cost (per X shots)": "20"
-                },
-                {
-                    "Weapon": "Taser",
-                    "Availability": "-",
-                    "Cost (per X shots)": "10"
-                },
-                {
-                    "Weapon": "Holdout Pistols",
-                    "Availability": "-",
-                    "Cost (per X shots)": "100"
-                },
-                {
-                    "Weapon": "Light Pistols",
-                    "Availability": "-",
-                    "Cost (per X shots)": "100"
-                },
-                {
-                    "Weapon": "Sub Machineguns",
-                    "Availability": "-",
-                    "Cost (per X shots)": "100"
-                },
-                {
-                    "Weapon": "Heavy Pistols",
-                    "Availability": "+2",
-                    "Cost (per X shots)": "20"
-                },
-                {
-                    "Weapon": "Shotguns",
-                    "Availability": "-",
-                    "Cost (per X shots)": "20"
-                },
-                {
-                    "Weapon": "Assault Rifles",
-                    "Availability": "+4",
-                    "Cost (per X shots)": "50"
-                },
-                {
-                    "Weapon": "Light Machineguns",
-                    "Availability": "+4",
-                    "Cost (per X shots)": "50"
-                },
-                {
-                    "Weapon": "Sport Rifles",
-                    "Availability": "+6",
-                    "Cost (per X shots)": "20"
-                },
-                {
-                    "Weapon": "Medium Machineguns",
-                    "Availability": "+6",
-                    "Cost (per X shots)": "20"
-                },
-                {
-                    "Weapon": "Sniper Rifles",
-                    "Availability": "+8",
-                    "Cost (per X shots)": "10"
-                },
-                {
-                    "Weapon": "Heavy Machineguns",
-                    "Availability": "+8",
-                    "Cost (per X shots)": "10"
-                },
-                {
-                    "Weapon": "Assault Cannons",
-                    "Availability": "+8",
-                    "Cost (per X shots)": "10"
-                }
-            ],
             "assault-cannons": [
                 {
-                    "Assault Cannon": "Panther XXL",
+                    "Name": "Panther XXL",
                     "Damage": "9P",
                     "AP": "-4",
                     "Mode": "SA",
@@ -2852,7 +2852,7 @@
             ],
             "assault-rifles": [
                 {
-                    "Assault Rifle": "AK-97",
+                    "Name": "AK-97",
                     "Damage": "6P",
                     "AP": "-1",
                     "Mode": "SA/BF/FA",
@@ -2862,7 +2862,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Assault Rifle": "FN HAR",
+                    "Name": "FN HAR",
                     "Damage": "7P",
                     "AP": "-2",
                     "Mode": "SA/BF/FA",
@@ -2872,7 +2872,7 @@
                     "Cost": "4000"
                 },
                 {
-                    "Assault Rifle": "M-23",
+                    "Name": "M-23",
                     "Damage": "6P",
                     "AP": "-1",
                     "Mode": "SA/BF/FA",
@@ -2884,115 +2884,115 @@
             ],
             "firearm-acessories": [
                 {
-                    "Accessory": "Advanced Safety System",
+                    "Name": "Advanced Safety System",
                     "Mount": "-",
                     "Availability": "4",
                     "Cost": "500"
                 },
                 {
-                    "Accessory": "Airburst Link",
+                    "Name": "Airburst Link",
                     "Mount": "-",
                     "Availability": "8F",
                     "Cost": "500"
                 },
                 {
-                    "Accessory": "Ammo Box",
+                    "Name": "Ammo Box",
                     "Mount": "-",
                     "Availability": "4",
                     "Cost": "20"
                 },
                 {
-                    "Accessory": "Bayonet",
+                    "Name": "Bayonet",
                     "Mount": "Barrel",
                     "Availability": "3",
                     "Cost": "40"
                 },
                 {
-                    "Accessory": "Bipod",
+                    "Name": "Bipod",
                     "Mount": "Under",
                     "Availability": "2",
                     "Cost": "100"
                 },
                 {
-                    "Accessory": "Concealable Holster",
+                    "Name": "Concealable Holster",
                     "Mount": "-",
                     "Availability": "2",
                     "Cost": "50"
                 },
                 {
-                    "Accessory": "Flashlight (Standard, Low-Light, Infrared)",
+                    "Name": "Flashlight (Standard, Low-Light, Infrared)",
                     "Mount": "Top/Under",
                     "Availability": "2, 4, 6",
                     "Cost": "50, 200, 200"
                 },
                 {
-                    "Accessory": "Foregrip",
+                    "Name": "Foregrip",
                     "Mount": "Under",
                     "Availability": "2",
                     "Cost": "100"
                 },
                 {
-                    "Accessory": "Gas-Vent System (1, 2, 3)",
+                    "Name": "Gas-Vent System (1, 2, 3)",
                     "Mount": "Barrel",
                     "Availability": "4R, 6R, 8R",
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Accessory": "Guncam",
+                    "Name": "Guncam",
                     "Mount": "Top/Under",
                     "Availability": "5",
                     "Cost": "400"
                 },
                 {
-                    "Accessory": "Gyro Stabilization",
+                    "Name": "Gyro Stabilization",
                     "Mount": "Under",
                     "Availability": "12R",
                     "Cost": "3000"
                 },
                 {
-                    "Accessory": "HOLO Sight",
+                    "Name": "HOLO Sight",
                     "Mount": "Top",
                     "Availability": "2",
                     "Cost": "100"
                 },
                 {
-                    "Accessory": "Hidden Arm Slide",
+                    "Name": "Hidden Arm Slide",
                     "Mount": "-",
                     "Availability": "6",
                     "Cost": "500"
                 },
                 {
-                    "Accessory": "Imaging Scope",
+                    "Name": "Imaging Scope",
                     "Mount": "Top",
                     "Availability": "4",
                     "Cost": "300"
                 },
                 {
-                    "Accessory": "Laser Sight",
+                    "Name": "Laser Sight",
                     "Mount": "Top/Under",
                     "Availability": "2",
                     "Cost": "100"
                 },
                 {
-                    "Accessory": "Quick-Draw Holster",
+                    "Name": "Quick-Draw Holster",
                     "Mount": "-",
                     "Availability": "2",
                     "Cost": "50"
                 },
                 {
-                    "Accessory": "Safe Target System",
+                    "Name": "Safe Target System",
                     "Mount": "-",
                     "Availability": "8",
                     "Cost": "1000"
                 },
                 {
-                    "Accessory": "Shock Pad",
+                    "Name": "Shock Pad",
                     "Mount": "Stock",
                     "Availability": "2",
                     "Cost": "50"
                 },
                 {
-                    "Accessory": "Silencer",
+                    "Name": "Silencer",
                     "Mount": "Barrel",
                     "Availability": "8F",
                     "Cost": "500"
@@ -3000,7 +3000,7 @@
             ],
             "heavy-machineguns": [
                 {
-                    "Heavy Machinegun": "Ultimax HMG",
+                    "Name": "Ultimax HMG",
                     "Damage": "8P",
                     "AP": "-3",
                     "Mode": "FA",
@@ -3010,7 +3010,7 @@
                     "Cost": "8000"
                 },
                 {
-                    "Heavy Machinegun": "Stoner-Ares M107",
+                    "Name": "Stoner-Ares M107",
                     "Damage": "9P",
                     "AP": "-4",
                     "Mode": "FA",
@@ -3022,7 +3022,7 @@
             ],
             "heavy-pistols": [
                 {
-                    "Heavy Pistol": "Ares Predator",
+                    "Name": "Ares Predator",
                     "Damage": "5P",
                     "AP": "-1",
                     "Mode": "SA",
@@ -3032,7 +3032,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Heavy Pistol": "Eichiro Hatamoto II",
+                    "Name": "Eichiro Hatamoto II",
                     "Damage": "7P",
                     "AP": "-1",
                     "Mode": "SS",
@@ -3042,7 +3042,7 @@
                     "Cost": "1500"
                 },
                 {
-                    "Heavy Pistol": "Ruger Super Warhawk",
+                    "Name": "Ruger Super Warhawk",
                     "Damage": "5P",
                     "AP": "-1",
                     "Mode": "SA",
@@ -3052,7 +3052,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Heavy Pistol": "WW Infiltrator",
+                    "Name": "WW Infiltrator",
                     "Damage": "5P",
                     "AP": "-1",
                     "Mode": "SA",
@@ -3062,7 +3062,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Heavy Pistol": "Savalette Guardian",
+                    "Name": "Savalette Guardian",
                     "Damage": "5P",
                     "AP": "-1",
                     "Mode": "SA/BF/FA",
@@ -3074,17 +3074,17 @@
             ],
             "holdout-pistols": [
                 {
-                    "Holdout Pistol": "Streetline Special",
+                    "Name": "Streetline Special",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA",
-                    "RC": "3",
+                    "RC": "1",
                     "Ammo": "6 (c)",
                     "Availability": "4R",
                     "Cost": "200"
                 },
                 {
-                    "Holdout Pistol": "Walther Palm Pistol",
+                    "Name": "Walther Palm Pistol",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SS / BF",
@@ -3096,7 +3096,7 @@
             ],
             "light-machineguns": [
                 {
-                    "Light Machinegun": "Ingram White Knight",
+                    "Name": "Ingram White Knight",
                     "Damage": "6P",
                     "AP": "-1",
                     "Mode": "FA",
@@ -3108,7 +3108,7 @@
             ],
             "light-pistols": [
                 {
-                    "Light Pistol": "Colt America L36",
+                    "Name": "Colt America L36",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA",
@@ -3118,7 +3118,7 @@
                     "Cost": "100"
                 },
                 {
-                    "Light Pistol": "Fichetti Security 600",
+                    "Name": "Fichetti Security 600",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA",
@@ -3128,7 +3128,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Light Pistol": "SA Puzzler",
+                    "Name": "SA Puzzler",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA",
@@ -3138,7 +3138,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Light Pistol": "Ceska Black Scorpion",
+                    "Name": "Ceska Black Scorpion",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA/BF/FA",
@@ -3150,7 +3150,7 @@
             ],
             "medium-machineguns": [
                 {
-                    "Medium Machinegun": "FN MAG-5",
+                    "Name": "FN MAG-5",
                     "Damage": "7P",
                     "AP": "-2",
                     "Mode": "FA",
@@ -3162,7 +3162,7 @@
             ],
             "shotguns": [
                 {
-                    "Shotgun": "Defiance T-250",
+                    "Name": "Defiance T-250",
                     "Damage": "7P",
                     "AP": "-1",
                     "Mode": "SS (P)",
@@ -3172,7 +3172,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Shotgun": "Mossberg AM-CDMT",
+                    "Name": "Mossberg AM-CDMT",
                     "Damage": "7P",
                     "AP": "-1",
                     "Mode": "SA",
@@ -3182,7 +3182,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Shotgun": "PJSS Model 55",
+                    "Name": "PJSS Model 55",
                     "Damage": "7P",
                     "AP": "-1",
                     "Mode": "SS / BF",
@@ -3192,7 +3192,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Shotgun": "Remington 990",
+                    "Name": "Remington 990",
                     "Damage": "7P",
                     "AP": "-1",
                     "Mode": "SS (P)",
@@ -3204,7 +3204,7 @@
             ],
             "sniper-rifles": [
                 {
-                    "Sniper Rifle": "Barret Model 121",
+                    "Name": "Barret Model 121",
                     "Damage": "9P",
                     "AP": "-4",
                     "Mode": "SA",
@@ -3214,7 +3214,7 @@
                     "Cost": "10000"
                 },
                 {
-                    "Sniper Rifle": "Ranger Arms SM-4",
+                    "Name": "Ranger Arms SM-4",
                     "Damage": "8P",
                     "AP": "-3",
                     "Mode": "SA",
@@ -3226,7 +3226,7 @@
             ],
             "sport-rifles": [
                 {
-                    "Sport Rifle": "Ruger 100",
+                    "Name": "Ruger 100",
                     "Damage": "7P",
                     "AP": "-2",
                     "Mode": "SS",
@@ -3236,7 +3236,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Sport Rifle": "PJSS Elephant Rifle",
+                    "Name": "PJSS Elephant Rifle",
                     "Damage": "9P",
                     "AP": "-2",
                     "Mode": "SS / BF",
@@ -3248,7 +3248,7 @@
             ],
             "sub-machineguns": [
                 {
-                    "Submachine Gun": "HK MP-5 TX",
+                    "Name": "HK MP-5 TX",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA/BF/FA",
@@ -3258,7 +3258,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Submachine Gun": "HK Urban Combat",
+                    "Name": "HK Urban Combat",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "SA/BF/FA",
@@ -3268,7 +3268,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Submachine Gun": "Uzi IV",
+                    "Name": "Uzi IV",
                     "Damage": "4P",
                     "AP": "-",
                     "Mode": "BF/FA",
@@ -3279,10 +3279,10 @@
                 }
             ]
         },
-        "grenades-rockets-and-missiles": {
+        "grenades-and rockets": {
             "grenade-launchers": [
                 {
-                    "Grenade Launcher": "Ares Antioch",
+                    "Name": "Ares Antioch",
                     "Damage": "Grenade",
                     "AP": "-",
                     "Mode": "SS",
@@ -3292,7 +3292,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Grenade Launcher": "ArmTect MGL-12",
+                    "Name": "ArmTect MGL-12",
                     "Damage": "Grenade",
                     "AP": "-",
                     "Mode": "SS",
@@ -3304,7 +3304,7 @@
             ],
             "grenades": [
                 {
-                    "Grenade": "Flare",
+                    "Name": "Flare",
                     "Damage": "-",
                     "AP": "-",
                     "Blast": "-",
@@ -3312,7 +3312,7 @@
                     "Cost": "50"
                 },
                 {
-                    "Grenade": "Flashbang",
+                    "Name": "Flashbang",
                     "Damage": "6S",
                     "AP": "-3",
                     "Blast": "2 / 5 / 10",
@@ -3320,7 +3320,7 @@
                     "Cost": "50"
                 },
                 {
-                    "Grenade": "Fragmentation",
+                    "Name": "Fragmentation",
                     "Damage": "12P (f)",
                     "AP": "+5",
                     "Blast": "5 / 10 / 20 / 50",
@@ -3328,7 +3328,7 @@
                     "Cost": "100"
                 },
                 {
-                    "Grenade": "High Explosive",
+                    "Name": "High Explosive",
                     "Damage": "10P",
                     "AP": "-2",
                     "Blast": "2 / 5 / 10",
@@ -3336,7 +3336,7 @@
                     "Cost": "100"
                 },
                 {
-                    "Grenade": "Incendiary",
+                    "Name": "Incendiary",
                     "Damage": "Special",
                     "AP": "-",
                     "Blast": "10m Radius",
@@ -3344,7 +3344,7 @@
                     "Cost": "100"
                 },
                 {
-                    "Grenade": "Gas",
+                    "Name": "Gas",
                     "Damage": "Chemical",
                     "AP": "-",
                     "Blast": "10m Radius",
@@ -3352,7 +3352,7 @@
                     "Cost": "20 + Chemical"
                 },
                 {
-                    "Grenade": "Smoke",
+                    "Name": "Smoke",
                     "Damage": "-",
                     "AP": "-",
                     "Blast": "10m Radius",
@@ -3360,7 +3360,7 @@
                     "Cost": "20"
                 },
                 {
-                    "Grenade": "Splash",
+                    "Name": "Splash",
                     "Damage": "Chemical",
                     "AP": "-",
                     "Blast": "10m Radius",
@@ -3368,7 +3368,7 @@
                     "Cost": "20 + Chemical"
                 },
                 {
-                    "Grenade": "Thermal Smoke",
+                    "Name": "Thermal Smoke",
                     "Damage": "-",
                     "AP": "-",
                     "Blast": "10m Radius",
@@ -3376,7 +3376,7 @@
                     "Cost": "50"
                 },
                 {
-                    "Grenade": "White Phosphorus",
+                    "Name": "White Phosphorus",
                     "Damage": "8P / 4P",
                     "AP": "",
                     "Blast": "2 / 5 / 10",
@@ -3384,9 +3384,9 @@
                     "Cost": "200"
                 }
             ],
-            "missile-launchers": [
+            "rocket-launchers": [
                 {
-                    "Missile Launcher": "Aztechnology Striker",
+                    "Name": "Aztechnology Striker",
                     "Damage": "Missile",
                     "AP": "-",
                     "Mode": "SS",
@@ -3396,7 +3396,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Missile Launcher": "Great Dragon ATGM",
+                    "Name": "Great Dragon ATGM",
                     "Damage": "Missile",
                     "AP": "-",
                     "Mode": "SS",
@@ -3408,7 +3408,7 @@
             ],
             "rockets": [
                 {
-                    "Rocket / Missile": "Anti-Vehicle",
+                    "Name": "Anti-Vehicle",
                     "Damage": "16P",
                     "AP": "-2 / -6",
                     "Blast": "1 / 2 / 5",
@@ -3416,7 +3416,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Rocket / Missile": "Fragmentation",
+                    "Name": "Fragmentation",
                     "Damage": "16P(F)",
                     "AP": "+5",
                     "Blast": "5 / 10 / 20 / 50",
@@ -3424,7 +3424,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Rocket / Missile": "High Explosive",
+                    "Name": "High Explosive",
                     "Damage": "14P",
                     "AP": "-2",
                     "Blast": "2 / 5 / 10",
@@ -3436,7 +3436,7 @@
         "less-than-lethal": {
             "special-ranged-weapons": [
                 {
-                    "Special Weapon": "Ares S-III Super Squirt",
+                    "Name": "Ares S-III Super Squirt",
                     "Damage": "Chemical",
                     "AP": "-",
                     "Mode": "SA",
@@ -3446,7 +3446,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Special Weapon": "Fichetti Pain Inducer",
+                    "Name": "Fichetti Pain Inducer",
                     "Damage": "Special",
                     "AP": "-half",
                     "Mode": "SS",
@@ -3456,7 +3456,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Special Weapon": "Parashield Dart Pistol",
+                    "Name": "Parashield Dart Pistol",
                     "Damage": "Dart",
                     "AP": "-2",
                     "Mode": "SA",
@@ -3466,7 +3466,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Special Weapon": "Paraschield Dart Rifle",
+                    "Name": "Paraschield Dart Rifle",
                     "Damage": "Dart",
                     "AP": "-2",
                     "Mode": "SA",
@@ -3478,7 +3478,7 @@
             ],
             "tasers": [
                 {
-                    "Taser": "Defiance EX Shocker",
+                    "Name": "Defiance EX Shocker",
                     "Damage": "8S(e)",
                     "AP": "-half",
                     "Mode": "SS (P)",
@@ -3488,7 +3488,7 @@
                     "Cost": "200"
                 },
                 {
-                    "Taser": "Yamaha Pulsar",
+                    "Name": "Yamaha Pulsar",
                     "Damage": "6S(e)",
                     "AP": "-half",
                     "Mode": "SA",
@@ -3502,7 +3502,7 @@
         "melee-weapons": {
             "blades": [
                 {
-                    "Blade": "Ceramic Knife",
+                    "Name": "Ceramic Knife",
                     "Reach": "-",
                     "Damage": "(STR/2 + 1)P",
                     "AP": "-",
@@ -3511,16 +3511,16 @@
                     "Cost": "100"
                 },
                 {
-                    "Blade": "Claymore",
+                    "Name": "Claymore",
                     "Reach": "2",
-                    "Damage": "(STR/2 +4)P",
+                    "Damage": "(STR/2 + 4)P",
                     "AP": "-1",
                     "STR Min": "5 (7)",
                     "Availability": "8R",
                     "Cost": "1000"
                 },
                 {
-                    "Blade": "Combat Axe",
+                    "Name": "Combat Axe",
                     "Reach": "2",
                     "Damage": "(STR/2 + 4)P",
                     "AP": "-1",
@@ -3529,7 +3529,7 @@
                     "Cost": "500"
                 },
                 {
-                    "Blade": "Forearm Snap-blades",
+                    "Name": "Forearm Snap-blades",
                     "Reach": "-",
                     "Damage": "(STR/2 + 2)P",
                     "AP": "-",
@@ -3538,7 +3538,7 @@
                     "Cost": "200"
                 },
                 {
-                    "Blade": "Katana",
+                    "Name": "Katana",
                     "Reach": "1",
                     "Damage": "(STR/2 + 3)P",
                     "AP": "-1",
@@ -3547,7 +3547,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Blade": "Knife",
+                    "Name": "Knife",
                     "Reach": "-",
                     "Damage": "(STR/2 + 1)P",
                     "AP": "-",
@@ -3556,7 +3556,7 @@
                     "Cost": "20"
                 },
                 {
-                    "Blade": "Monofilament Sword",
+                    "Name": "Monofilament Sword",
                     "Reach": "1",
                     "Damage": "(STR/2 + 3)P",
                     "AP": "-1",
@@ -3565,7 +3565,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Blade": "Spear",
+                    "Name": "Spear",
                     "Reach": "2",
                     "Damage": "(STR/2 +2)P",
                     "AP": "-",
@@ -3574,7 +3574,7 @@
                     "Cost": "200"
                 },
                 {
-                    "Blade": "Survival Knife",
+                    "Name": "Survival Knife",
                     "Reach": "-",
                     "Damage": "(STR/2 + 1)P",
                     "AP": "-",
@@ -3583,7 +3583,7 @@
                     "Cost": "50"
                 },
                 {
-                    "Blade": "Sword",
+                    "Name": "Sword",
                     "Reach": "1",
                     "Damage": "(STR/2 + 2)P",
                     "AP": "-1",
@@ -3592,7 +3592,7 @@
                     "Cost": "350"
                 },
                 {
-                    "Blade": "Tomahawk",
+                    "Name": "Tomahawk",
                     "Reach": "1",
                     "Damage": "(STR/2 +2)P",
                     "AP": "-",
@@ -3601,7 +3601,7 @@
                     "Cost": "200"
                 },
                 {
-                    "Blade": "Vibro Knife",
+                    "Name": "Vibro Knife",
                     "Reach": "-",
                     "Damage": "(STR/2 +2)P",
                     "AP": "-2",
@@ -3610,7 +3610,7 @@
                     "Cost": "1000"
                 },
                 {
-                    "Blade": "Vibro Sword",
+                    "Name": "Vibro Sword",
                     "Reach": "1",
                     "Damage": "(STR/2 + 4)P",
                     "AP": "-2",
@@ -3621,7 +3621,7 @@
             ],
             "clubs": [
                 {
-                    "Club": "Club",
+                    "Name": "Club",
                     "Reach": "1",
                     "Damage": "(STR/2 + 1)P",
                     "AP": "-",
@@ -3630,7 +3630,7 @@
                     "Cost": "20"
                 },
                 {
-                    "Club": "Extendable Baton",
+                    "Name": "Extendable Baton",
                     "Reach": "1",
                     "Damage": "(STR/2 + 1)P",
                     "AP": "-",
@@ -3639,7 +3639,7 @@
                     "Cost": "50"
                 },
                 {
-                    "Club": "Sap",
+                    "Name": "Sap",
                     "Reach": "-",
                     "Damage": "(STR/2 + 1)S",
                     "AP": "-",
@@ -3648,7 +3648,7 @@
                     "Cost": "20"
                 },
                 {
-                    "Club": "Staff",
+                    "Name": "Staff",
                     "Reach": "2",
                     "Damage": "(STR/2 + 2)P",
                     "AP": "-",
@@ -3657,7 +3657,7 @@
                     "Cost": "50"
                 },
                 {
-                    "Club": "Stun Baton",
+                    "Name": "Stun Baton",
                     "Reach": "1",
                     "Damage": "6S(e)",
                     "AP": "-half",
@@ -3668,7 +3668,7 @@
             ],
             "exotic-melee-weapons": [
                 {
-                    "Exotic Melee Weapon": "Garrote",
+                    "Name": "Garrote",
                     "Reach": "-",
                     "Damage": "(STR/2)P",
                     "AP": "-",
@@ -3677,7 +3677,7 @@
                     "Cost": "20"
                 },
                 {
-                    "Exotic Melee Weapon": "Monofilament Garrote",
+                    "Name": "Monofilament Garrote",
                     "Reach": "-",
                     "Damage": "8P",
                     "AP": "-4",
@@ -3686,7 +3686,7 @@
                     "Cost": "2000"
                 },
                 {
-                    "Exotic Melee Weapon": "Monofilament Whip",
+                    "Name": "Monofilament Whip",
                     "Reach": "2",
                     "Damage": "8P",
                     "AP": "-4",
@@ -3695,7 +3695,7 @@
                     "Cost": "5000"
                 },
                 {
-                    "Exotic Melee Weapon": "Pole Arm",
+                    "Name": "Pole Arm",
                     "Reach": "2",
                     "Damage": "(STR/2 + 2)P",
                     "AP": "-2",
@@ -3706,7 +3706,7 @@
             ],
             "unarmed": [
                 {
-                    "Unarmed": "Hardliner Gloves",
+                    "Name": "Hardliner Gloves",
                     "Reach": "-",
                     "Damage": "(STR/2 + 1)S",
                     "AP": "-",
@@ -3715,7 +3715,7 @@
                     "Cost": "100"
                 },
                 {
-                    "Unarmed": "Shock Glove",
+                    "Name": "Shock Glove",
                     "Reach": "-",
                     "Damage": "5S(e)",
                     "AP": "-half",
@@ -3728,49 +3728,49 @@
         "projectile-and-throwing-weapons": {
             "arrowheads": [
                 {
-                    "Arrowhead": "Regular",
+                    "Name": "Regular",
                     "Damage": "-",
                     "AP": "-",
                     "Availability": "2",
                     "Cost": "5"
                 },
                 {
-                    "Arrowhead": "Injection",
+                    "Name": "Injection",
                     "Damage": "-",
                     "AP": "-",
                     "Availability": "8R",
                     "Cost": "50"
                 },
                 {
-                    "Arrowhead": "Barbed",
+                    "Name": "Barbed",
                     "Damage": "-",
                     "AP": "-",
                     "Availability": "6R",
                     "Cost": "10"
                 },
                 {
-                    "Arrowhead": "Explosive",
+                    "Name": "Explosive",
                     "Damage": "+1",
                     "AP": "-1",
                     "Availability": "10F",
                     "Cost": "50"
                 },
                 {
-                    "Arrowhead": "Hammerhead",
+                    "Name": "Hammerhead",
                     "Damage": "S",
                     "AP": "+2",
                     "Availability": "4",
                     "Cost": "10"
                 },
                 {
-                    "Arrowhead": "Incendiary",
+                    "Name": "Incendiary",
                     "Damage": "-",
                     "AP": "-",
                     "Availability": "12F",
                     "Cost": "20"
                 },
                 {
-                    "Arrowhead": "Screamer",
+                    "Name": "Screamer",
                     "Damage": "-2S",
                     "AP": "+2",
                     "Availability": "2",
@@ -3779,28 +3779,28 @@
             ],
             "bows": [
                 {
-                    "Bow": "Bow – Rating 2",
+                    "Name": "Bow – Rating 2",
                     "Damage": "3P",
                     "AP": "-",
                     "Availability": "2",
                     "Cost": "100"
                 },
                 {
-                    "Bow": "Bow – Rating 4",
+                    "Name": "Bow – Rating 4",
                     "Damage": "4P",
                     "AP": "-1",
                     "Availability": "4",
                     "Cost": "200"
                 },
                 {
-                    "Bow": "Bow – Rating 6",
+                    "Name": "Bow – Rating 6",
                     "Damage": "5P",
                     "AP": "-2",
                     "Availability": "6",
                     "Cost": "500"
                 },
                 {
-                    "Bow": "Bow – Rating 8",
+                    "Name": "Bow – Rating 8",
                     "Damage": "6P",
                     "AP": "-3",
                     "Availability": "8",
@@ -3809,28 +3809,28 @@
             ],
             "crossbows": [
                 {
-                    "Crossbow": "Pistol Crossbow",
+                    "Name": "Pistol Crossbow",
                     "Damage": "2P",
                     "AP": "-",
                     "Availability": "4R",
                     "Cost": "200"
                 },
                 {
-                    "Crossbow": "Light Crossbow",
+                    "Name": "Light Crossbow",
                     "Damage": "3P",
                     "AP": "-",
                     "Availability": "2",
                     "Cost": "200"
                 },
                 {
-                    "Crossbow": "Medium Crossbow",
+                    "Name": "Medium Crossbow",
                     "Damage": "5P",
                     "AP": "-",
                     "Availability": "4R",
                     "Cost": "500"
                 },
                 {
-                    "Crossbow": "Heavy Crossbow",
+                    "Name": "Heavy Crossbow",
                     "Damage": "7P",
                     "AP": "-1",
                     "Availability": "8R",
@@ -3839,21 +3839,21 @@
             ],
             "throwing-weapons": [
                 {
-                    "Throwing Weapon": "Harpoon",
+                    "Name": "Harpoon",
                     "Damage": "(STR/2 + 2)P",
                     "AP": "-",
                     "Availability": "6",
                     "Cost": "200"
                 },
                 {
-                    "Throwing Weapon": "Knife",
+                    "Name": "Knife",
                     "Damage": "(STR/2)P",
                     "AP": "-",
                     "Availability": "2",
                     "Cost": "20"
                 },
                 {
-                    "Throwing Weapon": "Net",
+                    "Name": "Net",
                     "Damage": "-",
                     "AP": "-",
                     "Availability": "6",

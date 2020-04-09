@@ -1,4 +1,4 @@
-Headware	Essence	Capacity	Availability	Cost
+Name	Essence	Capacity	Availability	Cost
 Attention Coprocessor (1, 2, 3)	0.3	-	4, 6, 8	3000, 15000, 45000
 Commlink	0.2	[2]	-	2000 + Commlink
 Control Rig	0.5	-	8	10000

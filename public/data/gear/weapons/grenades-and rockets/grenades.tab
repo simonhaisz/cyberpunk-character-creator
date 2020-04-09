@@ -1,4 +1,4 @@
-Grenade	Damage	AP	Blast	Availability	Cost
+Name	Damage	AP	Blast	Availability	Cost
 Flare	-	-	-	4	50
 Flashbang	6S	-3	2 / 5 / 10	6F	50
 Fragmentation	12P (f)	+5	5 / 10 / 20 / 50	12F	100

@@ -13,7 +13,7 @@
             "Name": "Armorer"
         },
         {
-            "Name": "Artisan"
+            "Name": "[Artisan]"
         },
         {
             "Name": "Assensing"
@@ -56,6 +56,12 @@
         },
         {
             "Name": "Escape Artist"
+        },
+        {
+            "Name": "[Exotic Melee Weapon]"
+        },
+        {
+            "Name": "[Exotic Ranged Weapon]"
         },
         {
             "Name": "Firearms"

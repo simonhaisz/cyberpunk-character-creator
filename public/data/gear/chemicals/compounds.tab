@@ -1,4 +1,4 @@
-Compound	Availability	Cost (per 10 doses)
+Name	Availability	Cost
 Acid (2, 4, 6)	4R, 8R, 12R	500, 2500, 7500
 Adhesive (6)	6	50
 Antivenom	As venom	As venom / 2
