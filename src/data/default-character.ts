@@ -29,7 +29,132 @@ const DEFAULT_CHARACTER: Character = {
         health: [],
         illusion: [],
         manipulation: [],
-    }
+    },
+    gear: {},
+    // gear: {
+    //     weapons: {
+    //         meleeWeapons: {
+    //             unarmed: [],
+    //             clubs: [],
+    //             clades: [],
+    //             exoticMeleeWeapons: [],
+    //         },
+    //         projectileAndThrowingWeapons: {
+    //             throwingWeapons: [],
+    //             bows: [],
+    //             crossbows: [],
+    //             arrowheads: [],
+    //         },
+    //         lessThanLethal: {
+    //             tasers: [],
+    //             specialRangedWeapons: [],
+    //         },
+    //         firearms: {
+    //             holdOutPistols: [],
+    //             lightPistols: [],
+    //             heavyPistols: [],
+    //             subMachineguns: [],
+    //             shotguns: [],
+    //             assaultRifles: [],
+    //             sportRifles: [],
+    //             sniperRifles: [],
+    //             assaultCannons: [],
+    //             lightMachineguns: [],
+    //             mediumMachineguns: [],
+    //             heavyMachineguns: [],
+    //             ammunitionTypes: [],
+    //             firearmAccessories: [],
+    //         },
+    //         grenadesAndRockets: {
+    //             grenades: [],
+    //             grenadeLaunchers: [],
+    //             rockets: [],
+    //             rocketLaunchers: []
+    //         },
+    //     },
+    //     clothingAndArmor: {
+    //         clothing: [],
+    //         armor: [],
+    //         armorModifications: [],
+    //         helmetsAndShields: [],
+    //     },
+    //     augmentations: {
+    //         cyberAndBiowareGrades: [],
+    //         headware: [],
+    //         eyeware: [],
+    //         earware: [],
+    //         bodyware: [],
+    //         cyberlimbs: [],
+    //         cyberlimbEnhancements: [],
+    //         cyberlimbAccessories: [],
+    //         cyberMeleeWeapons: [],
+    //         basicBioware: [],
+    //         culturedBioware: [],
+    //     },
+    //     tech: {
+    //         electronics: {
+    //             commlink: [],
+    //             coomlinkUpgrades: [],
+    //             commlinkAccessories: [],
+    //         },
+    //         surveillance: {
+    //             imagingDevicies: [],
+    //             imagingEnhancements: [],
+    //             audioDevices: [],
+    //             audioEnhancements: [],
+    //             sensorPackages: [],
+    //             sensorFunctions: [],
+    //         },
+    //         security: {
+    //             locks: [],
+    //             restraints: [],
+    //             breakingAndEnteringTools: [],
+    //             disguises: [],
+    //         },
+    //         datachipsAndSoftware: {
+    //             matrixPrograms: [],
+    //             skillsoftPrograms: [],
+    //             dataPrograms: [],
+    //             simsemse: [],
+    //             areprograms: [],
+    //         },
+    //         tools: [],
+    //         survivalGear: [],
+    //         grapplegun: [],
+    //     },
+    //     medicalEquipment: {
+    //         biotech: [],
+    //         slapPatches: [],
+    //         docwagonContracts: [],
+    //     },
+    //     chemicals: {
+    //         drugs: [],
+    //         toxins: [],
+    //         compounds: [],
+    //     },
+    //     explosives: {
+    //         explosives: [],
+    //         detonators: [],
+    //     },
+    //     magicalEquipment: {
+    //         spellFormulae: [],
+    //         spellFetish: [],
+    //         foci: [],
+    //         magicalSupplies: [],
+    //     },
+    //     vehiclesAndDrones: {
+    //         bikes: [],
+    //         cars: [],
+    //         trucks: [],
+    //         securityVehicles: [],
+    //         microDroens: [],
+    //         miniDrones: [],
+    //         smallDrones: [],
+    //         mediumDrones: [],
+    //         largeDrones: [],
+    //         vehicleModifications: [],
+    //     },
+    // }
 };
 
 export function getDefaultCharacter(): Character {

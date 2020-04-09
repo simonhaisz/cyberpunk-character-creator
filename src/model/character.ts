@@ -34,6 +34,7 @@ export type Character = CharacterRef & {
     languageSkills: Skill[];
     contacts: Contact[];
     spells: Spells;
+    gear: any;
 };
 
 export function isAwakened(character: Character): boolean {

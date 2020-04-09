@@ -20,7 +20,8 @@ const findName = (value: any): string => {
 const findCost = (value: any): string => {
 	const cost = value[COST];
 	if (cost === undefined) {
-		throw new Error(`Could not find a cost for value '${JSON.stringify(value)}'`);
+		// throw new Error(`Could not find a cost for value '${JSON.stringify(value)}'`);
+		return "0";
 	}
 	return cost;
 };
@@ -28,7 +29,8 @@ const findCost = (value: any): string => {
 const findAvailability = (value: any): string => {
 	const availability = value[AVAILABILITY];
 	if (availability === undefined) {
-		throw new Error(`Could not find an availability for value '${JSON.stringify(value)}'`);
+		// throw new Error(`Could not find an availability for value '${JSON.stringify(value)}'`);
+		return "-";
 	}
 	return availability;
 };

@@ -47,10 +47,14 @@ const PropertyNode: FC<Props> = (props: Props) => {
 		const isRoot = parentPath.split(".").length === 1;
 		// branch-node
 		const children: JSX.Element[] = [];
-		for (const childName of Object.keys(value)) {
-			const childPath = `${parentPath}.${childName}`;
-			const childValue = value[childName];
+		for (const childName of Object.keys(all)) {
 			const childAll = all[childName];
+			const childPath = `${parentPath}.${childName}`;
+			// set the empty value early rather than passing down undefined
+			const defaultValue = isArray(childAll) ? [] : {};
+			// looping through all's properties, may not exist in value
+			const childValue = value[childName] || defaultValue;
+			
 			const onChildValueUpdated = (updatedChildValue: any) => {
 				const updatedValue = { ...value };
 				updatedValue[childName] = updatedChildValue;

@@ -39,7 +39,12 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 
 	const parentPath = breadcrums.join(".");
     allValues.push(...getChildItems(customItems, parentPath));
-    allValues.sort((a, b) => a.Name.localeCompare(b.Name));
+    allValues.sort((a, b) => {
+		if (a.Name === undefined || b.Name === undefined) {
+			throw new Error(`Value missing 'Name' property under '${parentPath}': ${JSON.stringify(allValues)}`);
+		}
+		return a.Name.localeCompare(b.Name)
+	});
 
 	const header = breadcrums[breadcrums.length - 1];
 
