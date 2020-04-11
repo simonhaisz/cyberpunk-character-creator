@@ -1,4 +1,282 @@
 {
+    "positive": [
+        {
+            "Name": "Adept",
+            "Cost": "20"
+        },
+        {
+            "Name": "Ambidextrous",
+            "Cost": "5"
+        },
+        {
+            "Name": "Analytical Mind",
+            "Cost": "5"
+        },
+        {
+            "Name": "Animal Empathy",
+            "Cost": "10"
+        },
+        {
+            "Name": "Aptitude",
+            "Cost": "10"
+        },
+        {
+            "Name": "Astral Chameleon",
+            "Cost": "5"
+        },
+        {
+            "Name": "Bilingual",
+            "Cost": "5"
+        },
+        {
+            "Name": "Black Market Pipeline",
+            "Cost": "10"
+        },
+        {
+            "Name": "Blandness",
+            "Cost": "10"
+        },
+        {
+            "Name": "Born Rich",
+            "Cost": "10"
+        },
+        {
+            "Name": "Catlike",
+            "Cost": "10"
+        },
+        {
+            "Name": "Codeslinger",
+            "Cost": "10"
+        },
+        {
+            "Name": "College Education",
+            "Cost": "5"
+        },
+        {
+            "Name": "Common Sensitive",
+            "Cost": "5"
+        },
+        {
+            "Name": "Deep Cover [Trigger]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Deep Cover [Controlled]",
+            "Cost": "10"
+        },
+        {
+            "Name": "Digital Doppelganger",
+            "Cost": "10"
+        },
+        {
+            "Name": "Double Jointed",
+            "Cost": "5"
+        },
+        {
+            "Name": "Erased [Week]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Erased [24 Hours]",
+            "Cost": "10"
+        },
+        {
+            "Name": "Escaped Clone",
+            "Cost": "5"
+        },
+        {
+            "Name": "Exceptional Attribute",
+            "Cost": "20"
+        },
+        {
+            "Name": "Fame [Local]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Fame [National]",
+            "Cost": "10"
+        },
+        {
+            "Name": "Fame [Global]",
+            "Cost": "20"
+        },
+        {
+            "Name": "First Impression",
+            "Cost": "5"
+        },
+        {
+            "Name": "Focused Concentration",
+            "Cost": "20"
+        },
+        {
+            "Name": "Gearhead [Specific]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Gearhead [Type]",
+            "Cost": "10"
+        },
+        {
+            "Name": "Guts",
+            "Cost": "5"
+        },
+        {
+            "Name": "Hawk Eye",
+            "Cost": "5"
+        },
+        {
+            "Name": "High Pain Tolerance",
+            "Cost": "20"
+        },
+        {
+            "Name": "Home Ground",
+            "Cost": "10"
+        },
+        {
+            "Name": "Human Looking",
+            "Cost": "5"
+        },
+        {
+            "Name": "Inspired",
+            "Cost": "5"
+        },
+        {
+            "Name": "Juryrigger",
+            "Cost": "10"
+        },
+        {
+            "Name": "Linguist",
+            "Cost": "5"
+        },
+        {
+            "Name": "Lucky",
+            "Cost": "20"
+        },
+        {
+            "Name": "Made Man",
+            "Cost": "10"
+        },
+        {
+            "Name": "Magician",
+            "Cost": "50"
+        },
+        {
+            "Name": "Magic Resistance",
+            "Cost": "20"
+        },
+        {
+            "Name": "Mentor Spirit",
+            "Cost": "5"
+        },
+        {
+            "Name": "Mistaken Identity",
+            "Cost": "10"
+        },
+        {
+            "Name": "Murky Link",
+            "Cost": "10"
+        },
+        {
+            "Name": "Natural Athlete",
+            "Cost": "10"
+        },
+        {
+            "Name": "Natural Hardening",
+            "Cost": "10"
+        },
+        {
+            "Name": "Natual Immunity [Natural]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Natual Immunity [Synthetic]",
+            "Cost": "15"
+        },
+        {
+            "Name": "Outdoorsman",
+            "Cost": "10"
+        },
+        {
+            "Name": "Perceptive",
+            "Cost": "10"
+        },
+        {
+            "Name": "Perfect Time",
+            "Cost": "5"
+        },
+        {
+            "Name": "Photographic Memory",
+            "Cost": "10"
+        },
+        {
+            "Name": "Privileged Family Name",
+            "Cost": "5"
+        },
+        {
+            "Name": "Quick Healer",
+            "Cost": "10"
+        },
+        {
+            "Name": "Resistance to Pathogens/Toxins [Or]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Resistance to Pathogens/Toxins [And]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Restricted Gear",
+            "Cost": "5"
+        },
+        {
+            "Name": "School of Hard Knocks",
+            "Cost": "5"
+        },
+        {
+            "Name": "Sense of Direction",
+            "Cost": "5"
+        },
+        {
+            "Name": "Speed Reading",
+            "Cost": "5"
+        },
+        {
+            "Name": "Spirit Affinity",
+            "Cost": "10"
+        },
+        {
+            "Name": "Technical School Education",
+            "Cost": "5"
+        },
+        {
+            "Name": "Tough as Nails",
+            "Cost": "30"
+        },
+        {
+            "Name": "Toughness",
+            "Cost": "10"
+        },
+        {
+            "Name": "Trust Fund [Moderate]",
+            "Cost": "10"
+        },
+        {
+            "Name": "Trust Fund [High]",
+            "Cost": "20"
+        },
+        {
+            "Name": "Trustworthy",
+            "Cost": "10"
+        },
+        {
+            "Name": "Water Sprite",
+            "Cost": "5"
+        },
+        {
+            "Name": "Will to Live",
+            "Cost": "15"
+        }
+    ],
     "negative": [
         {
             "Name": "Addiction [Mild]",
@@ -423,284 +701,6 @@
         {
             "Name": "Weak Immune System",
             "Cost": "-5"
-        }
-    ],
-    "positive": [
-        {
-            "Name": "Adept",
-            "Cost": "20"
-        },
-        {
-            "Name": "Ambidextrous",
-            "Cost": "5"
-        },
-        {
-            "Name": "Analytical Mind",
-            "Cost": "5"
-        },
-        {
-            "Name": "Animal Empathy",
-            "Cost": "10"
-        },
-        {
-            "Name": "Aptitude",
-            "Cost": "10"
-        },
-        {
-            "Name": "Astral Chameleon",
-            "Cost": "5"
-        },
-        {
-            "Name": "Bilingual",
-            "Cost": "5"
-        },
-        {
-            "Name": "Black Market Pipeline",
-            "Cost": "10"
-        },
-        {
-            "Name": "Blandness",
-            "Cost": "10"
-        },
-        {
-            "Name": "Born Rich",
-            "Cost": "10"
-        },
-        {
-            "Name": "Catlike",
-            "Cost": "10"
-        },
-        {
-            "Name": "Codeslinger",
-            "Cost": "10"
-        },
-        {
-            "Name": "College Education",
-            "Cost": "5"
-        },
-        {
-            "Name": "Common Sensitive",
-            "Cost": "5"
-        },
-        {
-            "Name": "Deep Cover [Trigger]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Deep Cover [Controlled]",
-            "Cost": "10"
-        },
-        {
-            "Name": "Digital Doppelganger",
-            "Cost": "10"
-        },
-        {
-            "Name": "Double Jointed",
-            "Cost": "5"
-        },
-        {
-            "Name": "Erased [Week]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Erased [24 Hours]",
-            "Cost": "10"
-        },
-        {
-            "Name": "Escaped Clone",
-            "Cost": "5"
-        },
-        {
-            "Name": "Exceptional Attribute",
-            "Cost": "20"
-        },
-        {
-            "Name": "Fame [Local]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Fame [National]",
-            "Cost": "10"
-        },
-        {
-            "Name": "Fame [Global]",
-            "Cost": "20"
-        },
-        {
-            "Name": "First Impression",
-            "Cost": "5"
-        },
-        {
-            "Name": "Focused Concentration",
-            "Cost": "20"
-        },
-        {
-            "Name": "Gearhead [Specific]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Gearhead [Type]",
-            "Cost": "10"
-        },
-        {
-            "Name": "Guts",
-            "Cost": "5"
-        },
-        {
-            "Name": "Hawk Eye",
-            "Cost": "5"
-        },
-        {
-            "Name": "High Pain Tolerance",
-            "Cost": "20"
-        },
-        {
-            "Name": "Home Ground",
-            "Cost": "10"
-        },
-        {
-            "Name": "Human Looking",
-            "Cost": "5"
-        },
-        {
-            "Name": "Inspired",
-            "Cost": "5"
-        },
-        {
-            "Name": "Juryrigger",
-            "Cost": "10"
-        },
-        {
-            "Name": "Linguist",
-            "Cost": "5"
-        },
-        {
-            "Name": "Lucky",
-            "Cost": "20"
-        },
-        {
-            "Name": "Made Man",
-            "Cost": "10"
-        },
-        {
-            "Name": "Magician",
-            "Cost": "50"
-        },
-        {
-            "Name": "Magic Resistance",
-            "Cost": "20"
-        },
-        {
-            "Name": "Mentor Spirit",
-            "Cost": "5"
-        },
-        {
-            "Name": "Mistaken Identity",
-            "Cost": "10"
-        },
-        {
-            "Name": "Murky Link",
-            "Cost": "10"
-        },
-        {
-            "Name": "Natural Athlete",
-            "Cost": "10"
-        },
-        {
-            "Name": "Natural Hardening",
-            "Cost": "10"
-        },
-        {
-            "Name": "Natual Immunity [Natural]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Natual Immunity [Synthetic]",
-            "Cost": "15"
-        },
-        {
-            "Name": "Outdoorsman",
-            "Cost": "10"
-        },
-        {
-            "Name": "Perceptive",
-            "Cost": "10"
-        },
-        {
-            "Name": "Perfect Time",
-            "Cost": "5"
-        },
-        {
-            "Name": "Photographic Memory",
-            "Cost": "10"
-        },
-        {
-            "Name": "Privileged Family Name",
-            "Cost": "5"
-        },
-        {
-            "Name": "Quick Healer",
-            "Cost": "10"
-        },
-        {
-            "Name": "Resistance to Pathogens/Toxins [Or]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Resistance to Pathogens/Toxins [And]",
-            "Cost": "5"
-        },
-        {
-            "Name": "Restricted Gear",
-            "Cost": "5"
-        },
-        {
-            "Name": "School of Hard Knocks",
-            "Cost": "5"
-        },
-        {
-            "Name": "Sense of Direction",
-            "Cost": "5"
-        },
-        {
-            "Name": "Speed Reading",
-            "Cost": "5"
-        },
-        {
-            "Name": "Spirit Affinity",
-            "Cost": "10"
-        },
-        {
-            "Name": "Technical School Education",
-            "Cost": "5"
-        },
-        {
-            "Name": "Tough as Nails",
-            "Cost": "30"
-        },
-        {
-            "Name": "Toughness",
-            "Cost": "10"
-        },
-        {
-            "Name": "Trust Fund [Moderate]",
-            "Cost": "10"
-        },
-        {
-            "Name": "Trust Fund [High]",
-            "Cost": "20"
-        },
-        {
-            "Name": "Trustworthy",
-            "Cost": "10"
-        },
-        {
-            "Name": "Water Sprite",
-            "Cost": "5"
-        },
-        {
-            "Name": "Will to Live",
-            "Cost": "15"
         }
     ]
 }

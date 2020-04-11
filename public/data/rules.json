@@ -1,0 +1,118 @@
+{
+    "ammunition-calibers": [
+        {
+            "Name": "Dart",
+            "Availability": "-",
+            "Box Size": "20"
+        },
+        {
+            "Name": "Taser",
+            "Availability": "-",
+            "Box Size": "10"
+        },
+        {
+            "Name": "Holdout Pistols",
+            "Availability": "-",
+            "Box Size": "100"
+        },
+        {
+            "Name": "Light Pistols",
+            "Availability": "-",
+            "Box Size": "100"
+        },
+        {
+            "Name": "Sub Machineguns",
+            "Availability": "-",
+            "Box Size": "100"
+        },
+        {
+            "Name": "Heavy Pistols",
+            "Availability": "+2",
+            "Box Size": "20"
+        },
+        {
+            "Name": "Shotguns",
+            "Availability": "-",
+            "Box Size": "20"
+        },
+        {
+            "Name": "Assault Rifles",
+            "Availability": "+4",
+            "Box Size": "50"
+        },
+        {
+            "Name": "Light Machineguns",
+            "Availability": "+4",
+            "Box Size": "50"
+        },
+        {
+            "Name": "Sport Rifles",
+            "Availability": "+6",
+            "Box Size": "20"
+        },
+        {
+            "Name": "Medium Machineguns",
+            "Availability": "+6",
+            "Box Size": "20"
+        },
+        {
+            "Name": "Sniper Rifles",
+            "Availability": "+8",
+            "Box Size": "10"
+        },
+        {
+            "Name": "Heavy Machineguns",
+            "Availability": "+8",
+            "Box Size": "10"
+        },
+        {
+            "Name": "Assault Cannons",
+            "Availability": "+8",
+            "Box Size": "10"
+        }
+    ],
+    "cyberlimb-types": [
+        {
+            "Name": "Obvious",
+            "Availability": "-",
+            "Cost": "x1"
+        },
+        {
+            "Name": "Synthetic",
+            "Availability": "-",
+            "Cost": "x2"
+        },
+        {
+            "Name": "Standard",
+            "Availability": "-",
+            "Cost": "x1"
+        },
+        {
+            "Name": "Customized",
+            "Availability": "+4",
+            "Cost": "x5"
+        }
+    ],
+    "cyberware-and-bioware-grades": [
+        {
+            "Name": "Used",
+            "Essence Multiplier": "x 1.2",
+            "Cost": "x0.5"
+        },
+        {
+            "Name": "Alphaware",
+            "Essence Multiplier": "x 1",
+            "Cost": "x1"
+        },
+        {
+            "Name": "Betaware",
+            "Essence Multiplier": "x 0.7",
+            "Cost": "x5"
+        },
+        {
+            "Name": "Deltaware",
+            "Essence Multiplier": "x 0.5",
+            "Cost": "x15"
+        }
+    ]
+}
