@@ -36,7 +36,7 @@ const CharacterCreator: FC = () => {
     const selectedCharacter = useGlobalState("selectedCharacter");
 
     useEffect(() => {
-        fetch("/data/qualities.json")
+        fetch("data/qualities.json")
             .then(response => response.json())
             .then(qualities => {
                 const data = qualities as LoadQualitiesData;
@@ -45,25 +45,25 @@ const CharacterCreator: FC = () => {
             .catch(error => {
                 console.error(`Error occured loading qualities: ${error.message}\n${error.stack}`);
             });
-        fetch("/data/skills.json")
+        fetch("data/skills.json")
             .then(response => response.json())
             .then(skills => {
                 const data = skills as LoadSkillsData;
                 dispatch({ type: ActionType.LoadSkills, data });
             });
-        fetch("/data/contacts.json")
+        fetch("data/contacts.json")
             .then(response => response.json())
             .then(contacts => {
                 const data = contacts.all as LoadContactsData;
                 dispatch({ type: ActionType.LoadContacts, data });
             });
-        fetch("/data/magic.json")
+        fetch("data/magic.json")
             .then(response => response.json())
             .then(magic => {
                 const spellData = magic.spells as LoadSpellsData;
                 dispatch({ type: ActionType.LoadSpells, data: spellData });
             });
-        fetch("/data/gear.json")
+        fetch("data/gear.json")
             .then(response => response.json())
             .then(gear => {
                 const gearData = transformAllGear(gear) as LoadGearData;
