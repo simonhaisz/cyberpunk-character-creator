@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ad1d9811286678f77a8303ebfdb8585e",
+    "revision": "da8d6d54b17a450ab95f741657153fc7",
     "url": "/cyberpunk-character-creator/index.html"
   },
   {
-    "revision": "acced7a4c4f1affbcfb4",
+    "revision": "bf44370b1f3ab7ccefcd",
     "url": "/cyberpunk-character-creator/static/css/main.69eda509.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/cyberpunk-character-creator/static/js/2.b08e5ad4.chunk.js.LICENSE"
   },
   {
-    "revision": "acced7a4c4f1affbcfb4",
-    "url": "/cyberpunk-character-creator/static/js/main.44da7418.chunk.js"
+    "revision": "bf44370b1f3ab7ccefcd",
+    "url": "/cyberpunk-character-creator/static/js/main.421f1f90.chunk.js"
   },
   {
     "revision": "44786293d4f7c2d26078",
