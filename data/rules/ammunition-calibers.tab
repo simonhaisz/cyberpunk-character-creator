@@ -1,0 +1,15 @@
+Name	Availability	Box Size
+Dart	-	20
+Taser	-	10
+Holdout Pistols	-	100
+Light Pistols	-	100
+Sub Machineguns	-	100
+Heavy Pistols	+2	20
+Shotguns	-	20
+Assault Rifles	+4	50
+Light Machineguns	+4	50
+Sport Rifles	+6	20
+Medium Machineguns	+6	20
+Sniper Rifles	+8	10
+Heavy Machineguns	+8	10
+Assault Cannons	+8	10

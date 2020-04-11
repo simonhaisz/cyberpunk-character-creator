@@ -1,0 +1,236 @@
+{
+    "active": [
+        {
+            "Name": "Arcana"
+        },
+        {
+            "Name": "Acting"
+        },
+        {
+            "Name": "Animal Handling"
+        },
+        {
+            "Name": "Armorer"
+        },
+        {
+            "Name": "[Artisan]"
+        },
+        {
+            "Name": "Assensing"
+        },
+        {
+            "Name": "Astral Combat"
+        },
+        {
+            "Name": "Athletics"
+        },
+        {
+            "Name": "Archery"
+        },
+        {
+            "Name": "Biotech"
+        },
+        {
+            "Name": "Chemistry"
+        },
+        {
+            "Name": "Close Combat"
+        },
+        {
+            "Name": "Cracking"
+        },
+        {
+            "Name": "Conjuring"
+        },
+        {
+            "Name": "Demolitions"
+        },
+        {
+            "Name": "Diving"
+        },
+        {
+            "Name": "Electronics"
+        },
+        {
+            "Name": "Enchanting"
+        },
+        {
+            "Name": "Escape Artist"
+        },
+        {
+            "Name": "[Exotic Melee Weapon]"
+        },
+        {
+            "Name": "[Exotic Ranged Weapon]"
+        },
+        {
+            "Name": "Firearms"
+        },
+        {
+            "Name": "Forgery"
+        },
+        {
+            "Name": "Free-fall"
+        },
+        {
+            "Name": "Gunnery"
+        },
+        {
+            "Name": "Heavy Weapons"
+        },
+        {
+            "Name": "Influence"
+        },
+        {
+            "Name": "Instruction"
+        },
+        {
+            "Name": "Intimidation"
+        },
+        {
+            "Name": "Locksmith"
+        },
+        {
+            "Name": "Mechanic"
+        },
+        {
+            "Name": "Outdoors"
+        },
+        {
+            "Name": "Perception"
+        },
+        {
+            "Name": "Pilot Aerospace"
+        },
+        {
+            "Name": "Pilot Aircraft"
+        },
+        {
+            "Name": "Pilot Groundcraft"
+        },
+        {
+            "Name": "Pilot Watercraft"
+        },
+        {
+            "Name": "Sorcery"
+        },
+        {
+            "Name": "Stealth"
+        },
+        {
+            "Name": "Throwing Weapons"
+        }
+    ],
+    "knowledge": [
+        {
+            "Name": "Architecture"
+        },
+        {
+            "Name": "Ares Macrotechnology"
+        },
+        {
+            "Name": "Black Market"
+        },
+        {
+            "Name": "Biology"
+        },
+        {
+            "Name": "Business"
+        },
+        {
+            "Name": "Celebrities"
+        },
+        {
+            "Name": "Chemistry"
+        },
+        {
+            "Name": "Club Music"
+        },
+        {
+            "Name": "Economics"
+        },
+        {
+            "Name": "History"
+        },
+        {
+            "Name": "Hong Kong Triads"
+        },
+        {
+            "Name": "Law"
+        },
+        {
+            "Name": "Literature"
+        },
+        {
+            "Name": "Matrix Games"
+        },
+        {
+            "Name": "Military"
+        },
+        {
+            "Name": "Seattle Street Gangs"
+        },
+        {
+            "Name": "Security Corporations"
+        },
+        {
+            "Name": "Security Design"
+        },
+        {
+            "Name": "Security Procedures"
+        },
+        {
+            "Name": "Software Design"
+        },
+        {
+            "Name": "Sports"
+        },
+        {
+            "Name": "Street Drugs"
+        },
+        {
+            "Name": "UCAS Politics"
+        },
+        {
+            "Name": "Wines"
+        }
+    ],
+    "language": [
+        {
+            "Name": "Algonquin"
+        },
+        {
+            "Name": "Cantonese"
+        },
+        {
+            "Name": "English"
+        },
+        {
+            "Name": "Japanese"
+        },
+        {
+            "Name": "Korean"
+        },
+        {
+            "Name": "Or’zet (Orkish)"
+        },
+        {
+            "Name": "Russian"
+        },
+        {
+            "Name": "Salish"
+        },
+        {
+            "Name": "Spanish"
+        },
+        {
+            "Name": "Sperethriel (Elvish)"
+        },
+        {
+            "Name": "Tagalog"
+        },
+        {
+            "Name": "Vietnamese"
+        }
+    ]
+}

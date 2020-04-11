@@ -1,0 +1,730 @@
+{
+    "spells": {
+        "combat": [
+            {
+                "Name": "Acid Stream",
+                "Cost": "5"
+            },
+            {
+                "Name": "Ball Lightning",
+                "Cost": "5"
+            },
+            {
+                "Name": "Blast",
+                "Cost": "5"
+            },
+            {
+                "Name": "Clout",
+                "Cost": "5"
+            },
+            {
+                "Name": "Corrode [Object]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Death Touch",
+                "Cost": "5"
+            },
+            {
+                "Name": "Demolish [Object]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Fireball",
+                "Cost": "5"
+            },
+            {
+                "Name": "Firewater",
+                "Cost": "5"
+            },
+            {
+                "Name": "Flamethrower",
+                "Cost": "5"
+            },
+            {
+                "Name": "Knockout",
+                "Cost": "5"
+            },
+            {
+                "Name": "Lightning Bolt",
+                "Cost": "5"
+            },
+            {
+                "Name": "Manaball",
+                "Cost": "5"
+            },
+            {
+                "Name": "Manabolt",
+                "Cost": "5"
+            },
+            {
+                "Name": "Melt [Object]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Napalm",
+                "Cost": "5"
+            },
+            {
+                "Name": "One Less [Metatype/Species]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Powerball",
+                "Cost": "5"
+            },
+            {
+                "Name": "Powerbolt",
+                "Cost": "5"
+            },
+            {
+                "Name": "Punch",
+                "Cost": "5"
+            },
+            {
+                "Name": "Ram [Object]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Shatter",
+                "Cost": "5"
+            },
+            {
+                "Name": "Shattershield",
+                "Cost": "5"
+            },
+            {
+                "Name": "Slaughter [Metatype/Species]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Slay [Metatype/Species]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Sludge [Object]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stunball",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stunbolt",
+                "Cost": "5"
+            },
+            {
+                "Name": "Toxic Wave",
+                "Cost": "5"
+            },
+            {
+                "Name": "Wreck [Object]",
+                "Cost": "5"
+            }
+        ],
+        "detection": [
+            {
+                "Name": "Analyze Device",
+                "Cost": "5"
+            },
+            {
+                "Name": "Analyze Magic",
+                "Cost": "5"
+            },
+            {
+                "Name": "Analyze Truth",
+                "Cost": "5"
+            },
+            {
+                "Name": "Animal Sense",
+                "Cost": "5"
+            },
+            {
+                "Name": "Area Thought Recognition",
+                "Cost": "5"
+            },
+            {
+                "Name": "Astral Clairvoyance",
+                "Cost": "5"
+            },
+            {
+                "Name": "Astral Window",
+                "Cost": "5"
+            },
+            {
+                "Name": "Borrow Sense",
+                "Cost": "5"
+            },
+            {
+                "Name": "Catalog",
+                "Cost": "5"
+            },
+            {
+                "Name": "Clairaudience",
+                "Cost": "5"
+            },
+            {
+                "Name": "Clairvoyance",
+                "Cost": "5"
+            },
+            {
+                "Name": "Combat Sense",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detect Enemies",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detect Individual",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detect Life",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detect [Life Form]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detect Magic",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detect [Object]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Diagnose",
+                "Cost": "5"
+            },
+            {
+                "Name": "Enhance Aim",
+                "Cost": "5"
+            },
+            {
+                "Name": "Eyes of the Pack",
+                "Cost": "5"
+            },
+            {
+                "Name": "Hawkeye",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mana Window",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mindlink",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mindnet",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mind Probe",
+                "Cost": "5"
+            },
+            {
+                "Name": "Night Vision",
+                "Cost": "5"
+            },
+            {
+                "Name": "[Sense] Cryptesthesia",
+                "Cost": "5"
+            },
+            {
+                "Name": "Spatial Sense",
+                "Cost": "5"
+            },
+            {
+                "Name": "Thermographic Vision",
+                "Cost": "5"
+            },
+            {
+                "Name": "Thought Recognition",
+                "Cost": "5"
+            },
+            {
+                "Name": "Translate",
+                "Cost": "5"
+            }
+        ],
+        "health": [
+            {
+                "Name": "Alleviate Addiction",
+                "Cost": "5"
+            },
+            {
+                "Name": "Alleviate Allergy",
+                "Cost": "5"
+            },
+            {
+                "Name": "Antidote",
+                "Cost": "5"
+            },
+            {
+                "Name": "Awaken",
+                "Cost": "5"
+            },
+            {
+                "Name": "Crank",
+                "Cost": "5"
+            },
+            {
+                "Name": "Cure Disease",
+                "Cost": "5"
+            },
+            {
+                "Name": "Decrease [Attribute]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Decrease Reflexes",
+                "Cost": "5"
+            },
+            {
+                "Name": "Detox",
+                "Cost": "5"
+            },
+            {
+                "Name": "Enabler",
+                "Cost": "5"
+            },
+            {
+                "Name": "Fast",
+                "Cost": "5"
+            },
+            {
+                "Name": "Heal",
+                "Cost": "5"
+            },
+            {
+                "Name": "Healthy Glow",
+                "Cost": "5"
+            },
+            {
+                "Name": "Hibernate",
+                "Cost": "5"
+            },
+            {
+                "Name": "Increase [Attribute]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Increase Reflexes",
+                "Cost": "5"
+            },
+            {
+                "Name": "Intoxication",
+                "Cost": "5"
+            },
+            {
+                "Name": "Nutrition",
+                "Cost": "5"
+            },
+            {
+                "Name": "Oxygenate",
+                "Cost": "5"
+            },
+            {
+                "Name": "Prophylaxis",
+                "Cost": "5"
+            },
+            {
+                "Name": "Resist Pain",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stabilize",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stim",
+                "Cost": "5"
+            }
+        ],
+        "illusion": [
+            {
+                "Name": "Agony",
+                "Cost": "5"
+            },
+            {
+                "Name": "Bugs",
+                "Cost": "5"
+            },
+            {
+                "Name": "Camouflage",
+                "Cost": "5"
+            },
+            {
+                "Name": "Chaff",
+                "Cost": "5"
+            },
+            {
+                "Name": "Chaos",
+                "Cost": "5"
+            },
+            {
+                "Name": "Chaotic World",
+                "Cost": "5"
+            },
+            {
+                "Name": "Confusion",
+                "Cost": "5"
+            },
+            {
+                "Name": "Double Image",
+                "Cost": "5"
+            },
+            {
+                "Name": "Dream",
+                "Cost": "5"
+            },
+            {
+                "Name": "Entertainment",
+                "Cost": "5"
+            },
+            {
+                "Name": "Flak",
+                "Cost": "5"
+            },
+            {
+                "Name": "Foreboding",
+                "Cost": "5"
+            },
+            {
+                "Name": "Hot Potato",
+                "Cost": "5"
+            },
+            {
+                "Name": "Hush",
+                "Cost": "5"
+            },
+            {
+                "Name": "Improved Invisibility",
+                "Cost": "5"
+            },
+            {
+                "Name": "Invisibility",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mask",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mass Agony",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mass Confusion",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mass [Sense]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Orgasm",
+                "Cost": "5"
+            },
+            {
+                "Name": "Orgy",
+                "Cost": "5"
+            },
+            {
+                "Name": "Phantasm",
+                "Cost": "5"
+            },
+            {
+                "Name": "Physical Camouflage",
+                "Cost": "5"
+            },
+            {
+                "Name": "Physical Double Image",
+                "Cost": "5"
+            },
+            {
+                "Name": "Physical Mask",
+                "Cost": "5"
+            },
+            {
+                "Name": "[Sense] Removal",
+                "Cost": "5"
+            },
+            {
+                "Name": "Silence",
+                "Cost": "5"
+            },
+            {
+                "Name": "Sound Barrier",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stealth",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stench",
+                "Cost": "5"
+            },
+            {
+                "Name": "Stink",
+                "Cost": "5"
+            },
+            {
+                "Name": "Swarm",
+                "Cost": "5"
+            },
+            {
+                "Name": "Trid Entertainment",
+                "Cost": "5"
+            },
+            {
+                "Name": "Trid Phantasm",
+                "Cost": "5"
+            },
+            {
+                "Name": "Vehicle Mask",
+                "Cost": "5"
+            }
+        ],
+        "manipulation": [
+            {
+                "Name": "Alter Memory",
+                "Cost": "5"
+            },
+            {
+                "Name": "Alter Temperature",
+                "Cost": "5"
+            },
+            {
+                "Name": "Animate",
+                "Cost": "5"
+            },
+            {
+                "Name": "Armor",
+                "Cost": "5"
+            },
+            {
+                "Name": "Astral Armor",
+                "Cost": "5"
+            },
+            {
+                "Name": "Bind",
+                "Cost": "5"
+            },
+            {
+                "Name": "Calm Animal",
+                "Cost": "5"
+            },
+            {
+                "Name": "Calm Pack",
+                "Cost": "5"
+            },
+            {
+                "Name": "Catfall",
+                "Cost": "5"
+            },
+            {
+                "Name": "Clean [Element]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Compel Truth",
+                "Cost": "5"
+            },
+            {
+                "Name": "Control Actions",
+                "Cost": "5"
+            },
+            {
+                "Name": "Control Animal",
+                "Cost": "5"
+            },
+            {
+                "Name": "Control Emotions",
+                "Cost": "5"
+            },
+            {
+                "Name": "Control Pack",
+                "Cost": "5"
+            },
+            {
+                "Name": "Control Thoughts",
+                "Cost": "5"
+            },
+            {
+                "Name": "[Critter] Form",
+                "Cost": "5"
+            },
+            {
+                "Name": "Deflection",
+                "Cost": "5"
+            },
+            {
+                "Name": "[Element] Aura",
+                "Cost": "5"
+            },
+            {
+                "Name": "[Element] Wall",
+                "Cost": "5"
+            },
+            {
+                "Name": "Fashion",
+                "Cost": "5"
+            },
+            {
+                "Name": "Fix",
+                "Cost": "5"
+            },
+            {
+                "Name": "Fling",
+                "Cost": "5"
+            },
+            {
+                "Name": "Gecko Crawl",
+                "Cost": "5"
+            },
+            {
+                "Name": "Glue Strip",
+                "Cost": "5"
+            },
+            {
+                "Name": "Ice Sheet",
+                "Cost": "5"
+            },
+            {
+                "Name": "Ignite",
+                "Cost": "5"
+            },
+            {
+                "Name": "Influence",
+                "Cost": "5"
+            },
+            {
+                "Name": "Interference",
+                "Cost": "5"
+            },
+            {
+                "Name": "Levitate",
+                "Cost": "5"
+            },
+            {
+                "Name": "Light",
+                "Cost": "5"
+            },
+            {
+                "Name": "Lock",
+                "Cost": "5"
+            },
+            {
+                "Name": "Magic Fingers",
+                "Cost": "5"
+            },
+            {
+                "Name": "Makeover",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mana Barrier",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mana Bind",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mana Net",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mana Static",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mass Animate",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mist",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mob Control",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mob Mind",
+                "Cost": "5"
+            },
+            {
+                "Name": "Mob Mood",
+                "Cost": "5"
+            },
+            {
+                "Name": "Net",
+                "Cost": "5"
+            },
+            {
+                "Name": "Offensive Mana Barrier",
+                "Cost": "5"
+            },
+            {
+                "Name": "Petrify",
+                "Cost": "5"
+            },
+            {
+                "Name": "Physical Barrier",
+                "Cost": "5"
+            },
+            {
+                "Name": "Poltergeist",
+                "Cost": "5"
+            },
+            {
+                "Name": "Preserve",
+                "Cost": "5"
+            },
+            {
+                "Name": "Pulse",
+                "Cost": "5"
+            },
+            {
+                "Name": "Reinforce",
+                "Cost": "5"
+            },
+            {
+                "Name": "Shadow",
+                "Cost": "5"
+            },
+            {
+                "Name": "Shapechange",
+                "Cost": "5"
+            },
+            {
+                "Name": "Shape [Material]",
+                "Cost": "5"
+            },
+            {
+                "Name": "Spirit Barrier",
+                "Cost": "5"
+            },
+            {
+                "Name": "Spirit Zapper",
+                "Cost": "5"
+            },
+            {
+                "Name": "Sterilize",
+                "Cost": "5"
+            },
+            {
+                "Name": "Turn to Goo",
+                "Cost": "5"
+            }
+        ]
+    }
+}
