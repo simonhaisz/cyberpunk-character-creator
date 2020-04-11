@@ -9,7 +9,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { makeStyles } from "@material-ui/core";
 import { Skill as SkillData } from "../model/character";
-import { Item, getChildItems } from "../model/custom-item";
+import { CustomItem, getChildItems } from "../model/custom-item";
 import { AddCustomItemData, ActionType } from "../reducer";
 import { useDispatch, useGlobalState } from "../context";
 import PickerButton from "./PickerButton";
@@ -32,7 +32,7 @@ const useStyles = makeStyles({
 type Props = {
     breadcrums: string[];
 	skills: SkillData[];
-	allSkills: Item[];
+	allSkills: CustomItem[];
     headerLabel: string;
     computeSkillCost: (rating: number) => number;
 	onSkillsUpdated: (updatedSkills: SkillData[]) => void;
@@ -73,7 +73,7 @@ const SkillList: FC<Props> = (props: Props) => {
         onSkillUpdate({ name, rating: -1 });
     };
 
-    const createNewSkill = (item: Item) => {
+    const createNewSkill = (item: CustomItem) => {
         const path = `${parentPath}.${item.Name}`;
         const data: AddCustomItemData = { path, item: item };
         dispatch({ type: ActionType.AddCustomItem, data });

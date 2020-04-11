@@ -1,4 +1,4 @@
-import { Item } from "./custom-item";
+import { CustomItem } from "./custom-item";
 
 export type Qualities = {
     positive: string[];
@@ -6,11 +6,11 @@ export type Qualities = {
 };
 
 export type AllQualities = {
-    positive: Item[];
-    negative: Item[];
+    positive: CustomItem[];
+    negative: CustomItem[];
 }
 
-export function getQualitiesCost(selectedQualities: string[], allQualities: Item[]): number {
+export function getQualitiesCost(selectedQualities: string[], allQualities: CustomItem[]): number {
     let cost = 0;
     for (const selected of selectedQualities) {
         const quality = allQualities.find(q => q.Name === selected);

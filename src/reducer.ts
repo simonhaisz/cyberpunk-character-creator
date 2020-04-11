@@ -6,9 +6,10 @@ import { saveCharacter, clearCharacter, loadCharacter, saveCustomItem } from "./
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { AllQualities } from "./model/quality";
 import { Skills } from "./model/skills";
-import { Dictionary, Item } from "./model/custom-item";
+import { CustomItem } from "./model/custom-item";
 import { Spells } from "./model/magic";
 import { Gear } from "./model/gear";
+import { Dictionary } from "./model/dictionary";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -33,11 +34,11 @@ export type UpdateCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = AllQualities;
 export type LoadSkillsData = Skills;
-export type LoadContactsData = Item[];
+export type LoadContactsData = CustomItem[];
 export type LoadSpellsData = Spells;
-export type LoadGearData = Gear;
-export type LoadCustomItemsData = Dictionary<Item>;
-export type AddCustomItemData = { path: string, item: Item };
+export type LoadGearData = Dictionary<Gear[]>;
+export type LoadCustomItemsData = Dictionary<CustomItem>;
+export type AddCustomItemData = { path: string, item: CustomItem };
 
 export const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
     switch (action.type) {
@@ -92,7 +93,7 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             return { ...state, allContacts}
         }
         case ActionType.LoadGear: {
-            const allGear = action.data as any;
+            const allGear = action.data as LoadGearData;
             return { ...state, allGear };
         }
         case ActionType.LoadSpells: {

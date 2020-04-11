@@ -2,9 +2,10 @@ import { Character, CharacterRef } from "./character";
 import { Karma } from "./karma";
 import { AllQualities } from "./quality";
 import { Skills } from "./skills";
-import { Dictionary, Item } from "./custom-item";
+import { CustomItem } from "./custom-item";
 import { Spells } from "./magic";
-// import { AllGear } from "./gear";
+import { Dictionary } from "./dictionary";
+import { Gear } from "./gear";
 
 export type State = {
     characters: CharacterRef[];
@@ -12,8 +13,8 @@ export type State = {
     karma: Karma;
     allQualities: AllQualities;
     allSkills: Skills;
-    allContacts: Item[];
+    allContacts: CustomItem[];
     allSpells: Spells;
-    allGear: any;
-    customItems: Dictionary<Item>;
+    allGear: Dictionary<Gear[]>;
+    customItems: Dictionary<CustomItem>;
 };

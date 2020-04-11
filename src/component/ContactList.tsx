@@ -8,7 +8,7 @@ import Contact from "./Contact";
 import { useDispatch, useGlobalState } from "../context";
 import { Contact as ContactData, getAllContactsCost, getFreeContactPoints } from "../model/contact";
 import { UpdateCharacterData, ActionType, AddCustomItemData } from "../reducer";
-import { getChildItems, Item } from "../model/custom-item";
+import { getChildItems, CustomItem } from "../model/custom-item";
 
 const useStyles = makeStyles({
 	header: {
@@ -66,7 +66,7 @@ const ContactList: FC = () => {
 		onContactUpdate({ name, connection: -1, loyalty: -1 });
 	};
 
-	const createNewContact = (item: Item) => {
+	const createNewContact = (item: CustomItem) => {
         const path = `${parentPath}.${item.Name}`;
         const data: AddCustomItemData = { path, item: item };
         dispatch({ type: ActionType.AddCustomItem, data });

@@ -1,13 +1,13 @@
-export type Dictionary<T> = { [key: string]: T };
+import { Dictionary } from "./dictionary";
 
-export type Item = {
+export type CustomItem = {
     Name: string;
     Availability?: string;
     Cost?: string;
 };
 
-export function getChildItems(customItems: Dictionary<Item>, parentPath: string): Item[] {
-	const items: Item[] = [];
+export function getChildItems(customItems: Dictionary<CustomItem>, parentPath: string): CustomItem[] {
+	const items: CustomItem[] = [];
 	for (const path in customItems) {
 		if (path.startsWith(parentPath)) {
 			items.push(customItems[path]);

@@ -1,6 +1,7 @@
 import { Character, CharacterRef } from "./model/character";
-import { Item, Dictionary } from "./model/custom-item";
+import { CustomItem } from "./model/custom-item";
 import { getDefaultCharacter } from "./data/default-character";
+import { Dictionary } from "./model/dictionary";
 
 const CHARACTER_KEY = "character";
 
@@ -73,8 +74,8 @@ function createCustomItemKey(path: string, name: string): string {
     return `${CUSTOM_ITEM_KEY}:${path}.${name}}`;
 }
 
-export function loadCustomItems(): Dictionary<Item> {
-    const customItems: Dictionary<Item> = {};
+export function loadCustomItems(): Dictionary<CustomItem> {
+    const customItems: Dictionary<CustomItem> = {};
     for (let i = 0; i < localStorage.length; i++) {
         const key = localStorage.key(i);
         if (key === null) {
@@ -101,12 +102,12 @@ export function loadCustomItems(): Dictionary<Item> {
     return customItems;
 }
 
-export function saveCustomItem(path: string, item: Item) {
+export function saveCustomItem(path: string, item: CustomItem) {
     const key = createCustomItemKey(path, item.Name);
     localStorage.setItem(key, JSON.stringify(item));
 }
 
-export function clearCustomItem(path: string, item: Item) {
+export function clearCustomItem(path: string, item: CustomItem) {
     const key = createCustomItemKey(path, item.Name);
     localStorage.removeItem(key);
 }

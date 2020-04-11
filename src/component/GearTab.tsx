@@ -1,7 +1,12 @@
-import React, { FC } from "react";
-import PropertyTree from "./PropertyTree";
+import React, { FC, Fragment } from "react";
+// import PropertyTree from "./PropertyTree";
 import { useGlobalState, useDispatch } from "../context";
 import { ActionType, UpdateCharacterData } from "../reducer";
+import { getChildNames, getChildSet } from "../model/dictionary";
+import GroupContainer from "./GroupContainer";
+import { Item, getItemSubset } from "../model/item";
+import { sentenceCase } from "change-case";
+import { gearRoot, findItemCost } from "../model/gear";
 
 const GearTab: FC = () => {
 	const dispatch = useDispatch();
@@ -9,21 +14,38 @@ const GearTab: FC = () => {
 	const { gear } = character;
 	const allGear = useGlobalState("allGear");
 
-	const cost = Number.NaN;
+	const createGearLabel= (item: Item) => {
+		const { name, count} = item;
+		const cost = findItemCost(item, allGear);
+		if (parseInt(count) > 1) {
+			return `${name} (${cost} x ${count})`;
+		} else {
+			return `${name} (${cost})`;
+		}
+	};
 
-	const onGearUpdated = (updatedGear: any) => {
-		const data: UpdateCharacterData = { ...character, gear: updatedGear };
+	const handleUpdateGear = (name: string, newSubGear: Item[]) => {
+		const newGear = gear.filter(g => !g.path.startsWith(`${gearRoot}.${name}`));
+		newGear.push(...newSubGear);
+		const data: UpdateCharacterData = { ...character, gear: newGear };
 		dispatch({ type: ActionType.UpdateCharacter, data });
-	}
+	};
 
 	return (
-		<PropertyTree
-			rootCost={cost}
-			rootName="gear"
-			rootValue={gear}
-			rootAll={allGear}
-			onRootUpdated={onGearUpdated}
-		/>
+		<Fragment>
+			{
+				getChildNames(allGear, gearRoot).map(name =>
+					<GroupContainer
+						key={name}
+						label={sentenceCase(name)}
+						items={getItemSubset(gear, `${gearRoot}.${name}`)}
+						allItems={getChildSet(allGear, `${gearRoot}.${name}`)}
+						createItemLabel={createGearLabel}
+						onUpdateItems={newItems => handleUpdateGear(name, newItems)}
+					/>
+				)
+			}
+		</Fragment>
 	);
 };
 

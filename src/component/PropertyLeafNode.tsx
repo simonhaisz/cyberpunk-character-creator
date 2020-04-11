@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
 import { useGlobalState, useDispatch } from "../context";
 import PickerButton from "./PickerButton";
-import { Item, getChildItems } from "../model/custom-item";
+import { CustomItem, getChildItems } from "../model/custom-item";
 import { AddCustomItemData, ActionType } from "../reducer";
 
 const useStyles = makeStyles({
@@ -24,7 +24,7 @@ type Props = {
 	fontWeight: number;
 	breadcrums: string[];
 	names: string[];
-	allValues: Item[];
+	allValues: CustomItem[];
 	onNamesUpdated: (updatedValues: string[]) => void;
 };
 const PropertyLeafNode: FC<Props> = (props: Props) => {
@@ -71,7 +71,7 @@ const PropertyLeafNode: FC<Props> = (props: Props) => {
 		onNamesUpdated(newValues);
 	};
 
-	const createNewValue = (item: Item) => {
+	const createNewValue = (item: CustomItem) => {
 		const path = `${parentPath}.${item.Name}`;
         const data: AddCustomItemData = { path, item: item };
         dispatch({ type: ActionType.AddCustomItem, data });

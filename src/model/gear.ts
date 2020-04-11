@@ -1,252 +1,163 @@
-import { Item } from "./custom-item";
+import { Dictionary } from "./dictionary";
+import { isArray } from "util";
+import { Item } from "./item";
 
 export type Gear = {
-	weapons: {
-		meleeWeapons: {
-			unarmed: string[],
-			clubs: string[],
-			clades: string[],
-			exoticMeleeWeapons: string[],
-		},
-		projectileAndThrowingWeapons: {
-			throwingWeapons: string[],
-			bows: string[],
-			crossbows: string[],
-			arrowheads: string[],
-		},
-		lessThanLethal: {
-			tasers: string[],
-			specialRangedWeapons: string[],
-		},
-		firearms: {
-			holdOutPistols: string[],
-			lightPistols: string[],
-			heavyPistols: string[],
-			subMachineguns: string[],
-			shotguns: string[],
-			assaultRifles: string[],
-			sportRifles: string[],
-			sniperRifles: string[],
-			assaultCannons: string[],
-			lightMachineguns: string[],
-			mediumMachineguns: string[],
-			heavyMachineguns: string[],
-			ammunitionTypes: string[],
-			firearmAccessories: string[],
-		},
-		grenadesAndRockets: {
-			grenades: string[],
-			grenadeLaunchers: string[],
-			rockets: string[],
-			rocketLaunchers: string[];
-		},
-	},
-	clothingAndArmor: {
-		clothing: string[],
-		armor: string[],
-		armorModifications: string[],
-		helmetsAndShields: string[],
-	},
-	augmentations: {
-		cyberAndBiowareGrades: string[],
-		headware: string[],
-		eyeware: string[],
-		earware: string[],
-		bodyware: string[],
-		cyberlimbs: string[],
-		cyberlimbEnhancements: string[],
-		cyberlimbAccessories: string[],
-		cyberMeleeWeapons: string[],
-		basicBioware: string[],
-		culturedBioware: string[],
-	},
-	tech: {
-		electronics: {
-			commlink: string[],
-			coomlinkUpgrades: string[],
-			commlinkAccessories: string[],
-		},
-		surveillance: {
-			imagingDevicies: string[],
-			imagingEnhancements: string[],
-			audioDevices: string[],
-			audioEnhancements: string[],
-			sensorPackages: string[],
-			sensorFunctions: string[],
-		},
-		security: {
-			locks: string[],
-			restraints: string[],
-			breakingAndEnteringTools: string[],
-			disguises: string[],
-		},
-		datachipsAndSoftware: {
-			matrixPrograms: string[],
-			skillsoftPrograms: string[],
-			dataPrograms: string[],
-			simsemse: string[],
-			areprograms: string[],
-		},
-		tools: string[],
-		survivalGear: string[],
-		grapplegun: string[],
-	},
-	medicalEquipment: {
-		biotech: string[],
-		slapPatches: string[],
-		docwagonContracts: string[],
-	},
-	chemicals: {
-		drugs: string[],
-		toxins: string[],
-		compounds: string[],
-	},
-	explosives: {
-		explosives: string[],
-		detonators: string[],
-	},
-	magicalEquipment: {
-		spellFormulae: string[],
-		spellFetish: string[],
-		foci: string[],
-		magicalSupplies: string[],
-	},
-	vehiclesAndDrones: {
-		bikes: string[],
-		cars: string[],
-		trucks: string[],
-		securityVehicles: string[],
-		microDroens: string[],
-		miniDrones: string[],
-		smallDrones: string[],
-		mediumDrones: string[],
-		largeDrones: string[],
-		vehicleModifications: string[],
-	},
-};
+	availability: string;
+	cost: string;
+	costLabel: string;
+} & Item;
 
-export type AllGear = {
-	weapons: {
-		meleeWeapons: {
-			unarmed: Item[],
-			clubs: Item[],
-			clades: Item[],
-			exoticMeleeWeapons: Item[],
-		},
-		projectileAndThrowingWeapons: {
-			throwingWeapons: Item[],
-			bows: Item[],
-			crossbows: Item[],
-			arrowheads: Item[],
-		},
-		lessThanLethal: {
-			tasers: Item[],
-			specialRangedWeapons: Item[],
-		},
-		firearms: {
-			holdOutPistols: Item[],
-			lightPistols: Item[],
-			heavyPistols: Item[],
-			subMachineguns: Item[],
-			shotguns: Item[],
-			assaultRifles: Item[],
-			sportRifles: Item[],
-			sniperRifles: Item[],
-			assaultCannons: Item[],
-			lightMachineguns: Item[],
-			mediumMachineguns: Item[],
-			heavyMachineguns: Item[],
-			ammunitionTypes: Item[],
-			firearmAccessories: Item[],
-		},
-		grenadesAndRockets: {
-			grenades: Item[],
-			grenadeLaunchers: Item[],
-			rockets: Item[],
-			rocketLaunchers: Item[];
-		},
-	},
-	clothingAndArmor: {
-		clothing: Item[],
-		armor: Item[],
-		armorModifications: Item[],
-		helmetsAndShields: Item[],
-	},
-	augmentations: {
-		cyberAndBiowareGrades: Item[],
-		headware: Item[],
-		eyeware: Item[],
-		earware: Item[],
-		bodyware: Item[],
-		cyberlimnTypes: Item[],
-		cyberlimbs: Item[],
-		cyberlimbEnhancements: Item[],
-		cyberlimbAccessories: Item[],
-		cyberMeleeWeapons: Item[],
-		basicBioware: Item[],
-		culturedBioware: Item[],
-	},
-	tech: {
-		electronics: {
-			commlink: Item[],
-			coomlinkUpgrades: Item[],
-			commlinkAccessories: Item[],
-		},
-		surveillance: {
-			imagingDevicies: Item[],
-			imagingEnhancements: Item[],
-			audioDevices: Item[],
-			audioEnhancements: Item[],
-			sensorPackages: Item[],
-			sensorFunctions: Item[],
-		},
-		security: {
-			locks: Item[],
-			restraints: Item[],
-			breakingAndEnteringTools: Item[],
-			disguises: Item[],
-		},
-		datachipsAndSoftware: {
-			matrixPrograms: Item[],
-			skillsoftPrograms: Item[],
-			dataPrograms: Item[],
-			simsemse: Item[],
-			areprograms: Item[],
-		},
-		tools: Item[],
-		survivalGear: Item[],
-		grapplegun: Item[],
-	},
-	medicalEquipment: {
-		biotech: Item[],
-		slapPatches: Item[],
-		docwagonContracts: Item[],
-	},
-	chemicals: {
-		drugs: Item[],
-		toxins: Item[],
-		compounds: Item[],
-	},
-	explosives: {
-		explosives: Item[],
-		detonators: Item[],
-	},
-	magicalEquipment: {
-		spellFormulae: Item[],
-		spellFetish: Item[],
-		foci:Item[],
-		magicalSupplies: Item[],
-	},
-	vehiclesAndDrones: {
-		bikes: Item[],
-		cars: Item[],
-		trucks: Item[],
-		securityVehicles: Item[],
-		microDroens: Item[],
-		miniDrones: Item[],
-		smallDrones: Item[],
-		mediumDrones: Item[],
-		largeDrones: Item[],
-		vehicleModifications: Item[],
-	},
-};
+export const gearRoot = "gear";
+
+export function transformAllGear(allData: any): Dictionary<Gear[]> {
+	const allGear: Dictionary<Gear[]> = {};
+	transformAllGearInner(gearRoot, allData, allGear);
+	return allGear;
+}
+
+function transformAllGearInner(parentPath: string, parentData: any, allGear: Dictionary<Gear[]>) {
+	for (const childName of Object.keys(parentData)) {
+		const childPath = `${parentPath}.${childName}`;
+		const childData = parentData[childName];
+		if (isArray(childData)) {
+			const values = childData as any[];
+			const items: Gear[] = [];
+			for (const item of values.map(v => transformGearItem(parentPath, v))) {
+				// gear with multiple versions need to be split into separate items
+				if (/^([\w-\s]+)\s+\(([\w-\s]+(,\s*)?)+\)$/i.test(item.name)) {
+					items.push(...splitGearItems(parentPath, item));
+				} else {
+					items.push(item);
+				}
+			}
+			for (const item of items) {
+				finalizeGearItem(item);
+			}
+			allGear[childPath] = items;
+		} else {
+			transformAllGearInner(childPath, childData, allGear);
+		}
+	}
+}
+
+function transformGearItem(parentPath: string, data: any): Gear {
+	const item: Gear = {
+		path: parentPath,
+		name: "[NAME]",
+		availability: "[AVAILABILITY]",
+		cost: "[COST]",
+		costLabel: "[COST]"
+	};
+	for (const propName of Object.keys(data)) {
+		const propValue = data[propName];
+		if (propName === "Name") {
+			item.name = propValue as string;
+		} else if (propName === "Availability") {
+			item.availability = propValue as string;
+		} else if (propName === "Cost") {
+			item.costLabel = propValue as string;
+		} else {
+			// assume a string (not that it actually matters)
+			item[propName] = propValue as string;
+		}
+	}
+	return item;
+}
+
+function splitGearItems(parentPath: string, item: Gear): Gear[] {
+	const itemVersions: Gear[] = [];
+	/*
+	"Some Thingy (1, 2, 3)" => [
+		"Some Thingy (A, B, C)"
+		"Some Thingy",
+		"A, B, C"
+	]
+	*/
+	const groupResult = /^([\w-\s]+)\s+\(((?:(?:[\w-\s]+)(?:,\s*)?)+)\)$/i.exec(item.name);
+	if (groupResult === null) {
+		throw new Error(`Gear item's name '${item.name}' does not contain multiple ratings`);
+	}
+	const namePrefix = groupResult[1];
+	const nameSuffixes = groupResult[2].split(",").map(r => r.trim());
+	const itemCount = nameSuffixes.length;
+	for (let i = 0; i < itemCount; i++) {
+		const itemVersion: Gear = {
+			path: parentPath,
+			name: `${namePrefix} - ${nameSuffixes[i]}`,
+			availability: "[AVAILABILITY]",
+			cost: "[COST]",
+			costLabel: "[COST]"
+		};
+		for (const propName of Object.keys(item)) {
+			// use lower-case names as this is the Gear object, not the raw object from the JSON file
+			if (propName === "name") {
+				// skip name - it is already set
+				continue;
+			}
+			if (propName === "cost") {
+				// skip cost - it is determined in the finalize step, after splitting
+				continue;
+			}
+			// all other properties are strings
+			const propValue = item[propName] as string;
+			const splitValues = propValue.split(",").map(v => v.trim());
+			if (splitValues.length === 1) {
+				// same value for all versions
+				itemVersion[propName] = propValue;
+			} else if (splitValues.length === itemCount) {
+				itemVersion[propName] = splitValues[i];
+			} else {
+				throw new Error(`Properties should have a single value or the same amount as there are version names ${itemCount} - found ${splitValues.length}`);
+			}
+		}
+		itemVersions.push(itemVersion);
+	}
+	return itemVersions;
+}
+
+function finalizeGearItem(item: Gear) {
+	/*
+	1000
+	+500
+	x2
+	50 (per dose)
+	*/
+	const costResult = /^(?:x|\+)?(\d+)\s*(?:\(([\w\s]+)\))?$/i.exec(item.costLabel);
+	if (costResult) {
+		item.cost = costResult[1];
+		if (isNaN(parseInt(item.cost))) {
+			throw new Error(`Gear item '${item.name}' has unsupported cost label '${item.costLabel}'`);
+		}
+	} else {
+		item.cost = "0";
+	}
+}
+
+const itemCostMap = new Map<string,number>();
+export function findItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
+	const key = `${item.path}.${item.name}`;
+	if (itemCostMap.has(key)) {
+		return itemCostMap.get(key)!;
+	}
+	const subGear = allGear[item.path];
+	const gear = subGear.find(g => g.name === item.name);
+	if (!gear) {
+		throw new Error(`Could not find gear with name '${item.name}' in list '${JSON.stringify(subGear)}' under path '${item.path}'`);
+	}
+
+	const cost = parseInt(gear.cost);
+	itemCostMap.set(key, cost);
+	return cost;
+}
+
+export function createSavedItem(path: string, item: Item): Item {
+	const { name, count, grade } = item;
+	const savedItem = { path, name, count, grade };
+	// do not want to save optional properties
+	// grade (used, alpha, beta, delta) only applies to augmentations
+	if (grade !== undefined) {
+		savedItem.grade = grade;
+	}
+	return savedItem;
+}

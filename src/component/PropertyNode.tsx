@@ -6,7 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import { isArray } from "util";
 import { sentenceCase } from "change-case";
-import { Item } from "../model/custom-item";
+import { CustomItem } from "../model/custom-item";
 import PropertyLeafNode from "./PropertyLeafNode";
 
 const fontWeights = [700, 600, 500, 400, 300, 200, 100];
@@ -29,7 +29,7 @@ const PropertyNode: FC<Props> = (props: Props) => {
 		// leaf-node
 		const breadcrums = getBreadcrums(parentPath, name);
 		const names = value as string[];
-		const allValues = all as Item[];
+		const allValues = all as CustomItem[];
 		const onNamesUpdated = (updatedNames: string[]) => {
 			onValueUpdated(updatedNames);
 		};
@@ -62,6 +62,7 @@ const PropertyNode: FC<Props> = (props: Props) => {
 			};
 			children.push(
 				<PropertyNode
+					key={childName}
 					parentPath={childPath}
 					name={childName}
 					value={childValue}

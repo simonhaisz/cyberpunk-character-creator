@@ -1,10 +1,10 @@
 import { Skill, Character } from "./character";
-import { Item } from "./custom-item";
+import { CustomItem } from "./custom-item";
 
 export type Skills = {
-    active: Item[];
-    knowledge: Item[];
-    language: Item[];
+    active: CustomItem[];
+    knowledge: CustomItem[];
+    language: CustomItem[];
 };
 
 export function getActiveSkillCost(rating: number): number {

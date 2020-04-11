@@ -30,7 +30,7 @@ const DEFAULT_CHARACTER: Character = {
         illusion: [],
         manipulation: [],
     },
-    gear: {},
+    gear: [],
     // gear: {
     //     weapons: {
     //         meleeWeapons: {

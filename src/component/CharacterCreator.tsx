@@ -21,6 +21,7 @@ import ContactsTab from "./ContactsTab";
 import { isAwakened } from "../model/character";
 import MagicTab from "./MagicTab";
 import GearTab from "./GearTab";
+import { transformAllGear } from "../model/gear";
 
 const useStyles = makeStyles({
     bar: {
@@ -65,7 +66,7 @@ const CharacterCreator: FC = () => {
         fetch("/data/gear.json")
             .then(response => response.json())
             .then(gear => {
-                const gearData = gear as LoadGearData;
+                const gearData = transformAllGear(gear) as LoadGearData;
                 dispatch({ type: ActionType.LoadGear, data: gearData });
             });
     }, [dispatch]);

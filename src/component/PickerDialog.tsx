@@ -11,9 +11,9 @@ import IconButton from "@material-ui/core/IconButton";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import TextField from "@material-ui/core/TextField";
-import { Item } from "../model/custom-item";
+import { CustomItem } from "../model/custom-item";
 
-export type SelectableItem = Item & {
+export type SelectableItem = CustomItem & {
 	selected: boolean;
 };
 
@@ -124,7 +124,7 @@ const PickerDialog: FC<Props> = (props: Props) => {
 						items.map(item => (
 							<ListItem key={item.Name}>
 								<ListItemText className={classes.name}>{item.Name}</ListItemText>
-						{ includeAvailability ? <ListItemText className={classes.availability}>{item.Availability}</ListItemText> : null }
+								{ includeAvailability ? <ListItemText className={classes.availability}>{item.Availability}</ListItemText> : null }
 								{ includeCost ? <ListItemText className={classes.cost}>{item.Cost}</ListItemText> : null }
 								{
 									allowMultiSelection ?
