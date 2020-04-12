@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/cyberpunk-character-creator/static/css/main.69eda509.chunk.css",
-    "main.js": "/cyberpunk-character-creator/static/js/main.49df6abc.chunk.js",
-    "main.js.map": "/cyberpunk-character-creator/static/js/main.49df6abc.chunk.js.map",
+    "main.js": "/cyberpunk-character-creator/static/js/main.15749a28.chunk.js",
+    "main.js.map": "/cyberpunk-character-creator/static/js/main.15749a28.chunk.js.map",
     "runtime-main.js": "/cyberpunk-character-creator/static/js/runtime-main.25024038.js",
     "runtime-main.js.map": "/cyberpunk-character-creator/static/js/runtime-main.25024038.js.map",
-    "static/js/2.327364c7.chunk.js": "/cyberpunk-character-creator/static/js/2.327364c7.chunk.js",
-    "static/js/2.327364c7.chunk.js.map": "/cyberpunk-character-creator/static/js/2.327364c7.chunk.js.map",
+    "static/js/2.04015c8d.chunk.js": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js",
+    "static/js/2.04015c8d.chunk.js.map": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js.map",
     "index.html": "/cyberpunk-character-creator/index.html",
-    "precache-manifest.c95ab70e07a639cd080fcab0c645446f.js": "/cyberpunk-character-creator/precache-manifest.c95ab70e07a639cd080fcab0c645446f.js",
+    "precache-manifest.4521fb03a0241ba1e152822618719b74.js": "/cyberpunk-character-creator/precache-manifest.4521fb03a0241ba1e152822618719b74.js",
     "service-worker.js": "/cyberpunk-character-creator/service-worker.js",
     "static/css/main.69eda509.chunk.css.map": "/cyberpunk-character-creator/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.327364c7.chunk.js.LICENSE": "/cyberpunk-character-creator/static/js/2.327364c7.chunk.js.LICENSE"
+    "static/js/2.04015c8d.chunk.js.LICENSE": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.25024038.js",
-    "static/js/2.327364c7.chunk.js",
+    "static/js/2.04015c8d.chunk.js",
     "static/css/main.69eda509.chunk.css",
-    "static/js/main.49df6abc.chunk.js"
+    "static/js/main.15749a28.chunk.js"
   ]
 }

@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "50232285c70eaace473247fbd79ca41a",
+    "revision": "92892359aea567039ab1f5013e75402b",
     "url": "/cyberpunk-character-creator/index.html"
   },
   {
-    "revision": "bf636175589ee23b2002",
+    "revision": "102b23364fb4b04ced2b",
     "url": "/cyberpunk-character-creator/static/css/main.69eda509.chunk.css"
   },
   {
-    "revision": "3fb76af23836ce8e652e",
-    "url": "/cyberpunk-character-creator/static/js/2.327364c7.chunk.js"
+    "revision": "01e863b09e9f5ac3622d",
+    "url": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js"
   },
   {
     "revision": "9b2f0f2c02ec15c1a684dfd9b7e38072",
-    "url": "/cyberpunk-character-creator/static/js/2.327364c7.chunk.js.LICENSE"
+    "url": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js.LICENSE"
   },
   {
-    "revision": "bf636175589ee23b2002",
-    "url": "/cyberpunk-character-creator/static/js/main.49df6abc.chunk.js"
+    "revision": "102b23364fb4b04ced2b",
+    "url": "/cyberpunk-character-creator/static/js/main.15749a28.chunk.js"
   },
   {
     "revision": "44786293d4f7c2d26078",

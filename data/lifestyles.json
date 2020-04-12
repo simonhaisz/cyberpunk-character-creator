@@ -1,0 +1,360 @@
+{
+    "advanced": {
+        "comforts": [
+            {
+                "Name": "Street",
+                "Cost": "0"
+            },
+            {
+                "Name": "Squatter",
+                "Cost": "1"
+            },
+            {
+                "Name": "Low",
+                "Cost": "2"
+            },
+            {
+                "Name": "Middle",
+                "Cost": "3"
+            },
+            {
+                "Name": "High",
+                "Cost": "4"
+            },
+            {
+                "Name": "Luxury",
+                "Cost": "6"
+            }
+        ],
+        "entertainment": [
+            {
+                "Name": "Street",
+                "Cost": "0"
+            },
+            {
+                "Name": "Squatter",
+                "Cost": "1"
+            },
+            {
+                "Name": "Low",
+                "Cost": "2"
+            },
+            {
+                "Name": "Middle",
+                "Cost": "3"
+            },
+            {
+                "Name": "High",
+                "Cost": "4"
+            },
+            {
+                "Name": "Luxury",
+                "Cost": "6"
+            }
+        ],
+        "necessities": [
+            {
+                "Name": "Street",
+                "Cost": "0"
+            },
+            {
+                "Name": "Squatter",
+                "Cost": "1"
+            },
+            {
+                "Name": "Low",
+                "Cost": "2"
+            },
+            {
+                "Name": "Middle",
+                "Cost": "3"
+            },
+            {
+                "Name": "High",
+                "Cost": "4"
+            },
+            {
+                "Name": "Luxury",
+                "Cost": "6"
+            }
+        ],
+        "neighborhood": [
+            {
+                "Name": "Street",
+                "Cost": "0"
+            },
+            {
+                "Name": "Squatter",
+                "Cost": "1"
+            },
+            {
+                "Name": "Low",
+                "Cost": "2"
+            },
+            {
+                "Name": "Middle",
+                "Cost": "3"
+            },
+            {
+                "Name": "High",
+                "Cost": "4"
+            },
+            {
+                "Name": "Luxury",
+                "Cost": "6"
+            },
+            {
+                "Name": "Luxuxy-AAA",
+                "Cost": "7"
+            }
+        ],
+        "security": [
+            {
+                "Name": "Street",
+                "Cost": "0"
+            },
+            {
+                "Name": "Squatter",
+                "Cost": "1"
+            },
+            {
+                "Name": "Low",
+                "Cost": "2"
+            },
+            {
+                "Name": "Middle",
+                "Cost": "3"
+            },
+            {
+                "Name": "High",
+                "Cost": "4"
+            },
+            {
+                "Name": "Luxury",
+                "Cost": "6"
+            }
+        ],
+        "qualities": {
+            "positive": [
+                {
+                    "Name": "Aspected Domain",
+                    "Cost": "5"
+                },
+                {
+                    "Name": "Astral Repellant",
+                    "Cost": "5"
+                },
+                {
+                    "Name": "Commercial Zone",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Concerned Neighbors",
+                    "Cost": "2"
+                },
+                {
+                    "Name": "Easy-going Landlord",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Escape Tunnel",
+                    "Cost": "3"
+                },
+                {
+                    "Name": "Feng Shui",
+                    "Cost": "5"
+                },
+                {
+                    "Name": "Free Access",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Friendly Neighbors",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Hasty Exit",
+                    "Cost": "2"
+                },
+                {
+                    "Name": "Homegrown Farming",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "In Tune",
+                    "Cost": "5"
+                },
+                {
+                    "Name": "Insconspicuous Housing",
+                    "Cost": "2"
+                },
+                {
+                    "Name": "No Neighbors",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Perfect Roommate",
+                    "Cost": "2"
+                },
+                {
+                    "Name": "Privacy Screen 1",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Privacy Screen 2",
+                    "Cost": "2"
+                },
+                {
+                    "Name": "Privacy Screen 3",
+                    "Cost": "3"
+                },
+                {
+                    "Name": "Quiet Neighborhood",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Rad Pad",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Security Conscious",
+                    "Cost": "2"
+                },
+                {
+                    "Name": "Well Made",
+                    "Cost": "1"
+                },
+                {
+                    "Name": "Workplace",
+                    "Cost": "1"
+                }
+            ],
+            "negative": [
+                {
+                    "Name": "AI in Residence",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Ambusher's Delight",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Blackhole 1",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "Blackhole 2",
+                    "Cost": "-4"
+                },
+                {
+                    "Name": "Corporate Owned",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Crash Pad",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Defective CHN",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Green Plan",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Haunted",
+                    "Cost": "-4"
+                },
+                {
+                    "Name": "Household Gremlins 1",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Household Gremlins 2",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Lax Security",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "Living by Commitee",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "Living with Parents",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "Network Bottleneck",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "No Forwarding Address",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Nosy Neighbors",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "No Privacy 1",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "No Privacy 2",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "No Privacy 3",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Pest Magnet 1",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Pest Magnet 2",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Poor Condition",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Rough Neighborhood",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Spirit Magnet 1 ",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Spirit Magnet 2 ",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "This Isn't Big Bob's Autos",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Trigger-Happy Landlord",
+                    "Cost": "-1"
+                },
+                {
+                    "Name": "Unsound",
+                    "Cost": "-2"
+                },
+                {
+                    "Name": "Unsafe",
+                    "Cost": "-3"
+                },
+                {
+                    "Name": "Worse Neighbors",
+                    "Cost": "-1"
+                }
+            ]
+        }
+    }
+}
