@@ -24,7 +24,7 @@ import MagicTab from "./MagicTab";
 import GearTab from "./GearTab";
 import { transformAllGear, getCharacterGearNuyenCost, getCharacterGearKarmaCost } from "../model/gear";
 import { getMetaTypeCost } from "../model/meta-type";
-import { getAllQualitiesCost } from "../model/quality";
+import { transformAllQualities, getCharacterQualitiesCost } from "../model/quality";
 import { getAllContactsCost } from "../model/contact";
 import { getCharacterSpellsCost } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
@@ -48,7 +48,7 @@ const CharacterCreator: FC = () => {
         fetch("data/qualities.json")
             .then(response => response.json())
             .then(qualities => {
-                const data = qualities as LoadQualitiesData;
+                const data = transformAllQualities(qualities) as LoadQualitiesData;
                 dispatch({ type: ActionType.LoadQualities, data });
             })
             .catch(error => {
@@ -87,7 +87,7 @@ const CharacterCreator: FC = () => {
         dispatch({ type: ActionType.ClearCharacter });
     };
 
-    const characterCost = getMetaTypeCost(selectedCharacter.metaType) + getAllQualitiesCost(selectedCharacter.qualities, allQualities);
+    const characterCost = getMetaTypeCost(selectedCharacter.metaType) + getCharacterQualitiesCost(selectedCharacter, allQualities);
     const attributesCost = getAttributesCost(selectedCharacter);
     const skillsCost = getSkillsCost(selectedCharacter);
     const contactsCost = getAllContactsCost(selectedCharacter);

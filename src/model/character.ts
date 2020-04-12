@@ -1,6 +1,5 @@
 import { Contact } from "./contact";
 import { Spells } from "./magic";
-import { Qualities } from "./quality";
 import { Item } from "./item";
 
 export enum MetaType {
@@ -29,7 +28,7 @@ export type CharacterRef = {
 export type Character = CharacterRef & {
     metaType: MetaType;
     attributes: Attribute[];
-    qualities: Qualities;
+    qualities: Item[];
     activeSkills: Skill[];
     knowledgeSkills: Skill[];
     languageSkills: Skill[];
@@ -40,5 +39,5 @@ export type Character = CharacterRef & {
 };
 
 export function isAwakened(character: Character): boolean {
-    return character.qualities.positive.find(q => q === "Adept" || q === "Magician") !== undefined;
+    return character.qualities.find(q => q.name === "Adept" || q.name === "Magician") !== undefined;
 }

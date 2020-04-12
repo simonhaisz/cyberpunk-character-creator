@@ -1,6 +1,37 @@
 import { sentenceCase } from "change-case";
+import { isArray } from "util";
+import { Item } from "./item";
 
 export type Dictionary<T> = { [key: string]: T };
+
+export function transformAllItems<T>(parentPath: string, parentData: any, allItems: Dictionary<T[]>, transformValues: (childpath: string, childValues: any[]) => T[]) {
+	for (const childName of Object.keys(parentData)) {
+		const childPath = `${parentPath}.${childName}`;
+		const childData = parentData[childName];
+		if (isArray(childData)) {
+			allItems[childPath] = transformValues(childPath, childData as any[]);
+		} else {
+			transformAllItems(childPath, childData, allItems, transformValues);
+		}
+	}
+}
+
+const itemCostMap = new Map<string,number>();
+export function getItemCost<T extends Item>(item: Item, allItems: Dictionary<T[]>): number {
+	const key = `${item.path}.${item.name}`;
+	if (itemCostMap.has(key)) {
+		return itemCostMap.get(key)!;
+	}
+	const items = allItems[item.path];
+	const foundItem = items.find(g => g.name === item.name);
+	if (!foundItem) {
+		throw new Error(`Could not find item with name '${item.name}' in list '${JSON.stringify(items)}' under path '${item.path}'`);
+	}
+
+	const cost = parseInt(foundItem.cost);
+	itemCostMap.set(key, cost);
+	return cost;
+}
 
 export function getNextParentPaths<T>(values: Dictionary<T>): Map<string,string> {
 	const parentPathToName = new Map<string,string>();

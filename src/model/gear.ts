@@ -1,5 +1,4 @@
-import { Dictionary } from "./dictionary";
-import { isArray } from "util";
+import { Dictionary, transformAllItems, getItemCost } from "./dictionary";
 import { Item } from "./item";
 import { Character } from "./character";
 
@@ -13,33 +12,24 @@ export const gearRoot = "gear";
 
 export function transformAllGear(allData: any): Dictionary<Gear[]> {
 	const allGear: Dictionary<Gear[]> = {};
-	transformAllGearInner(gearRoot, allData, allGear);
+	transformAllItems(gearRoot, allData, allGear, transformGearValues);
 	return allGear;
 }
 
-function transformAllGearInner(parentPath: string, parentData: any, allGear: Dictionary<Gear[]>) {
-	for (const childName of Object.keys(parentData)) {
-		const childPath = `${parentPath}.${childName}`;
-		const childData = parentData[childName];
-		if (isArray(childData)) {
-			const values = childData as any[];
-			const items: Gear[] = [];
-			for (const item of values.map(v => transformGearItem(childPath, v))) {
-				// gear with multiple versions need to be split into separate items
-				if (/^([\w-\s]+)\s+\(([\w-\s]+(,\s*)?)+\)$/i.test(item.name)) {
-					items.push(...splitGearItems(childPath, item));
-				} else {
-					items.push(item);
-				}
-			}
-			for (const item of items) {
-				finalizeGearItem(item);
-			}
-			allGear[childPath] = items;
+function transformGearValues(path: string, values: any[]): Gear[] {
+	const items: Gear[] = [];
+	for (const item of values.map(v => transformGearItem(path, v))) {
+		// gear with multiple versions need to be split into separate items
+		if (/^([\w-\s]+)\s+\(([\w-\s]+(,\s*)?)+\)$/i.test(item.name)) {
+			items.push(...splitGearItems(path, item));
 		} else {
-			transformAllGearInner(childPath, childData, allGear);
+			items.push(item);
 		}
 	}
+	for (const item of items) {
+		finalizeGearItem(item);
+	}
+	return items;
 }
 
 function transformGearItem(path: string, data: any): Gear {
@@ -135,25 +125,8 @@ function finalizeGearItem(item: Gear) {
 	}
 }
 
-const itemCostMap = new Map<string,number>();
-export function findItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
-	const key = `${item.path}.${item.name}`;
-	if (itemCostMap.has(key)) {
-		return itemCostMap.get(key)!;
-	}
-	const subGear = allGear[item.path];
-	const gear = subGear.find(g => g.name === item.name);
-	if (!gear) {
-		throw new Error(`Could not find gear with name '${item.name}' in list '${JSON.stringify(subGear)}' under path '${item.path}'`);
-	}
-
-	const cost = parseInt(gear.cost);
-	itemCostMap.set(key, cost);
-	return cost;
-}
-
 export function computeItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
-	const baseCost = findItemCost(item, allGear);
+	const baseCost = getItemCost(item, allGear);
 	return baseCost * getGradeCostMultipler(item.grade as Grade);
 }
 

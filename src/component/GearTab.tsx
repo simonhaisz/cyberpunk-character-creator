@@ -13,16 +13,20 @@ const GearTab: FC = () => {
 	const { gear } = character;
 	const allGear = useGlobalState("allGear");
 
-	const createGearLabel= (item: Item) => {
-		const { name, count} = item;
+	const createGearCostLabel = (item: Item) => {
+		const { count} = item;
 		const cost = computeItemCost(item, allGear);
-		let label = name;
-		
 		if (parseInt(count) > 1) {
-			label += ` (¥${cost} x ${count})`;
+			return `¥${cost} x ${count}`;
 		} else {
-			label += ` (¥${cost})`;
+			return `¥${cost}`;
 		}
+	};
+
+	const createGearLabel= (item: Item) => {
+		const { name } = item;
+		const costLabel = createGearCostLabel(item);
+		let label = `${name} (${costLabel})`;
 		const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
 		if (includeGrade) {
 			label += ` [${item.grade || Grade.Alpha}]`;
@@ -47,6 +51,7 @@ const GearTab: FC = () => {
 						items={getItemSubset(gear, `${gearRoot}.${name}`)}
 						allItems={getChildSet(allGear, `${gearRoot}.${name}`)}
 						createItemLabel={createGearLabel}
+						createItemCostLabel={createGearCostLabel}
 						onUpdateItems={newItems => handleUpdateGear(name, newItems)}
 					/>
 				)

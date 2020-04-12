@@ -15,10 +15,11 @@ type Props = {
 	onClose: () => void;
 	title: string;
 	allItems: Dictionary<Item[]>;
+	createCostLabel: (item: Item) => string;
 	onUpdateAllItems: (newItems: Dictionary<Item[]>) => void;
 };
 const ItemPickerDialog: FC<Props> = (props: Props) => {
-	const { open, onClose, title, allItems, onUpdateAllItems } = props;
+	const { open, onClose, title, allItems, createCostLabel, onUpdateAllItems } = props;
 
 	const allPaths = Object.keys(allItems);
 
@@ -80,6 +81,7 @@ const ItemPickerDialog: FC<Props> = (props: Props) => {
 				<ItemPickerSection
 					label={pathToLabel.get(group)!}
 					items={allItems[group]}
+					createCostLabel={createCostLabel}
 					onUpdateItems={handleUpdateItems}
 				/>
 			</DialogContent>

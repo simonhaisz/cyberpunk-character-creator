@@ -14,10 +14,11 @@ const useStyles = makeStyles({
 type Props = {
 	label: string;
 	items: Item[];
+	createCostLabel: (item: Item) => string;
 	onUpdateItems: (newItems: Item[]) => void;
 };
 const ItemPickerSection: FC<Props> = (props: Props) => {
-	const { items, onUpdateItems } = props;
+	const { items, createCostLabel, onUpdateItems } = props;
 
 	const classes = useStyles();
 
@@ -38,6 +39,7 @@ const ItemPickerSection: FC<Props> = (props: Props) => {
 					items.map(i =>
 						<ItemPickerCard
 							item={i}
+							createCostLabel={createCostLabel}
 							onUpdateItem={handleUpdate}
 						/>
 					)

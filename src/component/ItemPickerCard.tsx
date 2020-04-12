@@ -8,9 +8,8 @@ import Typography from "@material-ui/core/Typography";
 import AddIcon from "@material-ui/icons/Add";
 import RemoveIcon from "@material-ui/icons/Remove";
 import { makeStyles } from "@material-ui/core";
-import { Grade, gearRoot, computeItemCost } from "../model/gear";
+import { Grade, gearRoot } from "../model/gear";
 import GradeButton from "./GradeButton";
-import { useGlobalState } from "../context";
 
 const useStyles = makeStyles({
 	root: {
@@ -30,18 +29,16 @@ const useStyles = makeStyles({
 
 type Props = {
 	item: Item;
+	createCostLabel: (item: Item) => string;
 	onUpdateItem: (newItem: Item) => void;
 };
 const ItemPickerCard: FC<Props> = (props: Props) => {
-	const { item, onUpdateItem } = props;
-
-	const allGear = useGlobalState("allGear");
+	const { item, createCostLabel, onUpdateItem } = props;
 
 	const classes = useStyles();
 
 	const count = parseInt(item.count);
-
-	const cost = computeItemCost(item, allGear);
+	const costLabel = createCostLabel(item);
 
 	const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
 
@@ -73,7 +70,7 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 			<Typography className={classes.name} style={{lineHeight: "36px"}}>{item.name}</Typography>
 			<span className={classes.cost}>
 				<Badge badgeContent={count} color="secondary">
-					<Typography style={{lineHeight: "36px"}}>(¥{cost})</Typography>
+					<Typography style={{lineHeight: "36px"}}>({costLabel})</Typography>
 				</Badge>
 			</span>
 			<ButtonGroup>

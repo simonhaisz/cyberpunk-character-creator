@@ -8,9 +8,7 @@ import { Character as CharacterData, MetaType } from "../model/character";
 import { ActionType, UpdateCharacterData } from "../reducer";
 import { ALL_META_TYPES } from "../data/meta-types";
 import { getMetaTypeCost } from "../model/meta-type";
-import PropertyTree from "./PropertyTree";
-import { getAllQualitiesCost } from "../model/quality";
-
+import QualitiesSection from "./QualitiesSection";
 
 const useStyles = makeStyles({
     header: {
@@ -33,19 +31,11 @@ const CharacterTab: FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
-    const allQualities = useGlobalState("allQualities");
-    const { name, streetName, metaType, qualities } = character;
-
-    const cost = getAllQualitiesCost(qualities, allQualities);
+    const { name, streetName, metaType } = character;
 
     const onCharacterUpdated = (updatedCharacter: CharacterData) => {
         const data: UpdateCharacterData = updatedCharacter;
         dispatch({ type: ActionType.UpdateCharacter, data });
-    };
-
-    const onQualitiesUpdated = (updatedQualities: { positive: string[], negative: string[] }) => {
-        const data: UpdateCharacterData = { ...character, qualities: updatedQualities };
-		dispatch({ type: ActionType.UpdateCharacter, data });
     };
 
     return (
@@ -57,13 +47,7 @@ const CharacterTab: FC = () => {
                     {ALL_META_TYPES.map(t => <MenuItem key={t} value={t}>{t} ({getMetaTypeCost(t)})</MenuItem>)}
                 </Select>
             </div>
-            <PropertyTree
-                rootCost={cost}
-                rootName="qualities"
-                rootValue={qualities}
-                rootAll={allQualities}
-                onRootUpdated={onQualitiesUpdated}
-            />
+            <QualitiesSection />
         </Fragment>
     )
 }

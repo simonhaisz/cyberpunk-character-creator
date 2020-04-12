@@ -25,10 +25,11 @@ type Props = {
 	items: Item[];
 	allItems: Dictionary<Item[]>;
 	createItemLabel: (item: Item) => string;
+	createItemCostLabel: (item: Item) => string;
 	onUpdateItems: (newItems: Item[]) => void;
 };
 const GroupContainer: FC<Props> = (props: Props) => {
-	const { label, items, allItems, createItemLabel, onUpdateItems } = props;
+	const { label, items, allItems, createItemLabel, createItemCostLabel, onUpdateItems } = props;
 
 	const classes = useStyles();
 
@@ -66,11 +67,12 @@ const GroupContainer: FC<Props> = (props: Props) => {
 						title={label}
 						items={items}
 						allItems={allItems}
+						createCostLabel={createItemCostLabel}
 						onUpdateItems={handleUpdateItems}
 					/>}
 					label=""
 				/>
-				<Typography className={classes.headerLabel}>{label} (¥{cost})</Typography>
+				<Typography className={classes.headerLabel}>{label} ({cost})</Typography>
 			</ExpansionPanelSummary>
 			<ExpansionPanelDetails>
 				<ChipCollection

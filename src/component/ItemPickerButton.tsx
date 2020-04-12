@@ -13,10 +13,11 @@ type Props = {
 	title: string;
 	items: Item[];
 	allItems: Dictionary<Item[]>;
+	createCostLabel: (item: Item) => string;
 	onUpdateItems: (newItems: Item[]) => void;
 };
 const ItemPickerButton: FC<Props> = (props: Props) => {
-	const { title, items, allItems, onUpdateItems } = props;
+	const { title, items, allItems, createCostLabel, onUpdateItems } = props;
 
 	const [open, setOpen] = useState(false);
 	const handleClose = () => setOpen(false);
@@ -41,7 +42,9 @@ const ItemPickerButton: FC<Props> = (props: Props) => {
 	const allChildItems = getChildSet(allItems, parentPath);
 
 	const allCountedItems: Dictionary<Item[]> = {};
+	let hasItems = false;
 	for (const path of Object.keys(allChildItems)) {
+		hasItems = true;
 		const localItems = [...allChildItems[path]];
 		const matchingItems = getItemSubset(items, parentPath);
 		for (const localItem of localItems) {
@@ -101,13 +104,20 @@ const ItemPickerButton: FC<Props> = (props: Props) => {
 					))
 				}
 			</Menu>
-			<ItemPickerDialog
-				open={open}
-				onClose={handleClose}
-				title={`${title} - ${parentPathsToName.get(parentPath)!}`}
-				allItems={allCountedItems}
-				onUpdateAllItems={handleUpdateAllItems}
-			/>
+			{
+				hasItems
+				?
+				<ItemPickerDialog
+					open={open}
+					onClose={handleClose}
+					title={`${title} - ${parentPathsToName.get(parentPath)!}`}
+					allItems={allCountedItems}
+					createCostLabel={createCostLabel}
+					onUpdateAllItems={handleUpdateAllItems}
+				/>
+				:
+				null
+			}
 		</Fragment>
 	);
 };
