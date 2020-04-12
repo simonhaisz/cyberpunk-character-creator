@@ -29,11 +29,12 @@ import { getAllContactsCost } from "../model/contact";
 import { getCharacterSpellsCost } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
+import CombatTab from "./CombatTab";
 
 const useStyles = makeStyles({
     bar: {
         flexGrow: 1,
-        display: "flex"
+        display: "flex",
     }
 });
 
@@ -105,31 +106,27 @@ const CharacterCreator: FC = () => {
     let selectedTabPanel: JSX.Element | null;
     switch (selectedTab) {
         case 0:
-            selectedTabPanel = <CharacterTab />
+            selectedTabPanel = <CharacterTab />;
             break;
         case 1:
-            selectedTabPanel = <AttributesTab />
+            selectedTabPanel = <AttributesTab />;
             break;
         case 2:
-            selectedTabPanel = <SkillsTab />
+            selectedTabPanel = <SkillsTab />;
             break;
         case 3:
-            selectedTabPanel = <ContactsTab />
+            selectedTabPanel = <ContactsTab />;
             break;
         case 4: {
-            if (awakened) {
-                selectedTabPanel = <MagicTab />
-            } else {
-                selectedTabPanel = <GearTab />
-            }
+            selectedTabPanel = <MagicTab />;
             break;
         }
         case 5: {
-            if (awakened) {
-                selectedTabPanel = <GearTab />
-            } else {
-                selectedTabPanel = null;
-            }
+            selectedTabPanel = <GearTab />;
+            break;
+        }
+        case 6: {
+            selectedTabPanel = <CombatTab />;
             break;
         }
         default:
@@ -163,7 +160,7 @@ const CharacterCreator: FC = () => {
                         <ClearIcon />
                     </IconButton>
                 </Toolbar>
-                <Tabs value={selectedTab} onChange={onTabChange}>
+                <Tabs value={selectedTab} onChange={onTabChange} variant="scrollable">
                     <Tab
                         label={
                             <Badge badgeContent={characterCost} color="default" showZero max={999}>
@@ -192,19 +189,14 @@ const CharacterCreator: FC = () => {
                             </Badge>
                         }
                     />
-                    {
-                        awakened
-                        ?
-                        <Tab
+                    <Tab
+                        disabled={!awakened}
                         label={
                             <Badge badgeContent={magicCost} color="default" showZero max={999}>
                                 Magic
                             </Badge>
                         }
-                        />
-                        :
-                        null
-                    }
+                    />
                     <Tab
                         label={
                             <Badge badgeContent={`¥${gearNuyenCost}`} color="default" showZero max={1000000} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
@@ -214,6 +206,7 @@ const CharacterCreator: FC = () => {
                             </Badge>
                         }
                     />
+                    <Tab label="Combat" />
                 </Tabs>
             </AppBar>
             {

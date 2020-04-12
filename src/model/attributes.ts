@@ -1,5 +1,13 @@
 import { MetaType, Attribute, Character, isAwakened } from "./character";
 
+export function getEffectiveAttributeRating(character: Character, name: string): number {
+    const attribute = character.attributes.find(a => a.name === name);
+    if (!attribute) {
+        throw new Error(`Could not find attribute with name '${name}'`);
+    }
+    return attribute.rating + getAttributeModifier(character.metaType, attribute);
+}
+
 export function getAttributeModifier(metaType: MetaType, attribute: Attribute): number {
     switch (metaType) {
         case MetaType.Dwarf:
