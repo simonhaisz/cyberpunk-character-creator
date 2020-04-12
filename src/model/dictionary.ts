@@ -36,19 +36,27 @@ export function getItemCost<T extends Item>(item: Item, allItems: Dictionary<T[]
 export function getNextParentPaths<T>(values: Dictionary<T>): Map<string,string> {
 	const parentPathToName = new Map<string,string>();
 	const paths = Object.keys(values).map(p => p.split("."));
-	let differenceFound = false;
-	let componentIndex = 0;
-	while (!differenceFound) {
-		if (componentIndex >= paths[0].length) {
-			throw new Error(`Searched through all path components and found no differences`);
-		}
-		for (let pathIndex = 1; pathIndex < paths.length; pathIndex++) {
-			if (paths[0][componentIndex] !== paths[pathIndex][componentIndex]) {
-				differenceFound = true;
-				break;
+	let componentIndex: number;
+	if (paths.length > 1) {
+		let differenceFound = false;
+		componentIndex = 0;
+		while (!differenceFound) {
+			if (componentIndex >= paths[0].length) {
+				throw new Error(`Searched through all path components and found no differences`);
 			}
+			for (let pathIndex = 1; pathIndex < paths.length; pathIndex++) {
+				if (paths[0][componentIndex] !== paths[pathIndex][componentIndex]) {
+					differenceFound = true;
+					break;
+				}
+			}
+			componentIndex++;
 		}
-		componentIndex++;
+	} else if (paths.length === 1) {
+		// there is only a single path so pick the last component
+		componentIndex = paths[0].length - 1;
+	} else {
+		throw new Error(`There are no paths`);
 	}
 	for (const path of paths) {
 		const parentPath = path.slice(0, componentIndex).join(".");

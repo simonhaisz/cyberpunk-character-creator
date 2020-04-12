@@ -141,11 +141,11 @@ const CharacterCreator: FC = () => {
             selectedTabPanel = <ContactsTab />;
             break;
         case 4: {
-            selectedTabPanel = <MagicTab />;
+            selectedTabPanel = <GearTab />;
             break;
         }
         case 5: {
-            selectedTabPanel = <GearTab />;
+            selectedTabPanel = <MagicTab />;
             break;
         }
         case 6: {
@@ -211,19 +211,19 @@ const CharacterCreator: FC = () => {
                         }
                     />
                     <Tab
-                        disabled={!awakened}
-                        label={
-                            <Badge badgeContent={magicCost} color="default" showZero max={999}>
-                                Magic
-                            </Badge>
-                        }
-                    />
-                    <Tab
                         label={
                             <Badge badgeContent={gearNuyenCostLabel} color="default" showZero max={1000000} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
                                 <Badge badgeContent={getGearKarmaCost} color="default" showZero max={999} anchorOrigin={{ vertical: "top", horizontal: "right" }}>
                                     Gear
                                 </Badge>
+                            </Badge>
+                        }
+                    />
+                    <Tab
+                        disabled={!awakened}
+                        label={
+                            <Badge badgeContent={magicCost} color="default" showZero max={999}>
+                                Magic
                             </Badge>
                         }
                     />

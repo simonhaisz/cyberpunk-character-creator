@@ -3701,5 +3701,33 @@
                 }
             ]
         }
+    },
+    "lifestyles": {
+        "basic": [
+            {
+                "Name": "Street",
+                "Cost": "0"
+            },
+            {
+                "Name": "Squatter",
+                "Cost": "500"
+            },
+            {
+                "Name": "Low",
+                "Cost": "2000"
+            },
+            {
+                "Name": "Middle",
+                "Cost": "5000"
+            },
+            {
+                "Name": "High",
+                "Cost": "10000"
+            },
+            {
+                "Name": "Luxury",
+                "Cost": "100000"
+            }
+        ]
     }
 }
