@@ -7,7 +7,7 @@ import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { Quality } from "./model/quality";
 import { Skills } from "./model/skills";
 import { CustomItem } from "./model/custom-item";
-import { Spells } from "./model/magic";
+import { Spell } from "./model/magic";
 import { Gear } from "./model/gear";
 import { Dictionary } from "./model/dictionary";
 
@@ -35,7 +35,7 @@ export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = Dictionary<Quality[]>;
 export type LoadSkillsData = Skills;
 export type LoadContactsData = CustomItem[];
-export type LoadSpellsData = Spells;
+export type LoadSpellsData = Dictionary<Spell[]>;
 export type LoadGearData = Dictionary<Gear[]>;
 export type LoadCustomItemsData = Dictionary<CustomItem>;
 export type AddCustomItemData = { path: string, item: CustomItem };

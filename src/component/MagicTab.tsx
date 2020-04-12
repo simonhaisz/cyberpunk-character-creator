@@ -1,8 +1,8 @@
 import React, { FC } from "react";
-import PropertyTree from "./PropertyTree";
 import { useGlobalState, useDispatch } from "../context";
-import { Spells, getCharacterSpellsCost } from "../model/magic";
 import { ActionType, UpdateCharacterData } from "../reducer";
+import { Item } from "../model/item";
+import GroupContainer from "./GroupContainer";
 
 const MagicTab: FC = () => {
 	const dispatch = useDispatch();
@@ -10,14 +10,28 @@ const MagicTab: FC = () => {
 	const { spells } = character;
 	const allSpells = useGlobalState("allSpells");
 
-	const cost = getCharacterSpellsCost(character);
+	const createSpellCostLabel = (_item: Item) => {
+		return "5";
+	};
 
-	const onSpellsUpdated = (updatedSpells: Spells) => {
-		const data: UpdateCharacterData = { ...character, spells: updatedSpells };
+	const createSpellLabel = (item: Item) => {
+		const { name } = item;
+		return `${name} (5)`;
+	};
+
+	const handleUpdateSpells = (newSpells: Item[]) => {
+		const data: UpdateCharacterData = { ...character, spells: newSpells };
 		dispatch({ type: ActionType.UpdateCharacter, data });
 	};
 	return (
-		<PropertyTree rootCost={cost} rootName="spells" rootValue={spells} rootAll={allSpells} onRootUpdated={onSpellsUpdated} />
+		<GroupContainer
+			label="Spells"
+			items={spells}
+			allItems={allSpells}
+			createItemLabel={createSpellLabel}
+			createItemCostLabel={createSpellCostLabel}
+			onUpdateItems={handleUpdateSpells}
+		/>
 	);
 };
 

@@ -1,5 +1,4 @@
 import { Contact } from "./contact";
-import { Spells } from "./magic";
 import { Item } from "./item";
 
 export enum MetaType {
@@ -33,8 +32,7 @@ export type Character = CharacterRef & {
     knowledgeSkills: Skill[];
     languageSkills: Skill[];
     contacts: Contact[];
-    spells: Spells;
-    // gear: any;
+    spells: Item[];
     gear: Item[];
 };
 

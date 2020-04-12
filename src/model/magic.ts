@@ -1,31 +1,32 @@
 import { Character } from "./character";
+import { Item } from "./item";
+import { Dictionary, transformAllItems } from "./dictionary";
 
-export type Spells = {
-	combat: string[],
-	detection: string[],
-	health: string[],
-	illusion: string[],
-	manipulation: string[],
-};
+export type Spell = {
+	cost: string;
+} & Item;
 
-export function getSpellCost(): number {
-	return 5;
+export const spellsRoot = "spells";
+
+export function transformAllSpells(allData: any): Dictionary<Spell[]> {
+	const allSpells: Dictionary<Spell[]> = {};
+	transformAllItems(spellsRoot, allData, allSpells, transformSpellValues);
+	return allSpells;
 }
 
-export function getSpellsCost(spells: string[]): number {
-	return getSpellCost() * spells.length;
+function transformSpellValues(path: string, values: any[]): Spell[] {
+	const spells: Spell[] = []
+	for (const value of values) {
+		const name = value["Name"];
+		spells.push({ path, name, cost: "5" });
+	}
+	return spells;
+}
+
+export function getSpellsCost(spells: Item[]): number {
+	return spells.length * 5;
 }
 
 export function getCharacterSpellsCost(character: Character): number {
-	let cost = 0;
-	cost += getSpellsCost(character.spells.combat);
-	cost += getSpellsCost(character.spells.detection);
-	cost += getSpellsCost(character.spells.health);
-	cost += getSpellsCost(character.spells.illusion);
-	cost += getSpellsCost(character.spells.manipulation);
-	return cost;
+	return getSpellsCost(character.spells);
 }
-
-export type Magic = {
-	spells: Spells;
-};

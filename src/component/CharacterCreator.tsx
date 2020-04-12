@@ -26,7 +26,7 @@ import { transformAllGear, getCharacterGearNuyenCost, getCharacterGearKarmaCost 
 import { getMetaTypeCost } from "../model/meta-type";
 import { transformAllQualities, getCharacterQualitiesCost } from "../model/quality";
 import { getAllContactsCost } from "../model/contact";
-import { getCharacterSpellsCost } from "../model/magic";
+import { getCharacterSpellsCost, transformAllSpells } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
 import CombatTab from "./CombatTab";
@@ -70,7 +70,7 @@ const CharacterCreator: FC = () => {
         fetch("data/magic.json")
             .then(response => response.json())
             .then(magic => {
-                const spellData = magic.spells as LoadSpellsData;
+                const spellData = transformAllSpells(magic.spells) as LoadSpellsData;
                 dispatch({ type: ActionType.LoadSpells, data: spellData });
             });
         fetch("data/gear.json")
