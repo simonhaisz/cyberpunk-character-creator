@@ -73,7 +73,7 @@ const PropertyNode: FC<Props> = (props: Props) => {
 		}
 		return (
 			<Fragment>
-				<ExpansionPanel defaultExpanded={true}>
+				<ExpansionPanel defaultExpanded={false}>
 					<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />} >
 						<Typography style={{fontWeight}}>{label}{ isRoot ? (` (${rootCost})`) : null}</Typography>
 					</ExpansionPanelSummary>

@@ -73,7 +73,7 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 			<Typography className={classes.name} style={{lineHeight: "36px"}}>{item.name}</Typography>
 			<span className={classes.cost}>
 				<Badge badgeContent={count} color="secondary">
-					<Typography style={{lineHeight: "36px"}}>({cost})</Typography>
+					<Typography style={{lineHeight: "36px"}}>(¥{cost})</Typography>
 				</Badge>
 			</span>
 			<ButtonGroup>

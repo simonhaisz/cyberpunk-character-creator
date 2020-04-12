@@ -18,7 +18,7 @@ const useStyles = makeStyles({
 		flexDirection: "column",
 	},
 	rating: {
-		marginBottom: 20,
+		marginTop: 30,
 	}
 });
 
@@ -46,7 +46,7 @@ const Contact: FC<Props> = (props: Props) => {
 
 	return (
 		<Fragment>
-			<ExpansionPanel defaultExpanded={true}>
+			<ExpansionPanel defaultExpanded={false}>
 				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
 					<Typography className={classes.headerLabel}>{contact.name} ({contactCost})</Typography>
 				</ExpansionPanelSummary>

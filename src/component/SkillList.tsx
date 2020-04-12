@@ -81,7 +81,7 @@ const SkillList: FC<Props> = (props: Props) => {
 
 	return (
         <Fragment>
-            <ExpansionPanel defaultExpanded={true}>
+            <ExpansionPanel defaultExpanded={false}>
                 <ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
                     <FormControlLabel
                         onClick={(event) => event.stopPropagation()}

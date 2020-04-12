@@ -70,7 +70,7 @@ const GroupContainer: FC<Props> = (props: Props) => {
 					/>}
 					label=""
 				/>
-				<Typography className={classes.headerLabel}>{label} ({cost})</Typography>
+				<Typography className={classes.headerLabel}>{label} (¥{cost})</Typography>
 			</ExpansionPanelSummary>
 			<ExpansionPanelDetails>
 				<ChipCollection

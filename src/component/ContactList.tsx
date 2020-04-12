@@ -1,6 +1,5 @@
 import React, { FC, Fragment } from "react";
 import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core";
 import PickerButton from "./PickerButton";
@@ -89,9 +88,7 @@ const ContactList: FC = () => {
 			<List>
 				{
 					selectedContacts.map(c => (
-						<ListItem key={c.name}>
-							<Contact contact={c} onUpdate={onContactUpdate} />
-						</ListItem>
+						<Contact key={c.name} contact={c} onUpdate={onContactUpdate} />
 					))
 				}
 				</List>

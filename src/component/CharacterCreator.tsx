@@ -2,6 +2,7 @@ import React, { FC, useState, useEffect } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
+import Badge from "@material-ui/core/Badge";
 import Drawer from "@material-ui/core/Drawer";
 import MenuIcon from "@material-ui/icons/Menu";
 import SaveIcon from "@material-ui/icons/Save";
@@ -21,7 +22,13 @@ import ContactsTab from "./ContactsTab";
 import { isAwakened } from "../model/character";
 import MagicTab from "./MagicTab";
 import GearTab from "./GearTab";
-import { transformAllGear } from "../model/gear";
+import { transformAllGear, getCharacterGearNuyenCost, getCharacterGearKarmaCost } from "../model/gear";
+import { getMetaTypeCost } from "../model/meta-type";
+import { getAllQualitiesCost } from "../model/quality";
+import { getAllContactsCost } from "../model/contact";
+import { getCharacterSpellsCost } from "../model/magic";
+import { getSkillsCost } from "../model/skills";
+import { getAttributesCost } from "../model/attributes";
 
 const useStyles = makeStyles({
     bar: {
@@ -34,6 +41,8 @@ const CharacterCreator: FC = () => {
     const classes = useStyles();
     const dispatch = useDispatch();
     const selectedCharacter = useGlobalState("selectedCharacter");
+    const allQualities = useGlobalState("allQualities");
+    const allGear = useGlobalState("allGear");
 
     useEffect(() => {
         fetch("data/qualities.json")
@@ -76,7 +85,15 @@ const CharacterCreator: FC = () => {
     };
     const resetClickHandler = () =>{
         dispatch({ type: ActionType.ClearCharacter });
-    }
+    };
+
+    const characterCost = getMetaTypeCost(selectedCharacter.metaType) + getAllQualitiesCost(selectedCharacter.qualities, allQualities);
+    const attributesCost = getAttributesCost(selectedCharacter);
+    const skillsCost = getSkillsCost(selectedCharacter);
+    const contactsCost = getAllContactsCost(selectedCharacter);
+    const magicCost = getCharacterSpellsCost(selectedCharacter);
+    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear);
+    const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost);
 
     const [selectedTab, setSelectedTab] = useState(0);
     const onTabChange = (_event: React.ChangeEvent<{}>, newValue: number) => {
@@ -147,12 +164,56 @@ const CharacterCreator: FC = () => {
                     </IconButton>
                 </Toolbar>
                 <Tabs value={selectedTab} onChange={onTabChange}>
-                    <Tab label="Character" />
-                    <Tab label="Attributes" />
-                    <Tab label="Skills" />
-                    <Tab label="Contacts" />
-                    { awakened ? <Tab label="Magic" /> : null }
-                    <Tab label="Gear" />
+                    <Tab
+                        label={
+                            <Badge badgeContent={characterCost} color="default" showZero max={999}>
+                                Character
+                            </Badge>
+                        }
+                    />
+                    <Tab
+                        label={
+                            <Badge badgeContent={attributesCost} color="default" showZero max={999}>
+                                Attributes
+                            </Badge>
+                        }
+                    />
+                    <Tab
+                        label={
+                            <Badge badgeContent={skillsCost} color="default" showZero max={999}>
+                                Skills
+                            </Badge>
+                        }
+                    />
+                    <Tab
+                        label={
+                            <Badge badgeContent={contactsCost} color="default" showZero max={999}>
+                                Contacts
+                            </Badge>
+                        }
+                    />
+                    {
+                        awakened
+                        ?
+                        <Tab
+                        label={
+                            <Badge badgeContent={magicCost} color="default" showZero max={999}>
+                                Magic
+                            </Badge>
+                        }
+                        />
+                        :
+                        null
+                    }
+                    <Tab
+                        label={
+                            <Badge badgeContent={`¥${gearNuyenCost}`} color="default" showZero max={1000000} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
+                                <Badge badgeContent={getGearKarmaCost} color="default" showZero max={999} anchorOrigin={{ vertical: "top", horizontal: "right" }}>
+                                    Gear
+                                </Badge>
+                            </Badge>
+                        }
+                    />
                 </Tabs>
             </AppBar>
             {

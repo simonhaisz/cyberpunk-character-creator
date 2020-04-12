@@ -19,9 +19,9 @@ const GearTab: FC = () => {
 		let label = name;
 		
 		if (parseInt(count) > 1) {
-			label += ` (${cost} x ${count})`;
+			label += ` (¥${cost} x ${count})`;
 		} else {
-			label += ` (${cost})`;
+			label += ` (¥${cost})`;
 		}
 		const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
 		if (includeGrade) {

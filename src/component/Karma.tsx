@@ -16,13 +16,13 @@ const Karma: FC = () => {
     const { total, spent, available } = karma;
     return (
         <Fragment>
-            <Badge className={classes.badge} badgeContent={total} color="primary" max={1000} showZero>
+            <Badge className={classes.badge} badgeContent={total} color="primary" max={999} showZero>
                 <ShoppingCartIcon />
             </Badge>
-            <Badge className={classes.badge} badgeContent={spent} color="error" max={1000} showZero>
+            <Badge className={classes.badge} badgeContent={spent} color="secondary" max={999} showZero>
                 <ShoppingCartIcon />
             </Badge>
-            <Badge className={classes.badge} badgeContent={available} color="secondary" max={1000} showZero>
+            <Badge className={classes.badge} badgeContent={available} color="primary" max={999} showZero>
                 <ShoppingCartIcon />
             </Badge>
         </Fragment>

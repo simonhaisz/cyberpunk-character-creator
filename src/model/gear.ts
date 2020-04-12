@@ -1,6 +1,7 @@
 import { Dictionary } from "./dictionary";
 import { isArray } from "util";
 import { Item } from "./item";
+import { Character } from "./character";
 
 export type Gear = {
 	availability: string;
@@ -202,4 +203,18 @@ export function getGradeEssenseMultiplier(grade: Grade = Grade.Alpha): number {
 		default:
 			throw new Error(`Unknown augmentation grade '${grade}'`);
 	}
+}
+
+export function getCharacterGearNuyenCost(character: Character, allGear: Dictionary<Gear[]>): number {
+	let nuyen = 0;
+	for (const item of character.gear) {
+		nuyen += computeItemCost(item, allGear) * parseInt(item.count);
+	}
+	return nuyen;
+}
+
+export function getCharacterGearKarmaCost(nuyen: number): number {
+	// Nuyen is bought at a rate of 5 Karma for 10000¥
+	// All unspent nuyen is lost so round up
+	return Math.ceil(nuyen / 10000) * 5;
 }
