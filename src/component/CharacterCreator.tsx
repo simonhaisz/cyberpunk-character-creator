@@ -45,6 +45,9 @@ const CharacterCreator: FC = () => {
     const allQualities = useGlobalState("allQualities");
     const allGear = useGlobalState("allGear");
 
+    const [drawerOpen, setDrawerOpen] = useState(false);
+    const [selectedTab, setSelectedTab] = useState(0);
+
     useEffect(() => {
         fetch("data/qualities.json")
             .then(response => response.json())
@@ -60,24 +63,36 @@ const CharacterCreator: FC = () => {
             .then(skills => {
                 const data = skills as LoadSkillsData;
                 dispatch({ type: ActionType.LoadSkills, data });
+            })
+            .catch(error => {
+                console.error(`Error occured loading skills: ${error.message}\n${error.stack}`);
             });
         fetch("data/contacts.json")
             .then(response => response.json())
             .then(contacts => {
                 const data = contacts.all as LoadContactsData;
                 dispatch({ type: ActionType.LoadContacts, data });
+            })
+            .catch(error => {
+                console.error(`Error occured loading contacts: ${error.message}\n${error.stack}`);
             });
         fetch("data/magic.json")
             .then(response => response.json())
             .then(magic => {
                 const spellData = transformAllSpells(magic.spells) as LoadSpellsData;
                 dispatch({ type: ActionType.LoadSpells, data: spellData });
+            })
+            .catch(error => {
+                console.error(`Error occured loading magic: ${error.message}\n${error.stack}`);
             });
         fetch("data/gear.json")
             .then(response => response.json())
             .then(gear => {
                 const gearData = transformAllGear(gear) as LoadGearData;
                 dispatch({ type: ActionType.LoadGear, data: gearData });
+            })
+            .catch(error => {
+                console.error(`Error occured loading gear: ${error.message}\n${error.stack}`);
             });
     }, [dispatch]);
 
@@ -96,7 +111,15 @@ const CharacterCreator: FC = () => {
     const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear);
     const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost);
 
-    const [selectedTab, setSelectedTab] = useState(0);
+    let gearNuyenCostLabel: string;
+    if (gearNuyenCost < 1000) {
+        gearNuyenCostLabel = `¥${gearNuyenCost}`;
+    } else if (gearNuyenCost < 1000000) {
+        gearNuyenCostLabel = `¥${Math.round(gearNuyenCost / 100) / 10}K`;
+    } else {
+        gearNuyenCostLabel = `¥${Math.round(gearNuyenCost / 100000) / 10}M`;
+    }
+
     const onTabChange = (_event: React.ChangeEvent<{}>, newValue: number) => {
         setSelectedTab(newValue);
     };
@@ -132,8 +155,6 @@ const CharacterCreator: FC = () => {
         default:
             throw new Error(`Unknown tab index ${selectedTab}`);
     }
-
-    const [drawerOpen, setDrawerOpen] = useState(false);
 
     const onMenuClick = () => {
         setDrawerOpen(true);
@@ -199,7 +220,7 @@ const CharacterCreator: FC = () => {
                     />
                     <Tab
                         label={
-                            <Badge badgeContent={`¥${gearNuyenCost}`} color="default" showZero max={1000000} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
+                            <Badge badgeContent={gearNuyenCostLabel} color="default" showZero max={1000000} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
                                 <Badge badgeContent={getGearKarmaCost} color="default" showZero max={999} anchorOrigin={{ vertical: "top", horizontal: "right" }}>
                                     Gear
                                 </Badge>

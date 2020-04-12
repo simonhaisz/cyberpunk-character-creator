@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import Chip from "@material-ui/core/Chip";
-import { makeStyles } from "@material-ui/core";
+import { makeStyles, Badge } from "@material-ui/core";
 
 const useStyles = makeStyles({
 	root: {
@@ -29,12 +29,14 @@ const ChipCollection: FC<Props> = (props: Props) => {
 		<div className={classes.root}>
 			{
 				values.map(v =>
-					<Chip
-						className={classes.chip}
-						color="primary"
-						label={createChipLabel(v)}
-						onDelete={() => onDeleteValue(v)}
-					/>
+					<Badge badgeContent={v.count} invisible={v.count==="1"} color="secondary" max={99} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
+						<Chip
+							className={classes.chip}
+							color="primary"
+							label={createChipLabel(v)}
+							onDelete={() => onDeleteValue(v)}
+						/>
+					</Badge>
 				)
 			}
 		</div>

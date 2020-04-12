@@ -14,13 +14,8 @@ const GearTab: FC = () => {
 	const allGear = useGlobalState("allGear");
 
 	const createGearCostLabel = (item: Item) => {
-		const { count} = item;
 		const cost = computeItemCost(item, allGear);
-		if (parseInt(count) > 1) {
-			return `¥${cost} x ${count}`;
-		} else {
-			return `¥${cost}`;
-		}
+		return `¥${cost}`;
 	};
 
 	const createGearLabel= (item: Item) => {
