@@ -23,10 +23,10 @@ function transformAllGearInner(parentPath: string, parentData: any, allGear: Dic
 		if (isArray(childData)) {
 			const values = childData as any[];
 			const items: Gear[] = [];
-			for (const item of values.map(v => transformGearItem(parentPath, v))) {
+			for (const item of values.map(v => transformGearItem(childPath, v))) {
 				// gear with multiple versions need to be split into separate items
 				if (/^([\w-\s]+)\s+\(([\w-\s]+(,\s*)?)+\)$/i.test(item.name)) {
-					items.push(...splitGearItems(parentPath, item));
+					items.push(...splitGearItems(childPath, item));
 				} else {
 					items.push(item);
 				}
@@ -41,9 +41,9 @@ function transformAllGearInner(parentPath: string, parentData: any, allGear: Dic
 	}
 }
 
-function transformGearItem(parentPath: string, data: any): Gear {
+function transformGearItem(path: string, data: any): Gear {
 	const item: Gear = {
-		path: parentPath,
+		path,
 		name: "[NAME]",
 		availability: "[AVAILABILITY]",
 		cost: "[COST]",
@@ -65,7 +65,7 @@ function transformGearItem(parentPath: string, data: any): Gear {
 	return item;
 }
 
-function splitGearItems(parentPath: string, item: Gear): Gear[] {
+function splitGearItems(path: string, item: Gear): Gear[] {
 	const itemVersions: Gear[] = [];
 	/*
 	"Some Thingy (1, 2, 3)" => [
@@ -83,7 +83,7 @@ function splitGearItems(parentPath: string, item: Gear): Gear[] {
 	const itemCount = nameSuffixes.length;
 	for (let i = 0; i < itemCount; i++) {
 		const itemVersion: Gear = {
-			path: parentPath,
+			path,
 			name: `${namePrefix} - ${nameSuffixes[i]}`,
 			availability: "[AVAILABILITY]",
 			cost: "[COST]",
@@ -151,13 +151,55 @@ export function findItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
 	return cost;
 }
 
+export function computeItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
+	const baseCost = findItemCost(item, allGear);
+	return baseCost * getGradeCostMultipler(item.grade as Grade);
+}
+
 export function createSavedItem(path: string, item: Item): Item {
 	const { name, count, grade } = item;
 	const savedItem = { path, name, count, grade };
 	// do not want to save optional properties
 	// grade (used, alpha, beta, delta) only applies to augmentations
-	if (grade !== undefined) {
-		savedItem.grade = grade;
+	if (grade === undefined) {
+		delete savedItem.grade;
 	}
 	return savedItem;
+}
+
+export enum Grade {
+	Used = "Used",
+	Alpha = "Alpha",
+	Beta = "Beta",
+	Delta = "Delta"
+}
+
+export function getGradeCostMultipler(grade: Grade = Grade.Alpha): number {
+	switch (grade) {
+		case Grade.Used:
+			return 0.5;
+		case Grade.Alpha:
+			return 1;
+		case Grade.Beta:
+			return 5;
+		case Grade.Delta:
+			return 15;
+		default:
+			throw new Error(`Unknown augmentation grade '${grade}'`);
+	}
+}
+
+export function getGradeEssenseMultiplier(grade: Grade = Grade.Alpha): number {
+	switch (grade) {
+		case Grade.Used:
+			return 1.2;
+		case Grade.Alpha:
+			return 1;
+		case Grade.Beta:
+			return 0.7;
+		case Grade.Delta:
+			return 0.5;
+		default:
+			throw new Error(`Unknown augmentation grade '${grade}'`);
+	}
 }

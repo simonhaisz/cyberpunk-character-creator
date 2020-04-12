@@ -11,11 +11,6 @@ const useStyles = makeStyles({
 	}
 });
 
-type RowProps = {
-	index: number;
-	style: any;
-};
-
 type Props = {
 	label: string;
 	items: Item[];
@@ -32,12 +27,6 @@ const ItemPickerSection: FC<Props> = (props: Props) => {
 		newItems[index] = item;
 		onUpdateItems(newItems);
 	};
-
-	// const Row = (props: RowProps) => {
-	// 	const { index } = props;
-	// 	const item = items[index];
-	// 	return <ItemPickerCard item={item} onUpdateItem={handleUpdate} />;
-	// }
 
 	return (
 		<Fragment>
@@ -56,14 +45,6 @@ const ItemPickerSection: FC<Props> = (props: Props) => {
 					<div>No items</div>
 				}
 			</div>
-			{/* <List
-				height={600}
-				itemCount={items.length}
-				itemSize={() => 56}
-				width={550}
-			>
-				{Row}
-			</List> */}
 		</Fragment>
 	);
 };

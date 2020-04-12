@@ -1,12 +1,11 @@
 import React, { FC, Fragment } from "react";
-// import PropertyTree from "./PropertyTree";
 import { useGlobalState, useDispatch } from "../context";
 import { ActionType, UpdateCharacterData } from "../reducer";
 import { getChildNames, getChildSet } from "../model/dictionary";
 import GroupContainer from "./GroupContainer";
 import { Item, getItemSubset } from "../model/item";
 import { sentenceCase } from "change-case";
-import { gearRoot, findItemCost } from "../model/gear";
+import { gearRoot, computeItemCost, Grade } from "../model/gear";
 
 const GearTab: FC = () => {
 	const dispatch = useDispatch();
@@ -16,12 +15,19 @@ const GearTab: FC = () => {
 
 	const createGearLabel= (item: Item) => {
 		const { name, count} = item;
-		const cost = findItemCost(item, allGear);
+		const cost = computeItemCost(item, allGear);
+		let label = name;
+		
 		if (parseInt(count) > 1) {
-			return `${name} (${cost} x ${count})`;
+			label += ` (${cost} x ${count})`;
 		} else {
-			return `${name} (${cost})`;
+			label += ` (${cost})`;
 		}
+		const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
+		if (includeGrade) {
+			label += ` [${item.grade || Grade.Alpha}]`;
+		}
+		return label;
 	};
 
 	const handleUpdateGear = (name: string, newSubGear: Item[]) => {

@@ -48,6 +48,7 @@ const ItemPickerButton: FC<Props> = (props: Props) => {
 			const matchingItem = matchingItems.find(i => i.name === localItem.name);
 			if (matchingItem) {
 				localItem.count = matchingItem.count;
+				localItem.grade = matchingItem.grade;
 			} else {
 				localItem.count = "0";
 			}
