@@ -40,6 +40,10 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 	const count = parseInt(item.count);
 	const costLabel = createCostLabel(item);
 
+	const hasAny = count > 0;
+
+	const allowMultiple = item.path.startsWith(gearRoot);
+
 	const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
 
 	const grade = item.grade as Grade || Grade.Alpha;
@@ -74,15 +78,9 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 				</Badge>
 			</span>
 			<ButtonGroup>
-				<Button onClick={handleAdd}>
-					<AddIcon />
-				</Button>
-				<Button onClick={handleRemove}>
-					<RemoveIcon />
-				</Button>
-				{
-					includeGrade ? <GradeButton disabled={count === 0} grade={grade} onUpdateGrade={handleGradeToggle} /> : null
-				}
+				{ allowMultiple || !hasAny ? <Button onClick={handleAdd}><AddIcon /></Button> : null }
+				{ allowMultiple || hasAny ? <Button onClick={handleRemove}><RemoveIcon /></Button> : null }
+				{ includeGrade ? <GradeButton disabled={count === 0} grade={grade} onUpdateGrade={handleGradeToggle} /> : null }
 			</ButtonGroup>
 		</Paper>
 	);
