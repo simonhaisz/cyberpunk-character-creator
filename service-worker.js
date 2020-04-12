@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/cyberpunk-character-creator/precache-manifest.0634dcd8d95bc151d8c956e732371349.js"
+  "/cyberpunk-character-creator/precache-manifest.c95ab70e07a639cd080fcab0c645446f.js"
 );
 
 self.addEventListener('message', (event) => {
