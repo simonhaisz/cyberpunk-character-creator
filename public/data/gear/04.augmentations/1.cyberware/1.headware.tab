@@ -1,11 +1,11 @@
 Name	Essence	Capacity	Availability	Cost
 Attention Coprocessor (1, 2, 3)	0.3	-	4, 6, 8	3000, 15000, 45000
-Commlink	0.2	[2]	-	2000 + Commlink
+Commlink	0.2	[2]	-	2000
 Control Rig	0.5	-	8	10000
 Cranial Bomb (Kink, Micro, Area)	0	[1, 2, 3]	16F, 16F, 20F	2000, 5000, 10000
 Datafilter	0.2	-	12	2500
 Datajack	0.1	[1]	-	500
-Data Lock	0.1	[1]	12	1000 + Encryption
+Data Lock	0.1	[1]	12	1000
 Encephalon (1, 2)	0.75, 1.5	-	8, 12	30000, 75000
 Math SPU	0.15	-	9	5000
 Olfactory Booster (2, 4, 6)	0.2	[2]	4, 6, 8	1000, 5000, 15000
