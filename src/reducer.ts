@@ -45,22 +45,20 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
         case ActionType.UpdateCharacter: {
             const selectedCharacter = action.data as UpdateCharacterData;
             const karma = getCharacterKarma(state.karma, selectedCharacter, state);
-            return { ...state, selectedCharacter, karma };
-        }
-        case ActionType.SaveCharacter: {
-            if (hasDefaultKey(state.selectedCharacter)) {
+            const characters = [...state.characters];
+            if (hasDefaultKey(selectedCharacter)) {
                 // character has not been saved yet
-                if (isDefaultCharacter(state.selectedCharacter)) {
+                if (isDefaultCharacter(selectedCharacter)) {
                     // don't save copies of the empty character
                     break;
                 }
-                state.selectedCharacter.key = Date.now();
-                const { key, name, streetName } = state.selectedCharacter;
-                state.characters.push({ key, name, streetName });
+                selectedCharacter.key = Date.now();
+                const { key, name, streetName } = selectedCharacter;
+                characters.push({ key, name, streetName });
             }
             // the list of characters is not saved separatly - it is constructed from all the available characters
-            saveCharacter(state.selectedCharacter);
-            return { ...state};
+            saveCharacter(selectedCharacter);
+            return { ...state, selectedCharacter, characters, karma };
         }
         case ActionType.ClearCharacter: {
             clearCharacter(state.selectedCharacter);

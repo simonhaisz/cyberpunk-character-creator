@@ -5,7 +5,6 @@ import IconButton from "@material-ui/core/IconButton";
 import Badge from "@material-ui/core/Badge";
 import Drawer from "@material-ui/core/Drawer";
 import MenuIcon from "@material-ui/icons/Menu";
-import SaveIcon from "@material-ui/icons/Save";
 import ClearIcon from "@material-ui/icons/Clear";
 import Tabs from "@material-ui/core/Tabs";
 import Tab from "@material-ui/core/Tab";
@@ -30,6 +29,7 @@ import { getCharacterSpellsCost, transformAllSpells } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
 import CombatTab from "./CombatTab";
+import ConfirmationDialog from "./ConfirmationDialog";
 
 const useStyles = makeStyles({
     bar: {
@@ -96,11 +96,17 @@ const CharacterCreator: FC = () => {
             });
     }, [dispatch]);
 
-    const saveClickHandler = () => {
-        dispatch({ type: ActionType.SaveCharacter });
+    const [showDeleteConfirmation, setShowDeleteConfirmation] = useState(false);
+
+    const handleDelete = () =>{
+        setShowDeleteConfirmation(true);
     };
-    const resetClickHandler = () =>{
-        dispatch({ type: ActionType.ClearCharacter });
+
+    const handleDeleteChoice = (accept: boolean) => {
+        if (accept) {
+            dispatch({ type: ActionType.ClearCharacter });
+        }
+        setShowDeleteConfirmation(false);
     };
 
     const characterCost = getMetaTypeCost(selectedCharacter.metaType) + getCharacterQualitiesCost(selectedCharacter, allQualities);
@@ -113,11 +119,11 @@ const CharacterCreator: FC = () => {
 
     let gearNuyenCostLabel: string;
     if (gearNuyenCost < 1000) {
-        gearNuyenCostLabel = `¥${gearNuyenCost}`;
+        gearNuyenCostLabel = `${gearNuyenCost}¥`;
     } else if (gearNuyenCost < 1000000) {
-        gearNuyenCostLabel = `¥${Math.round(gearNuyenCost / 100) / 10}K`;
+        gearNuyenCostLabel = `${Math.round(gearNuyenCost / 100) / 10}K ¥`;
     } else {
-        gearNuyenCostLabel = `¥${Math.round(gearNuyenCost / 100000) / 10}M`;
+        gearNuyenCostLabel = `${Math.round(gearNuyenCost / 100000) / 10}M ¥`;
     }
 
     const onTabChange = (_event: React.ChangeEvent<{}>, newValue: number) => {
@@ -174,10 +180,7 @@ const CharacterCreator: FC = () => {
                         <CharacterName character={selectedCharacter} />
                         <Karma />
                     </div>
-                    <IconButton aria-label="save" onClick={saveClickHandler} color="secondary">
-                        <SaveIcon />
-                    </IconButton>
-                    <IconButton aria-label="clear" onClick={resetClickHandler} color="secondary">
+                    <IconButton aria-label="clear" onClick={handleDelete} color="secondary">
                         <ClearIcon />
                     </IconButton>
                 </Toolbar>
@@ -236,6 +239,11 @@ const CharacterCreator: FC = () => {
             <Drawer open={drawerOpen} onClose={onDrawerClose}>
                 <SelectCharacter />
             </Drawer>
+            <ConfirmationDialog
+                open={showDeleteConfirmation}
+                onChoice={handleDeleteChoice}
+                content="Are you sure you want to delete this character? All data will be lost forever."
+            />
         </div>
     );
 };
