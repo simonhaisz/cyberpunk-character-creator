@@ -125,9 +125,18 @@ function finalizeGearItem(item: Gear) {
 	}
 }
 
-export function computeItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
+export function computeItemCost(item: Item, allGear: Dictionary<Item[]>): number {
 	const baseCost = getItemCost(item, allGear);
-	return baseCost * getGradeCostMultipler(item.grade as Grade) * getAvailabilityCostMultiplier(getItemAvailability(item, allGear));
+	let multiplier = 1;
+	if (item.grade !== undefined) {
+		multiplier *= getGradeCostMultipler(item.grade as Grade) 
+		multiplier= getGradeCostMultipler(item.grade as Grade);
+	}
+	const availability = getItemAvailability(item, allGear);
+	if (availability !== undefined) {
+		multiplier *= getAvailabilityCostMultiplier(availability);
+	}
+	return baseCost * multiplier;
 }
 
 export function createSavedItem(path: string, item: Item): Item {
