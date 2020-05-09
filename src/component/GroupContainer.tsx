@@ -10,7 +10,7 @@ import { Item } from "../model/item";
 import ChipCollection from "./ChipCollection";
 import { makeStyles } from "@material-ui/core";
 import ItemPickerButton from "./ItemPickerButton";
-import { computeItemCost } from "../model/gear";
+import { Gear, computeItemCost } from "../model/gear";
 
 const useStyles = makeStyles({
     headerLabel: {
@@ -35,7 +35,7 @@ const GroupContainer: FC<Props> = (props: Props) => {
 
 	let cost = 0;
 	for (const item of items) {
-		cost += computeItemCost(item, allItems) * parseInt(item.count);
+		cost += computeItemCost(item, allItems as Dictionary<Gear[]>) * parseInt(item.count);
 	}
 
 	const flatItems: Item[] = [];

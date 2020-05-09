@@ -29,7 +29,7 @@ const ChipCollection: FC<Props> = (props: Props) => {
 		<div className={classes.root}>
 			{
 				values.map(v =>
-					<Badge key={v.name} badgeContent={v.count} invisible={v.count==="1"} color="secondary" max={99} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
+					<Badge badgeContent={v.count} invisible={v.count==="1"} color="secondary" max={99} anchorOrigin={{ vertical: "top", horizontal: "left" }}>
 						<Chip
 							className={classes.chip}
 							color="primary"

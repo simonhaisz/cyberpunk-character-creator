@@ -15,7 +15,7 @@ const GearTab: FC = () => {
 
 	const createGearCostLabel = (item: Item) => {
 		const cost = computeItemCost(item, allGear);
-		return `${cost}¥`;
+		return `¥${cost}`;
 	};
 
 	const createGearLabel= (item: Item) => {
