@@ -2,7 +2,7 @@ Name	Essence	Availability	Cost
 Adrenal Pump (1, 2, 3)	0.75, 1.5, 2.25	6F, 9F, 12F	30000, 150000, 450000
 Bone Density Augmentation (1, 2, 3)	0.3, 0.6, 0.9	8R, 12R, 16R	20000, 100000, 300000
 Cat’s Eyes	0.1	4	5000
-Chemical Gland	0.3	12	30000
+Chemical Gland	0.3	12*	30000 + (compound x 100)
 Exhalation Spray	0.1	-	5000
 Internal Release	-	-	1000
 Spit	0.1	-	3000
