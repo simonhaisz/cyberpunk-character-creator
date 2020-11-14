@@ -1,0 +1,740 @@
+{
+    "key": 1605383321339,
+    "name": "Test Everything",
+    "streetName": "Kitchen Sink",
+    "metaType": "Dwarf",
+    "attributes": [
+        {
+            "name": "Body",
+            "rating": 5
+        },
+        {
+            "name": "Agility",
+            "rating": 2
+        },
+        {
+            "name": "Reaction",
+            "rating": 4
+        },
+        {
+            "name": "Strength",
+            "rating": 4
+        },
+        {
+            "name": "Charisma",
+            "rating": 4
+        },
+        {
+            "name": "Intuition",
+            "rating": 3
+        },
+        {
+            "name": "Logic",
+            "rating": 4
+        },
+        {
+            "name": "Willpower",
+            "rating": 2
+        },
+        {
+            "name": "Edge",
+            "rating": 4
+        },
+        {
+            "name": "Magic",
+            "rating": 5
+        }
+    ],
+    "qualities": [
+        {
+            "path": "qualities.positive",
+            "name": "Adept",
+            "count": "1"
+        },
+        {
+            "path": "qualities.positive",
+            "name": "Bilingual",
+            "count": "1"
+        },
+        {
+            "path": "qualities.positive",
+            "name": "Gearhead [Specific]",
+            "count": "1"
+        },
+        {
+            "path": "qualities.positive",
+            "name": "Outdoorsman",
+            "count": "1"
+        },
+        {
+            "path": "qualities.positive",
+            "name": "Resistance to Pathogens/Toxins [Or]",
+            "count": "1"
+        },
+        {
+            "path": "qualities.negative",
+            "name": "Addiction [Burnout]",
+            "count": "1"
+        },
+        {
+            "path": "qualities.negative",
+            "name": "Astral Beacon",
+            "count": "1"
+        },
+        {
+            "path": "qualities.negative",
+            "name": "In Debt [50000]",
+            "count": "1"
+        },
+        {
+            "path": "qualities.negative",
+            "name": "Phobia [Uncommon, Severe]",
+            "count": "1"
+        }
+    ],
+    "activeSkills": [
+        {
+            "name": "Archery",
+            "rating": 1
+        },
+        {
+            "name": "Basket Weaving",
+            "rating": 3
+        },
+        {
+            "name": "Biotech",
+            "rating": 5
+        },
+        {
+            "name": "Heavy Weapons",
+            "rating": 1
+        },
+        {
+            "name": "Pilot Watercraft",
+            "rating": 3
+        }
+    ],
+    "knowledgeSkills": [
+        {
+            "name": "Architecture",
+            "rating": 1
+        },
+        {
+            "name": "History",
+            "rating": 3
+        },
+        {
+            "name": "Nerd Core",
+            "rating": 5
+        },
+        {
+            "name": "Security Procedures",
+            "rating": 3
+        },
+        {
+            "name": "UCAS Politics",
+            "rating": 1
+        }
+    ],
+    "languageSkills": [
+        {
+            "name": "English",
+            "rating": 1
+        },
+        {
+            "name": "Klingon",
+            "rating": 1
+        },
+        {
+            "name": "Russian",
+            "rating": 5
+        },
+        {
+            "name": "Tagalog",
+            "rating": 1
+        }
+    ],
+    "contacts": [
+        {
+            "name": "Actor [Source]",
+            "connection": 3,
+            "loyalty": 1
+        },
+        {
+            "name": "Blogger [Source]",
+            "connection": 1,
+            "loyalty": 5
+        },
+        {
+            "name": "Cult Member [Source]",
+            "connection": 1,
+            "loyalty": 3
+        },
+        {
+            "name": "Mime [Specialist]",
+            "connection": 3,
+            "loyalty": 5
+        }
+    ],
+    "spells": [
+        {
+            "path": "spells.combat",
+            "name": "Blast",
+            "count": "1"
+        },
+        {
+            "path": "spells.combat",
+            "name": "Fireball",
+            "count": "1"
+        },
+        {
+            "path": "spells.detection",
+            "name": "Astral Clairvoyance",
+            "count": "1"
+        },
+        {
+            "path": "spells.detection",
+            "name": "Clairaudience",
+            "count": "1"
+        },
+        {
+            "path": "spells.health",
+            "name": "Alleviate Addiction",
+            "count": "1"
+        },
+        {
+            "path": "spells.health",
+            "name": "Cure Disease",
+            "count": "1"
+        },
+        {
+            "path": "spells.illusion",
+            "name": "Camouflage",
+            "count": "1"
+        },
+        {
+            "path": "spells.illusion",
+            "name": "Double Image",
+            "count": "1"
+        },
+        {
+            "path": "spells.illusion",
+            "name": "Chaos",
+            "count": "1"
+        },
+        {
+            "path": "spells.manipulation",
+            "name": "Alter Temperature",
+            "count": "1"
+        },
+        {
+            "path": "spells.manipulation",
+            "name": "[Critter] Form",
+            "count": "1"
+        },
+        {
+            "path": "spells.manipulation",
+            "name": "Lock",
+            "count": "1"
+        },
+        {
+            "path": "spells.manipulation",
+            "name": "Mass Animate",
+            "count": "1"
+        }
+    ],
+    "gear": [
+        {
+            "path": "gear.clothing-and-armor.clothing",
+            "name": "Clothing - Name",
+            "count": "2"
+        },
+        {
+            "path": "gear.clothing-and-armor.armor",
+            "name": "Armored Clothing - Luxury",
+            "count": "1"
+        },
+        {
+            "path": "gear.clothing-and-armor.armor",
+            "name": "Military Helmet",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.melee-weapons.unarmed",
+            "name": "Hardliner Gloves",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.melee-weapons.exotic-melee-weapons",
+            "name": "Monofilament Garrote",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.projectile-and-throwing-weapons.bows",
+            "name": "Bow – Rating 2",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.less-than-lethal.tasers",
+            "name": "Defiance EX Shocker",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.firearms.heavy-pistols",
+            "name": "Eichiro Hatamoto II",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.firearms.sport-rifles",
+            "name": "Ruger 100",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.firearms.machineguns",
+            "name": "FN MAG-5",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.firearms.sub-machineguns",
+            "name": "HK MP-5 TX",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.firearms.firearm-accessories",
+            "name": "Bipod",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.firearms.ammunition",
+            "name": "Hollow Point",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.grenades-and.grenade-launchers",
+            "name": "Ares Antioch",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.grenades-and.grenades",
+            "name": "Smoke",
+            "count": "1"
+        },
+        {
+            "path": "gear.weapons.grenades-and.grenades",
+            "name": "Fragmentation",
+            "count": "5"
+        },
+        {
+            "path": "gear.weapons.grenades-and.rockets",
+            "name": "Fragmentation",
+            "count": "5"
+        },
+        {
+            "path": "gear.weapons.grenades-and.rocket-launchers",
+            "name": "Aztechnology Striker",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.commlink",
+            "name": "Commlink - 2",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.commlink-accessories",
+            "name": "Satellite Link",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.communications",
+            "name": "Micro-Transceiver - 2",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.id-and-credsticks",
+            "name": "Fake License - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.id-and-credsticks",
+            "name": "Fake SIN - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.miscellaneous-electronics",
+            "name": "Electronic Paper",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.commlink-upgrades",
+            "name": "Response - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.electronics.commlink-upgrades",
+            "name": "System - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.surveillance.imaging-devices",
+            "name": "Camera - 0",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.surveillance.sensor-functions",
+            "name": "Atmosphere Sensor - 3",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.surveillance.sensor-functions",
+            "name": "Directional Microphone - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.security.restraints",
+            "name": "Metal",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.security.disguises",
+            "name": "Nanopaste Disguise - Small",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.security.breaking-and-entering-tools",
+            "name": "Cellular Glove Molder - 3",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.security.breaking-and-entering-tools",
+            "name": "Keycard Copier - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.datachips-and-software.matrix-programs",
+            "name": "Common Use - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.datachips-and-software.matrix-programs",
+            "name": "Autosoft - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.datachips-and-software.data-programs",
+            "name": "Datasofts - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.miscellaneous.survival-gear",
+            "name": "Chemsuit - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.miscellaneous.survival-gear",
+            "name": "GPS",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.miscellaneous.tools",
+            "name": "Shop",
+            "count": "1"
+        },
+        {
+            "path": "gear.hi-tech.miscellaneous.tools",
+            "name": "Kit",
+            "count": "3"
+        },
+        {
+            "path": "gear.augmentations.cyberware.headware",
+            "name": "Attention Coprocessor - 3",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.cyberware.headware",
+            "name": "Commlink",
+            "count": "1",
+            "grade": "Beta"
+        },
+        {
+            "path": "gear.augmentations.cyberware.eyeware",
+            "name": "Cybereyes - 3",
+            "count": "1",
+            "grade": "Delta"
+        },
+        {
+            "path": "gear.augmentations.cyberware.eyeware",
+            "name": "Laser System",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.cyberware.earware",
+            "name": "Cyberears - 2",
+            "count": "1",
+            "grade": "Delta"
+        },
+        {
+            "path": "gear.augmentations.cyberware.bodyware",
+            "name": "Balance Tail",
+            "count": "1",
+            "grade": "Used"
+        },
+        {
+            "path": "gear.augmentations.cyberware.bodyware",
+            "name": "Bone Lacing - Titanium",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.cyberware.bodyware",
+            "name": "Move-by-Wire System - 2",
+            "count": "1",
+            "grade": "Beta"
+        },
+        {
+            "path": "gear.augmentations.cyberlimbs.cyberlimbs",
+            "name": "Full Arm/Leg",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.cyberlimbs.cyberlimb-enhancements",
+            "name": "Agility - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.cyberlimbs.cyberlimb-accessories",
+            "name": "Hydraulic Jack - 2",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.cyberlimbs.cyber-melee-weapons",
+            "name": "Shock Hand",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.bioware.basic-bioware",
+            "name": "Bone Density Augmentation - 1",
+            "count": "1",
+            "grade": "Beta"
+        },
+        {
+            "path": "gear.augmentations.bioware.cultured-bioware",
+            "name": "Damage Compensators - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.augmentations.bioware.cultured-bioware",
+            "name": "Pain Editor",
+            "count": "1",
+            "grade": "Used"
+        },
+        {
+            "path": "gear.explosives.explosives",
+            "name": "Plastic",
+            "count": "4"
+        },
+        {
+            "path": "gear.explosives.detonators",
+            "name": "Anti-Removal Device - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.explosives.detonators",
+            "name": "Detonating Cord",
+            "count": "10"
+        },
+        {
+            "path": "gear.chemicals.drugs",
+            "name": "Jazz",
+            "count": "3"
+        },
+        {
+            "path": "gear.chemicals.drugs",
+            "name": "Psyche",
+            "count": "1"
+        },
+        {
+            "path": "gear.chemicals.toxins",
+            "name": "Ekyelebenie Venom",
+            "count": "1"
+        },
+        {
+            "path": "gear.chemicals.toxins",
+            "name": "Nausea Gas",
+            "count": "1"
+        },
+        {
+            "path": "gear.chemicals.compounds",
+            "name": "Adhesive - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.chemicals.compounds",
+            "name": "DMSO",
+            "count": "1"
+        },
+        {
+            "path": "gear.chemicals.compounds",
+            "name": "Freeze Foam - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.medical-equipment.biotech",
+            "name": "Biomonitor",
+            "count": "1"
+        },
+        {
+            "path": "gear.medical-equipment.biotech",
+            "name": "Medkit - 2",
+            "count": "1"
+        },
+        {
+            "path": "gear.medical-equipment.slap-patches",
+            "name": "Stimulant Patch - 3",
+            "count": "1"
+        },
+        {
+            "path": "gear.medical-equipment.slap-patches",
+            "name": "Tranq Patch - 6",
+            "count": "2"
+        },
+        {
+            "path": "gear.medical-equipment.slap-patches",
+            "name": "Trauma Patch",
+            "count": "5"
+        },
+        {
+            "path": "gear.medical-equipment.docwagon-contract",
+            "name": "Basic",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.spell-formulae",
+            "name": "Combat",
+            "count": "4"
+        },
+        {
+            "path": "gear.magical-equipment.spell-formulae",
+            "name": "Health",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.spell-formulae",
+            "name": "Detection",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.spell-formulae",
+            "name": "Illusion",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.spell-fetish",
+            "name": "Detection",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.spell-fetish",
+            "name": "Manipulation",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.foci",
+            "name": "Counterspelling - 4",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.foci",
+            "name": "Spellcasting - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.foci",
+            "name": "Banishing - 4",
+            "count": "2"
+        },
+        {
+            "path": "gear.magical-equipment.foci",
+            "name": "Power - 1",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.magical-supplies",
+            "name": "Magical Lodge Materials - 8",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.magical-supplies",
+            "name": "Biofiber - 8",
+            "count": "1"
+        },
+        {
+            "path": "gear.magical-equipment.magical-supplies",
+            "name": "Spirit Binding Materials - 6",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.vehicles.bikes",
+            "name": "Dodge Scoot",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.vehicles.trucks",
+            "name": "GMC Bulldog Step-van",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.vehicles.security-vehicles",
+            "name": "Ares Citymaster",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.vehicle-modifications",
+            "name": "Rigger Adaption",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.vehicle-modifications",
+            "name": "Weapon Mount",
+            "count": "5"
+        },
+        {
+            "path": "gear.vehicles-and-drones.drones.micro-drones",
+            "name": "Shiawase Kanmushi",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.drones.mini-drones",
+            "name": "MCT Fly-Spy",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.drones.small-drones",
+            "name": "Aztechnology Crawler",
+            "count": "2"
+        },
+        {
+            "path": "gear.vehicles-and-drones.drones.medium-drones",
+            "name": "MCT-Nissan Rotordrone",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.drones.medium-drones",
+            "name": "Renraku Stormcloud",
+            "count": "1"
+        },
+        {
+            "path": "gear.vehicles-and-drones.drones.large-drones",
+            "name": "C-D Dalmation",
+            "count": "1"
+        },
+        {
+            "path": "gear.lifestyles.basic",
+            "name": "Squatter",
+            "count": "1"
+        },
+        {
+            "path": "gear.lifestyles.basic",
+            "name": "Middle",
+            "count": "1"
+        }
+    ]
+}
