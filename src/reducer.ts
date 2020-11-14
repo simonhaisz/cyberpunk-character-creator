@@ -13,7 +13,7 @@ import { Dictionary } from "./model/dictionary";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
-    SaveCharacter = "saveCharacter",
+    ImportCharacter = "importCharacter",
     ClearCharacter = "clearCharacter",
     SelectCharacter = "selectCharacter",
     LoadQualities = "loadQualities",
@@ -31,6 +31,7 @@ export type Action = {
 };
 
 export type UpdateCharacterData = Character;
+export type ImportCharacterData = Character;
 export type SelectCharacterData = CharacterRef;
 export type LoadQualitiesData = Dictionary<Quality[]>;
 export type LoadSkillsData = Skills;
@@ -44,20 +45,17 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
     switch (action.type) {
         case ActionType.UpdateCharacter: {
             const selectedCharacter = action.data as UpdateCharacterData;
+            const characters = handleCharacterUpdate(selectedCharacter, state);
             const karma = getCharacterKarma(state.karma, selectedCharacter, state);
-            const characters = [...state.characters];
-            if (hasDefaultKey(selectedCharacter)) {
-                // character has not been saved yet
-                if (isDefaultCharacter(selectedCharacter)) {
-                    // don't save copies of the empty character
-                    break;
-                }
-                selectedCharacter.key = Date.now();
-                const { key, name, streetName } = selectedCharacter;
-                characters.push({ key, name, streetName });
-            }
             // the list of characters is not saved separatly - it is constructed from all the available characters
             saveCharacter(selectedCharacter);
+            return { ...state, selectedCharacter, characters, karma };
+        }
+        case ActionType.ImportCharacter: {
+            const selectedCharacter = action.data as ImportCharacterData;
+            saveCharacter(selectedCharacter);
+            const characters = handleCharacterUpdate(selectedCharacter, state);
+            const karma = getCharacterKarma(state.karma, selectedCharacter, state)
             return { ...state, selectedCharacter, characters, karma };
         }
         case ActionType.ClearCharacter: {
@@ -125,3 +123,22 @@ export const INITIAL_STATE: State = {
     allGear: {},
     customItems: {},
 };
+
+function handleCharacterUpdate(character: Character, state: State): CharacterRef[] {
+    const characters = [...state.characters];
+    let index: number;
+    if (hasDefaultKey(character)) {
+        // character has not been saved yet
+        character.key = Date.now();
+        index = -1;
+    } else {
+        index = characters.findIndex(c => c.key === character.key);
+    }
+    const { key, name, streetName } = character;
+    if (index === -1) {
+        characters.push({ key, name, streetName });
+    } else {
+        characters[index] = { key, name, streetName };
+    }
+    return characters;
+}

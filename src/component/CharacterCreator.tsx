@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import SelectCharacter from "./SelectCharacter";
 import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
-import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData, LoadSpellsData, LoadGearData } from "../reducer";
+import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData, LoadSpellsData, LoadGearData, ImportCharacterData } from "../reducer";
 import CharacterTab from "./CharacterTab";
 import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
@@ -31,6 +31,9 @@ import { getAttributesCost } from "../model/attributes";
 import CombatTab from "./CombatTab";
 import { createPublicUrl } from "../request";
 import ConfirmationDialog from "./ConfirmationDialog";
+import ImportButton from "./ImportButton";
+import ExportButton from "./ExportButton";
+import Tooltip from "@material-ui/core/Tooltip";
 
 const useStyles = makeStyles({
     bar: {
@@ -163,24 +166,38 @@ const CharacterCreator: FC = () => {
             throw new Error(`Unknown tab index ${selectedTab}`);
     }
 
-    const onMenuClick = () => {
+    const handleShowCharacters = () => {
         setDrawerOpen(true);
     }
-    const onDrawerClose = () => {
+    const handleCloseCharacters = () => {
         setDrawerOpen(false);
     }
+
+    const importCharacterData = (rawData: string) => {
+        const data: ImportCharacterData = JSON.parse(rawData);
+        dispatch({ type: ActionType.ImportCharacter, data });
+    };
+
+    const exportFileName = `${selectedCharacter.streetName}.json`;
+    const generateCharacterData = () => {
+        return JSON.stringify(selectedCharacter);
+    };
     
     return (
         <div>
             <AppBar position="sticky" color="default">
                 <Toolbar>
-                    <IconButton edge="start" onClick={onMenuClick} aria-label="menu">
-                        <MenuIcon />
-                    </IconButton>
+                    <Tooltip title="Characters">
+                        <IconButton edge="start" onClick={handleShowCharacters} aria-label="characters">
+                            <MenuIcon />
+                        </IconButton>
+                    </Tooltip>
                     <div className={classes.bar}>
                         <CharacterName character={selectedCharacter} />
                         <Karma />
                     </div>
+                    <ImportButton saveData={importCharacterData} />
+                    <ExportButton filename={exportFileName} generateData={generateCharacterData} />
                     <IconButton aria-label="clear" onClick={handleDelete} color="secondary">
                         <ClearIcon />
                     </IconButton>
@@ -237,7 +254,7 @@ const CharacterCreator: FC = () => {
             {
                 selectedTabPanel
             }
-            <Drawer open={drawerOpen} onClose={onDrawerClose}>
+            <Drawer open={drawerOpen} onClose={handleCloseCharacters}>
                 <SelectCharacter />
             </Drawer>
             <ConfirmationDialog
