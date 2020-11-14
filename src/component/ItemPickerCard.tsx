@@ -37,7 +37,7 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 
 	const classes = useStyles();
 
-	const count = parseInt(item.count);
+	const count = parseInt(item.count!);
 	const costLabel = createCostLabel(item);
 
 	const hasAny = count > 0;
@@ -57,7 +57,7 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 	};
 
 	const handleGradeToggle = (newGrade: Grade) => {
-		const newItem = { ...item, grade: newGrade };
+		const newItem: Item = { ...item, grade: newGrade };
 		// alpha is the default for cyber/bio and we don't want to 'dirty' all gear items with unnecessary grade properties
 		// if it is never toggled it will never get added in the first place, so do not need to consider grade in the add/remove handlers
 		if (newGrade === Grade.Alpha) {

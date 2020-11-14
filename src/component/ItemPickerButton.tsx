@@ -64,7 +64,7 @@ const ItemPickerButton: FC<Props> = (props: Props) => {
 
 		for (const path of Object.keys(newCountedItems)) {
 			for (const localItem of newCountedItems[path]) {
-				const includeItem = parseInt(localItem.count) > 0;
+				const includeItem = parseInt(localItem.count!) > 0;
 				const index = newItems.findIndex(i => i.path === path && i.name === localItem.name);
 				if (index > -1) {
 					if (includeItem) {

@@ -181,7 +181,7 @@ export function getGradeEssenseMultiplier(grade: Grade = Grade.Alpha): number {
 export function getCharacterGearNuyenCost(character: Character, allGear: Dictionary<Gear[]>): number {
 	let nuyen = 0;
 	for (const item of character.gear) {
-		nuyen += computeItemCost(item, allGear) * parseInt(item.count);
+		nuyen += computeItemCost(item, allGear) * parseInt(item.count!);
 	}
 	return nuyen;
 }

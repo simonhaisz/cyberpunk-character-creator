@@ -35,7 +35,7 @@ const GroupContainer: FC<Props> = (props: Props) => {
 
 	let cost = 0;
 	for (const item of items) {
-		cost += computeItemCost(item, allItems as Dictionary<Gear[]>) * parseInt(item.count);
+		cost += computeItemCost(item, allItems as Dictionary<Gear[]>) * parseInt(item.count!);
 	}
 
 	const flatItems: Item[] = [];

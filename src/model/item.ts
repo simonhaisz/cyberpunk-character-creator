@@ -3,7 +3,7 @@ import { Dictionary } from "./dictionary";
 export type Item = {
 	path: string;
 	name: string;
-} & Dictionary<string>;
+} & Dictionary<string | undefined>;
 
 export function getItemSubset(items: Item[], parentPath: string): Item[] {
 	const subItems: Item[] = [];

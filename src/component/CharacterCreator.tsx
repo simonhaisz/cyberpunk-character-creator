@@ -30,6 +30,7 @@ import { getCharacterSpellsCost, transformAllSpells } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
 import CombatTab from "./CombatTab";
+import { createPublicUrl } from "../request";
 
 const useStyles = makeStyles({
     bar: {
@@ -49,7 +50,7 @@ const CharacterCreator: FC = () => {
     const [selectedTab, setSelectedTab] = useState(0);
 
     useEffect(() => {
-        fetch("data/qualities.json")
+        fetch(createPublicUrl("data/qualities.json"))
             .then(response => response.json())
             .then(qualities => {
                 const data = transformAllQualities(qualities) as LoadQualitiesData;
@@ -58,7 +59,7 @@ const CharacterCreator: FC = () => {
             .catch(error => {
                 console.error(`Error occured loading qualities: ${error.message}\n${error.stack}`);
             });
-        fetch("data/skills.json")
+        fetch(createPublicUrl("data/skills.json"))
             .then(response => response.json())
             .then(skills => {
                 const data = skills as LoadSkillsData;
@@ -67,7 +68,7 @@ const CharacterCreator: FC = () => {
             .catch(error => {
                 console.error(`Error occured loading skills: ${error.message}\n${error.stack}`);
             });
-        fetch("data/contacts.json")
+        fetch(createPublicUrl("data/contacts.json"))
             .then(response => response.json())
             .then(contacts => {
                 const data = contacts.all as LoadContactsData;
@@ -76,7 +77,7 @@ const CharacterCreator: FC = () => {
             .catch(error => {
                 console.error(`Error occured loading contacts: ${error.message}\n${error.stack}`);
             });
-        fetch("data/magic.json")
+        fetch(createPublicUrl("data/magic.json"))
             .then(response => response.json())
             .then(magic => {
                 const spellData = transformAllSpells(magic.spells) as LoadSpellsData;
@@ -85,7 +86,7 @@ const CharacterCreator: FC = () => {
             .catch(error => {
                 console.error(`Error occured loading magic: ${error.message}\n${error.stack}`);
             });
-        fetch("data/gear.json")
+        fetch(createPublicUrl("data/gear.json"))
             .then(response => response.json())
             .then(gear => {
                 const gearData = transformAllGear(gear) as LoadGearData;
