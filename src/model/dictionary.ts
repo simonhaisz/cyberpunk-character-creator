@@ -33,8 +33,8 @@ export function getItemCost<T extends Item>(item: Item, allItems: Dictionary<T[]
 	return cost;
 }
 
-const itemAvailabilityMap = new Map<string,string>();
-export function getItemAvailability<T extends Item>(item: Item, allItems: Dictionary<T[]>): string {
+const itemAvailabilityMap = new Map<string,string | undefined>();
+export function getItemAvailability<T extends Item>(item: Item, allItems: Dictionary<T[]>): string | undefined {
 	const key = `${item.path}.${item.name}`;
 	if (itemAvailabilityMap.has(key)) {
 		return itemAvailabilityMap.get(key)!;
@@ -46,10 +46,7 @@ export function getItemAvailability<T extends Item>(item: Item, allItems: Dictio
 	}
 
 	const availability = foundItem.availability;
-	if (availability === undefined) {
-		throw new Error(`Item has no availability defined: ${JSON.stringify(item)}`);
-	}
-	itemAvailabilityMap.set(key, availability);
+	itemAvailabilityMap.set(key, foundItem.availability);
 	return availability;
 }
 
