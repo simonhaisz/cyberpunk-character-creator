@@ -29,7 +29,7 @@ export function getCharacterKarma(karma: Karma, character: Character, state: Sta
     spent += getCharacterQualitiesCost(character, state.allQualities);
     spent += getAttributesCost(character);
     spent += getSkillsCost(character);
-    spent += getCharacterGearKarmaCost(getCharacterGearNuyenCost(character, state.allGear));
+    spent += getCharacterGearKarmaCost(getCharacterGearNuyenCost(character, state.allGear, state.options.applyCharacterCreationLimits));
     const available = total - spent;
     return { total, spent, available };
 }

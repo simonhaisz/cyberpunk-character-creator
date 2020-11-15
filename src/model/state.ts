@@ -6,6 +6,7 @@ import { CustomItem } from "./custom-item";
 import { Spell } from "./magic";
 import { Dictionary } from "./dictionary";
 import { Gear } from "./gear";
+import { CreateOptions } from "./create-options";
 
 export type State = {
     characters: CharacterRef[];
@@ -17,4 +18,5 @@ export type State = {
     allSpells: Dictionary<Spell[]>;
     allGear: Dictionary<Gear[]>;
     customItems: Dictionary<CustomItem>;
+    options: CreateOptions;
 };

@@ -11,6 +11,7 @@ import ChipCollection from "./ChipCollection";
 import { makeStyles } from "@material-ui/core";
 import ItemPickerButton from "./ItemPickerButton";
 import { Gear, computeItemCost } from "../model/gear";
+import { useGlobalState } from "../context";
 
 const useStyles = makeStyles({
     headerLabel: {
@@ -30,12 +31,13 @@ type Props = {
 };
 const GroupContainer: FC<Props> = (props: Props) => {
 	const { label, items, allItems, createItemLabel, createItemCostLabel, onUpdateItems } = props;
+	const options = useGlobalState("options");
 
 	const classes = useStyles();
 
 	let cost = 0;
 	for (const item of items) {
-		cost += computeItemCost(item, allItems as Dictionary<Gear[]>) * parseInt(item.count!);
+		cost += computeItemCost(item, allItems as Dictionary<Gear[]>, options.applyCharacterCreationLimits) * parseInt(item.count!);
 	}
 
 	const flatItems: Item[] = [];
