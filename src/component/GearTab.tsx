@@ -10,11 +10,12 @@ import { gearRoot, computeItemCost, Grade } from "../model/gear";
 const GearTab: FC = () => {
 	const dispatch = useDispatch();
 	const character = useGlobalState("selectedCharacter");
+	const options = useGlobalState("options");
 	const { gear } = character;
 	const allGear = useGlobalState("allGear");
 
 	const createGearCostLabel = (item: Item) => {
-		const cost = computeItemCost(item, allGear);
+		const cost = computeItemCost(item, allGear, options.applyCharacterCreationLimits);
 		return `¥${cost}`;
 	};
 

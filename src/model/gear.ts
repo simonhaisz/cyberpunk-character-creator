@@ -1,4 +1,4 @@
-import { Dictionary, transformAllItems, getItemCost } from "./dictionary";
+import { Dictionary, transformAllItems, getItemCost, getItemAvailability } from "./dictionary";
 import { Item } from "./item";
 import { Character } from "./character";
 
@@ -125,9 +125,13 @@ function finalizeGearItem(item: Gear) {
 	}
 }
 
-export function computeItemCost(item: Item, allGear: Dictionary<Gear[]>): number {
-	const baseCost = getItemCost(item, allGear);
-	return baseCost * getGradeCostMultipler(item.grade as Grade);
+export function computeItemCost(item: Item, allGear: Dictionary<Gear[]>, applyAvailabilityMultiplier: boolean): number {
+	let cost = getItemCost(item, allGear);
+	if (applyAvailabilityMultiplier) {
+		cost *= getAvailabilityCostMultiplier(getItemAvailability(item, allGear));
+	}
+	cost *= getGradeCostMultipler(item.grade as Grade);
+	return cost;
 }
 
 export function createSavedItem(path: string, item: Item): Item {
@@ -163,6 +167,79 @@ export function getGradeCostMultipler(grade: Grade = Grade.Alpha): number {
 	}
 }
 
+export function isItemAvailable(availability: string): boolean {
+	const { rating, legality } = parseAvailability(availability);
+	switch (legality) {
+		case "L":
+			return rating <= (18 + 6);
+		case "R":
+			return rating <= (12 + 6);
+		case "F":
+			return rating <= (6 + 6);
+		default:
+			throw new Error(`Unknown availability legality '${legality}'`);
+	}
+}
+
+export function getAvailabilityCostMultiplier(availability: string): number {
+	const { rating, legality } = parseAvailability(availability);
+
+	if (legality === "F") {
+		// forbidden
+		if (rating <= 6) {
+			return 1;
+		} else if (rating <= 8) {
+			return 2;
+		} else if (rating <= 10) {
+			return 5;
+		} else if (rating <= 12) {
+			return 10;
+		} else {
+			return Number.NaN;
+		}
+	} else if (legality === "R") {
+		// restricted
+		if (rating <= 12) {
+			return 1;
+		} else if (rating <= 14) {
+			return 2;
+		} else if (rating <= 16) {
+			return 5;
+		} else if (rating <= 18) {
+			return 10;
+		} else {
+			return Number.NaN;
+		}
+	} else {
+		// legal
+		if (rating <= 18) {
+			return 1;
+		} else if (rating <= 20) {
+			return 2;
+		} else if (rating <= 22) {
+			return 5;
+		} else if (rating <= 24) {
+			return 10;
+		} else {
+			return Number.NaN;
+		}
+	}
+}
+
+function parseAvailability(availability: string): { rating: number, legality: string } {
+	if (availability === "-") {
+		return { rating: 1, legality: "L" };
+	}
+	const result = /^\+?(\d+)(R|F)?$/i.exec(availability);
+	if (!result) {
+		console.error(`Unknown availability format '${availability}' - falling back to standard cost`);
+		return { rating: 1, legality: "L" };
+	}
+	const rating = parseInt(result[1]);
+	const legality = result[2] || "L";
+	return { rating, legality };
+}
+
 export function getGradeEssenseMultiplier(grade: Grade = Grade.Alpha): number {
 	switch (grade) {
 		case Grade.Used:
@@ -178,10 +255,10 @@ export function getGradeEssenseMultiplier(grade: Grade = Grade.Alpha): number {
 	}
 }
 
-export function getCharacterGearNuyenCost(character: Character, allGear: Dictionary<Gear[]>): number {
+export function getCharacterGearNuyenCost(character: Character, allGear: Dictionary<Gear[]>, applyAvailabilityMultiplier: boolean): number {
 	let nuyen = 0;
 	for (const item of character.gear) {
-		nuyen += computeItemCost(item, allGear) * parseInt(item.count!);
+		nuyen += computeItemCost(item, allGear, applyAvailabilityMultiplier) * parseInt(item.count!);
 	}
 	return nuyen;
 }

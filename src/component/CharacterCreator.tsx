@@ -34,6 +34,7 @@ import ConfirmationDialog from "./ConfirmationDialog";
 import ImportButton from "./ImportButton";
 import ExportButton from "./ExportButton";
 import Tooltip from "@material-ui/core/Tooltip";
+import CreateOptionsPanel from "./CreateOptionsPanel";
 
 const useStyles = makeStyles({
     bar: {
@@ -48,6 +49,7 @@ const CharacterCreator: FC = () => {
     const selectedCharacter = useGlobalState("selectedCharacter");
     const allQualities = useGlobalState("allQualities");
     const allGear = useGlobalState("allGear");
+    const options = useGlobalState("options");
 
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [selectedTab, setSelectedTab] = useState(0);
@@ -118,7 +120,7 @@ const CharacterCreator: FC = () => {
     const skillsCost = getSkillsCost(selectedCharacter);
     const contactsCost = getAllContactsCost(selectedCharacter);
     const magicCost = getCharacterSpellsCost(selectedCharacter);
-    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear);
+    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear, options.applyCharacterCreationLimits);
     const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost);
 
     let gearNuyenCostLabel: string;
@@ -195,6 +197,7 @@ const CharacterCreator: FC = () => {
                     <div className={classes.bar}>
                         <CharacterName character={selectedCharacter} />
                         <Karma />
+                        <CreateOptionsPanel />
                     </div>
                     <ImportButton saveData={importCharacterData} />
                     <ExportButton filename={exportFileName} generateData={generateCharacterData} />
