@@ -1,5 +1,5 @@
 import React, { FC, Fragment, useState } from "react";
-import { Dictionary, getNextParentPaths } from "../model/dictionary";
+import { Dictionary, getMatchingParents, getMaxPathDepth, getNextParentPaths } from "../model/dictionary";
 import { Item, getItemSubset } from "../model/item";
 import IconButton from "@material-ui/core/IconButton";
 import EditIcon from "@material-ui/icons/Edit";
@@ -28,19 +28,13 @@ const ItemPickerButton: FC<Props> = (props: Props) => {
 	for (const parentPath of parentPathsToName.keys()) {
 		parentPaths.push(parentPath);
 	}
-
+	
 	const [parentPath, setParentPath] = useState(parentPaths[0]);
-
+	
 	const [menuAnchor, setMenuAnchor] = useState<HTMLButtonElement | null>(null);
 
-	const handleMenuClick = (parentPath: string) => {
-		setParentPath(parentPath);
-		setMenuAnchor(null);
-		setOpen(true);
-	};
-
 	const allChildItems = getChildSet(allItems, parentPath);
-
+	
 	const allCountedItems: Dictionary<Item[]> = {};
 	let hasItems = false;
 	for (const path of Object.keys(allChildItems)) {
@@ -80,37 +74,67 @@ const ItemPickerButton: FC<Props> = (props: Props) => {
 
 		onUpdateItems(newItems);
 	};
-	
+
+	const matchingParents = getMatchingParents(allItems);
+	const matchingParentPath = matchingParents.join(".");
+	const maxPathDepth = getMaxPathDepth(allItems);
+	const useMenu = matchingParents.length + 1 < maxPathDepth;
+
+	const handleMenuClick = (parentPath: string) => {
+		setParentPath(parentPath);
+		setMenuAnchor(null);
+		setOpen(true);
+	};
+
+	const handleButtonClick = (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+		if (useMenu) {
+			setMenuAnchor(event.currentTarget);
+		} else {
+			setParentPath(matchingParentPath);
+			setOpen(true);
+		}
+	}
+
 	return (
 		<Fragment>
 			<IconButton
-				onClick={event => setMenuAnchor(event.currentTarget)}
+				onClick={handleButtonClick}
 				color="secondary"
 				size="medium"
 				disableRipple
 			>
 				<EditIcon />
 			</IconButton>
-			<Menu
-				anchorEl={menuAnchor}
-				open={Boolean(menuAnchor)}
-				onClose={() => setMenuAnchor(null)}
-			>
-				{
-					parentPaths.map(p => (
-						<MenuItem key={p} onClick={() => {handleMenuClick(p)}}>
-							{sentenceCase(parentPathsToName.get(p)!)}
-						</MenuItem>
-					))
-				}
-			</Menu>
+			{
+				useMenu ?
+				<Menu
+					anchorEl={menuAnchor}
+					open={Boolean(menuAnchor)}
+					onClose={() => setMenuAnchor(null)}
+				>
+					{
+						parentPaths.map(p => (
+							<MenuItem key={p} onClick={() => {handleMenuClick(p)}}>
+								{sentenceCase(parentPathsToName.get(p)!)}
+							</MenuItem>
+						))
+					}
+				</Menu>
+				:
+				null
+			}
 			{
 				hasItems
 				?
 				<ItemPickerDialog
 					open={open}
 					onClose={handleClose}
-					title={`${title} - ${parentPathsToName.get(parentPath)!}`}
+					title={
+						useMenu ?
+						`${title} - ${parentPathsToName.get(parentPath)!}`
+						:
+						title
+					}
 					allItems={allCountedItems}
 					createCostLabel={createCostLabel}
 					onUpdateAllItems={handleUpdateAllItems}

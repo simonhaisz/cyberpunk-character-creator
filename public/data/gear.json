@@ -3706,26 +3706,32 @@
         "basic": [
             {
                 "Name": "Street",
+                "Availability": "-",
                 "Cost": "0"
             },
             {
                 "Name": "Squatter",
+                "Availability": "-",
                 "Cost": "500"
             },
             {
                 "Name": "Low",
+                "Availability": "2",
                 "Cost": "2000"
             },
             {
                 "Name": "Middle",
+                "Availability": "4",
                 "Cost": "5000"
             },
             {
                 "Name": "High",
+                "Availability": "6",
                 "Cost": "10000"
             },
             {
                 "Name": "Luxury",
+                "Availability": "8",
                 "Cost": "100000"
             }
         ]

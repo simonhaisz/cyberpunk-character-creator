@@ -1,7 +1,7 @@
-Name	Cost
-Street	0
-Squatter	500
-Low	2000
-Middle	5000
-High	10000
-Luxury	100000
+Name	Availability	Cost
+Street	-	0
+Squatter	-	500
+Low	2	2000
+Middle	4	5000
+High	6	10000
+Luxury	8	100000

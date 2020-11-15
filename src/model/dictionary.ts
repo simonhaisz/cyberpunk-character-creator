@@ -1,5 +1,4 @@
 import { sentenceCase } from "change-case";
-import { isArray } from "util";
 import { Item } from "./item";
 
 export type Dictionary<T> = { [key: string]: T };
@@ -8,7 +7,7 @@ export function transformAllItems<T>(parentPath: string, parentData: any, allIte
 	for (const childName of Object.keys(parentData)) {
 		const childPath = `${parentPath}.${childName}`;
 		const childData = parentData[childName];
-		if (isArray(childData)) {
+		if (Array.isArray(childData)) {
 			allItems[childPath] = transformValues(childPath, childData as any[]);
 		} else {
 			transformAllItems(childPath, childData, allItems, transformValues);
@@ -81,6 +80,46 @@ export function getNextParentPaths<T>(values: Dictionary<T>): Map<string,string>
 		parentPathToName.set(parentPath, sentenceCase(name));
 	}
 	return parentPathToName;
+}
+
+export function getMatchingParents<T>(values: Dictionary<T>): string[] {
+	const paths = Object.keys(values).map(p => p.split("."));
+	let matchingLevels = 0;
+	for (let i = 0; ; i++) {
+		let currentLevel: string | undefined;
+		let currentLevelMatches = true;
+		for (const path of paths) {
+			if (i >= path.length) {
+				currentLevelMatches = false;
+				break;
+			}
+			if (currentLevel === undefined) {
+				currentLevel = path[i];
+			} else if (currentLevel !== path[i]) {
+				currentLevelMatches = false;
+				break;
+			}
+		}
+		if (currentLevelMatches) {
+			matchingLevels++;
+		} else {
+			break;
+		}
+	}
+	if (matchingLevels === 0) {
+		return [];
+	}
+	// since they all match we can just grab the first path
+	return paths[0].slice(0, matchingLevels);
+}
+
+export function getMaxPathDepth<T>(values: Dictionary<T>): number {
+	let maxDepth = 0;
+	const paths = Object.keys(values).map(p => p.split("."));
+	for (const path of paths) {
+		maxDepth = Math.max(maxDepth, path.length);
+	}
+	return maxDepth;
 }
 
 export function getChildNames<T>(values: Dictionary<T>, parentPath: string): string[] {
