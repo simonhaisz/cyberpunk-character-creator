@@ -25,6 +25,10 @@
             "Cost": "5"
         },
         {
+            "Name": "Astral Sight",
+            "Cost": "5"
+        },
+        {
             "Name": "Bilingual",
             "Cost": "5"
         },
@@ -117,6 +121,10 @@
             "Cost": "10"
         },
         {
+            "Name": "Gifted Healer",
+            "Cost": "5"
+        },
+        {
             "Name": "Guts",
             "Cost": "5"
         },
@@ -162,6 +170,22 @@
         },
         {
             "Name": "Magic Resistance",
+            "Cost": "20"
+        },
+        {
+            "Name": "Martial Arts [White]",
+            "Cost": "5"
+        },
+        {
+            "Name": "Martial Arts [Yellow]",
+            "Cost": "10"
+        },
+        {
+            "Name": "Martial Arts [Brown]",
+            "Cost": "15"
+        },
+        {
+            "Name": "Martial Arts [Black]",
             "Cost": "20"
         },
         {
@@ -295,6 +319,18 @@
             "Cost": "-30"
         },
         {
+            "Name": "Aged [50]",
+            "Cost": "-5"
+        },
+        {
+            "Name": "Aged [60]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Aged [70]",
+            "Cost": "-15"
+        },
+        {
             "Name": "Albinism",
             "Cost": "-10"
         },
@@ -329,6 +365,22 @@
         {
             "Name": "Amnesia [Everything]",
             "Cost": "-25"
+        },
+        {
+            "Name": "Aspected Magician [Astral]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Aspected Magician [Conjuror]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Aspected Magician [Enchanter]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Aspected Magician [Sorceror]",
+            "Cost": "-10"
         },
         {
             "Name": "Asthma",
@@ -373,6 +425,10 @@
         {
             "Name": "Cranial Bomb",
             "Cost": "-10"
+        },
+        {
+            "Name": "Cursed",
+            "Cost": "-20"
         },
         {
             "Name": "Day Job [10 Hours]",
@@ -447,6 +503,42 @@
             "Cost": "-10"
         },
         {
+            "Name": "Geas [Condition]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Fasting]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Gestures]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Incantation]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Location]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Mentor]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Ritual]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Talisman]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Geas [Time]",
+            "Cost": "-10"
+        },
+        {
             "Name": "Gremlins",
             "Cost": "-20"
         },
@@ -461,6 +553,18 @@
         {
             "Name": "Illiterate",
             "Cost": "-10"
+        },
+        {
+            "Name": "Illness [Mild]",
+            "Cost": "-5"
+        },
+        {
+            "Name": "Illness [Moderate]",
+            "Cost": "-10"
+        },
+        {
+            "Name": "Illness [Severe]",
+            "Cost": "-15"
         },
         {
             "Name": "In Debt [10000]",
@@ -593,6 +697,10 @@
         {
             "Name": "Poor Self Control [Combat Monster]",
             "Cost": "-10"
+        },
+        {
+            "Name": "Pregnant",
+            "Cost": "-15"
         },
         {
             "Name": "Prejudiced [Common, Biased]",
