@@ -1,4 +1,4 @@
-import React, { FC, useState, useEffect } from "react";
+import React, { FC, useState, useEffect, Fragment } from "react";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import IconButton from "@material-ui/core/IconButton";
@@ -49,7 +49,6 @@ const CharacterCreator: FC = () => {
     const selectedCharacter = useGlobalState("selectedCharacter");
     const allQualities = useGlobalState("allQualities");
     const allGear = useGlobalState("allGear");
-    const options = useGlobalState("options");
 
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [selectedTab, setSelectedTab] = useState(0);
@@ -120,7 +119,7 @@ const CharacterCreator: FC = () => {
     const skillsCost = getSkillsCost(selectedCharacter);
     const contactsCost = getAllContactsCost(selectedCharacter);
     const magicCost = getCharacterSpellsCost(selectedCharacter);
-    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear, options.applyCharacterCreationLimits);
+    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear, selectedCharacter.options.applyCharacterCreationLimits);
     const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost);
 
     let gearNuyenCostLabel: string;
@@ -186,7 +185,7 @@ const CharacterCreator: FC = () => {
     };
     
     return (
-        <div>
+        <Fragment>
             <AppBar position="sticky" color="default">
                 <Toolbar>
                     <Tooltip title="Characters">
@@ -265,7 +264,7 @@ const CharacterCreator: FC = () => {
                 onChoice={handleDeleteChoice}
                 content="Are you sure you want to delete this character? All data will be lost forever."
             />
-        </div>
+        </Fragment>
     );
 };
 

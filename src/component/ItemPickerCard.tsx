@@ -40,7 +40,7 @@ type Props = {
 };
 const ItemPickerCard: FC<Props> = (props: Props) => {
 	const { item, createCostLabel, onUpdateItem } = props;
-	const options = useGlobalState("options");
+	const options = useGlobalState("selectedCharacter").options;
 
 	const classes = useStyles();
 

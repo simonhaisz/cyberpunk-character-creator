@@ -1,4 +1,5 @@
 import { Contact } from "./contact";
+import { CreateOptions } from "./create-options";
 import { Item } from "./item";
 
 export enum MetaType {
@@ -34,6 +35,7 @@ export type Character = CharacterRef & {
     contacts: Contact[];
     spells: Item[];
     gear: Item[];
+    options: CreateOptions;
 };
 
 export function isAwakened(character: Character): boolean {

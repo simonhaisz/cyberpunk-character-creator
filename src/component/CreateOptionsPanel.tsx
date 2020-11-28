@@ -1,9 +1,10 @@
-import React, { ChangeEvent, FC } from "react";
+import React, { ChangeEvent, FC, Fragment, useState } from "react";
 import Switch from "@material-ui/core/Switch";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import { useDispatch, useGlobalState } from "../context";
-import { ActionType, UpdateCreateOptionsData } from "../reducer";
+import { ActionType, UpdateCharacterData } from "../reducer";
 import { makeStyles } from "@material-ui/core";
+import ConfirmationDialog from "./ConfirmationDialog";
 
 const useStyles = makeStyles({
 	root: {
@@ -14,31 +15,56 @@ const useStyles = makeStyles({
 
 const CreateOptionsPanel: FC = () => {
     const dispatch = useDispatch();
-    const options = useGlobalState("options");
+    const selectedCharacter = useGlobalState("selectedCharacter");
+    const options = selectedCharacter.options;
 
     const classes = useStyles();
 
+    const [showToggleConfirmation, setShowToggleConfirmation] = useState(false);
+
     const handleApplyChange = (_event: ChangeEvent<HTMLInputElement>, checked: boolean) => {
-        const data: UpdateCreateOptionsData = {
-            applyCharacterCreationLimits: checked
-        };
-        dispatch({ type: ActionType.UpdateCreateOptions, data });
+        if (!checked) {
+            setShowToggleConfirmation(true);
+        } else {
+            console.warn("Apply character creaiton limits toggle can never be turned on after being turned off");
+        }
     };
 
-    return (
-        <div className={classes.root}>
-            <FormControlLabel
-                control={
-                    <Switch
-                        checked={options.applyCharacterCreationLimits}
-                        onChange={handleApplyChange}
-                        name="applyLimits"
-                        color="primary"
-                    />
+    const handleToggleChoice = (accept: boolean) => {
+        if (accept) {
+            const data: UpdateCharacterData = {
+                ...selectedCharacter,
+                options: {
+                    applyCharacterCreationLimits: false
                 }
-                label="Apply Character Creation Limits"
-            />
-        </div>
+            };
+            dispatch({ type: ActionType.UpdateCharacter, data });
+        }
+        setShowToggleConfirmation(false);
+    }
+
+    return (
+        <Fragment>
+            <div className={classes.root}>
+                <FormControlLabel
+                    control={
+                        <Switch
+                            disabled={!options.applyCharacterCreationLimits}
+                            checked={options.applyCharacterCreationLimits}
+                            onChange={handleApplyChange}
+                            name="applyLimits"
+                            color="primary"
+                        />
+                    }
+                    label="Apply Character Creation Limits"
+                />
+            </div>
+            <ConfirmationDialog
+                open={showToggleConfirmation}
+                onChoice={handleToggleChoice}
+                content="Are you sure you want to turn off character creation limits? Once turned off it cannot be turned on again."
+                />
+        </Fragment>
     );
 }
 

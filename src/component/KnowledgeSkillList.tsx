@@ -10,11 +10,15 @@ const breadcrums = ["Skills", "Knowledge"];
 const KnowledgeSkillList: FC = () => {
     const dispatch = useDispatch();
     const character = useGlobalState("selectedCharacter");
-	const allSkills = useGlobalState("allSkills");
+    const allSkills = useGlobalState("allSkills");
+    
+    const limitOptions = character.options.applyCharacterCreationLimits;
 
 	const { knowledgeSkills } = character;
 
-	const knowledgeSkillsCost = getKnowledgeSkillsCost(knowledgeSkills);
+    const knowledgeSkillsCost = getKnowledgeSkillsCost(knowledgeSkills, limitOptions);
+    
+    const computeSkillCost = (rating: number) => getKnowledgeSkillCost(rating, limitOptions);
     const freeKnowledgeSkillPoints = getFreeKnowledgeSkillPoints(character);
     const totalCost = knowledgeSkillsCost - freeKnowledgeSkillPoints;
     const headerLabel = `Knowledge Skills (${knowledgeSkillsCost} - ${freeKnowledgeSkillPoints} = ${totalCost})`;
@@ -32,7 +36,7 @@ const KnowledgeSkillList: FC = () => {
             skills={knowledgeSkills}
             allSkills={allKnowledgeSkills}
             headerLabel={headerLabel}
-            computeSkillCost={getKnowledgeSkillCost}
+            computeSkillCost={computeSkillCost}
             onSkillsUpdated={onSkillsUpdated}
         />
     );

@@ -1,6 +1,6 @@
 import { Reducer } from "react";
 import { State } from "./model/state";
-import { getDefaultCharacter, hasDefaultKey } from "./data/default-character";
+import { getDefaultCharacter, hasDefaultKey, upgradeCharacter } from "./data/default-character";
 import { Character, CharacterRef } from "./model/character";
 import { saveCharacter, clearCharacter, loadCharacter, saveCustomItem } from "./persistance";
 import { getDefaultKarma, getCharacterKarma } from "./model/karma";
@@ -10,8 +10,6 @@ import { CustomItem } from "./model/custom-item";
 import { Spell } from "./model/magic";
 import { Gear } from "./model/gear";
 import { Dictionary } from "./model/dictionary";
-import { DEFAULT_OPTIONS } from "./data/default-create-options";
-import { CreateOptions } from "./model/create-options";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -24,8 +22,7 @@ export enum ActionType {
     LoadSpells = "loadSpells",
     LoadGear = "loadGear",
     LoadCustomItems = "loadCustomItems",
-    AddCustomItem = "addCustomItem",
-    UpdateCreateOptions = "updateCreateOptions"
+    AddCustomItem = "addCustomItem"
 }
 
 export type Action = {
@@ -43,7 +40,6 @@ export type LoadSpellsData = Dictionary<Spell[]>;
 export type LoadGearData = Dictionary<Gear[]>;
 export type LoadCustomItemsData = Dictionary<CustomItem>;
 export type AddCustomItemData = { path: string, item: CustomItem };
-export type UpdateCreateOptionsData = CreateOptions;
 
 export const reducer: Reducer<State, Action> = (state: State, action: Action): State => {
     switch (action.type) {
@@ -56,7 +52,7 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             return { ...state, selectedCharacter, characters, karma };
         }
         case ActionType.ImportCharacter: {
-            const selectedCharacter = action.data as ImportCharacterData;
+            const selectedCharacter = upgradeCharacter(action.data as ImportCharacterData);
             saveCharacter(selectedCharacter);
             const characters = handleCharacterUpdate(selectedCharacter, state);
             const karma = getCharacterKarma(state.karma, selectedCharacter, state)
@@ -112,10 +108,6 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             customItems[newItem.path] = newItem.item;
             return { ...state, customItems };
         }
-        case ActionType.UpdateCreateOptions: {
-            const newOptions = action.data as UpdateCreateOptionsData;
-            return { ...state, options: newOptions};
-        }
     }
     return { ...state };
 }
@@ -130,7 +122,6 @@ export const INITIAL_STATE: State = {
     allSpells: { combat: [], detection: [], health: [], illusion: [], manipulation: [] },
     allGear: {},
     customItems: {},
-    options: { ...DEFAULT_OPTIONS }
 };
 
 function handleCharacterUpdate(character: Character, state: State): CharacterRef[] {

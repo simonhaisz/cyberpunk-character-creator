@@ -14,8 +14,12 @@ const ActiveSkillList: FC = () => {
 
     const { activeSkills } = character;
 
-    const activeSkillsCost = getActiveSkillsCost(activeSkills);
+    const limitOptions = character.options.applyCharacterCreationLimits;
+
+    const activeSkillsCost = getActiveSkillsCost(activeSkills, limitOptions);
     const headerLabel = `Active Skills (${activeSkillsCost})`;
+
+    const computeSkillCost = (rating: number) => getActiveSkillCost(rating, limitOptions);
 
     const allActiveSkills = [...allSkills.active];
 
@@ -29,7 +33,7 @@ const ActiveSkillList: FC = () => {
             skills={activeSkills}
             allSkills={allActiveSkills}
             headerLabel={headerLabel}
-            computeSkillCost={getActiveSkillCost}
+            computeSkillCost={computeSkillCost}
             onSkillsUpdated={onSkillsUpdated}
         />
     );

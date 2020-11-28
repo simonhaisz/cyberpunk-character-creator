@@ -12,10 +12,14 @@ const LanguageSkillList: FC = () => {
     const character = useGlobalState("selectedCharacter");
 	const allSkills = useGlobalState("allSkills");
 
-	const { languageSkills } = character;
+    const { languageSkills } = character;
+    
+    const limitOptions = character.options.applyCharacterCreationLimits;
 
-	const languageSkillsCost = getKnowledgeSkillsCost(languageSkills);
+	const languageSkillsCost = getKnowledgeSkillsCost(languageSkills, limitOptions);
     const headerLabel = `Language Skills (${languageSkillsCost}) + Native`;
+
+    const computeSkillCost = (rating: number) => getKnowledgeSkillCost(rating, limitOptions);
 
     const allLanguageSkills = [...allSkills.language];
 
@@ -30,7 +34,7 @@ const LanguageSkillList: FC = () => {
             skills={languageSkills}
             allSkills={allLanguageSkills}
             headerLabel={headerLabel}
-            computeSkillCost={getKnowledgeSkillCost}
+            computeSkillCost={computeSkillCost}
             onSkillsUpdated={onSkillsUpdated}
         />
     );

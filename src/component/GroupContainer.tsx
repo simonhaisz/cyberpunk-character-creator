@@ -31,7 +31,7 @@ type Props = {
 };
 const GroupContainer: FC<Props> = (props: Props) => {
 	const { label, items, allItems, createItemLabel, createItemCostLabel, onUpdateItems } = props;
-	const options = useGlobalState("options");
+	const options = useGlobalState("selectedCharacter").options;
 
 	const classes = useStyles();
 
