@@ -14,6 +14,8 @@ export function getContactRatingCost(rating: number): number {
 			return 7;
 		case 5:
 			return 15;
+		case 7:
+			return 30;
 		default:
 			throw new Error();
 	}

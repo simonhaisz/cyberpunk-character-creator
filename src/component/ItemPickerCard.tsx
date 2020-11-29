@@ -40,7 +40,7 @@ type Props = {
 };
 const ItemPickerCard: FC<Props> = (props: Props) => {
 	const { item, createCostLabel, onUpdateItem } = props;
-	const options = useGlobalState("options");
+	const options = useGlobalState("selectedCharacter").options;
 
 	const classes = useStyles();
 
@@ -51,7 +51,7 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 
 	const allowMultiple = item.path.startsWith(gearRoot);
 	const includeAvailability = item.path.startsWith(gearRoot);
-	const available = includeAvailability && options.applyCharacterCreationLimits ? isItemAvailable(item.availability!) : true;
+	const available = includeAvailability ? isItemAvailable(item.availability!, options.gearLevel) : true;
 	const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
 
 	const grade = item.grade as Grade || Grade.Alpha;

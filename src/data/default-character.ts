@@ -1,4 +1,5 @@
 import { Character, MetaType } from "../model/character";
+import { DEFAULT_OPTIONS } from "./default-create-options";
 
 const DEFAULT_KEY = -1;
 const DEFAULT_CHARACTER: Character = {
@@ -25,6 +26,7 @@ const DEFAULT_CHARACTER: Character = {
     contacts: [],
     spells: [],
     gear: [],
+    options: { ...DEFAULT_OPTIONS }
 };
 
 export function getDefaultCharacter(): Character {

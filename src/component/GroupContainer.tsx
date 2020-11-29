@@ -31,13 +31,13 @@ type Props = {
 };
 const GroupContainer: FC<Props> = (props: Props) => {
 	const { label, items, allItems, createItemLabel, createItemCostLabel, onUpdateItems } = props;
-	const options = useGlobalState("options");
+	const options = useGlobalState("selectedCharacter").options;
 
 	const classes = useStyles();
 
 	let cost = 0;
 	for (const item of items) {
-		cost += computeItemCost(item, allItems, options.applyCharacterCreationLimits) * parseInt(item.count!);
+		cost += computeItemCost(item, allItems, options.gearLevel) * parseInt(item.count!);
 	}
 
 	const flatItems: Item[] = [];

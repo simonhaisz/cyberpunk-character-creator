@@ -40,6 +40,7 @@ const useStyles = makeStyles({
     bar: {
         flexGrow: 1,
         display: "flex",
+        alignItems: "center"
     }
 });
 
@@ -49,7 +50,7 @@ const CharacterCreator: FC = () => {
     const selectedCharacter = useGlobalState("selectedCharacter");
     const allQualities = useGlobalState("allQualities");
     const allGear = useGlobalState("allGear");
-    const options = useGlobalState("options");
+    const options = selectedCharacter.options;
 
     const [drawerOpen, setDrawerOpen] = useState(false);
     const [selectedTab, setSelectedTab] = useState(0);
@@ -120,8 +121,8 @@ const CharacterCreator: FC = () => {
     const skillsCost = getSkillsCost(selectedCharacter);
     const contactsCost = getAllContactsCost(selectedCharacter);
     const magicCost = getCharacterSpellsCost(selectedCharacter);
-    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear, options.applyCharacterCreationLimits);
-    const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost);
+    const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear, options.gearLevel);
+    const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost, selectedCharacter.options.nuyenLevel);
 
     let gearNuyenCostLabel: string;
     if (gearNuyenCost < 1000) {

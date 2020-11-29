@@ -1,6 +1,7 @@
 import { Dictionary, transformAllItems, getItemCost, getItemAvailability } from "./dictionary";
 import { Item } from "./item";
 import { Character } from "./character";
+import { getBaseGearAvailability, getNuyenFactor, Level } from "./create-options";
 
 export type Gear = {
 	availability: string;
@@ -125,18 +126,16 @@ function finalizeGearItem(item: Gear) {
 	}
 }
 
-export function computeItemCost(item: Item, allGear: Dictionary<Item[]>, applyAvailabilityMultiplier: boolean): number {
+export function computeItemCost(item: Item, allGear: Dictionary<Item[]>, gearLevel: Level): number {
 	const baseCost = getItemCost(item, allGear);
 	let multiplier = 1;
 	if (item.grade !== undefined) {
 		multiplier *= getGradeCostMultipler(item.grade as Grade) 
 		multiplier= getGradeCostMultipler(item.grade as Grade);
 	}
-	if (applyAvailabilityMultiplier) {
-		const availability = getItemAvailability(item, allGear);
-		if (availability !== undefined) {
-			multiplier *= getAvailabilityCostMultiplier(availability);
-		}
+	const availability = getItemAvailability(item, allGear);
+	if (availability !== undefined) {
+		multiplier *= getAvailabilityCostMultiplier(availability, gearLevel);
 	}
 	return baseCost * multiplier;
 }
@@ -174,58 +173,64 @@ export function getGradeCostMultipler(grade: Grade = Grade.Alpha): number {
 	}
 }
 
-export function isItemAvailable(availability: string): boolean {
+export function isItemAvailable(availability: string, gearLevel: Level): boolean {
 	const { rating, legality } = parseAvailability(availability);
+	const baseAvailability = getBaseGearAvailability(gearLevel);
 	switch (legality) {
 		case "L":
-			return rating <= (18 + 6);
+			return rating <= (baseAvailability + 12 + 6);
 		case "R":
-			return rating <= (12 + 6);
+			return rating <= (baseAvailability + 6 + 6);
 		case "F":
-			return rating <= (6 + 6);
+			return rating <= (baseAvailability + 6);
 		default:
 			throw new Error(`Unknown availability legality '${legality}'`);
 	}
 }
 
-export function getAvailabilityCostMultiplier(availability: string): number {
+export function getAvailabilityCostMultiplier(availability: string, gearLevel: Level): number {
 	const { rating, legality } = parseAvailability(availability);
+
+	const baseAvailability = getBaseGearAvailability(gearLevel);
 
 	if (legality === "F") {
 		// forbidden
-		if (rating <= 6) {
+		const forbiddenAvailability = baseAvailability;
+		if (rating <= forbiddenAvailability) {
 			return 1;
-		} else if (rating <= 8) {
+		} else if (rating <= forbiddenAvailability + 2) {
 			return 2;
-		} else if (rating <= 10) {
+		} else if (rating <= forbiddenAvailability + 4) {
 			return 5;
-		} else if (rating <= 12) {
+		} else if (rating <= forbiddenAvailability + 6) {
 			return 10;
 		} else {
 			return Number.NaN;
 		}
 	} else if (legality === "R") {
 		// restricted
-		if (rating <= 12) {
+		const restrictedAvailability = baseAvailability + 6;
+		if (rating <= restrictedAvailability) {
 			return 1;
-		} else if (rating <= 14) {
+		} else if (rating <= restrictedAvailability + 2) {
 			return 2;
-		} else if (rating <= 16) {
+		} else if (rating <= restrictedAvailability + 4) {
 			return 5;
-		} else if (rating <= 18) {
+		} else if (rating <= restrictedAvailability + 6) {
 			return 10;
 		} else {
 			return Number.NaN;
 		}
 	} else {
 		// legal
-		if (rating <= 18) {
+		const legalAvailability = baseAvailability + 12;
+		if (rating <= legalAvailability) {
 			return 1;
-		} else if (rating <= 20) {
+		} else if (rating <= legalAvailability + 2) {
 			return 2;
-		} else if (rating <= 22) {
+		} else if (rating <= legalAvailability + 4) {
 			return 5;
-		} else if (rating <= 24) {
+		} else if (rating <= legalAvailability + 6) {
 			return 10;
 		} else {
 			return Number.NaN;
@@ -262,16 +267,17 @@ export function getGradeEssenseMultiplier(grade: Grade = Grade.Alpha): number {
 	}
 }
 
-export function getCharacterGearNuyenCost(character: Character, allGear: Dictionary<Gear[]>, applyAvailabilityMultiplier: boolean): number {
+export function getCharacterGearNuyenCost(character: Character, allGear: Dictionary<Gear[]>, gearLevel: Level): number {
 	let nuyen = 0;
 	for (const item of character.gear) {
-		nuyen += computeItemCost(item, allGear, applyAvailabilityMultiplier) * parseInt(item.count!);
+		nuyen += computeItemCost(item, allGear, gearLevel) * parseInt(item.count!);
 	}
 	return nuyen;
 }
 
-export function getCharacterGearKarmaCost(nuyen: number): number {
-	// Nuyen is bought at a rate of 5 Karma for 10000¥
+export function getCharacterGearKarmaCost(nuyen: number, nuyenLevel: Level): number {
+	// Nuyen is bought at a rate of 5 Karma for ¥10000 / 20000 / 50000 depending upon nuyen level
 	// All unspent nuyen is lost so round up
-	return Math.ceil(nuyen / 10000) * 5;
+	const factor = getNuyenFactor(nuyenLevel);
+	return Math.ceil(nuyen / factor) * 5;
 }
