@@ -31,10 +31,6 @@ export function getAttributeModifier(metaType: MetaType, attribute: Attribute): 
             }
             break;
         case MetaType.Human:
-            switch (attribute.name) {
-                case "Edge":
-                    return 1;
-            }
             break;
         case MetaType.Ork:
             switch (attribute.name) {

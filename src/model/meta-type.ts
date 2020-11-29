@@ -5,13 +5,13 @@ export function getMetaTypeCost(metaType: MetaType): number {
         case MetaType.Human:
             return 0;
         case MetaType.Ork:
-            return 40;
+            return 30;
         case MetaType.Dwarf:
-            return 50;
+            return 30;
         case MetaType.Elf:
-            return 60;
+            return 40;
         case MetaType.Troll:
-            return 80;
+            return 60;
         default:
             throw new Error(`Unknown meta-type '${metaType}'`);
     }
