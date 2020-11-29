@@ -1,4 +1,6 @@
+import { DEFAULT_OPTIONS } from "../data/default-create-options";
 import { Contact } from "./contact";
+import { CreateOptions } from "./create-options";
 import { Item } from "./item";
 
 export enum MetaType {
@@ -34,8 +36,17 @@ export type Character = CharacterRef & {
     contacts: Contact[];
     spells: Item[];
     gear: Item[];
+    options: CreateOptions;
 };
 
 export function isAwakened(character: Character): boolean {
     return character.qualities.find(q => q.name === "Adept" || q.name === "Magician") !== undefined;
+}
+
+export function upgradeCharacter(originalCharacter: any): Character {
+    const upgradedCharacter = { ...originalCharacter };
+    if (upgradedCharacter.options === undefined) {
+        upgradedCharacter.options = { ...DEFAULT_OPTIONS };
+    }
+    return upgradedCharacter;
 }

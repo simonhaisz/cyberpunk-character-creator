@@ -17,7 +17,7 @@ const Skill: FC<Props> = (props: Props) => {
             property={skill}
             onUpdate={onUpdate}
             min={1}
-            max={5}
+            max={7}
             step={2}
             formatDisplayValue={value => value.toString()}
             computeCost={computeCost}

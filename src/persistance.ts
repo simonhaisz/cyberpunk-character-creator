@@ -1,4 +1,4 @@
-import { Character, CharacterRef } from "./model/character";
+import { Character, CharacterRef, upgradeCharacter } from "./model/character";
 import { CustomItem } from "./model/custom-item";
 import { getDefaultCharacter } from "./data/default-character";
 import { Dictionary } from "./model/dictionary";
@@ -35,7 +35,7 @@ export function loadCharacter(key: number): Character | undefined {
     }
     const character = localStorage.getItem(createCharacterKey(key));
     if (character) {
-        return JSON.parse(character);
+        return upgradeCharacter(JSON.parse(character));
     } else {
         return undefined;
     }

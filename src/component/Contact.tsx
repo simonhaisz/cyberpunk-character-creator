@@ -8,6 +8,8 @@ import { makeStyles } from "@material-ui/core";
 import { Contact as ContactData, getContactCost, getContactRatingCost } from "../model/contact";
 import Property from "./Property";
 import { NamedProperty } from "../model/character";
+import { useGlobalState } from "../context";
+import { getMaxConnection } from "../model/create-options";
 
 const useStyles = makeStyles({
 	headerLabel: {
@@ -29,6 +31,8 @@ type Props = {
 const Contact: FC<Props> = (props: Props) => {
 	const { contact, onUpdate } = props;
 
+	const options = useGlobalState("selectedCharacter").options;
+
 	const classes = useStyles();
 
 	const contactCost = getContactCost(contact);
@@ -44,6 +48,8 @@ const Contact: FC<Props> = (props: Props) => {
 		onUpdate(updatedContact);
 	};
 
+	const maxConnection = getMaxConnection(options.connectionLevel);
+
 	return (
 		<Fragment>
 			<ExpansionPanel defaultExpanded={false}>
@@ -57,7 +63,7 @@ const Contact: FC<Props> = (props: Props) => {
 								property={connection}
 								onUpdate={onUpdateConnection}
 								min={1}
-								max={3}
+								max={maxConnection}
 								step={2}
 								formatDisplayValue={(value => value.toString())}
 								computeCost={getContactRatingCost}

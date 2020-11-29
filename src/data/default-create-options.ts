@@ -1,5 +1,8 @@
-import { CreateOptions } from "../model/create-options";
+import { CreateOptions, Level } from "../model/create-options";
 
 export const DEFAULT_OPTIONS: CreateOptions = {
-    applyCharacterCreationLimits: true
+    karmaLevel: Level.Normal,
+    connectionLevel: Level.Normal,
+    nuyenLevel: Level.Normal,
+    gearLevel: Level.Normal
 };

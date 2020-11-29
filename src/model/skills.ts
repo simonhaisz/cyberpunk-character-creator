@@ -17,6 +17,8 @@ export function getActiveSkillCost(rating: number): number {
             return 15;
         case 5:
             return 30;
+        case 7:
+            return 60;
         default:
             throw new Error(`Unsupported skill rating ${rating}`);
     }
@@ -28,12 +30,16 @@ export function getActiveSkillsCost(activeSkills: Skill[]): number {
 
 export function getKnowledgeSkillCost(rating: number): number {
     switch (rating) {
+        case -1:
+            return 0;
         case 1:
             return 2;
         case 3:
             return 7;
         case 5:
             return 15;
+        case 7:
+            return 30;
         default:
             throw new Error(`Unsupported skill rating ${rating}`);
     }
