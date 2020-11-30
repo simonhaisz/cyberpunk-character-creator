@@ -1,4 +1,4 @@
-import { Character } from "./character";
+import { Character, getProfessionalismCost } from "./character";
 import { getMetaTypeCost } from "./meta-type";
 import { getAttributesCost } from "./attributes";
 import { getSkillsCost } from "./skills";
@@ -43,6 +43,7 @@ export function getCharacterKarma(karma: Karma, character: Character, state: Sta
     spent += getAttributesCost(character);
     spent += getSkillsCost(character);
     spent += getCharacterGearKarmaCost(getCharacterGearNuyenCost(character, state.allGear, character.options.gearLevel), character.options.nuyenLevel);
+    spent += getProfessionalismCost(character.professionalism);
     const available = total - spent;
     return { total, spent, available };
 }

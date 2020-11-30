@@ -17,7 +17,14 @@ const Attribute: FC<Props> = (props: Props) => {
     const formatDisplayValue = (rating: number): string => (rating + modifier).toString();
 
     return (
-        <Property property={attribute} onUpdate={onUpdate} min={1} max={7} step={1} formatDisplayValue={formatDisplayValue} computeCost={getAttributeCost} />
+        <Property property={attribute}
+        onUpdate={onUpdate}
+        min={1}
+        max={7}
+        step={1}
+        formatDisplayValue={formatDisplayValue}
+        computeCost={getAttributeCost}
+        />
     );
 };
 

@@ -18,7 +18,7 @@ import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
 import AttributesTab from "./AttributesTab";
 import ContactsTab from "./ContactsTab";
-import { isAwakened } from "../model/character";
+import { getProfessionalismCost, isAwakened } from "../model/character";
 import MagicTab from "./MagicTab";
 import GearTab from "./GearTab";
 import { transformAllGear, getCharacterGearNuyenCost, getCharacterGearKarmaCost } from "../model/gear";
@@ -116,7 +116,7 @@ const CharacterCreator: FC = () => {
         setShowDeleteConfirmation(false);
     };
 
-    const characterCost = getMetaTypeCost(selectedCharacter.metaType) + getCharacterQualitiesCost(selectedCharacter, allQualities);
+    const characterCost = getMetaTypeCost(selectedCharacter.metaType) + getCharacterQualitiesCost(selectedCharacter, allQualities) + getProfessionalismCost(selectedCharacter.professionalism);
     const attributesCost = getAttributesCost(selectedCharacter);
     const skillsCost = getSkillsCost(selectedCharacter);
     const contactsCost = getAllContactsCost(selectedCharacter);

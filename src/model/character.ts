@@ -37,16 +37,28 @@ export type Character = CharacterRef & {
     spells: Item[];
     gear: Item[];
     options: CreateOptions;
+    professionalism: number;
 };
 
 export function isAwakened(character: Character): boolean {
     return character.qualities.find(q => q.name === "Adept" || q.name === "Magician") !== undefined;
 }
 
+export function getProfessionalismCost(professionalism: number): number {
+    if (professionalism < 0 || professionalism > 6) {
+        throw new Error(`Professionalism must be witin the range [1..6] - found ${professionalism}`);
+    }
+    const sum = professionalism * (professionalism + 1) / 2;
+    return sum * 20;
+}
+
 export function upgradeCharacter(originalCharacter: any): Character {
     const upgradedCharacter = { ...originalCharacter };
     if (upgradedCharacter.options === undefined) {
         upgradedCharacter.options = { ...DEFAULT_OPTIONS };
+    }
+    if (upgradedCharacter.professionalism === undefined) {
+        upgradedCharacter.professionalism = 0;
     }
     return upgradedCharacter;
 }

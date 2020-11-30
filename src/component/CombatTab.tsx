@@ -17,7 +17,7 @@ const useStyles = makeStyles({
 		flexDirection: "row",
 		marginBottom: 10,
 	},
-})
+});
 
 const CombatTab: FC = () => {
 

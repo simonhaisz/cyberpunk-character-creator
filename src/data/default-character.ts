@@ -26,7 +26,8 @@ const DEFAULT_CHARACTER: Character = {
     contacts: [],
     spells: [],
     gear: [],
-    options: { ...DEFAULT_OPTIONS }
+    options: { ...DEFAULT_OPTIONS },
+    professionalism: 0
 };
 
 export function getDefaultCharacter(): Character {

@@ -9,6 +9,7 @@ import { ActionType, UpdateCharacterData } from "../reducer";
 import { ALL_META_TYPES } from "../data/meta-types";
 import { getMetaTypeCost } from "../model/meta-type";
 import QualitiesSection from "./QualitiesSection";
+import Professionalism from "./Professionalism";
 
 const useStyles = makeStyles({
     header: {
@@ -17,6 +18,7 @@ const useStyles = makeStyles({
         marginLeft: 5,
         marginRight: 5,
         marginBottom: 10,
+        alignItems: "center",
     },
     field: {
         marginRight: 10,
@@ -46,6 +48,7 @@ const CharacterTab: FC = () => {
                 <Select id="meta-type" value={metaType} displayEmpty onChange={e => onCharacterUpdated({ ...character, metaType: e.target.value as MetaType})} className={classes.field} variant="outlined">
                     {ALL_META_TYPES.map(t => <MenuItem key={t} value={t}>{t} ({getMetaTypeCost(t)})</MenuItem>)}
                 </Select>
+                <Professionalism />
             </div>
             <QualitiesSection />
         </Fragment>
