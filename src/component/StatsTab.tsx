@@ -19,7 +19,7 @@ const useStyles = makeStyles({
 	},
 });
 
-const CombatTab: FC = () => {
+const StatsTab: FC = () => {
 
 	const classes = useStyles();
 
@@ -28,8 +28,19 @@ const CombatTab: FC = () => {
 	const body = getEffectiveAttributeRating(character, "Body");
 	const agility = getEffectiveAttributeRating(character, "Agility");
 	const reaction = getEffectiveAttributeRating(character, "Reaction");
+	const strength = getEffectiveAttributeRating(character, "Strength");
+	const charisma = getEffectiveAttributeRating(character, "Charisma");
 	const intuition = getEffectiveAttributeRating(character, "Intuition");
+	const logic = getEffectiveAttributeRating(character, "Logic");
 	const willpower = getEffectiveAttributeRating(character, "Willpower");
+
+	let essence = 6;
+
+	for (const item of character.gear) {
+		if (item.essence !== undefined) {
+			essence -= parseFloat(item.essence);
+		}
+	}
 
 	const athletics = character.activeSkills.find(s => s.name === "Athletics")?.rating || 0;
 
@@ -53,6 +64,19 @@ const CombatTab: FC = () => {
 
 	return (
 		<Fragment>
+			<Typography className={classes.header}>Attributes</Typography>
+			<Divider />
+			<div className={classes.section}>
+				<ReadOnlyProperty name="Body" value={body} />
+				<ReadOnlyProperty name="Agility" value={agility} />
+				<ReadOnlyProperty name="Reaction" value={reaction} />
+				<ReadOnlyProperty name="Strength" value={strength} />
+				<ReadOnlyProperty name="Charisma" value={charisma} />
+				<ReadOnlyProperty name="Intuition" value={intuition} />
+				<ReadOnlyProperty name="Logic" value={logic} />
+				<ReadOnlyProperty name="Willpower" value={willpower} />
+				<ReadOnlyProperty name="Essence" value={essence} />
+			</div>
 			<Typography className={classes.header}>Initiative</Typography>
 			<Divider />
 			<div className={classes.section}>
@@ -76,4 +100,4 @@ const CombatTab: FC = () => {
 	);
 };
 
-export default CombatTab;
+export default StatsTab;
