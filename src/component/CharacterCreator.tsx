@@ -28,7 +28,7 @@ import { getAllContactsCost } from "../model/contact";
 import { getCharacterSpellsCost, transformAllSpells } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
-import CombatTab from "./CombatTab";
+import StatsTab from "./StatsTab";
 import { createPublicUrl } from "../request";
 import ConfirmationDialog from "./ConfirmationDialog";
 import ImportButton from "./ImportButton";
@@ -162,7 +162,7 @@ const CharacterCreator: FC = () => {
             break;
         }
         case 6: {
-            selectedTabPanel = <CombatTab />;
+            selectedTabPanel = <StatsTab />;
             break;
         }
         default:
@@ -252,7 +252,7 @@ const CharacterCreator: FC = () => {
                             </Badge>
                         }
                     />
-                    <Tab label="Combat" />
+                    <Tab label="Stats" />
                 </Tabs>
             </AppBar>
             {

@@ -23,9 +23,9 @@ const GearTab: FC = () => {
 		const { name } = item;
 		const costLabel = createGearCostLabel(item);
 		let label = `${name} (${costLabel})`;
-		const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
-		if (includeGrade) {
-			label += ` [${item.grade || Grade.Alpha}]`;
+		const augmentation = item.path.startsWith(`${gearRoot}.augmentations`);
+		if (augmentation) {
+			label += ` [${item.grade || Grade.Alpha}: ${item.essence || 0}E]`;
 		}
 		return label;
 	};

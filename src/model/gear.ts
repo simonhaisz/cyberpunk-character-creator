@@ -49,6 +49,8 @@ function transformGearItem(path: string, data: any): Gear {
 			item.availability = propValue as string;
 		} else if (propName === "Cost") {
 			item.costLabel = propValue as string;
+		} else if (propName === "Essence") {
+			item.essence = propValue as string;
 		} else {
 			// assume a string (not that it actually matters)
 			item[propName] = propValue as string;
@@ -141,12 +143,18 @@ export function computeItemCost(item: Item, allGear: Dictionary<Item[]>, gearLev
 }
 
 export function createSavedItem(path: string, item: Item): Item {
-	const { name, count, grade } = item;
-	const savedItem = { path, name, count, grade };
+	const { name, count, grade, essence } = item;
+	const savedItem = { path, name, count, grade, essence };
 	// do not want to save optional properties
 	// grade (used, alpha, beta, delta) only applies to augmentations
 	if (grade === undefined) {
 		delete savedItem.grade;
+	}
+	if (essence === undefined) {
+		delete savedItem.essence;
+	}
+	if (grade !== undefined && essence !== undefined) {
+		savedItem.essence = (parseFloat(essence) * getGradeEssenceMultiplier(grade as Grade)).toPrecision(2);
 	}
 	return savedItem;
 }
@@ -168,6 +176,21 @@ export function getGradeCostMultipler(grade: Grade = Grade.Alpha): number {
 			return 5;
 		case Grade.Delta:
 			return 15;
+		default:
+			throw new Error(`Unknown augmentation grade '${grade}'`);
+	}
+}
+
+export function getGradeEssenceMultiplier(grade: Grade): number {
+	switch (grade) {
+		case Grade.Used:
+			return 1.2;
+		case Grade.Alpha:
+			return 1;
+		case Grade.Beta:
+			return 0.7;
+		case Grade.Delta:
+			return 0.5;
 		default:
 			throw new Error(`Unknown augmentation grade '${grade}'`);
 	}
