@@ -5,7 +5,7 @@ import { useGlobalState } from "../context";
 import { getEffectiveAttributeRating } from "../model/attributes";
 import ReadOnlyProperty from "./ReadOnlyProperty";
 import { makeStyles } from "@material-ui/core";
-import { MetaType } from "../model/character";
+import { isAwakened, MetaType } from "../model/character";
 
 const useStyles = makeStyles({
 	header: {
@@ -42,6 +42,11 @@ const StatsTab: FC = () => {
 		}
 	}
 
+	const awakened = isAwakened(character);
+	let magic = getEffectiveAttributeRating(character, "Magic");
+	const essenceLost = Math.ceil(6 - essence);
+	magic -= essenceLost;
+
 	const athletics = character.activeSkills.find(s => s.name === "Athletics")?.rating || 0;
 
 	const initiative = reaction + intuition;
@@ -76,6 +81,12 @@ const StatsTab: FC = () => {
 				<ReadOnlyProperty name="Logic" value={logic} />
 				<ReadOnlyProperty name="Willpower" value={willpower} />
 				<ReadOnlyProperty name="Essence" value={essence} />
+				{
+					awakened ?
+					<ReadOnlyProperty name="Magic" value={magic} />
+					:
+					null
+				}
 			</div>
 			<Typography className={classes.header}>Initiative</Typography>
 			<Divider />
