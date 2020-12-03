@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 
 import { Attribute as AttributeData, MetaType } from "../model/character";
-import { getAttributeModifier, getAttributeCost } from "../model/attributes";
+import { getAttributeMetaTypeModifier, getAttributeCost } from "../model/attributes";
 import Property from "./Property";
 
 type Props = {
@@ -12,7 +12,7 @@ type Props = {
 
 const Attribute: FC<Props> = (props: Props) => {
     const { attribute, metaType, onUpdate } = props;
-    const modifier = getAttributeModifier(metaType, attribute);
+    const modifier = getAttributeMetaTypeModifier(metaType, attribute.name);
 
     const formatDisplayValue = (rating: number): string => (rating + modifier).toString();
 

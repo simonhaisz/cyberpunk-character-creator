@@ -1,17 +1,32 @@
-import { MetaType, Attribute, Character, isAwakened } from "./character";
+import { MetaType, Character, isAwakened } from "./character";
+import { getModifier } from "./modifier";
 
-export function getEffectiveAttributeRating(character: Character, name: string): number {
+export function getBaseAttributeRating(character: Character, name: string): number {
     const attribute = character.attributes.find(a => a.name === name);
     if (!attribute) {
         throw new Error(`Could not find attribute with name '${name}'`);
     }
-    return attribute.rating + getAttributeModifier(character.metaType, attribute);
+    return attribute.rating
 }
 
-export function getAttributeModifier(metaType: MetaType, attribute: Attribute): number {
+export function getNaturalAttributeRating(character: Character, name: string): number {
+    const baseRating = getBaseAttributeRating(character, name);
+    const metaTypeModifier = getAttributeMetaTypeModifier(character.metaType, name);
+    
+    return baseRating + metaTypeModifier;
+}
+
+export function getEffectiveAttributeRating(character: Character, name: string): number {
+    const naturalRating = getNaturalAttributeRating(character, name);
+    const modifier = getModifier(character, name);
+
+    return naturalRating + modifier;
+}
+
+export function getAttributeMetaTypeModifier(metaType: MetaType, name: string): number {
     switch (metaType) {
         case MetaType.Dwarf:
-            switch (attribute.name) {
+            switch (name) {
                 case "Body":
                     return 1;
                 case "Reaction":
@@ -23,7 +38,7 @@ export function getAttributeModifier(metaType: MetaType, attribute: Attribute): 
             }
             break;
         case MetaType.Elf:
-            switch (attribute.name) {
+            switch (name) {
                 case "Agility":
                     return 1;
                 case "Charisma":
@@ -33,7 +48,7 @@ export function getAttributeModifier(metaType: MetaType, attribute: Attribute): 
         case MetaType.Human:
             break;
         case MetaType.Ork:
-            switch (attribute.name) {
+            switch (name) {
                 case "Body":
                     return 3;
                 case "Strength":
@@ -45,7 +60,7 @@ export function getAttributeModifier(metaType: MetaType, attribute: Attribute): 
             }
             break;
         case MetaType.Troll:
-            switch (attribute.name) {
+            switch (name) {
                 case "Body":
                     return 4;
                 case "Agility":

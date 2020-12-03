@@ -38,6 +38,7 @@ export type Character = CharacterRef & {
     gear: Item[];
     options: CreateOptions;
     professionalism: number;
+    modifiers: NamedProperty[];
 };
 
 export function isAwakened(character: Character): boolean {
@@ -59,6 +60,9 @@ export function upgradeCharacter(originalCharacter: any): Character {
     }
     if (upgradedCharacter.professionalism === undefined) {
         upgradedCharacter.professionalism = 0;
+    }
+    if (upgradedCharacter.modifiers === undefined) {
+        upgradedCharacter.modifiers = [];
     }
     return upgradedCharacter;
 }
