@@ -1,22 +1,20 @@
 {
   "files": {
-    "main.css": "/cyberpunk-character-creator/static/css/main.69eda509.chunk.css",
-    "main.js": "/cyberpunk-character-creator/static/js/main.15749a28.chunk.js",
-    "main.js.map": "/cyberpunk-character-creator/static/js/main.15749a28.chunk.js.map",
-    "runtime-main.js": "/cyberpunk-character-creator/static/js/runtime-main.25024038.js",
-    "runtime-main.js.map": "/cyberpunk-character-creator/static/js/runtime-main.25024038.js.map",
-    "static/js/2.04015c8d.chunk.js": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js",
-    "static/js/2.04015c8d.chunk.js.map": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js.map",
-    "index.html": "/cyberpunk-character-creator/index.html",
-    "precache-manifest.4521fb03a0241ba1e152822618719b74.js": "/cyberpunk-character-creator/precache-manifest.4521fb03a0241ba1e152822618719b74.js",
-    "service-worker.js": "/cyberpunk-character-creator/service-worker.js",
-    "static/css/main.69eda509.chunk.css.map": "/cyberpunk-character-creator/static/css/main.69eda509.chunk.css.map",
-    "static/js/2.04015c8d.chunk.js.LICENSE": "/cyberpunk-character-creator/static/js/2.04015c8d.chunk.js.LICENSE"
+    "main.css": "http://localhost:5000/static/css/main.2ae47eeb.chunk.css",
+    "main.js": "http://localhost:5000/static/js/main.9792c60b.chunk.js",
+    "main.js.map": "http://localhost:5000/static/js/main.9792c60b.chunk.js.map",
+    "runtime-main.js": "http://localhost:5000/static/js/runtime-main.09273568.js",
+    "runtime-main.js.map": "http://localhost:5000/static/js/runtime-main.09273568.js.map",
+    "static/js/2.dad10303.chunk.js": "http://localhost:5000/static/js/2.dad10303.chunk.js",
+    "static/js/2.dad10303.chunk.js.map": "http://localhost:5000/static/js/2.dad10303.chunk.js.map",
+    "index.html": "http://localhost:5000/index.html",
+    "static/css/main.2ae47eeb.chunk.css.map": "http://localhost:5000/static/css/main.2ae47eeb.chunk.css.map",
+    "static/js/2.dad10303.chunk.js.LICENSE.txt": "http://localhost:5000/static/js/2.dad10303.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.25024038.js",
-    "static/js/2.04015c8d.chunk.js",
-    "static/css/main.69eda509.chunk.css",
-    "static/js/main.15749a28.chunk.js"
+    "static/js/runtime-main.09273568.js",
+    "static/js/2.dad10303.chunk.js",
+    "static/css/main.2ae47eeb.chunk.css",
+    "static/js/main.9792c60b.chunk.js"
   ]
 }

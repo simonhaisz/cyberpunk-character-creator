@@ -3,6 +3,9 @@ Addiction [Mild]	-5
 Addiction [Moderate]	-10
 Addiction [Severe]	-20
 Addiction [Burnout]	-30
+Aged [50]	-5
+Aged [60]	-10
+Aged [70]	-15
 Albinism	-10
 Allergy [Uncommon&Mild]	-5
 Allergy [Uncommon&Moderate]	-10
@@ -12,6 +15,10 @@ Allergy [Common&Moderate]	-15
 Allergy [Common&Severe]	-20
 Amnesia [Life]	-10
 Amnesia [Everything]	-25
+Aspected Magician [Astral]	-10
+Aspected Magician [Conjuror]	-10
+Aspected Magician [Enchanter]	-10
+Aspected Magician [Sorceror]	-10
 Asthma	-15
 Astral Beacon	-5
 Bad Luck	-20
@@ -23,6 +30,7 @@ Codeblock	-5
 Combat Paralysis	-20
 Computer Illeterate	-5
 Cranial Bomb	-10
+Cursed	-20
 Day Job [10 Hours]	-5
 Day Job [20 Hours]	-10
 Day Job [40 Hours]	-15
@@ -41,10 +49,22 @@ Enemy [C+I=25]	-25
 Evil Twin	-10
 Flashbacks [Uncommon]	-5
 Flashbacks [Common]	-10
+Geas [Condition]	-10
+Geas [Fasting]	-10
+Geas [Gestures]	-10
+Geas [Incantation]	-10
+Geas [Location]	-10
+Geas [Mentor]	-10
+Geas [Ritual]	-10
+Geas [Talisman]	-10
+Geas [Time]	-10
 Gremlins	-20
 Hallucinations	-10
 Hung Out to Dry	-10
 Illiterate	-10
+Illness [Mild]	-5
+Illness [Moderate]	-10
+Illness [Severe]	-15
 In Debt [10000]	-5
 In Debt [30000]	-15
 In Debt [50000]	-25
@@ -78,6 +98,7 @@ Poor Self Control [Compulsive, Minor]	-5
 Poor Self Control [Compulsive, Severe]	-15
 Poor Self Control [Vindictive]	-10
 Poor Self Control [Combat Monster]	-10
+Pregnant	-15
 Prejudiced [Common, Biased]	-10
 Prejudiced [Common, Outspoken]	-15
 Prejudiced [Common, Active]	-20
