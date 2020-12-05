@@ -304,3 +304,45 @@ export function getCharacterGearKarmaCost(nuyen: number, nuyenLevel: Level): num
 	const factor = getNuyenFactor(nuyenLevel);
 	return Math.ceil(nuyen / factor) * 5;
 }
+
+export function upgradeGear(originalGear: Item[]): Item[] {
+	const upgradedGear: Item[] = [];
+
+	for (const item of originalGear) {
+		if (/^gear\.weapons\.grenades-and\./i.test(item.path)) {
+			const match = /(?<toreplace>^gear\.weapons\.grenades-and\.)(?<tokeep>.*)/i.exec(item.path);
+			if (match === null) {
+				throw new Error(`'${item.path}' matched test regex but not exec regex`);
+			}
+			const upgradedPath = `gear.weapons.grenades-and-rockets.${match.groups!["tokeep"]}`;
+			upgradedGear.push({
+				...item,
+				path: upgradedPath
+			});
+		} else if (/^Bow –/i.test(item.name)) {
+			const match = /(?<toreplace>^Bow –)(?<tokeep>.*)/i.exec(item.name);
+			if (match === null) {
+				throw new Error(`'${item.name}' matched test regex but not exec regex`);
+			}
+			const upgradedName = `Bow -${match.groups!["tokeep"]}`;
+			upgradedGear.push({
+				...item,
+				name: upgradedName
+			});
+		} else if (/^Jammer –/i.test(item.name)) {
+			const match = /(?<toreplace>^Jammer –)(?<tokeep>.*)/i.exec(item.name);
+			if (match === null) {
+				throw new Error(`'${item.name}' matched test regex but not exec regex`);
+			}
+			const upgradedName = `Jammer -${match.groups!["tokeep"]}`;
+			upgradedGear.push({
+				...item,
+				name: upgradedName
+			});
+		} else {
+			upgradedGear.push(item);
+		}
+	}
+
+	return upgradedGear;
+}

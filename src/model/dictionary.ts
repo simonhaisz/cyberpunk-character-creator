@@ -22,6 +22,9 @@ export function getItemCost<T extends Item>(item: Item, allItems: Dictionary<T[]
 		return itemCostMap.get(key)!;
 	}
 	const items = allItems[item.path];
+	if (items === undefined) {
+		throw new Error(`Could not find any items under path '${item.path}'`);
+	}
 	const foundItem = items.find(g => g.name === item.name);
 	if (!foundItem) {
 		throw new Error(`Could not find item with name '${item.name}' in list '${JSON.stringify(items)}' under path '${item.path}'`);
