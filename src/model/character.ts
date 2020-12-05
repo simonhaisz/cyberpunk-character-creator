@@ -1,6 +1,7 @@
 import { DEFAULT_OPTIONS } from "../data/default-create-options";
 import { Contact } from "./contact";
 import { CreateOptions } from "./create-options";
+import { upgradeGear } from "./gear";
 import { Item } from "./item";
 
 export enum MetaType {
@@ -63,6 +64,11 @@ export function upgradeCharacter(originalCharacter: any): Character {
     }
     if (upgradedCharacter.modifiers === undefined) {
         upgradedCharacter.modifiers = [];
+    }
+    if (upgradedCharacter.gear === undefined) {
+        upgradedCharacter.gear = [];
+    } else {
+        upgradedCharacter.gear = upgradeGear(upgradedCharacter.gear);
     }
     return upgradedCharacter;
 }

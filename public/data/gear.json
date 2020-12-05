@@ -384,35 +384,140 @@
                     "Availability": "4R",
                     "Cost": "1000"
                 }
+            ],
+            "improvised-melee-weapons": [
+                {
+                    "Name": "Baseball Bat",
+                    "Reach": "1",
+                    "Damage": "(STR/2 + 1)P",
+                    "AP": "+2",
+                    "STR Min": "2 (4)",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Bottle (Unbroken)",
+                    "Reach": "-",
+                    "Damage": "(STR/2 + 1)S",
+                    "AP": "+2",
+                    "STR Min": "1",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Bottle (Broken)",
+                    "Reach": "-",
+                    "Damage": "(STR/2 + 1)P",
+                    "AP": "+2",
+                    "STR Min": "1",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Chair",
+                    "Reach": "1",
+                    "Damage": "(STR/2 + 2)S",
+                    "AP": "+2",
+                    "STR Min": "2 (4)",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Frying Pan",
+                    "Reach": "-",
+                    "Damage": "(STR/2 +1)P",
+                    "AP": "-",
+                    "STR Min": "2",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Metahuman Body",
+                    "Reach": "1",
+                    "Damage": "(BOD/2 +2)S",
+                    "AP": "+2",
+                    "STR Min": "BOD",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Pistol",
+                    "Reach": "-",
+                    "Damage": "(STR/2)P",
+                    "AP": "-",
+                    "STR Min": "Pistol",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Pool Cue",
+                    "Reach": "2",
+                    "Damage": "(STR/2)P",
+                    "AP": "+2",
+                    "STR Min": "2",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Rifle Butt",
+                    "Reach": "1",
+                    "Damage": "(STR/2 +1)P",
+                    "AP": "-",
+                    "STR Min": "Rifle",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Sledge Hammer",
+                    "Reach": "1",
+                    "Damage": "(STR/2 + 3)P",
+                    "AP": "-",
+                    "STR Min": "4 (6)",
+                    "Availability": "-",
+                    "Cost": "-"
+                },
+                {
+                    "Name": "Steel Pipe",
+                    "Reach": "1",
+                    "Damage": "(STR/2 + 1)P",
+                    "AP": "-",
+                    "STR Min": "2 (4)",
+                    "Availability": "-",
+                    "Cost": "-"
+                }
             ]
         },
         "projectile-and-throwing-weapons": {
             "bows": [
                 {
-                    "Name": "Bow – Rating 2",
+                    "Name": "Bow - Rating 2",
                     "Damage": "3P",
                     "AP": "-",
+                    "STR Min": "2",
                     "Availability": "2",
                     "Cost": "100"
                 },
                 {
-                    "Name": "Bow – Rating 4",
+                    "Name": "Bow - Rating 4",
                     "Damage": "4P",
                     "AP": "-1",
+                    "STR Min": "4",
                     "Availability": "4",
                     "Cost": "200"
                 },
                 {
-                    "Name": "Bow – Rating 6",
+                    "Name": "Bow - Rating 6",
                     "Damage": "5P",
                     "AP": "-2",
+                    "STR Min": "6",
                     "Availability": "6",
                     "Cost": "500"
                 },
                 {
-                    "Name": "Bow – Rating 8",
+                    "Name": "Bow - Rating 8",
                     "Damage": "6P",
                     "AP": "-3",
+                    "STR Min": "8",
                     "Availability": "8",
                     "Cost": "1000"
                 }
@@ -422,6 +527,7 @@
                     "Name": "Pistol Crossbow",
                     "Damage": "2P",
                     "AP": "-",
+                    "STR Min": "2 (3)",
                     "Availability": "4R",
                     "Cost": "200"
                 },
@@ -429,20 +535,23 @@
                     "Name": "Light Crossbow",
                     "Damage": "3P",
                     "AP": "-",
+                    "STR Min": "2 (4)",
                     "Availability": "2",
                     "Cost": "200"
                 },
                 {
                     "Name": "Medium Crossbow",
-                    "Damage": "5P",
+                    "Damage": "4P",
                     "AP": "-",
+                    "STR Min": "3 (5)",
                     "Availability": "4R",
                     "Cost": "500"
                 },
                 {
                     "Name": "Heavy Crossbow",
-                    "Damage": "7P",
+                    "Damage": "5P",
                     "AP": "-1",
+                    "STR Min": "4 (6)",
                     "Availability": "8R",
                     "Cost": "1000"
                 }
@@ -508,7 +617,7 @@
                 },
                 {
                     "Name": "Knife",
-                    "Damage": "(STR/2)P",
+                    "Damage": "(STR/2 + 1)P",
                     "AP": "-",
                     "Availability": "2",
                     "Cost": "20"
@@ -519,6 +628,20 @@
                     "AP": "-",
                     "Availability": "6",
                     "Cost": "350"
+                },
+                {
+                    "Name": "Shuriken",
+                    "Damage": "(STR/2)P",
+                    "AP": "-",
+                    "Availability": "4",
+                    "Cost": "50"
+                },
+                {
+                    "Name": "Tomahawk",
+                    "Damage": "(STR/2 + 2)P",
+                    "AP": "-",
+                    "Availability": "6",
+                    "Cost": "1000"
                 }
             ]
         },
@@ -1124,7 +1247,7 @@
                 }
             ]
         },
-        "grenades-and": {
+        "grenades-and-rockets": {
             "grenade-launchers": [
                 {
                     "Name": "Ares Antioch",
@@ -1379,12 +1502,12 @@
                     "Cost": "200, 1000, 3000"
                 },
                 {
-                    "Name": "Jammer – Area (4, 8, 12)",
+                    "Name": "Jammer - Area (4, 8, 12)",
                     "Availability": "12F, 18F, 24F",
                     "Cost": "1000, 5000, 15000"
                 },
                 {
-                    "Name": "Jammer – Directional (4, 8, 12)",
+                    "Name": "Jammer - Directional (4, 8, 12)",
                     "Availability": "8F, 12F, 16F",
                     "Cost": "500, 2500, 7500"
                 },
@@ -1835,7 +1958,17 @@
                     "Cost": "1000, 5000, 15000"
                 },
                 {
-                    "Name": "Agent / IC / Pilot (2, 4, 6)",
+                    "Name": "Agent (2, 4, 6)",
+                    "Availability": "8, 12, 16",
+                    "Cost": "2000, 10000, 30000"
+                },
+                {
+                    "Name": "IC (2, 4, 6)",
+                    "Availability": "8, 12, 16",
+                    "Cost": "2000, 10000, 30000"
+                },
+                {
+                    "Name": "Pilot (2, 4, 6)",
                     "Availability": "8, 12, 16",
                     "Cost": "2000, 10000, 30000"
                 },
@@ -2068,7 +2201,7 @@
                     "Essence": "0.2",
                     "Capacity": "[2]",
                     "Availability": "-",
-                    "Cost": "2000 + Commlink"
+                    "Cost": "2000"
                 },
                 {
                     "Name": "Control Rig",
@@ -2103,7 +2236,7 @@
                     "Essence": "0.1",
                     "Capacity": "[1]",
                     "Availability": "12",
-                    "Cost": "1000 + Encryption"
+                    "Cost": "1000"
                 },
                 {
                     "Name": "Encephalon (1, 2)",
@@ -2776,8 +2909,8 @@
                 {
                     "Name": "Chemical Gland",
                     "Essence": "0.3",
-                    "Availability": "12*",
-                    "Cost": "30000 + (compound x 100)"
+                    "Availability": "12",
+                    "Cost": "30000"
                 },
                 {
                     "Name": "Exhalation Spray",
@@ -3112,8 +3245,9 @@
             },
             {
                 "Name": "Thermite Burning Bar",
-                "Rating": "16R",
-                "Availability": "500"
+                "Rating": "-",
+                "Availability": "16R",
+                "Cost": "500"
             }
         ],
         "detonators": [
