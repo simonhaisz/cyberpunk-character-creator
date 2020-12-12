@@ -11,7 +11,7 @@ import { Spell } from "./model/magic";
 import { Gear } from "./model/gear";
 import { Dictionary } from "./model/dictionary";
 import { DEFAULT_OPTIONS } from "./data/default-create-options";
-import { CreateOptions, getStartingKarma } from "./model/create-options";
+import { CreateOptions } from "./model/create-options";
 
 export enum ActionType {
     UpdateCharacter = "updateCharacter",
@@ -50,7 +50,7 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
         case ActionType.UpdateCharacter: {
             const selectedCharacter = action.data as UpdateCharacterData;
             const characters = handleCharacterUpdate(selectedCharacter, state);
-            const karma = getCharacterKarma(state.karma, selectedCharacter, state);
+            const karma = getCharacterKarma(selectedCharacter, state);
             // the list of characters is not saved separatly - it is constructed from all the available characters
             saveCharacter(selectedCharacter);
             return { ...state, selectedCharacter, characters, karma };
@@ -59,7 +59,7 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             const selectedCharacter = action.data as ImportCharacterData;
             saveCharacter(upgradeCharacter(selectedCharacter));
             const characters = handleCharacterUpdate(selectedCharacter, state);
-            const karma = getCharacterKarma(state.karma, selectedCharacter, state)
+            const karma = getCharacterKarma(selectedCharacter, state)
             return { ...state, selectedCharacter, characters, karma };
         }
         case ActionType.ClearCharacter: {
@@ -79,7 +79,7 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             if (!selectedCharacter) {
                 throw new Error(`Could not find saved character ${JSON.stringify(characterRef)}`);
             }
-            const karma = getCharacterKarma(state.karma, selectedCharacter, state);
+            const karma = getCharacterKarma(selectedCharacter, state);
             return { ...state, selectedCharacter, karma};
         }
         case ActionType.LoadQualities: {
@@ -116,9 +116,8 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
         }
         case ActionType.UpdateCreateOptions: {
             const newOptions = action.data as UpdateCreateOptionsData;
-            const selectedCharacter = { ...state.selectedCharacter, options: newOptions };
-            const totalKarma = getStartingKarma(newOptions.karmaLevel);
-            const karma = getCharacterKarma({ ...state.karma, total: totalKarma }, selectedCharacter, state);
+            const selectedCharacter = { ...state.selectedCharacter, options: { ...newOptions } };
+            const karma = getCharacterKarma(selectedCharacter, state);
             return { ...state, selectedCharacter, karma};
         }
     }
