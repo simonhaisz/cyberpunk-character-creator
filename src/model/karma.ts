@@ -7,7 +7,7 @@ import { State } from "./state";
 import { getCharacterGearKarmaCost, getCharacterGearNuyenCost } from "./gear";
 import { getStartingKarma, Level } from "./create-options";
 import { getContactsCost } from "./contact";
-import { getCharacterMagicCost, getCharacterSpellsCost } from "./magic";
+import { getCharacterMagicCost } from "./magic";
 
 export type Karma = {
     total: number;

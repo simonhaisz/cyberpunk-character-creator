@@ -181,7 +181,16 @@ const CharacterCreator: FC = () => {
         dispatch({ type: ActionType.ImportCharacter, data });
     };
 
-    const exportFileName = `${selectedCharacter.streetName}.json`;
+    let name: string
+    if (selectedCharacter.streetName.length > 0) {
+        name = selectedCharacter.streetName;
+    } else if (selectedCharacter.name.length > 0) {
+        name = selectedCharacter.name;
+    } else {
+        name = "[New Character]";
+    }
+
+    const exportFileName = `${name}.json`;
     const generateCharacterData = () => {
         return JSON.stringify(selectedCharacter);
     };
