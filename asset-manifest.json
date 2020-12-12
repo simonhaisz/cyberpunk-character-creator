@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/cyberpunk-character-creator/static/css/main.2ae47eeb.chunk.css",
-    "main.js": "/cyberpunk-character-creator/static/js/main.489f42a3.chunk.js",
-    "main.js.map": "/cyberpunk-character-creator/static/js/main.489f42a3.chunk.js.map",
+    "main.js": "/cyberpunk-character-creator/static/js/main.de1cb388.chunk.js",
+    "main.js.map": "/cyberpunk-character-creator/static/js/main.de1cb388.chunk.js.map",
     "runtime-main.js": "/cyberpunk-character-creator/static/js/runtime-main.c72b6bcb.js",
     "runtime-main.js.map": "/cyberpunk-character-creator/static/js/runtime-main.c72b6bcb.js.map",
-    "static/js/2.dad10303.chunk.js": "/cyberpunk-character-creator/static/js/2.dad10303.chunk.js",
-    "static/js/2.dad10303.chunk.js.map": "/cyberpunk-character-creator/static/js/2.dad10303.chunk.js.map",
+    "static/js/2.829dfe96.chunk.js": "/cyberpunk-character-creator/static/js/2.829dfe96.chunk.js",
+    "static/js/2.829dfe96.chunk.js.map": "/cyberpunk-character-creator/static/js/2.829dfe96.chunk.js.map",
     "index.html": "/cyberpunk-character-creator/index.html",
     "static/css/main.2ae47eeb.chunk.css.map": "/cyberpunk-character-creator/static/css/main.2ae47eeb.chunk.css.map",
-    "static/js/2.dad10303.chunk.js.LICENSE.txt": "/cyberpunk-character-creator/static/js/2.dad10303.chunk.js.LICENSE.txt"
+    "static/js/2.829dfe96.chunk.js.LICENSE.txt": "/cyberpunk-character-creator/static/js/2.829dfe96.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.c72b6bcb.js",
-    "static/js/2.dad10303.chunk.js",
+    "static/js/2.829dfe96.chunk.js",
     "static/css/main.2ae47eeb.chunk.css",
-    "static/js/main.489f42a3.chunk.js"
+    "static/js/main.de1cb388.chunk.js"
   ]
 }
