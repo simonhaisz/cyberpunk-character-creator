@@ -25,7 +25,7 @@ import { transformAllGear, getCharacterGearNuyenCost, getCharacterGearKarmaCost 
 import { getMetaTypeCost } from "../model/meta-type";
 import { transformAllQualities, getCharacterQualitiesCost } from "../model/quality";
 import { getAllContactsCost } from "../model/contact";
-import { getCharacterSpellsCost, transformAllSpells } from "../model/magic";
+import { getCharacterMagicCost, transformAllSpells } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
 import StatsTab from "./StatsTab";
@@ -120,7 +120,7 @@ const CharacterCreator: FC = () => {
     const attributesCost = getAttributesCost(selectedCharacter);
     const skillsCost = getSkillsCost(selectedCharacter);
     const contactsCost = getAllContactsCost(selectedCharacter);
-    const magicCost = getCharacterSpellsCost(selectedCharacter);
+    const magicCost = getCharacterMagicCost(selectedCharacter);
     const gearNuyenCost = getCharacterGearNuyenCost(selectedCharacter, allGear, options.gearLevel);
     const getGearKarmaCost = getCharacterGearKarmaCost(gearNuyenCost, selectedCharacter.options.nuyenLevel);
 

@@ -35,7 +35,7 @@ const ContactList: FC = () => {
 
 	const contactsCost = getAllContactsCost(character);
 	const freeContactPoints = getFreeContactPoints(character);
-    const totalCost = contactsCost - freeContactPoints;
+    const totalCost = Math.max(contactsCost - freeContactPoints, 0);
 	const headerLabel = `Contacts (${contactsCost} - ${freeContactPoints} = ${totalCost})`;
 	
 	allContacts.push(...getChildItems(customItems, parentPath));
