@@ -1,3 +1,4 @@
+import { getNaturalAttributeRating } from "./attributes";
 import { Character } from "./character";
 
 export type Contact = {
@@ -29,17 +30,17 @@ export function getContactCost(contact: Contact): number {
 }
 
 export function getFreeContactPoints(character: Character): number {
-    const charisma = character.attributes.find(a => a.name === "Charisma");
-    if (charisma === undefined) {
-        throw new Error(`Character '${character.streetName}' has no attribute 'Charisma'`);
-    }
-    const willpower = character.attributes.find(a => a.name === "Willpower");
-    if (willpower === undefined) {
-        throw new Error(`Character '${character.streetName}' has no attribute 'Willpower'`);
-    }
-    return (charisma.rating + willpower.rating) * 10;
+    const charisma = getNaturalAttributeRating(character, "Charisma");
+    const willpower = getNaturalAttributeRating(character, "Willpower");
+    return (charisma + willpower) * 10;
 }
 
 export function getAllContactsCost(character: Character): number {
 	return character.contacts.map(c => getContactCost(c)).reduce((a, b) => a + b, 0);
+}
+
+export function getContactsCost(character: Character): number {
+	const allContactsCost = getAllContactsCost(character);
+	const freeContactPoints = getFreeContactPoints(character);
+	return Math.max(allContactsCost - freeContactPoints, 0);
 }

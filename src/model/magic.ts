@@ -30,3 +30,9 @@ export function getSpellsCost(spells: Item[]): number {
 export function getCharacterSpellsCost(character: Character): number {
 	return getSpellsCost(character.spells);
 }
+
+export function getCharacterMagicCost(character: Character): number {
+	let cost = 0;
+	cost += getCharacterSpellsCost(character);
+	return cost;
+}

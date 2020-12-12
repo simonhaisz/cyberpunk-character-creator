@@ -5,7 +5,9 @@ import { getSkillsCost } from "./skills";
 import { getCharacterQualitiesCost } from "./quality";
 import { State } from "./state";
 import { getCharacterGearKarmaCost, getCharacterGearNuyenCost } from "./gear";
-import { Level } from "./create-options";
+import { getStartingKarma, Level } from "./create-options";
+import { getContactsCost } from "./contact";
+import { getCharacterMagicCost } from "./magic";
 
 export type Karma = {
     total: number;
@@ -35,14 +37,16 @@ export function getDefaultKarma(karmaLevel: Level): Karma {
     };
 }
 
-export function getCharacterKarma(karma: Karma, character: Character, state: State): Karma {
-    const { total } = karma;
+export function getCharacterKarma(character: Character, state: State): Karma {
+    const total = getStartingKarma(character.options.karmaLevel);
     let spent = 0;
     spent += getMetaTypeCost(character.metaType);
     spent += getCharacterQualitiesCost(character, state.allQualities);
     spent += getAttributesCost(character);
     spent += getSkillsCost(character);
+    spent += getContactsCost(character);
     spent += getCharacterGearKarmaCost(getCharacterGearNuyenCost(character, state.allGear, character.options.gearLevel), character.options.nuyenLevel);
+    spent += getCharacterMagicCost(character);
     spent += getProfessionalismCost(character.professionalism);
     const available = total - spent;
     return { total, spent, available };
