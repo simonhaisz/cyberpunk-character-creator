@@ -1,3 +1,4 @@
+import { getNaturalAttributeRating } from "./attributes";
 import { Skill, Character } from "./character";
 import { CustomItem } from "./custom-item";
 
@@ -50,15 +51,9 @@ export function getKnowledgeSkillsCost(knowledgeSkills: Skill[]): number {
 }
 
 export function getFreeKnowledgeSkillPoints(character: Character): number {
-    const intuition = character.attributes.find(a => a.name === "Intuition");
-    if (intuition === undefined) {
-        throw new Error(`Character '${character.streetName}' has no attribute 'Intuition'`);
-    }
-    const logic = character.attributes.find(a => a.name === "Logic");
-    if (logic === undefined) {
-        throw new Error(`Character '${character.streetName}' has no attribute 'Logic'`);
-    }
-    return (intuition.rating + logic.rating) * 10;
+    const intuition = getNaturalAttributeRating(character, "Intuition");
+    const logic = getNaturalAttributeRating(character, "Logic");
+    return (intuition + logic) * 10;
 }
 
 export function getSkillsCost(character: Character): number {
