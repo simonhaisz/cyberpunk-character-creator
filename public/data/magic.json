@@ -310,6 +310,92 @@
                 "Cost": "1",
                 "Levels": "-"
             }
+        ],
+        "metamagic": [
+            {
+                "Name": "Absorption"
+            },
+            {
+                "Name": "Adept Centering"
+            },
+            {
+                "Name": "Anchoring"
+            },
+            {
+                "Name": "Ally Conjuration"
+            },
+            {
+                "Name": "Attunement (Animal)"
+            },
+            {
+                "Name": "Attunement (Item)"
+            },
+            {
+                "Name": "Centering"
+            },
+            {
+                "Name": "Channeling"
+            },
+            {
+                "Name": "Cleansing"
+            },
+            {
+                "Name": "Cognition"
+            },
+            {
+                "Name": "Divining"
+            },
+            {
+                "Name": "Empower Animal"
+            },
+            {
+                "Name": "Extended Masking"
+            },
+            {
+                "Name": "Filtering"
+            },
+            {
+                "Name": "Flexible Signature"
+            },
+            {
+                "Name": "Flux"
+            },
+            {
+                "Name": "Geomancy"
+            },
+            {
+                "Name": "Great Ritual"
+            },
+            {
+                "Name": "Infusion"
+            },
+            {
+                "Name": "Invoking"
+            },
+            {
+                "Name": "Masking"
+            },
+            {
+                "Name": "Psychometry"
+            },
+            {
+                "Name": "Quickening"
+            },
+            {
+                "Name": "Reflecting"
+            },
+            {
+                "Name": "Sensing"
+            },
+            {
+                "Name": "Shielding"
+            },
+            {
+                "Name": "Sometic Control"
+            },
+            {
+                "Name": "Sympathetic Linking"
+            }
         ]
     },
     "spells": {

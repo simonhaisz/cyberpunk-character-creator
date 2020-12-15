@@ -29,6 +29,8 @@ const DEFAULT_CHARACTER: Character = {
     gear: [],
     options: { ...DEFAULT_OPTIONS },
     professionalism: 0,
+    initiateGrade: 0,
+    metaMagics: [],
     modifiers: []
 };
 

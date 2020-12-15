@@ -60,7 +60,7 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 	let allowMultiple: boolean;
 	if (item.path.startsWith(gearRoot)) {
 		allowMultiple = true;
-	} else if (item.path.startsWith(powersRoot)) {
+	} else if (item.path.startsWith(`${powersRoot}.adept-powers`)) {
 		allowMultiple = doesAdeptPowerHaveLevels(item, allPowers);
 	} else {
 		allowMultiple = false;

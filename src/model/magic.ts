@@ -40,17 +40,24 @@ export const powersRoot = "powers";
 
 export function transformAllPowers(allData: any): Dictionary<AdeptPower[]> {
 	const allPowers: Dictionary<AdeptPower[]> = {};
-	transformAllItems(powersRoot, allData, allPowers, transformAdepPowerValues);
+	transformAllItems(powersRoot, allData, allPowers, transformPowerValues);
 	return allPowers;
 }
 
-function transformAdepPowerValues(path: string, values: any[]): AdeptPower[] {
+function transformPowerValues(path: string, values: any[]): AdeptPower[] {
 	const powers: AdeptPower[] = [];
 	for (const value of values) {
-		const name = value["Name"];
-		const cost = value["Cost"];
-		const levels = value["Levels"];
-		powers.push({ path, name, cost, levels });
+		if (path === "powers.adept-powers") {
+			const name = value["Name"];
+			const cost = value["Cost"];
+			const levels = value["Levels"];
+			powers.push({ path, name, cost, levels });
+		} else if (path === "powers.metamagic") {
+			const name = value["Name"];
+			const cost = "10";
+			const levels = "";
+			powers.push({ path, name, cost, levels });
+		}
 	}
 	return powers;
 }
@@ -79,8 +86,21 @@ export function doesAdeptPowerHaveLevels(item: Item, allPowers: Dictionary<Item[
 	return hasLevels;
 }
 
+export function getInitiateGradeCost(rating: number): number {
+	if (rating < 0 || rating > 6) {
+        throw new Error(`Initiate grade must be witin the range [1..6] - found ${rating}`);
+	}
+	if (rating === 0) {
+		return 0;
+	}
+    const sum = rating * (rating + 1) / 2 + 1; // first grade costs 20 instead of 10
+    return sum * 10;
+}
+
 export function getCharacterMagicCost(character: Character): number {
 	let cost = 0;
 	cost += getCharacterSpellsCost(character);
+	cost += getInitiateGradeCost(character.initiateGrade);
+	cost += character.metaMagics.length * 10;
 	return cost;
 }
