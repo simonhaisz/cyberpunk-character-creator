@@ -3,7 +3,7 @@ import { Karma } from "./karma";
 import { Quality } from "./quality";
 import { Skills } from "./skills";
 import { CustomItem } from "./custom-item";
-import { Spell } from "./magic";
+import { AdeptPower, Spell } from "./magic";
 import { Dictionary } from "./dictionary";
 import { Gear } from "./gear";
 
@@ -15,6 +15,7 @@ export type State = {
     allSkills: Skills;
     allContacts: CustomItem[];
     allSpells: Dictionary<Spell[]>;
+    allPowers: Dictionary<AdeptPower[]>;
     allGear: Dictionary<Gear[]>;
     customItems: Dictionary<CustomItem>;
 };

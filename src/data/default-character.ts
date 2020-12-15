@@ -25,9 +25,12 @@ const DEFAULT_CHARACTER: Character = {
     languageSkills: [],
     contacts: [],
     spells: [],
+    powers: [],
     gear: [],
     options: { ...DEFAULT_OPTIONS },
     professionalism: 0,
+    initiateGrade: 0,
+    metaMagics: [],
     modifiers: []
 };
 

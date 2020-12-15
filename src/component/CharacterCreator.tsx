@@ -12,7 +12,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import SelectCharacter from "./SelectCharacter";
 import CharacterName from "./CharacterName";
 import { useDispatch, useGlobalState } from "../context";
-import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData, LoadSpellsData, LoadGearData, ImportCharacterData } from "../reducer";
+import { ActionType, LoadSkillsData, LoadContactsData, LoadQualitiesData, LoadSpellsData, LoadGearData, ImportCharacterData, LoadPowersData } from "../reducer";
 import CharacterTab from "./CharacterTab";
 import SkillsTab from "./SkillsTab";
 import Karma from "./Karma";
@@ -25,7 +25,7 @@ import { transformAllGear, getCharacterGearNuyenCost, getCharacterGearKarmaCost 
 import { getMetaTypeCost } from "../model/meta-type";
 import { transformAllQualities, getCharacterQualitiesCost } from "../model/quality";
 import { getAllContactsCost } from "../model/contact";
-import { getCharacterMagicCost, transformAllSpells } from "../model/magic";
+import { getCharacterMagicCost, transformAllPowers, transformAllSpells } from "../model/magic";
 import { getSkillsCost } from "../model/skills";
 import { getAttributesCost } from "../model/attributes";
 import StatsTab from "./StatsTab";
@@ -88,6 +88,8 @@ const CharacterCreator: FC = () => {
             .then(magic => {
                 const spellData = transformAllSpells(magic.spells) as LoadSpellsData;
                 dispatch({ type: ActionType.LoadSpells, data: spellData });
+                const powersData = transformAllPowers(magic.powers) as LoadPowersData;
+                dispatch({ type: ActionType.LoadPowers, data: powersData });
             })
             .catch(error => {
                 console.error(`Error occured loading magic: ${error.message}\n${error.stack}`);

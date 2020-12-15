@@ -36,9 +36,12 @@ export type Character = CharacterRef & {
     languageSkills: Skill[];
     contacts: Contact[];
     spells: Item[];
+    powers: Item[];
     gear: Item[];
     options: CreateOptions;
     professionalism: number;
+    initiateGrade: number;
+    metaMagics: Item[];
     modifiers: NamedProperty[];
 };
 
@@ -69,6 +72,15 @@ export function upgradeCharacter(originalCharacter: any): Character {
         upgradedCharacter.gear = [];
     } else {
         upgradedCharacter.gear = upgradeGear(upgradedCharacter.gear);
+    }
+    if (upgradedCharacter.powers === undefined) {
+        upgradedCharacter.powers = [];
+    }
+    if (upgradedCharacter.initiateGrade === undefined) {
+        upgradedCharacter.initiateGrade = 0;
+    }
+    if (upgradedCharacter.metaMagics === undefined) {
+        upgradedCharacter.metaMagics = [];
     }
     return upgradedCharacter;
 }

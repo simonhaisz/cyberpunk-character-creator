@@ -1,4 +1,403 @@
 {
+    "powers": {
+        "adept-powers": [
+            {
+                "Name": "Analytics",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Animal Empathy",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Astral Perception",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Attribute Boost",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Berserk",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Blind Fighting",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Cloak",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Combat Sense",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Commanding Voice",
+                "Cost": "0.25",
+                "Levels": "-"
+            },
+            {
+                "Name": "Cool Resolve",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Counterstrike",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Critical Strike",
+                "Cost": "0.25",
+                "Levels": "3"
+            },
+            {
+                "Name": "Distance Strike",
+                "Cost": "2",
+                "Levels": "-"
+            },
+            {
+                "Name": "Eidetic Sense Memory",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Elemental Strike",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Empathic Sense",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Enhanced Perception",
+                "Cost": "0.25",
+                "Levels": "3"
+            },
+            {
+                "Name": "Enthralling Performance",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Facial Sculpt",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Flexibility",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Free Fall",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Gliding",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Great Leap",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Improved Ability",
+                "Cost": "0.25",
+                "Levels": "3"
+            },
+            {
+                "Name": "Improved Physical Attribute",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Improved Reflexes",
+                "Cost": "1.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Improved Sense",
+                "Cost": "0.25",
+                "Levels": "Infinity"
+            },
+            {
+                "Name": "Inertia Strike",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Iron Gut",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Iron Lungs",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Iron Will",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Killing Hands",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Kinesics",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Linguistics",
+                "Cost": "0.25",
+                "Levels": "-"
+            },
+            {
+                "Name": "Living Focus",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Magic Sense",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Melanin Control",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Metabolic Control",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Missile Mastery",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Missile Parry",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Motion Sense",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Multi-Tasking",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Mystic Armor",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Natural Immunity",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Nerve Strike",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Nimble Fingers",
+                "Cost": "0.25",
+                "Levels": "-"
+            },
+            {
+                "Name": "Pain Relief",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Pain Resistance",
+                "Cost": "1",
+                "Levels": "3"
+            },
+            {
+                "Name": "Penetrating Strike",
+                "Cost": "0.25",
+                "Levels": "3"
+            },
+            {
+                "Name": "Piercing Senses",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Power Throw",
+                "Cost": "0.25",
+                "Levels": "3"
+            },
+            {
+                "Name": "Quick Draw",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Rapid Healing",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Rooting",
+                "Cost": "0.25"
+            },
+            {
+                "Name": "Smashing Blow",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Spell Resistance",
+                "Cost": "1",
+                "Levels": "3"
+            },
+            {
+                "Name": "Sustenance",
+                "Cost": "0.25",
+                "Levels": "-"
+            },
+            {
+                "Name": "Temperature Tolerance",
+                "Cost": "0.5",
+                "Levels": "3"
+            },
+            {
+                "Name": "Three-Dimensional Memory",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Traceless Walk",
+                "Cost": "1",
+                "Levels": "-"
+            },
+            {
+                "Name": "Voice Control",
+                "Cost": "0.5",
+                "Levels": "-"
+            },
+            {
+                "Name": "Wall Running",
+                "Cost": "1",
+                "Levels": "-"
+            }
+        ],
+        "metamagic": [
+            {
+                "Name": "Absorption"
+            },
+            {
+                "Name": "Adept Centering"
+            },
+            {
+                "Name": "Anchoring"
+            },
+            {
+                "Name": "Ally Conjuration"
+            },
+            {
+                "Name": "Attunement (Animal)"
+            },
+            {
+                "Name": "Attunement (Item)"
+            },
+            {
+                "Name": "Centering"
+            },
+            {
+                "Name": "Channeling"
+            },
+            {
+                "Name": "Cleansing"
+            },
+            {
+                "Name": "Cognition"
+            },
+            {
+                "Name": "Divining"
+            },
+            {
+                "Name": "Empower Animal"
+            },
+            {
+                "Name": "Extended Masking"
+            },
+            {
+                "Name": "Filtering"
+            },
+            {
+                "Name": "Flexible Signature"
+            },
+            {
+                "Name": "Flux"
+            },
+            {
+                "Name": "Geomancy"
+            },
+            {
+                "Name": "Great Ritual"
+            },
+            {
+                "Name": "Infusion"
+            },
+            {
+                "Name": "Invoking"
+            },
+            {
+                "Name": "Masking"
+            },
+            {
+                "Name": "Psychometry"
+            },
+            {
+                "Name": "Quickening"
+            },
+            {
+                "Name": "Reflecting"
+            },
+            {
+                "Name": "Sensing"
+            },
+            {
+                "Name": "Shielding"
+            },
+            {
+                "Name": "Sometic Control"
+            },
+            {
+                "Name": "Sympathetic Linking"
+            }
+        ]
+    },
     "spells": {
         "combat": [
             {
