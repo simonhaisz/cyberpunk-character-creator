@@ -36,6 +36,7 @@ export type Character = CharacterRef & {
     languageSkills: Skill[];
     contacts: Contact[];
     spells: Item[];
+    powers: Item[];
     gear: Item[];
     options: CreateOptions;
     professionalism: number;

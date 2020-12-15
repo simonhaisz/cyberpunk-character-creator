@@ -30,7 +30,7 @@ export function getItemCost<T extends Item>(item: Item, allItems: Dictionary<T[]
 		throw new Error(`Could not find item with name '${item.name}' in list '${JSON.stringify(items)}' under path '${item.path}'`);
 	}
 
-	const cost = parseInt(foundItem.cost!);
+	const cost = parseFloat(foundItem.cost!);
 	itemCostMap.set(key, cost);
 	return cost;
 }

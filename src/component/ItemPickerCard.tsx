@@ -11,6 +11,7 @@ import { makeStyles } from "@material-ui/core";
 import { Grade, gearRoot, isItemAvailable } from "../model/gear";
 import GradeButton from "./GradeButton";
 import { useGlobalState } from "../context";
+import { doesAdeptPowerHaveLevels, powersRoot } from "../model/magic";
 
 const useStyles = makeStyles({
 	root: {
@@ -31,6 +32,12 @@ const useStyles = makeStyles({
 		width: 200,
 		textAlign: "center",
 	},
+	buttons: {
+		width: 200,
+		display: "flex",
+		flexDirection: "row",
+		justifyContent: "center"
+	}
 });
 
 type Props = {
@@ -40,6 +47,7 @@ type Props = {
 };
 const ItemPickerCard: FC<Props> = (props: Props) => {
 	const { item, createCostLabel, onUpdateItem } = props;
+	const allPowers = useGlobalState("allPowers");
 	const options = useGlobalState("selectedCharacter").options;
 
 	const classes = useStyles();
@@ -49,7 +57,15 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 
 	const hasAny = count > 0;
 
-	const allowMultiple = item.path.startsWith(gearRoot);
+	let allowMultiple: boolean;
+	if (item.path.startsWith(gearRoot)) {
+		allowMultiple = true;
+	} else if (item.path.startsWith(powersRoot)) {
+		allowMultiple = doesAdeptPowerHaveLevels(item, allPowers);
+	} else {
+		allowMultiple = false;
+	}
+	
 	const includeAvailability = item.path.startsWith(gearRoot);
 	const available = includeAvailability ? isItemAvailable(item.availability!, options.gearLevel) : true;
 	const includeGrade = item.path.startsWith(`${gearRoot}.augmentations`);
@@ -80,13 +96,18 @@ const ItemPickerCard: FC<Props> = (props: Props) => {
 			elevation={3}
 		>
 			<Typography className={classes.name} style={{lineHeight: "36px"}}>{item.name}</Typography>
-			{ includeAvailability ? <Typography className={classes.availability} style={{lineHeight: "36px"}}>{item.availability}</Typography> : null }
+			{
+				includeAvailability ?
+				<Typography className={classes.availability} style={{lineHeight: "36px"}}>{item.availability}</Typography>
+				:
+				null
+			}
 			<span className={classes.cost}>
 				<Badge badgeContent={count} color="secondary">
 					<Typography style={{lineHeight: "36px"}}>({costLabel})</Typography>
 				</Badge>
 			</span>
-			<ButtonGroup>
+			<ButtonGroup className={classes.buttons}>
 				{ allowMultiple || !hasAny ? <Button onClick={handleAdd} disabled={!available}><AddIcon /></Button> : null }
 				{ allowMultiple || hasAny ? <Button onClick={handleRemove} disabled={!available}><RemoveIcon /></Button> : null }
 				{ includeGrade ? <GradeButton disabled={count === 0} grade={grade} onUpdateGrade={handleGradeToggle} /> : null }

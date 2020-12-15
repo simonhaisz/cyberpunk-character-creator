@@ -134,7 +134,7 @@
             {
                 "Name": "Improved Sense",
                 "Cost": "0.25",
-                "Levels": "-"
+                "Levels": "Infinity"
             },
             {
                 "Name": "Inertia Strike",

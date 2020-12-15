@@ -7,7 +7,7 @@ import { getDefaultKarma, getCharacterKarma } from "./model/karma";
 import { Quality } from "./model/quality";
 import { Skills } from "./model/skills";
 import { CustomItem } from "./model/custom-item";
-import { Spell } from "./model/magic";
+import { AdeptPower, Spell } from "./model/magic";
 import { Gear } from "./model/gear";
 import { Dictionary } from "./model/dictionary";
 import { DEFAULT_OPTIONS } from "./data/default-create-options";
@@ -22,6 +22,7 @@ export enum ActionType {
     LoadSkills = "loadSkills",
     LoadContacts = "loadContacts",
     LoadSpells = "loadSpells",
+    LoadPowers = "loadPowers",
     LoadGear = "loadGear",
     LoadCustomItems = "loadCustomItems",
     AddCustomItem = "addCustomItem",
@@ -40,6 +41,7 @@ export type LoadQualitiesData = Dictionary<Quality[]>;
 export type LoadSkillsData = Skills;
 export type LoadContactsData = CustomItem[];
 export type LoadSpellsData = Dictionary<Spell[]>;
+export type LoadPowersData = Dictionary<AdeptPower[]>;
 export type LoadGearData = Dictionary<Gear[]>;
 export type LoadCustomItemsData = Dictionary<CustomItem>;
 export type AddCustomItemData = { path: string, item: CustomItem };
@@ -102,6 +104,10 @@ export const reducer: Reducer<State, Action> = (state: State, action: Action): S
             const allSpells = action.data as LoadSpellsData;
             return { ...state, allSpells };
         }
+        case ActionType.LoadPowers: {
+            const allPowers = action.data as LoadPowersData;
+            return { ...state, allPowers };
+        }
         case ActionType.LoadCustomItems: {
             const customItems = action.data as LoadCustomItemsData;
             return { ...state, customItems };
@@ -132,6 +138,7 @@ export const INITIAL_STATE: State = {
     allSkills: { active: [], knowledge: [], language: [] },
     allContacts: [],
     allSpells: { combat: [], detection: [], health: [], illusion: [], manipulation: [] },
+    allPowers: { adeptPowers: [] },
     allGear: {},
     customItems: {}
 };
